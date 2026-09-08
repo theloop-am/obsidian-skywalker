@@ -1,4 +1,4 @@
-# Loop Skywalker
+# LOOP - Skywalker
 
 An Obsidian theme by [theLOOP](https://github.com/theloop-am).
 
@@ -13,11 +13,11 @@ Via [BRAT](https://github.com/TfTHacker/obsidian42-brat): add
 `theloop-am/loop-skywalker` as a beta theme.
 
 Manually: copy `manifest.json` and `theme.css` into
-`<vault>/.obsidian/themes/loop-skywalker/`.
+`<vault>/.obsidian/themes/LOOP - Skywalker/`.
 
 ## Credits
 
-Loop Skywalker is derived from [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin)
+LOOP - Skywalker is derived from [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin)
 by [Anubis](https://github.com/AnubisNekhet), imported at upstream commit
 `82d207c` and modified since. If you like the foundation this is built on,
 consider [supporting the original author](https://www.buymeacoffee.com/anubisnekhet).
