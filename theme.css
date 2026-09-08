@@ -1292,6 +1292,12 @@ settings:
     type: class-toggle
     default: true
 -
+    id: anp-empty-tab-flat
+    title: Flat New Tab
+    description: Gives the New tab pane the same tone as the sidebars. The reading area is lifted slightly to be easier on the eye, which an empty pane does not need.
+    type: class-toggle
+    default: true
+-
     id: anp-hide-help
     title: Hide Help Button
     description: Removes the help button from the vault profile, leaving the settings cog
@@ -3986,6 +3992,16 @@ input.slider,
 /*-Suggestion selected item bg fix-*/
 .suggestion-item.is-selected {
   background-color: rgba(var(--ctp-text), 0.075);
+}
+
+/*-New tab uses the sidebar tone-*/
+/* --background-primary lifts the reading area a little off the sidebars so text
+   is easier on the eye. The New tab pane holds no text, so it gets no benefit
+   from that lift - it just shows as a lighter rectangle in the middle of an
+   otherwise even window. */
+.anp-empty-tab-flat .workspace-leaf-content[data-type=empty],
+.anp-empty-tab-flat .workspace-leaf-content[data-type=empty] .view-content {
+  background-color: var(--background-secondary);
 }
 
 .mod-community-theme .modal-content .community-modal-details .community-modal-info summary h1:first-child,

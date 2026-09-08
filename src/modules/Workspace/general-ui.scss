@@ -97,3 +97,14 @@
 .suggestion-item.is-selected {
     background-color: rgba(var(--ctp-text), 0.075);
 }
+/*-New tab uses the sidebar tone-*/
+/* --background-primary lifts the reading area a little off the sidebars so text
+   is easier on the eye. The New tab pane holds no text, so it gets no benefit
+   from that lift - it just shows as a lighter rectangle in the middle of an
+   otherwise even window. */
+.anp-empty-tab-flat {
+    .workspace-leaf-content[data-type="empty"],
+    .workspace-leaf-content[data-type="empty"] .view-content {
+        background-color: var(--background-secondary);
+    }
+}

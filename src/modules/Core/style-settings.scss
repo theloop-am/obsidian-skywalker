@@ -1275,6 +1275,12 @@ settings:
     type: class-toggle
     default: true
 -
+    id: anp-empty-tab-flat
+    title: Flat New Tab
+    description: Gives the New tab pane the same tone as the sidebars. The reading area is lifted slightly to be easier on the eye, which an empty pane does not need.
+    type: class-toggle
+    default: true
+-
     id: anp-hide-help
     title: Hide Help Button
     description: Removes the help button from the vault profile, leaving the settings cog
