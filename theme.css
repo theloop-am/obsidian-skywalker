@@ -884,7 +884,7 @@ settings:
     id: anp-td-highlight
     title: <td> Highlight
     type: class-select
-    default: anp-td-none
+    default: none
     allowEmpty: false
     options:
     -
@@ -6094,6 +6094,51 @@ table.dataview.table-view-table > tbody > tr:hover {
   margin-right: calc(50% - var(--anp-table-width-pct) / 2);
 }
 
+.markdown-rendered :not(pre) > code {
+  --code-normal: var(--anp-code-text-color, var(--text-normal));
+}
+
+.markdown-rendered code:not([class*=language]) {
+  --code-normal: var(--anp-code-text-color, var(--text-normal));
+}
+
+/* Show language in LP always */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock.cm-line.cm-line.cm-line.HyperMD-codeblock-begin {
+  overflow-x: visible;
+}
+
+.anp-codeblock-edit-nowrap .markdown-source-view.mod-cm6 .HyperMD-codeblock.cm-line {
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.anp-codeblock-edit-nowrap .markdown-source-view.mod-cm6 .HyperMD-codeblock.cm-line::-webkit-scrollbar {
+  display: none;
+}
+
+.anp-codeblock-preview-nowrap .markdown-rendered pre {
+  white-space: pre;
+  overflow-x: auto;
+}
+.anp-codeblock-preview-nowrap .markdown-rendered pre code {
+  overflow-x: scroll;
+}
+.anp-codeblock-preview-nowrap .markdown-rendered pre code::-webkit-scrollbar {
+  display: none;
+}
+
+.anp-codeblock-preview-hl-nowrap .markdown-rendered pre[class*=language-] {
+  white-space: pre;
+  overflow-x: auto;
+}
+.anp-codeblock-preview-hl-nowrap .markdown-rendered pre[class*=language-] code {
+  white-space: pre !important;
+  overflow-x: scroll;
+}
+.anp-codeblock-preview-hl-nowrap .markdown-rendered pre[class*=language-] code::-webkit-scrollbar {
+  display: none;
+}
+
 /*-Custom folder title-*/
 .anp-custom-vault-toggle .nav-folder.mod-root > .nav-folder-title > .nav-folder-title-content {
   font-size: 130%;
@@ -7902,7 +7947,7 @@ None of the original code was used and the feature was implemented from scratch.
   margin-top: 0;
 }
 
-.style-settings-container .setting-item:is([data-id=anp-snippet-minimal-cards-disclaimer],
+.style-settings-container .setting-item:is([data-id=anp-snippet-minimal-cards-disc],
 [data-id=anp-background-image-light],
 [data-id=anp-background-image-dark]) .setting-item-description > div {
   display: none;
