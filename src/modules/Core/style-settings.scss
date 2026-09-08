@@ -168,6 +168,68 @@ settings:
     type: class-toggle
     default: false
 -
+    id: anp-starlight-header
+    title: Starlight
+    description: A slow drifting starfield across the top bar, like a car's starlight headliner. Dark themes only.
+    type: heading
+    level: 2
+    collapsed: true
+-
+    id: anp-starlight
+    title: Enable starlight
+    type: class-toggle
+    default: false
+-
+    id: anp-starlight-density
+    title: How many stars
+    description: Whole numbers only. 1 is sparse, each step up doubles the count.
+    type: variable-number-slider
+    default: 1
+    min: 1
+    max: 6
+    step: 1
+-
+    id: anp-starlight-brightness
+    title: How bright they are
+    type: variable-number-slider
+    default: 70
+    min: 10
+    max: 100
+    step: 5
+-
+    id: anp-starlight-size
+    title: How big they are
+    description: Scales every star. The sizes vary between stars either way.
+    type: variable-number-slider
+    default: 100
+    min: 40
+    max: 300
+    step: 10
+-
+    id: anp-starlight-height
+    title: How deep the sky is
+    description: Height of the starfield in pixels. The tab bar is 40 tall.
+    type: variable-number-slider
+    default: 40
+    min: 24
+    max: 160
+    step: 2
+-
+    id: anp-starlight-color
+    title: Star colour
+    type: variable-color
+    format: hex
+    opacity: false
+    default: '#ffffff'
+-
+    id: anp-starlight-warm-color
+    title: Warm star colour
+    description: Used by a few of the brighter stars, for a little variation
+    type: variable-color
+    format: hex
+    opacity: false
+    default: '#ffe9b8'
+-
     id: loop-skywalker-url-extended-colorschemes
     title: Extended Color Schemes Snippet
     description: "Adds 25 further flavors on top of the ones built in. Download the snippet by clicking on [this link](https://github.com/theloop-am/loop-skywalker/blob/main/snippets/extended-colorschemes.css)."

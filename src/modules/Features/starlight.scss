@@ -1,0 +1,115 @@
+/* Starfield across the top bar, after a car's starlight headliner.
+   Dark themes only.
+
+   The stars do not travel. A headliner does not scroll, and neither does the
+   sky on any timescale you would notice - what makes it feel alive is that
+   each star brightens and dims on its own schedule.
+
+   One pseudo-element can only carry one opacity animation, so every star
+   drawn into it pulses in unison. Independence therefore costs layers: six
+   groups spread over three full-width hosts, each with its own period and a
+   negative delay so they start out of phase. The periods are deliberately
+   not multiples of one another, or they would drift back into step.
+
+   Every layer is position: fixed, which needs no positioned ancestor and so
+   disturbs no layout, and which escapes the overflow: hidden on .workspace
+   and .horizontal-main-container.
+
+   Stars are drawn into a tile that repeats horizontally, so density is tile
+   width: halve it and twice as many fit on screen. Keep density a whole
+   number - a fractional tile leaves a visible seam at the screen edge. */
+
+@mixin anp-star-layer($period, $delay, $peak, $floor) {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(var(--anp-starlight-height, 40) * 1px);
+    pointer-events: none;
+    z-index: 50;
+    background-repeat: repeat-x;
+    background-size: var(--anp-starlight-tile) 100%;
+    will-change: opacity;
+    --anp-star-peak: #{$peak};
+    --anp-star-floor: #{$floor};
+    animation: anp-star-twinkle $period ease-in-out $delay infinite;
+}
+
+@function anp-star($x, $y, $size, $color) {
+    @return radial-gradient(circle at #{$x} #{$y},
+        var(#{$color}) 0 calc(var(--anp-star-unit) * #{$size}),
+        transparent calc(var(--anp-star-unit) * #{$size + 0.35}));
+}
+
+body.anp-starlight.theme-dark:not(.loop-starfield-active) {
+    --anp-starlight-tile: calc(50% / var(--anp-starlight-density, 1));
+    --anp-star-unit: calc(var(--anp-starlight-size, 100) / 100 * 1px);
+    --anp-star-bright: calc(var(--anp-starlight-brightness, 70) / 100);
+
+    .app-container::before {
+        @include anp-star-layer(4.3s, -1.1s, 1, 0.15);
+        background-image:
+            anp-star(9%, 38%, 0.5, --anp-starlight-color),
+            anp-star(63%, 24%, 1.1, --anp-starlight-warm-color);
+    }
+
+    .app-container::after {
+        @include anp-star-layer(6.7s, -3.4s, 0.85, 0.1);
+        background-image:
+            anp-star(23%, 66%, 0.9, --anp-starlight-color),
+            anp-star(88%, 44%, 0.6, --anp-starlight-color);
+    }
+
+    .workspace::before {
+        @include anp-star-layer(9.1s, -0.6s, 1, 0.2);
+        background-image:
+            anp-star(41%, 71%, 1.6, --anp-starlight-warm-color);
+    }
+
+    .workspace::after {
+        @include anp-star-layer(5.9s, -4.7s, 0.7, 0.08);
+        background-image:
+            anp-star(52%, 30%, 0.7, --anp-starlight-color),
+            anp-star(95%, 78%, 0.5, --anp-starlight-color);
+    }
+
+    .horizontal-main-container::before {
+        @include anp-star-layer(12.7s, -8.2s, 0.9, 0.25);
+        background-image:
+            anp-star(31%, 18%, 1.3, --anp-starlight-color);
+    }
+
+    .horizontal-main-container::after {
+        @include anp-star-layer(7.9s, -2.3s, 0.75, 0.05);
+        background-image:
+            anp-star(76%, 58%, 0.8, --anp-starlight-warm-color),
+            anp-star(15%, 84%, 0.6, --anp-starlight-color);
+    }
+}
+
+@keyframes anp-star-twinkle {
+    0%,
+    100% {
+        opacity: calc(var(--anp-star-bright) * var(--anp-star-floor));
+    }
+
+    50% {
+        opacity: calc(var(--anp-star-bright) * var(--anp-star-peak));
+    }
+}
+
+/* Stars stay, the pulsing stops. */
+@media (prefers-reduced-motion: reduce) {
+    body.anp-starlight.theme-dark:not(.loop-starfield-active) {
+        .app-container::before,
+        .app-container::after,
+        .workspace::before,
+        .workspace::after,
+        .horizontal-main-container::before,
+        .horizontal-main-container::after {
+            animation: none;
+            opacity: calc(var(--anp-star-bright) * 0.7);
+        }
+    }
+}
