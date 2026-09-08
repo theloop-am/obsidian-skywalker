@@ -28,7 +28,7 @@ None of the original code was used in this theme, and the following code is mere
             }
 
             &:not(:last-child):not(:first-child) {
-                &>.el-p.el-p.el-p:not(.el-embed-image) {
+                &>.el-p.el-p.el-p:not(:has(.image-embed)) {
                     border-bottom: 1px dashed var(--background-modifier-border); //use minimal's styling itself for borders between fields
                 }
             }
