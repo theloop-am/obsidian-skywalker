@@ -1,20 +1,23 @@
 /*===============================================================
-                           AnuPpuccin
-                           ----------
-                  Personal theme for Obsidian
+                        Loop Skywalker
+                        --------------
+                   Obsidian theme by theLOOP
 
-AnuPpuccin is licensed under the GPL-3.0 license which allows you
-  to modify the code freely, however the Copyright and license
-notices must be preserved in your CSS. If you redistribute a part
-of my code, please credit my theme in your CSS file, and specify
-  which code you are using. Please keep my Buy Me a Coffee link
-                  in your README if you do so.
+Copyright (C) 2022-2024  Anubis (AnubisNekhet) - original AnuPpuccin
+Copyright (C) 2026       theLOOP
 
-            https://www.buymeacoffee.com/anubisnekhet
+Derived from AnuPpuccin, imported at upstream commit 82d207c.
+Modified since 2026-09-08.
+https://github.com/AnubisNekhet/AnuPpuccin
+
+This program is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License,
+version 3, as published by the Free Software Foundation. It comes
+with ABSOLUTELY NO WARRANTY. See LICENSE for the full text.
 *===============================================================*/
 /* @settings
-name: AnuPpuccin
-id: anuppuccin-theme-settings
+name: Loop Skywalker
+id: loop-skywalker-theme-settings
 settings:
 
 # Colors
@@ -7703,25 +7706,25 @@ None of the original code was used and the feature was implemented from scratch.
   border-top-width: 0;
 }
 
-.style-settings-heading:is([data-id=anuppuccin-theme-settings],
-[data-id=anuppuccin-theme-settings-extended]) {
+.style-settings-heading:is([data-id=loop-skywalker-theme-settings],
+[data-id=loop-skywalker-theme-settings-extended]) {
   border-color: hsla(var(--color-accent-hsl), 0.2);
 }
-.style-settings-heading:is([data-id=anuppuccin-theme-settings],
-[data-id=anuppuccin-theme-settings-extended]):not(.is-collapsed) + .style-settings-container {
+.style-settings-heading:is([data-id=loop-skywalker-theme-settings],
+[data-id=loop-skywalker-theme-settings-extended]):not(.is-collapsed) + .style-settings-container {
   border-color: hsla(var(--color-accent-hsl), 0.2);
 }
-.style-settings-heading:is([data-id=anuppuccin-theme-settings],
-[data-id=anuppuccin-theme-settings-extended]) .setting-item-name {
+.style-settings-heading:is([data-id=loop-skywalker-theme-settings],
+[data-id=loop-skywalker-theme-settings-extended]) .setting-item-name {
   color: var(--color-accent);
 }
 
-.anuppuccin-accent-toggle .style-settings-heading:is([data-id=anuppuccin-theme-settings],
-[data-id=anuppuccin-theme-settings-extended]) {
+.anuppuccin-accent-toggle .style-settings-heading:is([data-id=loop-skywalker-theme-settings],
+[data-id=loop-skywalker-theme-settings-extended]) {
   border-color: rgba(var(--ctp-accent), 0.2);
 }
-.anuppuccin-accent-toggle .style-settings-heading:is([data-id=anuppuccin-theme-settings],
-[data-id=anuppuccin-theme-settings-extended]):not(.is-collapsed) + .style-settings-container {
+.anuppuccin-accent-toggle .style-settings-heading:is([data-id=loop-skywalker-theme-settings],
+[data-id=loop-skywalker-theme-settings-extended]):not(.is-collapsed) + .style-settings-container {
   border-color: rgba(var(--ctp-accent), 0.2);
 }
 
@@ -7851,13 +7854,13 @@ None of the original code was used and the feature was implemented from scratch.
   content: " ⬇";
 }
 
-.setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name {
+.setting-item:is([data-id*=loop-skywalker-theme-settings]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
 }
-.setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+.setting-item:is([data-id*=loop-skywalker-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
   margin-right: 4px;
 }
-.setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+.setting-item:is([data-id*=loop-skywalker-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   background-color: var(--color-accent);
@@ -7872,17 +7875,17 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+.setting-item:is([data-id*=loop-skywalker-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
-.setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name {
+.setting-item:is([data-id*=loop-skywalker-theme-settings-extended]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
 }
-.setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+.setting-item:is([data-id*=loop-skywalker-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
   margin-right: 4px;
 }
-.setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+.setting-item:is([data-id*=loop-skywalker-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   background-color: var(--color-accent);
@@ -7897,7 +7900,7 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+.setting-item:is([data-id*=loop-skywalker-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
@@ -8155,7 +8158,7 @@ None of the original code was used and the feature was implemented from scratch.
   background: linear-gradient(to right, rgb(var(--ctp-rosewater)) 7%, rgb(var(--ctp-flamingo)) 7%, rgb(var(--ctp-flamingo)) 14%, rgb(var(--ctp-mauve)) 14%, rgb(var(--ctp-mauve)) 21%, rgb(var(--ctp-pink)) 21%, rgb(var(--ctp-pink)) 28%, rgb(var(--ctp-red)) 28%, rgb(var(--ctp-red)) 35%, rgb(var(--ctp-maroon)) 35%, rgb(var(--ctp-maroon)) 42%, rgb(var(--ctp-peach)) 42%, rgb(var(--ctp-peach)) 49%, rgb(var(--ctp-yellow)) 49%, rgb(var(--ctp-yellow)) 56%, rgb(var(--ctp-green)) 56%, rgb(var(--ctp-green)) 63%, rgb(var(--ctp-teal)) 63%, rgb(var(--ctp-teal)) 70%, rgb(var(--ctp-sky)) 70%, rgb(var(--ctp-sky)) 77%, rgb(var(--ctp-sapphire)) 77%, rgb(var(--ctp-sapphire)) 85%, rgb(var(--ctp-blue)) 85%, rgb(var(--ctp-blue)) 92%, rgb(var(--ctp-lavender)));
 }
 
-.setting-item:is([data-id=anuppuccin-theme-settings],
+.setting-item:is([data-id=loop-skywalker-theme-settings],
 [data-id=anp-colors-section-header],
 [data-id=anp-editor-header],
 [data-id=anp-misc-element-header],
@@ -8169,17 +8172,17 @@ None of the original code was used and the feature was implemented from scratch.
   transition: transform 0.1s;
 }
 
-.setting-item:is([data-id=anuppuccin-theme-settings-extended],
+.setting-item:is([data-id=loop-skywalker-theme-settings-extended],
 [data-id=anp-preview-header]):not(.is-collapsed) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   transform: rotate(-90deg);
   transition: transform 0.1s;
 }
 
-.setting-item:is([data-id=anuppuccin-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+.setting-item:is([data-id=loop-skywalker-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='17.5' cy='10.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='8.5' cy='7.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='6.5' cy='12.5' r='.5'%3E%3C/circle%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.setting-item:is([data-id=anuppuccin-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+.setting-item:is([data-id=loop-skywalker-theme-settings-extended]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z'%3E%3C/path%3E%3Cpath d='M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7'%3E%3C/path%3E%3Cpath d='M14.5 17.5 4.5 15'%3E%3C/path%3E%3C/svg%3E");
 }
 
