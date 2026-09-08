@@ -47,7 +47,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
         }
     }
 
-    &.anuppuccin-accent-toggle.anp-colorful-frame {
+    &.anp-accent-toggle.anp-colorful-frame {
 
         &:not(.anp-card-layout, .anp-border-layout) .mod-top .workspace-tab-header-container,
         &:not(.anp-card-layout, .anp-border-layout) .workspace-ribbon.mod-left:before,
@@ -64,7 +64,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
         }
     }
 
-    &.anuppuccin-accent-toggle.anp-colorful-frame,
+    &.anp-accent-toggle.anp-colorful-frame,
     &.anp-colorful-frame.anp-colorful-frame.anp-colorful-frame {
         .sidebar-toggle-button {
             --background-modifier-hover: rgba(var(--ctp-text), 0.075);
@@ -278,7 +278,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
 }
 
 body.anp-colorful-frame.anp-card-layout .workspace,
-.anp-colorful-frame.anuppuccin-accent-toggle.anp-card-layout .workspace-tabs {
+.anp-colorful-frame.anp-accent-toggle.anp-card-layout .workspace-tabs {
     background-color: var(--tab-container-background);
 }
 

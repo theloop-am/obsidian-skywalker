@@ -30,7 +30,7 @@ settings:
     level: 1
     collapsed: true
 -
-    id: anuppuccin-theme-light
+    id: anp-theme-light
     title: Light Theme Flavor
     description: Select your preferred light mode flavor
     type: class-select
@@ -47,7 +47,7 @@ settings:
         label: Rosé Pine
         value: ctp-rosepine-light
 -
-    id: anuppuccin-theme-dark
+    id: anp-theme-dark
     title: Dark Theme Flavor
     description: Select your preferred dark mode flavor
     type: class-select
@@ -73,7 +73,7 @@ settings:
         label: Mocha Old
         value: ctp-mocha-old
 -
-    id: anuppuccin-light-theme-accents
+    id: anp-light-theme-accents
     title: Light Theme Accent
     description: Select your preferred light theme accent (Defaults to dark theme accent if left empty)
     type: class-select
@@ -123,7 +123,7 @@ settings:
         label: Lavender
         value: ctp-accent-light-lavender
 -
-    id: anuppuccin-theme-accents
+    id: anp-theme-accents
     title: Dark Theme Accent
     description: Select your preferred accent
     type: class-select
@@ -173,7 +173,7 @@ settings:
         label: Lavender
         value: ctp-accent-lavender
 -
-    id: anuppuccin-accent-toggle
+    id: anp-accent-toggle
     title: Force Custom Accents
     description: Forces colorscheme-specific custom accents to be utilised instead of default obsidian accent
     type: class-toggle
@@ -185,7 +185,7 @@ settings:
     type: class-toggle
     default: false
 -
-    id: anuppuccin-url-extended-colorschemes
+    id: loop-skywalker-url-extended-colorschemes
     title: Extended Color Schemes Snippet
     description: "Adds 25 further flavors on top of the ones built in. Download the snippet by clicking on [this link](https://github.com/theloop-am/loop-skywalker/blob/main/snippets/extended-colorschemes.css)."
     type: info-text
@@ -1185,11 +1185,11 @@ settings:
 -
     id: anp-snippet-minimal-cards-disc
     title: Usage
-    description: "Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). AnuPpuccin does not come compiled with the snippet, however you can use a compiled version with this theme."
+    description: "Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). This theme does not come compiled with the snippet, however you can use a compiled version with this theme."
     type: info-text
     markdown: true
 -
-    id: anuppuccin-url-minimal-cards-snippet
+    id: loop-skywalker-url-minimal-cards-snippet
     title: Minimal Cards Snippet
     description: "Download the snippet from [kepano](https://github.com/kepano/)'s github via [this link](https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss)."
     type: info-text
@@ -2358,9 +2358,9 @@ settings:
     level: 2
     collapsed: true
 -
-    id: anuppuccin-url-custom-rainbow-colors
+    id: loop-skywalker-url-custom-rainbow-colors
     title: Custom rainbow folder colors snippet
-    description: "Download the snippet through [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/custom-rainbow-colors.css)."
+    description: "Download the snippet through [this link](https://github.com/theloop-am/loop-skywalker/blob/main/snippets/custom-rainbow-colors.css)."
     type: info-text
     markdown: true
 -
@@ -2710,28 +2710,28 @@ settings:
 # Credits
 
 -
-    id: anuppuccin-support
-    title: Support AnuPpuccin
-    description: If you like the theme, here are some ways to support development
+    id: loop-skywalker-credits
+    title: LOOP - Skywalker
+    description: Links and attribution
     type: heading
     level: 1
     collapsed: true
 -
-    id: anuppuccin-url-donate
-    title: Buy Me a Coffee
-    description: "[https://www.buymeacoffee.com/anubisnekhet](https://www.buymeacoffee.com/anubisnekhet)"
+    id: loop-skywalker-url-repo
+    title: Theme on GitHub
+    description: "[https://github.com/theloop-am/loop-skywalker](https://github.com/theloop-am/loop-skywalker)"
     type: info-text
     markdown: true
 -
-    id: anuppuccin-url-star-repo
-    title: Star the Theme on GitHub
-    description: "[https://github.com/anubisnekhet/anuppuccin](https://github.com/anubisnekhet/anuppuccin)"
+    id: loop-skywalker-url-submit-issue
+    title: Submit an Issue
+    description: "[https://github.com/theloop-am/loop-skywalker/issues](https://github.com/theloop-am/loop-skywalker/issues)"
     type: info-text
     markdown: true
 -
-    id: anuppuccin-url-submit-issue
-    title: Submit an Issue on GitHub
-    description: "[https://github.com/anubisnekhet/anuppuccin/issues](https://github.com/anubisnekhet/anuppuccin/issues)"
+    id: loop-skywalker-url-upstream
+    title: Built on AnuPpuccin
+    description: "Derived from [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin) by Anubis, licensed GPL-3.0."
     type: info-text
     markdown: true
 
@@ -3068,11 +3068,11 @@ settings:
 }
 
 /*------------------Selecting Accents-------------------*/
-.anuppuccin-accent-toggle.ctp-accent-rosewater {
+.anp-accent-toggle.ctp-accent-rosewater {
   --ctp-accent: var(--ctp-rosewater);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-rosewater {
+.theme-light.anp-accent-toggle.ctp-accent-light-rosewater {
   --ctp-accent: var(--ctp-rosewater);
 }
 
@@ -3088,11 +3088,11 @@ settings:
   --anp-highlight-color: var(--ctp-rosewater);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-flamingo {
+.anp-accent-toggle.ctp-accent-flamingo {
   --ctp-accent: var(--ctp-flamingo);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-flamingo {
+.theme-light.anp-accent-toggle.ctp-accent-light-flamingo {
   --ctp-accent: var(--ctp-flamingo);
 }
 
@@ -3108,11 +3108,11 @@ settings:
   --anp-highlight-color: var(--ctp-flamingo);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-pink {
+.anp-accent-toggle.ctp-accent-pink {
   --ctp-accent: var(--ctp-pink);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-pink {
+.theme-light.anp-accent-toggle.ctp-accent-light-pink {
   --ctp-accent: var(--ctp-pink);
 }
 
@@ -3128,11 +3128,11 @@ settings:
   --anp-highlight-color: var(--ctp-pink);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-mauve {
+.anp-accent-toggle.ctp-accent-mauve {
   --ctp-accent: var(--ctp-mauve);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-mauve {
+.theme-light.anp-accent-toggle.ctp-accent-light-mauve {
   --ctp-accent: var(--ctp-mauve);
 }
 
@@ -3148,11 +3148,11 @@ settings:
   --anp-highlight-color: var(--ctp-mauve);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-red {
+.anp-accent-toggle.ctp-accent-red {
   --ctp-accent: var(--ctp-red);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-red {
+.theme-light.anp-accent-toggle.ctp-accent-light-red {
   --ctp-accent: var(--ctp-red);
 }
 
@@ -3168,11 +3168,11 @@ settings:
   --anp-highlight-color: var(--ctp-red);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-maroon {
+.anp-accent-toggle.ctp-accent-maroon {
   --ctp-accent: var(--ctp-maroon);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-maroon {
+.theme-light.anp-accent-toggle.ctp-accent-light-maroon {
   --ctp-accent: var(--ctp-maroon);
 }
 
@@ -3188,11 +3188,11 @@ settings:
   --anp-highlight-color: var(--ctp-maroon);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-peach {
+.anp-accent-toggle.ctp-accent-peach {
   --ctp-accent: var(--ctp-peach);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-peach {
+.theme-light.anp-accent-toggle.ctp-accent-light-peach {
   --ctp-accent: var(--ctp-peach);
 }
 
@@ -3208,11 +3208,11 @@ settings:
   --anp-highlight-color: var(--ctp-peach);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-yellow {
+.anp-accent-toggle.ctp-accent-yellow {
   --ctp-accent: var(--ctp-yellow);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-yellow {
+.theme-light.anp-accent-toggle.ctp-accent-light-yellow {
   --ctp-accent: var(--ctp-yellow);
 }
 
@@ -3228,11 +3228,11 @@ settings:
   --anp-highlight-color: var(--ctp-yellow);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-green {
+.anp-accent-toggle.ctp-accent-green {
   --ctp-accent: var(--ctp-green);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-green {
+.theme-light.anp-accent-toggle.ctp-accent-light-green {
   --ctp-accent: var(--ctp-green);
 }
 
@@ -3248,11 +3248,11 @@ settings:
   --anp-highlight-color: var(--ctp-green);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-teal {
+.anp-accent-toggle.ctp-accent-teal {
   --ctp-accent: var(--ctp-teal);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-teal {
+.theme-light.anp-accent-toggle.ctp-accent-light-teal {
   --ctp-accent: var(--ctp-teal);
 }
 
@@ -3268,11 +3268,11 @@ settings:
   --anp-highlight-color: var(--ctp-teal);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-sky {
+.anp-accent-toggle.ctp-accent-sky {
   --ctp-accent: var(--ctp-sky);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-sky {
+.theme-light.anp-accent-toggle.ctp-accent-light-sky {
   --ctp-accent: var(--ctp-sky);
 }
 
@@ -3288,11 +3288,11 @@ settings:
   --anp-highlight-color: var(--ctp-sky);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-sapphire {
+.anp-accent-toggle.ctp-accent-sapphire {
   --ctp-accent: var(--ctp-sapphire);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-sapphire {
+.theme-light.anp-accent-toggle.ctp-accent-light-sapphire {
   --ctp-accent: var(--ctp-sapphire);
 }
 
@@ -3308,11 +3308,11 @@ settings:
   --anp-highlight-color: var(--ctp-sapphire);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-blue {
+.anp-accent-toggle.ctp-accent-blue {
   --ctp-accent: var(--ctp-blue);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-blue {
+.theme-light.anp-accent-toggle.ctp-accent-light-blue {
   --ctp-accent: var(--ctp-blue);
 }
 
@@ -3328,11 +3328,11 @@ settings:
   --anp-highlight-color: var(--ctp-blue);
 }
 
-.anuppuccin-accent-toggle.ctp-accent-lavender {
+.anp-accent-toggle.ctp-accent-lavender {
   --ctp-accent: var(--ctp-lavender);
 }
 
-.theme-light.anuppuccin-accent-toggle.ctp-accent-light-lavender {
+.theme-light.anp-accent-toggle.ctp-accent-light-lavender {
   --ctp-accent: var(--ctp-lavender);
 }
 
@@ -3349,7 +3349,7 @@ settings:
 }
 
 /*------------------Actual Configs--------------------*/
-.anuppuccin-accent-toggle {
+.anp-accent-toggle {
   --color-accent: rgb(var(--ctp-accent));
   --color-accent-1: rgb(var(--ctp-accent));
   --color-accent-2: rgba(var(--ctp-accent), 0.9);
@@ -3881,7 +3881,7 @@ input.slider,
   fill: var(--background-primary);
 }
 
-.anuppuccin-accent-toggle .canvas-selection {
+.anp-accent-toggle .canvas-selection {
   background-color: rgba(var(--ctp-accent), 0.1);
   border: 2px solid var(--color-accent);
 }
@@ -3900,7 +3900,7 @@ input.slider,
   left: 0;
 }
 
-.anuppuccin-accent-toggle .canvas-placeholder-message {
+.anp-accent-toggle .canvas-placeholder-message {
   background: rgba(var(--ctp-accent), 0.1);
 }
 
@@ -4004,7 +4004,7 @@ input.slider,
   background-color: var(--background-modifier-hover);
 }
 
-.anuppuccin-accent-toggle .drag-ghost-hidden:before {
+.anp-accent-toggle .drag-ghost-hidden:before {
   background-color: rgba(var(--ctp-accent), 0.3);
 }
 
@@ -4809,7 +4809,6 @@ body.anp-border-layout:not(.is-mobile) .workspace .workspace-split.mod-root:not(
 Floating Status Bar
 Author: AnubisNekhet
 Note: If you decide to implement it in your theme or redistribute it, please keep this comment (Especially for *certain* individuals who may try to rebrand it as their own :))
-Support me: https://buymeacoffee.com/AnubisNekhet
 */
 .anp-floating-status-bar {
   --status-bar-position: absolute;
@@ -5057,7 +5056,7 @@ Support me: https://buymeacoffee.com/AnubisNekhet
 .anp-callout-color-toggle .callout[data-callout=quote], .anp-callout-color-toggle .callout[data-callout=cite] {
   --callout-color: var(--ctp-surface2);
 }
-.anp-callout-color-toggle.anuppuccin-accent-toggle .callout[data-callout=note] {
+.anp-callout-color-toggle.anp-accent-toggle .callout[data-callout=note] {
   --callout-color: var(--ctp-accent);
 }
 
@@ -6297,29 +6296,29 @@ body.rainbow-tags {
 }
 
 /*-Button for metadata-*/
-body.anuppuccin-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header,
-body.anuppuccin-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header {
+body.anp-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header,
+body.anp-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header {
   background-color: rgba(var(--ctp-accent), 0.8);
 }
-body.anuppuccin-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:hover,
-body.anuppuccin-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:hover {
+body.anp-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:hover,
+body.anp-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:hover {
   background-color: rgba(var(--ctp-accent), 0.7);
 }
-body.anuppuccin-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:active,
-body.anuppuccin-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:active {
+body.anp-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:active,
+body.anp-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:active {
   background-color: rgba(var(--ctp-accent), 0.6);
 }
 
-body:not(.anuppuccin-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header,
-body:not(.anuppuccin-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header {
+body:not(.anp-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header,
+body:not(.anp-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header {
   background-color: hsla(var(--color-accent-hsl), 0.8);
 }
-body:not(.anuppuccin-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:hover,
-body:not(.anuppuccin-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:hover {
+body:not(.anp-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:hover,
+body:not(.anp-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:hover {
   background-color: hsla(var(--color-accent-hsl), 0.7);
 }
-body:not(.anuppuccin-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:active,
-body:not(.anuppuccin-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:active {
+body:not(.anp-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:active,
+body:not(.anp-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:active {
   background-color: hsla(var(--color-accent-hsl), 0.6);
 }
 
@@ -6438,14 +6437,14 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
 .anp-colorful-frame.is-frameless.is-frameless:not(.is-hidden-frameless) .sidebar-toggle-button.mod-left {
   border-radius: 0 var(--radius-m) var(--radius-m) 0;
 }
-.anp-colorful-frame.anuppuccin-accent-toggle.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout) .mod-top .workspace-tab-header-container, .anp-colorful-frame.anuppuccin-accent-toggle.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout) .workspace-ribbon.mod-left:before, .anp-colorful-frame.anuppuccin-accent-toggle.anp-colorful-frame.anp-card-layout, .anp-colorful-frame.anuppuccin-accent-toggle.anp-colorful-frame.anp-card-layout .workspace-tabs.mod-top, .anp-colorful-frame.anuppuccin-accent-toggle.anp-colorful-frame.anp-card-layout .sidebar-toggle-button, .anp-colorful-frame.anuppuccin-accent-toggle.anp-colorful-frame.anp-card-layout .workspace-ribbon.mod-left:before {
+.anp-colorful-frame.anp-accent-toggle.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout) .mod-top .workspace-tab-header-container, .anp-colorful-frame.anp-accent-toggle.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout) .workspace-ribbon.mod-left:before, .anp-colorful-frame.anp-accent-toggle.anp-colorful-frame.anp-card-layout, .anp-colorful-frame.anp-accent-toggle.anp-colorful-frame.anp-card-layout .workspace-tabs.mod-top, .anp-colorful-frame.anp-accent-toggle.anp-colorful-frame.anp-card-layout .sidebar-toggle-button, .anp-colorful-frame.anp-accent-toggle.anp-colorful-frame.anp-card-layout .workspace-ribbon.mod-left:before {
   --tab-container-background: rgba(var(--anp-colorful-frame-color, var(--ctp-accent)), var(--anp-colorful-frame-opacity, 1));
   --titlebar-background: rgba(var(--anp-colorful-frame-color, var(--ctp-accent)), var(--anp-colorful-frame-opacity, 1));
 }
-.anp-colorful-frame.anuppuccin-accent-toggle.anp-colorful-frame.anp-card-layout .prompt {
+.anp-colorful-frame.anp-accent-toggle.anp-colorful-frame.anp-card-layout .prompt {
   --background-modifier-hover: rgba(var(--ctp-text), 0.075) ;
 }
-.anp-colorful-frame.anuppuccin-accent-toggle.anp-colorful-frame .sidebar-toggle-button, .anp-colorful-frame.anp-colorful-frame.anp-colorful-frame.anp-colorful-frame .sidebar-toggle-button {
+.anp-colorful-frame.anp-accent-toggle.anp-colorful-frame .sidebar-toggle-button, .anp-colorful-frame.anp-colorful-frame.anp-colorful-frame.anp-colorful-frame .sidebar-toggle-button {
   --background-modifier-hover: rgba(var(--ctp-text), 0.075);
 }
 .anp-colorful-frame.is-focused .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner .workspace-tab-header-inner-title,
@@ -6602,7 +6601,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
 }
 
 body.anp-colorful-frame.anp-card-layout .workspace,
-.anp-colorful-frame.anuppuccin-accent-toggle.anp-card-layout .workspace-tabs {
+.anp-colorful-frame.anp-accent-toggle.anp-card-layout .workspace-tabs {
   background-color: var(--tab-container-background);
 }
 
@@ -7625,7 +7624,6 @@ None of the original code was used and the feature was implemented from scratch.
 /*===============================================================
 * RAINBOW FOLDERS
 * Author: AnubisNekhet
-* https://www.buymeacoffee.com/anubisnekhet
 *===============================================================*/
 /*---------------------------------------------------------------
 * RAIBOW FOLDER VARIABLE
@@ -7882,16 +7880,16 @@ None of the original code was used and the feature was implemented from scratch.
   color: var(--color-accent);
 }
 
-.anuppuccin-accent-toggle .style-settings-heading:is([data-id=loop-skywalker-theme-settings],
+.anp-accent-toggle .style-settings-heading:is([data-id=loop-skywalker-theme-settings],
 [data-id=loop-skywalker-theme-settings-extended]) {
   border-color: rgba(var(--ctp-accent), 0.2);
 }
-.anuppuccin-accent-toggle .style-settings-heading:is([data-id=loop-skywalker-theme-settings],
+.anp-accent-toggle .style-settings-heading:is([data-id=loop-skywalker-theme-settings],
 [data-id=loop-skywalker-theme-settings-extended]):not(.is-collapsed) + .style-settings-container {
   border-color: rgba(var(--ctp-accent), 0.2);
 }
 
-.style-settings-container .style-settings-heading[data-id=anuppuccin-support] .setting-item-name {
+.style-settings-container .style-settings-heading[data-id=loop-skywalker-credits] .setting-item-name {
   color: var(--color-accent) !important;
 }
 
@@ -7904,12 +7902,9 @@ None of the original code was used and the feature was implemented from scratch.
   margin-top: 0;
 }
 
-.style-settings-container .setting-item:is([data-id=anuppuccin-extended-colorschemes-links],
-[data-id=anp-snippet-minimal-cards-disclaimer],
+.style-settings-container .setting-item:is([data-id=anp-snippet-minimal-cards-disclaimer],
 [data-id=anp-background-image-light],
-[data-id=anp-background-image-dark],
-[data-id=anuppuccin-theme-donate],
-[data-id=anuppuccin-theme-source]) .setting-item-description > div {
+[data-id=anp-background-image-dark]) .setting-item-description > div {
   display: none;
 }
 
@@ -7983,10 +7978,10 @@ None of the original code was used and the feature was implemented from scratch.
   border-image: linear-gradient(to right, rgb(var(--ctp-rosewater)) 7%, rgb(var(--ctp-flamingo)) 7%, rgb(var(--ctp-flamingo)) 14%, rgb(var(--ctp-mauve)) 14%, rgb(var(--ctp-mauve)) 21%, rgb(var(--ctp-pink)) 21%, rgb(var(--ctp-pink)) 28%, rgb(var(--ctp-red)) 28%, rgb(var(--ctp-red)) 35%, rgb(var(--ctp-maroon)) 35%, rgb(var(--ctp-maroon)) 42%, rgb(var(--ctp-peach)) 42%, rgb(var(--ctp-peach)) 49%, rgb(var(--ctp-yellow)) 49%, rgb(var(--ctp-yellow)) 56%, rgb(var(--ctp-green)) 56%, rgb(var(--ctp-green)) 63%, rgb(var(--ctp-teal)) 63%, rgb(var(--ctp-teal)) 70%, rgb(var(--ctp-sky)) 70%, rgb(var(--ctp-sky)) 77%, rgb(var(--ctp-sapphire)) 77%, rgb(var(--ctp-sapphire)) 85%, rgb(var(--ctp-blue)) 85%, rgb(var(--ctp-blue)) 92%, rgb(var(--ctp-lavender))) 5;
 }
 
-.setting-item:is([data-id^=anuppuccin-url-]) .setting-item-control {
+.setting-item:is([data-id^=loop-skywalker-url-]) .setting-item-control {
   display: none;
 }
-.setting-item:is([data-id^=anuppuccin-url-]) .setting-item-name::before {
+.setting-item:is([data-id^=loop-skywalker-url-]) .setting-item-name::before {
   display: inline-flex;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   height: fit-content;
@@ -8001,19 +7996,19 @@ None of the original code was used and the feature was implemented from scratch.
   width: var(--size-4-4);
 }
 
-.setting-item[data-id=anuppuccin-url-donate] .setting-item-name::before {
-  content: " ☕";
-}
-
-.setting-item[data-id=anuppuccin-url-star-repo] .setting-item-name::before {
+.setting-item[data-id=loop-skywalker-url-repo] .setting-item-name::before {
   content: " ⭐";
 }
 
-.setting-item[data-id=anuppuccin-url-submit-issue] .setting-item-name::before {
+.setting-item[data-id=loop-skywalker-url-upstream] .setting-item-name::before {
+  content: " 🤝";
+}
+
+.setting-item[data-id=loop-skywalker-url-submit-issue] .setting-item-name::before {
   content: " 🐞";
 }
 
-.setting-item[data-id=anuppuccin-url-minimal-cards-snippet] .setting-item-name::before {
+.setting-item[data-id=loop-skywalker-url-minimal-cards-snippet] .setting-item-name::before {
   content: " ⬇";
 }
 
@@ -8267,13 +8262,13 @@ None of the original code was used and the feature was implemented from scratch.
   display: none;
 }
 
-.setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name {
+.setting-item:is([data-id*=loop-skywalker-credits]) > .setting-item-info > .setting-item-name {
   margin-left: -3px;
 }
-.setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
+.setting-item:is([data-id*=loop-skywalker-credits]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
   margin-right: 4px;
 }
-.setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+.setting-item:is([data-id*=loop-skywalker-credits]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   background-color: var(--color-accent);
@@ -8288,7 +8283,7 @@ None of the original code was used and the feature was implemented from scratch.
   vertical-align: text-top;
   margin-right: 0;
 }
-.setting-item:is([data-id*=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+.setting-item:is([data-id*=loop-skywalker-credits]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
@@ -8329,7 +8324,7 @@ None of the original code was used and the feature was implemented from scratch.
 [data-id=anp-typography-header],
 [data-id=anp-plugin-header],
 [data-id=anp-workspace-header],
-[data-id=anuppuccin-support],
+[data-id=loop-skywalker-credits],
 [data-id=anp-custom-rainbow-colors]):not(.is-collapsed) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   transform: rotate(90deg);
   transition: transform 0.1s;
@@ -8381,7 +8376,7 @@ None of the original code was used and the feature was implemented from scratch.
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='5' rx='2'%3E%3C/rect%3E%3Cpath d='M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9'%3E%3C/path%3E%3Cpath d='M10 13h4'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.setting-item:is([data-id=anuppuccin-support]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+.setting-item:is([data-id=loop-skywalker-credits]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z'%3E%3C/path%3E%3C/svg%3E");
 }
 

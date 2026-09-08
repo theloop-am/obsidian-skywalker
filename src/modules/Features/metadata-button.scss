@@ -1,5 +1,5 @@
 /*-Button for metadata-*/
-body.anuppuccin-accent-toggle {
+body.anp-accent-toggle {
 
     &.anp-button-metadata-toggle,
     .markdown-rendered.metadata-button {
@@ -17,7 +17,7 @@ body.anuppuccin-accent-toggle {
     }
 }
 
-body:not(.anuppuccin-accent-toggle) {
+body:not(.anp-accent-toggle) {
 
     &.anp-button-metadata-toggle,
     .markdown-rendered.metadata-button {

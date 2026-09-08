@@ -13,7 +13,7 @@ settings:
     level: 1
     collapsed: true
 -
-    id: anuppuccin-theme-light
+    id: anp-theme-light
     title: Light Theme Flavor
     description: Select your preferred light mode flavor
     type: class-select
@@ -30,7 +30,7 @@ settings:
         label: Rosé Pine
         value: ctp-rosepine-light
 -
-    id: anuppuccin-theme-dark
+    id: anp-theme-dark
     title: Dark Theme Flavor
     description: Select your preferred dark mode flavor
     type: class-select
@@ -56,7 +56,7 @@ settings:
         label: Mocha Old
         value: ctp-mocha-old
 -
-    id: anuppuccin-light-theme-accents
+    id: anp-light-theme-accents
     title: Light Theme Accent
     description: Select your preferred light theme accent (Defaults to dark theme accent if left empty)
     type: class-select
@@ -106,7 +106,7 @@ settings:
         label: Lavender
         value: ctp-accent-light-lavender
 -
-    id: anuppuccin-theme-accents
+    id: anp-theme-accents
     title: Dark Theme Accent
     description: Select your preferred accent
     type: class-select
@@ -156,7 +156,7 @@ settings:
         label: Lavender
         value: ctp-accent-lavender
 -
-    id: anuppuccin-accent-toggle
+    id: anp-accent-toggle
     title: Force Custom Accents
     description: Forces colorscheme-specific custom accents to be utilised instead of default obsidian accent
     type: class-toggle
@@ -168,7 +168,7 @@ settings:
     type: class-toggle
     default: false
 -
-    id: anuppuccin-url-extended-colorschemes
+    id: loop-skywalker-url-extended-colorschemes
     title: Extended Color Schemes Snippet
     description: "Adds 25 further flavors on top of the ones built in. Download the snippet by clicking on [this link](https://github.com/theloop-am/loop-skywalker/blob/main/snippets/extended-colorschemes.css)."
     type: info-text
@@ -1168,11 +1168,11 @@ settings:
 -
     id: anp-snippet-minimal-cards-disc
     title: Usage
-    description: "Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). AnuPpuccin does not come compiled with the snippet, however you can use a compiled version with this theme."
+    description: "Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). This theme does not come compiled with the snippet, however you can use a compiled version with this theme."
     type: info-text
     markdown: true
 -
-    id: anuppuccin-url-minimal-cards-snippet
+    id: loop-skywalker-url-minimal-cards-snippet
     title: Minimal Cards Snippet
     description: "Download the snippet from [kepano](https://github.com/kepano/)'s github via [this link](https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss)."
     type: info-text
@@ -2341,9 +2341,9 @@ settings:
     level: 2
     collapsed: true
 -
-    id: anuppuccin-url-custom-rainbow-colors
+    id: loop-skywalker-url-custom-rainbow-colors
     title: Custom rainbow folder colors snippet
-    description: "Download the snippet through [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/custom-rainbow-colors.css)."
+    description: "Download the snippet through [this link](https://github.com/theloop-am/loop-skywalker/blob/main/snippets/custom-rainbow-colors.css)."
     type: info-text
     markdown: true
 -
@@ -2693,28 +2693,28 @@ settings:
 # Credits
 
 -
-    id: anuppuccin-support
-    title: Support AnuPpuccin
-    description: If you like the theme, here are some ways to support development
+    id: loop-skywalker-credits
+    title: LOOP - Skywalker
+    description: Links and attribution
     type: heading
     level: 1
     collapsed: true
 -
-    id: anuppuccin-url-donate
-    title: Buy Me a Coffee
-    description: "[https://www.buymeacoffee.com/anubisnekhet](https://www.buymeacoffee.com/anubisnekhet)"
+    id: loop-skywalker-url-repo
+    title: Theme on GitHub
+    description: "[https://github.com/theloop-am/loop-skywalker](https://github.com/theloop-am/loop-skywalker)"
     type: info-text
     markdown: true
 -
-    id: anuppuccin-url-star-repo
-    title: Star the Theme on GitHub
-    description: "[https://github.com/anubisnekhet/anuppuccin](https://github.com/anubisnekhet/anuppuccin)"
+    id: loop-skywalker-url-submit-issue
+    title: Submit an Issue
+    description: "[https://github.com/theloop-am/loop-skywalker/issues](https://github.com/theloop-am/loop-skywalker/issues)"
     type: info-text
     markdown: true
 -
-    id: anuppuccin-url-submit-issue
-    title: Submit an Issue on GitHub
-    description: "[https://github.com/anubisnekhet/anuppuccin/issues](https://github.com/anubisnekhet/anuppuccin/issues)"
+    id: loop-skywalker-url-upstream
+    title: Built on AnuPpuccin
+    description: "Derived from [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin) by Anubis, licensed GPL-3.0."
     type: info-text
     markdown: true
 

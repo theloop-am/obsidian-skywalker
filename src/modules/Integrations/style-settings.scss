@@ -60,7 +60,7 @@
     }
 }
 
-.anuppuccin-accent-toggle .style-settings-heading:is([data-id="loop-skywalker-theme-settings"],
+.anp-accent-toggle .style-settings-heading:is([data-id="loop-skywalker-theme-settings"],
     [data-id="loop-skywalker-theme-settings-extended"]) {
     border-color: rgba(var(--ctp-accent), 0.2);
 
@@ -69,7 +69,7 @@
     }
 }
 
-.style-settings-container .style-settings-heading[data-id="anuppuccin-support"] .setting-item-name {
+.style-settings-container .style-settings-heading[data-id="loop-skywalker-credits"] .setting-item-name {
     color: var(--color-accent) !important;
 }
 
@@ -82,12 +82,9 @@
     margin-top: 0;
 }
 
-.style-settings-container .setting-item:is([data-id="anuppuccin-extended-colorschemes-links"],
-    [data-id="anp-snippet-minimal-cards-disclaimer"],
+.style-settings-container .setting-item:is([data-id="anp-snippet-minimal-cards-disclaimer"],
     [data-id="anp-background-image-light"],
-    [data-id="anp-background-image-dark"],
-    [data-id="anuppuccin-theme-donate"],
-    [data-id="anuppuccin-theme-source"]) .setting-item-description>div {
+    [data-id="anp-background-image-dark"]) .setting-item-description>div {
     display: none;
 }
 
@@ -164,7 +161,7 @@
     border-image: linear-gradient(to right, rgb(var(--ctp-rosewater)) 7%, rgb(var(--ctp-flamingo)) 7%, rgb(var(--ctp-flamingo)) 14%, rgb(var(--ctp-mauve)) 14%, rgb(var(--ctp-mauve)) 21%, rgb(var(--ctp-pink)) 21%, rgb(var(--ctp-pink)) 28%, rgb(var(--ctp-red)) 28%, rgb(var(--ctp-red)) 35%, rgb(var(--ctp-maroon)) 35%, rgb(var(--ctp-maroon)) 42%, rgb(var(--ctp-peach)) 42%, rgb(var(--ctp-peach)) 49%, rgb(var(--ctp-yellow)) 49%, rgb(var(--ctp-yellow)) 56%, rgb(var(--ctp-green)) 56%, rgb(var(--ctp-green)) 63%, rgb(var(--ctp-teal)) 63%, rgb(var(--ctp-teal)) 70%, rgb(var(--ctp-sky)) 70%, rgb(var(--ctp-sky)) 77%, rgb(var(--ctp-sapphire)) 77%, rgb(var(--ctp-sapphire)) 85%, rgb(var(--ctp-blue)) 85%, rgb(var(--ctp-blue)) 92%, rgb(var(--ctp-lavender))) 5;
 }
 
-.setting-item:is([data-id^="anuppuccin-url-"]) {
+.setting-item:is([data-id^="loop-skywalker-url-"]) {
     .setting-item-control {
         display: none;
     }
@@ -188,13 +185,13 @@
 }
 
 $linkEmojis: (
-    "anuppuccin-url-donate": '\2615',
-    //coffee
-    "anuppuccin-url-star-repo": '\2b50',
+    "loop-skywalker-url-repo": '\2b50',
     // star
-    "anuppuccin-url-submit-issue": '\1f41e',
+    "loop-skywalker-url-upstream": '\1f91d',
+    // handshake
+    "loop-skywalker-url-submit-issue": '\1f41e',
     // bug
-    "anuppuccin-url-minimal-cards-snippet": '\2b07',
+    "loop-skywalker-url-minimal-cards-snippet": '\2b07',
     //down
 );
 
@@ -217,7 +214,7 @@ $headingIcons: (
     "anp-show-hide-elements-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z'%3E%3C/path%3E%3Cpath d='m14 7 3 3'%3E%3C/path%3E%3Cpath d='M5 6v4'%3E%3C/path%3E%3Cpath d='M19 14v4'%3E%3C/path%3E%3Cpath d='M10 2v2'%3E%3C/path%3E%3Cpath d='M7 8H3'%3E%3C/path%3E%3Cpath d='M21 16h-4'%3E%3C/path%3E%3Cpath d='M11 3H9'%3E%3C/path%3E%3C/svg%3E"),
     "anp-typography-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 7 4 4 20 4 20 7'%3E%3C/polyline%3E%3Cline x1='9' y1='20' x2='15' y2='20'%3E%3C/line%3E%3Cline x1='12' y1='4' x2='12' y2='20'%3E%3C/line%3E%3C/svg%3E"),
     "anp-workspace-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='5' rx='2'%3E%3C/rect%3E%3Cpath d='M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9'%3E%3C/path%3E%3Cpath d='M10 13h4'%3E%3C/path%3E%3C/svg%3E"),
-    "anuppuccin-support": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z'%3E%3C/path%3E%3C/svg%3E"),
+    "loop-skywalker-credits": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z'%3E%3C/path%3E%3C/svg%3E"),
     "anp-custom-rainbow-colors": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 19.9V16h3a2 2 0 0 0 2-2v-2H5v2c0 1.1.9 2 2 2h3v3.9a2 2 0 1 0 4 0Z'%3E%3C/path%3E%3Cpath d='M6 12V2h12v10'%3E%3C/path%3E%3Cpath d='M14 2v4'%3E%3C/path%3E%3Cpath d='M10 2v2'%3E%3C/path%3E%3C/svg%3E"),
 );
 
@@ -266,7 +263,7 @@ $headingIcons: (
     [data-id="anp-typography-header"],
     [data-id="anp-plugin-header"],
     [data-id="anp-workspace-header"],
-    [data-id="anuppuccin-support"],
+    [data-id="loop-skywalker-credits"],
     [data-id="anp-custom-rainbow-colors"]):not(.is-collapsed)>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
     transform: rotate(90deg);
     transition: transform 0.1s;

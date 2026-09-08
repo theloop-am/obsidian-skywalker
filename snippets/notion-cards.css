@@ -2,7 +2,6 @@
 Notion-Styled Kanban
 Author: AnubisNekhet
 Note: If you decide to implement it in your theme or redistribute it, please keep this comment (Especially for *certain* individuals who may try to rebrand it as their own :))
-Support me: https://buymeacoffee.com/AnubisNekhet
 */
 body.theme-light {
   --notion-kanban-card: var(--background-primary);
