@@ -3589,7 +3589,7 @@ body.theme-dark {
 .markdown-source-view.mod-cm6 .edit-block-button {
   background-color: var(--background-secondary);
   cursor: pointer;
-  border: 1px solid var(--background-modifer-border);
+  border: 1px solid var(--background-modifier-border);
 }
 .markdown-source-view.mod-cm6 .edit-block-button:hover {
   background-color: var(--background-secondary);
@@ -3599,7 +3599,7 @@ body.theme-dark {
 
 .markdown-source-view.mod-cm6 .cm-embed-block:hover .edit-block-button:hover {
   background-color: var(--background-secondary);
-  border: 1px solid var(--background-modifer-border);
+  border: 1px solid var(--background-modifier-border);
   opacity: 1;
 }
 
@@ -4188,7 +4188,7 @@ body:not(.anp-alternate-tab-toggle):not(.anp-disable-newtab-align) .workspace-sp
   /*-----VARIABLES---------*/
   --tab-background-inactive: var(--background-secondary-alt);
   --tab-background-active: var(--background-primary);
-  --tab-background-inactive-hover: var(--background-primary-secondary);
+  --tab-background-inactive-hover: var(--background-secondary);
   --tab-text-color: var(--text-faint);
   --tab-text-color-active: var(--text-muted);
   --tab-text-color-focused: var(--text-muted);
@@ -4443,7 +4443,7 @@ body.anp-card-layout {
   --card-foreground-color: var(--background-primary);
   --divider-color: transparent;
   --tab-outline-color: var(--background-modifier-border);
-  --divider-color-hover: var(--backgrouund-modifier-border);
+  --divider-color-hover: var(--background-modifier-border);
   --divider-width: 4px;
   --divider-width-hover: 4px;
   --tab-container-background: var(--card-background-color);
@@ -5936,7 +5936,7 @@ hr {
 }
 
 .math-block {
-  font-size: var(--anp-latex-block-font-size, var(--font-size-lg));
+  font-size: var(--anp-latex-block-font-size, 1em);
 }
 
 .anp-toggle-metadata .frontmatter-container,
@@ -7819,7 +7819,7 @@ None of the original code was used and the feature was implemented from scratch.
 }
 
 .modal {
-  --h1-font: var(--interface-font);
+  --h1-font: var(--font-interface);
 }
 
 .style-settings-container:empty {

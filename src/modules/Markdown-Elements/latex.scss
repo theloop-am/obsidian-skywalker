@@ -17,5 +17,5 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 }
 
 .math-block {
-    font-size: var(--anp-latex-block-font-size, var(--font-size-lg));
+    font-size: var(--anp-latex-block-font-size, 1em);
 }

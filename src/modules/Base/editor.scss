@@ -62,7 +62,7 @@
 .markdown-source-view.mod-cm6 .edit-block-button {
     background-color: var(--background-secondary);
     cursor: pointer;
-    border: 1px solid var(--background-modifer-border);
+    border: 1px solid var(--background-modifier-border);
 
     &:hover {
         background-color: var(--background-secondary);
@@ -73,7 +73,7 @@
 
 .markdown-source-view.mod-cm6 .cm-embed-block:hover .edit-block-button:hover {
     background-color: var(--background-secondary);
-    border: 1px solid var(--background-modifer-border);
+    border: 1px solid var(--background-modifier-border);
     opacity: 1;
 }
 
