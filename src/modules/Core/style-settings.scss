@@ -1013,9 +1013,9 @@ settings:
     level: 2
     collapsed: true
 -
-    id: anp-nn-banner-wordmark
-    title: Show Wordmark Over Navigation Banner
-    description: Masks the banner image set in Notebook Navigator with the LOOP lockup, recoloured per theme. Override --anp-nn-banner-lockup to use your own.
+    id: anp-nn-banner-logo
+    title: Show LOOP logo on the navigation banner
+    description: Draws the LOOP logo over the banner image, in the right colour for the current theme. Needs a banner image chosen in Notebook Navigator first, otherwise there is nothing to draw on.
     type: class-toggle
     default: false
 
@@ -2211,9 +2211,9 @@ settings:
     level: 1
     collapsed: true
 -
-    id: anp-vault-wordmark
-    title: Show Wordmark Instead of Vault Name
-    description: Replaces the vault name in the sidebar with the LOOP wordmark. Override --anp-vault-wordmark to use your own.
+    id: anp-vault-logo
+    title: Show LOOP logo instead of vault name
+    description: Puts the LOOP logo where the vault name sits at the bottom of the sidebar.
     type: class-toggle
     default: false
 
