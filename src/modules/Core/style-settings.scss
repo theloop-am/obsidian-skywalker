@@ -998,10 +998,26 @@ settings:
 -
     id: anp-plugin-header
     title: Integrations
-    description: Kanban, MAKE.md, Minimal Cards Snippet, etc.
+    description: Kanban, Notebook Navigator, Minimal Cards Snippet, etc.
     type: heading
     level: 1
     collapsed: true
+
+# Integrations :: Notebook Navigator
+
+-
+    id: anp-notebook-navigator-header
+    title: Notebook Navigator
+    description:
+    type: heading
+    level: 2
+    collapsed: true
+-
+    id: anp-nn-banner-wordmark
+    title: Show Wordmark Over Navigation Banner
+    description: Masks the banner image set in Notebook Navigator with the LOOP lockup, recoloured per theme. Override --anp-nn-banner-lockup to use your own.
+    type: class-toggle
+    default: false
 
 # Integrations :: Kanban
 
@@ -1141,29 +1157,6 @@ settings:
     description: 
     type: class-toggle
 
-# Integrations :: MAKE.md
-
--
-    id: anp-plugin-makemd
-    title: MAKE.md
-    description: 
-    type: heading
-    level: 2
-    collapsed: true
--
-    id: anp-inline-title-vis
-    title: Inline Title Visibility
-    description: Make.md requires inline titles to be enabled to show folder titles, hence this toggle exists to disable it on notes elsewhere.
-    type: variable-select
-    default: block
-    options:
-    -
-        label: Visible
-        value: block
-    -
-        label: Invisible
-        value: none
-
 # Integrations :: Minimal Cards
 
 -
@@ -1285,6 +1278,25 @@ settings:
     title: Hide External Link Icon
     type: class-toggle
     default: true
+-
+    id: anp-hide-help
+    title: Hide Help Button
+    description: Removes the help button from the vault profile, leaving the settings cog
+    type: class-toggle
+    default: false
+-
+    id: anp-inline-title-vis
+    title: Inline Title Visibility
+    description: Some plugins require inline titles to be enabled globally; this hides them on notes without turning the setting off.
+    type: variable-select
+    default: block
+    options:
+    -
+        label: Visible
+        value: block
+    -
+        label: Invisible
+        value: none
 
 # Typography
 
@@ -2198,6 +2210,12 @@ settings:
     type: heading
     level: 1
     collapsed: true
+-
+    id: anp-vault-wordmark
+    title: Show Wordmark Instead of Vault Name
+    description: Replaces the vault name in the sidebar with the LOOP wordmark. Override --anp-vault-wordmark to use your own.
+    type: class-toggle
+    default: false
 
 # Workspace :: Canvas
 
