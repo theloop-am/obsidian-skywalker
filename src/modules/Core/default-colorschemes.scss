@@ -5,7 +5,10 @@
 @import "colorschemes/macchiato.scss";
 @import "colorschemes/mocha.scss";
 @import "colorschemes/mocha-old.scss";
-$theme-list: $theme-latte, $theme-rosepine-light, $theme-frappe, $theme-macchiato, $theme-mocha, $theme-mocha-old;
+@import "colorschemes/solarized-light.scss";
+@import "colorschemes/flexoki-dark.scss";
+@import "colorschemes/amoled-dark.scss";
+$theme-list: $theme-latte, $theme-rosepine-light, $theme-solarized-light, $theme-frappe, $theme-macchiato, $theme-mocha, $theme-mocha-old, $theme-flexoki-dark, $theme-amoled-dark;
 $color-list: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender", "text", "subtext1", "subtext0", "overlay2", "overlay1", "overlay0", "surface2", "surface1", "surface0", "base", "mantle", "crust";
 
 @each $theme-name in $theme-list {
@@ -17,11 +20,22 @@ $color-list: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 }
 .theme-dark {
   @each $color-name in $color-list {
-    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{red(map-get($theme-mocha, ctp-#{$color-name}))}, #{green(map-get($theme-mocha, ctp-#{$color-name}))}, #{blue(map-get($theme-mocha, ctp-#{$color-name}))}));
+    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{red(map-get($theme-flexoki-dark, ctp-#{$color-name}))}, #{green(map-get($theme-flexoki-dark, ctp-#{$color-name}))}, #{blue(map-get($theme-flexoki-dark, ctp-#{$color-name}))}));
   }
 }
 .theme-light {
   @each $color-name in $color-list {
-    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{red(map-get($theme-latte, ctp-#{$color-name}))}, #{green(map-get($theme-latte, ctp-#{$color-name}))}, #{blue(map-get($theme-latte, ctp-#{$color-name}))}));
+    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{red(map-get($theme-solarized-light, ctp-#{$color-name}))}, #{green(map-get($theme-solarized-light, ctp-#{$color-name}))}, #{blue(map-get($theme-solarized-light, ctp-#{$color-name}))}));
   }
+}
+
+/*------------------AMOLED Toggle-------------------*/
+/* Overrides the --ctp-ext-* layer, so it applies on top of any flavour. */
+.theme-dark.anp-theme-amoled {
+  --ctp-ext-surface2: 80, 80, 80 !important;
+  --ctp-ext-surface1: 50, 50, 50 !important;
+  --ctp-ext-surface0: 30, 30, 30 !important;
+  --ctp-ext-base: 10, 10, 10 !important;
+  --ctp-ext-mantle: 5, 5, 5 !important;
+  --ctp-ext-crust: 0, 0, 0 !important;
 }

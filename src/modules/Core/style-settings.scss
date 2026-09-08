@@ -18,8 +18,11 @@ settings:
     description: Select your preferred light mode flavor
     type: class-select
     allowEmpty: false
-    default: ctp-latte
+    default: ctp-solarized-light
     options:
+    -
+        label: Solarized
+        value: ctp-solarized-light
     -
         label: Latte
         value: ctp-latte
@@ -32,8 +35,14 @@ settings:
     description: Select your preferred dark mode flavor
     type: class-select
     allowEmpty: false
-    default: ctp-mocha
+    default: ctp-flexoki-dark
     options:
+    -
+        label: Flexoki
+        value: ctp-flexoki-dark
+    -
+        label: AMOLED Dark
+        value: ctp-amoled-dark
     -
         label: Frappe
         value: ctp-frappe
@@ -153,9 +162,15 @@ settings:
     type: class-toggle
     default: true
 -
+    id: anp-theme-amoled
+    title: Toggle AMOLED black on all themes
+    description: Pushes the darkest surfaces to true black, on top of whichever dark flavor is selected
+    type: class-toggle
+    default: false
+-
     id: anuppuccin-url-extended-colorschemes
     title: Extended Color Schemes Snippet
-    description: "Download the snippet by clicking on [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)."
+    description: "Adds 25 further flavors on top of the ones built in. Download the snippet by clicking on [this link](https://github.com/theloop-am/loop-skywalker/blob/main/snippets/extended-colorschemes.css)."
     type: info-text
     markdown: true
 

@@ -11,10 +11,6 @@ settings:
     id: anp-theme-ext-dark
     title: Toggle extended dark theme
     type: class-toggle
-  -
-    id: anp-theme-ext-amoled
-    title: Toggle amoled black on all themes
-    type: class-toggle
   - 
     id: catppuccin-theme-extended
     title: Light theme flavor
@@ -47,9 +43,6 @@ settings:
         - 
             label: Sandy Beaches
             value: ctp-sandy-beaches-light
-        - 
-            label: Solarized
-            value: ctp-solarized-light
   - 
     id: catppuccin-theme-dark-extended
     title: Dark theme flavor
@@ -58,9 +51,6 @@ settings:
     allowEmpty: false
     default: ctp-nord-dark
     options:
-        -
-            label: AMOLED Dark
-            value: ctp-amoled-dark
         -
             label: Atom
             value: ctp-atom-dark
@@ -79,9 +69,6 @@ settings:
         -
             label: Everforest
             value: ctp-everforest-dark
-        -
-            label: Flexoki
-            value: ctp-flexoki-dark
         -
             label: Gruvbox
             value: ctp-gruvbox-dark
@@ -147,15 +134,6 @@ settings:
 
 .theme-dark.anp-theme-ext-dark.ctp-atom-dark {
   --ctp-accent: var(--ctp-blue);
-}
-
-.theme-dark.anp-theme-ext-amoled {
-  --ctp-ext-surface2: 80, 80, 80 !important;
-  --ctp-ext-surface1: 50, 50, 50 !important;
-  --ctp-ext-surface0: 30, 30, 30 !important;
-  --ctp-ext-base: 10, 10, 10 !important;
-  --ctp-ext-mantle: 5, 5, 5 !important;
-  --ctp-ext-crust: 0, 0, 0 !important;
 }
 
 .theme-light.anp-theme-ext-light.ctp-atom-light,
@@ -290,140 +268,6 @@ settings:
   	219
   ,
   220 ;
-}
-
-.theme-dark.anp-theme-ext-dark.ctp-amoled-dark,
-.anp-theme-ext-dark.ctp-amoled-dark .themed-color-wrapper > .theme-dark {
-  --ctp-ext-rosewater: 245
-  	,
-  	224
-  ,
-  220 ;
-  --ctp-ext-flamingo: 242
-  	,
-  	205
-  ,
-  205 ;
-  --ctp-ext-pink: 245
-  	,
-  	194
-  ,
-  231 ;
-  --ctp-ext-mauve: 203
-  	,
-  	166
-  ,
-  247 ;
-  --ctp-ext-red: 243
-  	,
-  	139
-  ,
-  168 ;
-  --ctp-ext-maroon: 235
-  	,
-  	160
-  ,
-  172 ;
-  --ctp-ext-peach: 250
-  	,
-  	179
-  ,
-  135 ;
-  --ctp-ext-yellow: 249
-  	,
-  	226
-  ,
-  175 ;
-  --ctp-ext-green: 166
-  	,
-  	227
-  ,
-  161 ;
-  --ctp-ext-teal: 148
-  	,
-  	226
-  ,
-  213 ;
-  --ctp-ext-sky: 137
-  	,
-  	220
-  ,
-  235 ;
-  --ctp-ext-sapphire: 116
-  	,
-  	199
-  ,
-  236 ;
-  --ctp-ext-blue: 135
-  	,
-  	176
-  ,
-  249 ;
-  --ctp-ext-lavender: 180
-  	,
-  	190
-  ,
-  254 ;
-  --ctp-ext-text: 255
-  	,
-  	255
-  ,
-  255 ;
-  --ctp-ext-subtext1: 210
-  	,
-  	210
-  ,
-  210 ;
-  --ctp-ext-subtext0: 189
-  	,
-  	189
-  ,
-  189 ;
-  --ctp-ext-overlay2: 168
-  	,
-  	168
-  ,
-  168 ;
-  --ctp-ext-overlay1: 147
-  	,
-  	147
-  ,
-  147 ;
-  --ctp-ext-overlay0: 126
-  	,
-  	126
-  ,
-  126 ;
-  --ctp-ext-surface2: 80
-  	,
-  	80
-  ,
-  80 ;
-  --ctp-ext-surface1: 50
-  	,
-  	50
-  ,
-  50 ;
-  --ctp-ext-surface0: 30
-  	,
-  	30
-  ,
-  30 ;
-  --ctp-ext-base: 10
-  	,
-  	10
-  ,
-  10 ;
-  --ctp-ext-mantle: 5
-  	,
-  	5
-  ,
-  5 ;
-  --ctp-ext-crust: 0
-  	,
-  	0
-  ,
-  0 ;
 }
 
 .theme-dark.anp-theme-ext-dark.ctp-atom-dark,
@@ -1228,140 +1072,6 @@ settings:
   	40
   ,
   44 ;
-}
-
-.theme-dark.anp-theme-ext-dark.ctp-flexoki-dark,
-.anp-theme-ext-dark.ctp-flexoki-dark .themed-color-wrapper > .theme-dark {
-  --ctp-ext-rosewater: 245
-  	,
-  	224
-  ,
-  220 ;
-  --ctp-ext-flamingo: 242
-  	,
-  	205
-  ,
-  205 ;
-  --ctp-ext-pink: 245
-  	,
-  	194
-  ,
-  231 ;
-  --ctp-ext-mauve: 203
-  	,
-  	166
-  ,
-  247 ;
-  --ctp-ext-red: 243
-  	,
-  	139
-  ,
-  168 ;
-  --ctp-ext-maroon: 235
-  	,
-  	160
-  ,
-  172 ;
-  --ctp-ext-peach: 250
-  	,
-  	179
-  ,
-  135 ;
-  --ctp-ext-yellow: 249
-  	,
-  	226
-  ,
-  175 ;
-  --ctp-ext-green: 166
-  	,
-  	227
-  ,
-  161 ;
-  --ctp-ext-teal: 148
-  	,
-  	226
-  ,
-  213 ;
-  --ctp-ext-sky: 137
-  	,
-  	220
-  ,
-  235 ;
-  --ctp-ext-sapphire: 116
-  	,
-  	199
-  ,
-  236 ;
-  --ctp-ext-blue: 135
-  	,
-  	176
-  ,
-  249 ;
-  --ctp-ext-lavender: 180
-  	,
-  	190
-  ,
-  254 ;
-  --ctp-ext-text: 207
-  	,
-  	206
-  ,
-  196 ;
-  --ctp-ext-subtext1: 179
-  	,
-  	177
-  ,
-  168 ;
-  --ctp-ext-subtext0: 158
-  	,
-  	156
-  ,
-  148 ;
-  --ctp-ext-overlay2: 136
-  	,
-  	134
-  ,
-  129 ;
-  --ctp-ext-overlay1: 123
-  	,
-  	122
-  ,
-  116 ;
-  --ctp-ext-overlay0: 111
-  	,
-  	110
-  ,
-  105 ;
-  --ctp-ext-surface2: 87
-  	,
-  	86
-  ,
-  83 ;
-  --ctp-ext-surface1: 64
-  	,
-  	62
-  ,
-  60 ;
-  --ctp-ext-surface0: 52
-  	,
-  	51
-  ,
-  49 ;
-  --ctp-ext-base: 28
-  	,
-  	27
-  ,
-  26 ;
-  --ctp-ext-mantle: 16
-  	,
-  	15
-  ,
-  15 ;
-  --ctp-ext-crust: 8
-  	,
-  	7
-  ,
-  7 ;
 }
 
 .theme-dark.anp-theme-ext-dark.ctp-generic-dark,
@@ -3640,140 +3350,6 @@ settings:
   	33
   ,
   41 ;
-}
-
-.theme-light.anp-theme-ext-light.ctp-solarized-light,
-.anp-theme-ext-light.ctp-solarized-light .themed-color-wrapper > .theme-light {
-  --ctp-ext-rosewater: 227
-  	,
-  	131
-  ,
-  89 ;
-  --ctp-ext-flamingo: 241
-  	,
-  	142
-  ,
-  168 ;
-  --ctp-ext-pink: 211
-  	,
-  	54
-  ,
-  130 ;
-  --ctp-ext-mauve: 108
-  	,
-  	113
-  ,
-  196 ;
-  --ctp-ext-red: 220
-  	,
-  	50
-  ,
-  47 ;
-  --ctp-ext-maroon: 220
-  	,
-  	60
-  ,
-  46 ;
-  --ctp-ext-peach: 203
-  	,
-  	75
-  ,
-  22 ;
-  --ctp-ext-yellow: 181
-  	,
-  	137
-  ,
-  0 ;
-  --ctp-ext-green: 133
-  	,
-  	153
-  ,
-  0 ;
-  --ctp-ext-teal: 42
-  	,
-  	161
-  ,
-  152 ;
-  --ctp-ext-sky: 42
-  	,
-  	145
-  ,
-  161 ;
-  --ctp-ext-sapphire: 39
-  	,
-  	168
-  ,
-  211 ;
-  --ctp-ext-blue: 38
-  	,
-  	139
-  ,
-  210 ;
-  --ctp-ext-lavender: 139
-  	,
-  	143
-  ,
-  222 ;
-  --ctp-ext-text: 0
-  	,
-  	43
-  ,
-  54 ;
-  --ctp-ext-subtext1: 7
-  	,
-  	54
-  ,
-  66 ;
-  --ctp-ext-subtext0: 10
-  	,
-  	76
-  ,
-  92 ;
-  --ctp-ext-overlay2: 77
-  	,
-  	96
-  ,
-  102 ;
-  --ctp-ext-overlay1: 88
-  	,
-  	110
-  ,
-  117 ;
-  --ctp-ext-overlay0: 101
-  	,
-  	123
-  ,
-  131 ;
-  --ctp-ext-surface2: 131
-  	,
-  	148
-  ,
-  150 ;
-  --ctp-ext-surface1: 145
-  	,
-  	160
-  ,
-  161 ;
-  --ctp-ext-surface0: 173
-  	,
-  	184
-  ,
-  184 ;
-  --ctp-ext-base: 253
-  	,
-  	246
-  ,
-  227 ;
-  --ctp-ext-mantle: 237
-  	,
-  	232
-  ,
-  214 ;
-  --ctp-ext-crust: 224
-  	,
-  	215
-  ,
-  184 ;
 }
 
 .theme-dark.anp-theme-ext-dark.ctp-thorns,

@@ -35,8 +35,11 @@ settings:
     description: Select your preferred light mode flavor
     type: class-select
     allowEmpty: false
-    default: ctp-latte
+    default: ctp-solarized-light
     options:
+    -
+        label: Solarized
+        value: ctp-solarized-light
     -
         label: Latte
         value: ctp-latte
@@ -49,8 +52,14 @@ settings:
     description: Select your preferred dark mode flavor
     type: class-select
     allowEmpty: false
-    default: ctp-mocha
+    default: ctp-flexoki-dark
     options:
+    -
+        label: Flexoki
+        value: ctp-flexoki-dark
+    -
+        label: AMOLED Dark
+        value: ctp-amoled-dark
     -
         label: Frappe
         value: ctp-frappe
@@ -170,9 +179,15 @@ settings:
     type: class-toggle
     default: true
 -
+    id: anp-theme-amoled
+    title: Toggle AMOLED black on all themes
+    description: Pushes the darkest surfaces to true black, on top of whichever dark flavor is selected
+    type: class-toggle
+    default: false
+-
     id: anuppuccin-url-extended-colorschemes
     title: Extended Color Schemes Snippet
-    description: "Download the snippet by clicking on [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)."
+    description: "Adds 25 further flavors on top of the ones built in. Download the snippet by clicking on [this link](https://github.com/theloop-am/loop-skywalker/blob/main/snippets/extended-colorschemes.css)."
     type: info-text
     markdown: true
 
@@ -2762,6 +2777,35 @@ settings:
   --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 221, 208, 198));
 }
 
+.theme-light.ctp-solarized-light, .ctp-solarized-light .themed-color-wrapper > .theme-light {
+  --ctp-rosewater: var(--ctp-custom-rosewater, var(--ctp-ext-rosewater, 227, 131, 89));
+  --ctp-flamingo: var(--ctp-custom-flamingo, var(--ctp-ext-flamingo, 241, 142, 168));
+  --ctp-pink: var(--ctp-custom-pink, var(--ctp-ext-pink, 211, 54, 130));
+  --ctp-mauve: var(--ctp-custom-mauve, var(--ctp-ext-mauve, 108, 113, 196));
+  --ctp-red: var(--ctp-custom-red, var(--ctp-ext-red, 220, 50, 47));
+  --ctp-maroon: var(--ctp-custom-maroon, var(--ctp-ext-maroon, 220, 60, 46));
+  --ctp-peach: var(--ctp-custom-peach, var(--ctp-ext-peach, 203, 75, 22));
+  --ctp-yellow: var(--ctp-custom-yellow, var(--ctp-ext-yellow, 181, 137, 0));
+  --ctp-green: var(--ctp-custom-green, var(--ctp-ext-green, 133, 153, 0));
+  --ctp-teal: var(--ctp-custom-teal, var(--ctp-ext-teal, 42, 161, 152));
+  --ctp-sky: var(--ctp-custom-sky, var(--ctp-ext-sky, 42, 145, 161));
+  --ctp-sapphire: var(--ctp-custom-sapphire, var(--ctp-ext-sapphire, 39, 168, 211));
+  --ctp-blue: var(--ctp-custom-blue, var(--ctp-ext-blue, 38, 139, 210));
+  --ctp-lavender: var(--ctp-custom-lavender, var(--ctp-ext-lavender, 139, 143, 222));
+  --ctp-text: var(--ctp-custom-text, var(--ctp-ext-text, 0, 43, 54));
+  --ctp-subtext1: var(--ctp-custom-subtext1, var(--ctp-ext-subtext1, 7, 54, 66));
+  --ctp-subtext0: var(--ctp-custom-subtext0, var(--ctp-ext-subtext0, 10, 76, 92));
+  --ctp-overlay2: var(--ctp-custom-overlay2, var(--ctp-ext-overlay2, 77, 96, 102));
+  --ctp-overlay1: var(--ctp-custom-overlay1, var(--ctp-ext-overlay1, 88, 110, 117));
+  --ctp-overlay0: var(--ctp-custom-overlay0, var(--ctp-ext-overlay0, 101, 123, 131));
+  --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 131, 148, 150));
+  --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 145, 160, 161));
+  --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 173, 184, 184));
+  --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 253, 246, 227));
+  --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 237, 232, 214));
+  --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 224, 215, 184));
+}
+
 .theme-dark.ctp-frappe, .ctp-frappe .themed-color-wrapper > .theme-dark {
   --ctp-rosewater: var(--ctp-custom-rosewater, var(--ctp-ext-rosewater, 242, 213, 207));
   --ctp-flamingo: var(--ctp-custom-flamingo, var(--ctp-ext-flamingo, 238, 190, 190));
@@ -2878,6 +2922,64 @@ settings:
   --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 22, 19, 32));
 }
 
+.theme-dark.ctp-flexoki-dark, .ctp-flexoki-dark .themed-color-wrapper > .theme-dark {
+  --ctp-rosewater: var(--ctp-custom-rosewater, var(--ctp-ext-rosewater, 245, 224, 220));
+  --ctp-flamingo: var(--ctp-custom-flamingo, var(--ctp-ext-flamingo, 242, 205, 205));
+  --ctp-pink: var(--ctp-custom-pink, var(--ctp-ext-pink, 245, 194, 231));
+  --ctp-mauve: var(--ctp-custom-mauve, var(--ctp-ext-mauve, 203, 166, 247));
+  --ctp-red: var(--ctp-custom-red, var(--ctp-ext-red, 243, 139, 168));
+  --ctp-maroon: var(--ctp-custom-maroon, var(--ctp-ext-maroon, 235, 160, 172));
+  --ctp-peach: var(--ctp-custom-peach, var(--ctp-ext-peach, 250, 179, 135));
+  --ctp-yellow: var(--ctp-custom-yellow, var(--ctp-ext-yellow, 249, 226, 175));
+  --ctp-green: var(--ctp-custom-green, var(--ctp-ext-green, 166, 227, 161));
+  --ctp-teal: var(--ctp-custom-teal, var(--ctp-ext-teal, 148, 226, 213));
+  --ctp-sky: var(--ctp-custom-sky, var(--ctp-ext-sky, 137, 220, 235));
+  --ctp-sapphire: var(--ctp-custom-sapphire, var(--ctp-ext-sapphire, 116, 199, 236));
+  --ctp-blue: var(--ctp-custom-blue, var(--ctp-ext-blue, 135, 176, 249));
+  --ctp-lavender: var(--ctp-custom-lavender, var(--ctp-ext-lavender, 180, 190, 254));
+  --ctp-text: var(--ctp-custom-text, var(--ctp-ext-text, 207, 206, 196));
+  --ctp-subtext1: var(--ctp-custom-subtext1, var(--ctp-ext-subtext1, 179, 177, 168));
+  --ctp-subtext0: var(--ctp-custom-subtext0, var(--ctp-ext-subtext0, 158, 156, 148));
+  --ctp-overlay2: var(--ctp-custom-overlay2, var(--ctp-ext-overlay2, 136, 134, 129));
+  --ctp-overlay1: var(--ctp-custom-overlay1, var(--ctp-ext-overlay1, 123, 122, 116));
+  --ctp-overlay0: var(--ctp-custom-overlay0, var(--ctp-ext-overlay0, 111, 110, 105));
+  --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 87, 86, 83));
+  --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 64, 62, 60));
+  --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 52, 51, 49));
+  --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 28, 27, 26));
+  --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 16, 15, 15));
+  --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 8, 7, 7));
+}
+
+.theme-dark.ctp-amoled-dark, .ctp-amoled-dark .themed-color-wrapper > .theme-dark {
+  --ctp-rosewater: var(--ctp-custom-rosewater, var(--ctp-ext-rosewater, 245, 224, 220));
+  --ctp-flamingo: var(--ctp-custom-flamingo, var(--ctp-ext-flamingo, 242, 205, 205));
+  --ctp-pink: var(--ctp-custom-pink, var(--ctp-ext-pink, 245, 194, 231));
+  --ctp-mauve: var(--ctp-custom-mauve, var(--ctp-ext-mauve, 203, 166, 247));
+  --ctp-red: var(--ctp-custom-red, var(--ctp-ext-red, 243, 139, 168));
+  --ctp-maroon: var(--ctp-custom-maroon, var(--ctp-ext-maroon, 235, 160, 172));
+  --ctp-peach: var(--ctp-custom-peach, var(--ctp-ext-peach, 250, 179, 135));
+  --ctp-yellow: var(--ctp-custom-yellow, var(--ctp-ext-yellow, 249, 226, 175));
+  --ctp-green: var(--ctp-custom-green, var(--ctp-ext-green, 166, 227, 161));
+  --ctp-teal: var(--ctp-custom-teal, var(--ctp-ext-teal, 148, 226, 213));
+  --ctp-sky: var(--ctp-custom-sky, var(--ctp-ext-sky, 137, 220, 235));
+  --ctp-sapphire: var(--ctp-custom-sapphire, var(--ctp-ext-sapphire, 116, 199, 236));
+  --ctp-blue: var(--ctp-custom-blue, var(--ctp-ext-blue, 135, 176, 249));
+  --ctp-lavender: var(--ctp-custom-lavender, var(--ctp-ext-lavender, 180, 190, 254));
+  --ctp-text: var(--ctp-custom-text, var(--ctp-ext-text, 255, 255, 255));
+  --ctp-subtext1: var(--ctp-custom-subtext1, var(--ctp-ext-subtext1, 210, 210, 210));
+  --ctp-subtext0: var(--ctp-custom-subtext0, var(--ctp-ext-subtext0, 189, 189, 189));
+  --ctp-overlay2: var(--ctp-custom-overlay2, var(--ctp-ext-overlay2, 168, 168, 168));
+  --ctp-overlay1: var(--ctp-custom-overlay1, var(--ctp-ext-overlay1, 147, 147, 147));
+  --ctp-overlay0: var(--ctp-custom-overlay0, var(--ctp-ext-overlay0, 126, 126, 126));
+  --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 80, 80, 80));
+  --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 50, 50, 50));
+  --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 30, 30, 30));
+  --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 10, 10, 10));
+  --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 5, 5, 5));
+  --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 0, 0, 0));
+}
+
 .theme-dark {
   --ctp-rosewater: var(--ctp-custom-rosewater, var(--ctp-ext-rosewater, 245, 224, 220));
   --ctp-flamingo: var(--ctp-custom-flamingo, var(--ctp-ext-flamingo, 242, 205, 205));
@@ -2893,47 +2995,58 @@ settings:
   --ctp-sapphire: var(--ctp-custom-sapphire, var(--ctp-ext-sapphire, 116, 199, 236));
   --ctp-blue: var(--ctp-custom-blue, var(--ctp-ext-blue, 135, 176, 249));
   --ctp-lavender: var(--ctp-custom-lavender, var(--ctp-ext-lavender, 180, 190, 254));
-  --ctp-text: var(--ctp-custom-text, var(--ctp-ext-text, 198, 208, 245));
-  --ctp-subtext1: var(--ctp-custom-subtext1, var(--ctp-ext-subtext1, 179, 188, 223));
-  --ctp-subtext0: var(--ctp-custom-subtext0, var(--ctp-ext-subtext0, 161, 168, 201));
-  --ctp-overlay2: var(--ctp-custom-overlay2, var(--ctp-ext-overlay2, 142, 149, 179));
-  --ctp-overlay1: var(--ctp-custom-overlay1, var(--ctp-ext-overlay1, 123, 129, 157));
-  --ctp-overlay0: var(--ctp-custom-overlay0, var(--ctp-ext-overlay0, 105, 109, 134));
-  --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 86, 89, 112));
-  --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 67, 70, 90));
-  --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 49, 50, 68));
-  --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 30, 30, 46));
-  --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 24, 24, 37));
-  --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 17, 17, 27));
+  --ctp-text: var(--ctp-custom-text, var(--ctp-ext-text, 207, 206, 196));
+  --ctp-subtext1: var(--ctp-custom-subtext1, var(--ctp-ext-subtext1, 179, 177, 168));
+  --ctp-subtext0: var(--ctp-custom-subtext0, var(--ctp-ext-subtext0, 158, 156, 148));
+  --ctp-overlay2: var(--ctp-custom-overlay2, var(--ctp-ext-overlay2, 136, 134, 129));
+  --ctp-overlay1: var(--ctp-custom-overlay1, var(--ctp-ext-overlay1, 123, 122, 116));
+  --ctp-overlay0: var(--ctp-custom-overlay0, var(--ctp-ext-overlay0, 111, 110, 105));
+  --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 87, 86, 83));
+  --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 64, 62, 60));
+  --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 52, 51, 49));
+  --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 28, 27, 26));
+  --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 16, 15, 15));
+  --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 8, 7, 7));
 }
 
 .theme-light {
-  --ctp-rosewater: var(--ctp-custom-rosewater, var(--ctp-ext-rosewater, 222, 149, 132));
-  --ctp-flamingo: var(--ctp-custom-flamingo, var(--ctp-ext-flamingo, 221, 120, 120));
-  --ctp-pink: var(--ctp-custom-pink, var(--ctp-ext-pink, 236, 131, 208));
-  --ctp-mauve: var(--ctp-custom-mauve, var(--ctp-ext-mauve, 136, 57, 239));
-  --ctp-red: var(--ctp-custom-red, var(--ctp-ext-red, 210, 15, 57));
-  --ctp-maroon: var(--ctp-custom-maroon, var(--ctp-ext-maroon, 230, 69, 83));
-  --ctp-peach: var(--ctp-custom-peach, var(--ctp-ext-peach, 254, 100, 11));
-  --ctp-yellow: var(--ctp-custom-yellow, var(--ctp-ext-yellow, 228, 147, 32));
-  --ctp-green: var(--ctp-custom-green, var(--ctp-ext-green, 64, 160, 43));
-  --ctp-teal: var(--ctp-custom-teal, var(--ctp-ext-teal, 23, 146, 153));
-  --ctp-sky: var(--ctp-custom-sky, var(--ctp-ext-sky, 4, 165, 229));
-  --ctp-sapphire: var(--ctp-custom-sapphire, var(--ctp-ext-sapphire, 32, 159, 181));
-  --ctp-blue: var(--ctp-custom-blue, var(--ctp-ext-blue, 42, 110, 245));
-  --ctp-lavender: var(--ctp-custom-lavender, var(--ctp-ext-lavender, 114, 135, 253));
-  --ctp-text: var(--ctp-custom-text, var(--ctp-ext-text, 76, 79, 105));
-  --ctp-subtext1: var(--ctp-custom-subtext1, var(--ctp-ext-subtext1, 92, 95, 119));
-  --ctp-subtext0: var(--ctp-custom-subtext0, var(--ctp-ext-subtext0, 108, 111, 133));
-  --ctp-overlay2: var(--ctp-custom-overlay2, var(--ctp-ext-overlay2, 124, 127, 147));
-  --ctp-overlay1: var(--ctp-custom-overlay1, var(--ctp-ext-overlay1, 140, 143, 161));
-  --ctp-overlay0: var(--ctp-custom-overlay0, var(--ctp-ext-overlay0, 156, 160, 176));
-  --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 172, 176, 190));
-  --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 188, 192, 204));
-  --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 204, 208, 218));
-  --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 239, 241, 245));
-  --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 230, 233, 239));
-  --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 220, 224, 232));
+  --ctp-rosewater: var(--ctp-custom-rosewater, var(--ctp-ext-rosewater, 227, 131, 89));
+  --ctp-flamingo: var(--ctp-custom-flamingo, var(--ctp-ext-flamingo, 241, 142, 168));
+  --ctp-pink: var(--ctp-custom-pink, var(--ctp-ext-pink, 211, 54, 130));
+  --ctp-mauve: var(--ctp-custom-mauve, var(--ctp-ext-mauve, 108, 113, 196));
+  --ctp-red: var(--ctp-custom-red, var(--ctp-ext-red, 220, 50, 47));
+  --ctp-maroon: var(--ctp-custom-maroon, var(--ctp-ext-maroon, 220, 60, 46));
+  --ctp-peach: var(--ctp-custom-peach, var(--ctp-ext-peach, 203, 75, 22));
+  --ctp-yellow: var(--ctp-custom-yellow, var(--ctp-ext-yellow, 181, 137, 0));
+  --ctp-green: var(--ctp-custom-green, var(--ctp-ext-green, 133, 153, 0));
+  --ctp-teal: var(--ctp-custom-teal, var(--ctp-ext-teal, 42, 161, 152));
+  --ctp-sky: var(--ctp-custom-sky, var(--ctp-ext-sky, 42, 145, 161));
+  --ctp-sapphire: var(--ctp-custom-sapphire, var(--ctp-ext-sapphire, 39, 168, 211));
+  --ctp-blue: var(--ctp-custom-blue, var(--ctp-ext-blue, 38, 139, 210));
+  --ctp-lavender: var(--ctp-custom-lavender, var(--ctp-ext-lavender, 139, 143, 222));
+  --ctp-text: var(--ctp-custom-text, var(--ctp-ext-text, 0, 43, 54));
+  --ctp-subtext1: var(--ctp-custom-subtext1, var(--ctp-ext-subtext1, 7, 54, 66));
+  --ctp-subtext0: var(--ctp-custom-subtext0, var(--ctp-ext-subtext0, 10, 76, 92));
+  --ctp-overlay2: var(--ctp-custom-overlay2, var(--ctp-ext-overlay2, 77, 96, 102));
+  --ctp-overlay1: var(--ctp-custom-overlay1, var(--ctp-ext-overlay1, 88, 110, 117));
+  --ctp-overlay0: var(--ctp-custom-overlay0, var(--ctp-ext-overlay0, 101, 123, 131));
+  --ctp-surface2: var(--ctp-custom-surface2, var(--ctp-ext-surface2, 131, 148, 150));
+  --ctp-surface1: var(--ctp-custom-surface1, var(--ctp-ext-surface1, 145, 160, 161));
+  --ctp-surface0: var(--ctp-custom-surface0, var(--ctp-ext-surface0, 173, 184, 184));
+  --ctp-base: var(--ctp-custom-base, var(--ctp-ext-base, 253, 246, 227));
+  --ctp-mantle: var(--ctp-custom-mantle, var(--ctp-ext-mantle, 237, 232, 214));
+  --ctp-crust: var(--ctp-custom-crust, var(--ctp-ext-crust, 224, 215, 184));
+}
+
+/*------------------AMOLED Toggle-------------------*/
+/* Overrides the --ctp-ext-* layer, so it applies on top of any flavour. */
+.theme-dark.anp-theme-amoled {
+  --ctp-ext-surface2: 80, 80, 80 !important;
+  --ctp-ext-surface1: 50, 50, 50 !important;
+  --ctp-ext-surface0: 30, 30, 30 !important;
+  --ctp-ext-base: 10, 10, 10 !important;
+  --ctp-ext-mantle: 5, 5, 5 !important;
+  --ctp-ext-crust: 0, 0, 0 !important;
 }
 
 /*------------------Selecting Accents-------------------*/
