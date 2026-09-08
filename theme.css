@@ -1241,10 +1241,6 @@ settings:
     description: "Adds a transition when switching palettes, looks really neat :)"
     type: class-toggle
 -
-    id: anp-button-metadata-toggle
-    title: Enable Custom Metadata Button
-    type: class-toggle
--
     id: anp-print
     title: Enable Print Styling
     type: class-toggle
@@ -3645,7 +3641,7 @@ input.slider,
 .status-bar-item.mod-clickable,
 .titlebar-button,
 .button,
-.frontmatter-container .frontmatter-container-header,
+.metadata-properties-heading,
 .card.u-clickable,
 .list-item-part.clickable-icon,
 .u-clickable,
@@ -3728,14 +3724,6 @@ input.slider,
 .markdown-rendered.rtl .list-bullet {
   float: right;
   margin-right: -12px;
-}
-.anp-button-metadata-toggle .markdown-rendered.rtl .frontmatter-container .frontmatter-container-header {
-  left: unset;
-  right: calc(100% - 32px);
-}
-.anp-button-metadata-toggle .markdown-rendered.rtl .frontmatter-container .frontmatter-container-header:after {
-  margin-left: unset;
-  margin-right: 7px;
 }
 .markdown-rendered.rtl blockquote {
   border-right: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
@@ -3921,11 +3909,6 @@ input.slider,
   border-radius: 0px;
 }
 
-/*-Padding for banner pages-*/
-.obsidian-banner-wrapper .frontmatter-container {
-  margin-top: 20px;
-}
-
 /*-Disable scrollbars-*/
 .anp-toggle-scrollbars *::-webkit-scrollbar {
   display: none;
@@ -3984,11 +3967,6 @@ input.slider,
 
 .nav-folder-title-content {
   flex-grow: 1;
-}
-
-/* Hide empty frontmatter (uses :has()) */
-.frontmatter-container:not(:has(.frontmatter-section)) {
-  display: none;
 }
 
 /* Inline title visibility */
@@ -5936,8 +5914,8 @@ hr {
   font-size: var(--anp-latex-block-font-size, 1em);
 }
 
-.anp-toggle-metadata .frontmatter-container,
-.markdown-rendered.hide-metadata .frontmatter-container {
+.anp-toggle-metadata .metadata-container,
+.markdown-rendered.hide-metadata .metadata-container {
   display: none;
 }
 
@@ -6335,66 +6313,6 @@ body.rainbow-tags {
 }
 .markdown-reading-view .markdown-preview-view.capacities-card::after {
   display: none;
-}
-
-/*-Button for metadata-*/
-body.anp-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header,
-body.anp-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header {
-  background-color: rgba(var(--ctp-accent), 0.8);
-}
-body.anp-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:hover,
-body.anp-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:hover {
-  background-color: rgba(var(--ctp-accent), 0.7);
-}
-body.anp-accent-toggle.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:active,
-body.anp-accent-toggle .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:active {
-  background-color: rgba(var(--ctp-accent), 0.6);
-}
-
-body:not(.anp-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header,
-body:not(.anp-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header {
-  background-color: hsla(var(--color-accent-hsl), 0.8);
-}
-body:not(.anp-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:hover,
-body:not(.anp-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:hover {
-  background-color: hsla(var(--color-accent-hsl), 0.7);
-}
-body:not(.anp-accent-toggle).anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:active,
-body:not(.anp-accent-toggle) .markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:active {
-  background-color: hsla(var(--color-accent-hsl), 0.6);
-}
-
-.anp-button-metadata-toggle .frontmatter-container,
-.markdown-rendered.metadata-button .frontmatter-container {
-  padding: 0;
-}
-.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header,
-.markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header {
-  width: 32px !important;
-  z-index: 1;
-  height: 32px !important;
-  text-overflow: clip;
-  overflow: hidden;
-  color: transparent !important;
-  position: absolute;
-  left: calc(100% - 32px);
-  border-radius: 6px;
-}
-.anp-button-metadata-toggle .frontmatter-container .frontmatter-container-header:after,
-.markdown-rendered.metadata-button .frontmatter-container .frontmatter-container-header:after {
-  position: absolute;
-  content: " ";
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Cpolygon points='12 2 2 7 12 12 22 7 12 2'%3E%3C/polygon%3E%3Cpolyline points='2 17 12 22 22 17'%3E%3C/polyline%3E%3Cpolyline points='2 12 12 17 22 12'%3E%3C/polyline%3E%3C/svg%3E");
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Cpolygon points='12 2 2 7 12 12 22 7 12 2'%3E%3C/polygon%3E%3Cpolyline points='2 17 12 22 22 17'%3E%3C/polyline%3E%3Cpolyline points='2 12 12 17 22 12'%3E%3C/polyline%3E%3C/svg%3E");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-size: contain;
-  background-color: var(--background-primary);
-  color: var(--background-secondary);
-  width: 22px;
-  height: 22px;
-  margin-left: 5px;
-  margin-top: 5px;
 }
 
 /*-------Tweak for Minimal Cards--------------

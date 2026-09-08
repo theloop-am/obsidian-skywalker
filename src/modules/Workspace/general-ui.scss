@@ -18,11 +18,6 @@
     border-radius: 0px;
 }
 
-/*-Padding for banner pages-*/
-.obsidian-banner-wrapper .frontmatter-container {
-    margin-top: 20px;
-}
-
 /*-Disable scrollbars-*/
 .anp-toggle-scrollbars *::-webkit-scrollbar {
     display: none;
@@ -81,11 +76,6 @@
 
 .nav-folder-title-content {
     flex-grow: 1;
-}
-
-/* Hide empty frontmatter (uses :has()) */
-.frontmatter-container:not(:has(.frontmatter-section)) {
-    display: none;
 }
 
 /* Inline title visibility */
