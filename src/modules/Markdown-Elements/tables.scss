@@ -1,10 +1,8 @@
 /*-Recolor table borders-*/
 .loopsk-table-toggle {
 
-    .markdown-preview-view:not(.cards):not(.table-disable) table,
-    .markdown-preview-view.cards:not(.table-disable) table:not(.dataview),
-    .is-live-preview:not(.cards):not(.table-disable) table,
-    .is-live-preview.cards:not(.table-disable) table:not(.dataview) {
+    .markdown-preview-view:not(.table-disable) table,
+    .is-live-preview:not(.table-disable) table {
 
         &,
         td,
@@ -75,69 +73,53 @@ $table-styling: th-highlight, row-alt, col-alt, full, checkered;
     }
 }
 
-// applies styling for:
-// reading mode and live preview for dataview tables without minimal card styling and regular tables in general
-// also uses the following classes for per-note styling:
-// row-alt
-// col-alt
-// checkered
-// table-full
-// th-highlight
+// Reading mode and live preview, either through the theme-wide toggle or through
+// a per-note class: row-alt, col-alt, checkered, table-full, th-highlight.
 @each $table-style in $table-styling {
     .loopsk-table-toggle {
-
         &.loopsk-table-#{"#{$table-style}"} {
- .markdown-preview-view:not(.cards):not(.table-disable),
-        .markdown-preview-view.cards:not(.table-disable) table:not(.dataview),
-        .is-live-preview:not(.cards):not(.table-disable),
-        .is-live-preview.cards:not(.table-disable) table:not(.dataview) {
-            @include styling($table-style);
+
+            .markdown-preview-view:not(.table-disable),
+            .is-live-preview:not(.table-disable) {
+                @include styling($table-style);
+            }
+        }
+    }
+
+    @if $table-style !=full {
+        .#{$table-style} {
+
+            &.markdown-preview-view:not(.table-disable),
+            &.is-live-preview:not(.table-disable) {
+                @include styling($table-style);
+            }
+        }
+    }
+
+    @else {
+        .table-#{$table-style} {
+
+            &.markdown-preview-view:not(.table-disable),
+            &.is-live-preview:not(.table-disable) {
+                @include styling($table-style);
+            }
         }
     }
 }
 
-@if $table-style !=full {
-    .#{$table-style} {
-
-        &.markdown-preview-view:not(.cards):not(.table-disable),
-        &.markdown-preview-view.cards:not(.table-disable) table:not(.dataview),
-        &.is-live-preview:not(.cards):not(.table-disable),
-        &.is-live-preview.cards:not(.table-disable) table:not(.dataview) {
-            @include styling($table-style);
-        }
-    }
-}
-
-@else {
-    .table-#{$table-style} {
-
-        &.markdown-preview-view:not(.cards):not(.table-disable),
-        &.markdown-preview-view.cards:not(.table-disable) table:not(.dataview),
-        &.is-live-preview:not(.cards):not(.table-disable),
-        &.is-live-preview.cards:not(.table-disable) table:not(.dataview) {
-            @include styling($table-style);
-        }
-    }
-}
-}
-
-.loopsk-table-auto.markdown-rendered:not(.cards):not(.table-disable) table,
-.loopsk-table-auto.markdown-rendered.cards:not(.table-disable) table:not(.dataview) {
+.loopsk-table-auto.markdown-rendered:not(.table-disable) table {
     margin: 0 auto;
 }
 
-.loopsk-table-width.markdown-rendered:not(.cards):not(.table-disable) table,
-.loopsk-table-width.markdown-rendered.cards:not(.table-disable) table:not(.dataview) {
+.loopsk-table-width.markdown-rendered:not(.table-disable) table {
     width: var(--loopsk-table-width-pct);
 }
 
-.loopsk-table-auto.loopsk-table-toggle .markdown-rendered:not(.cards):not(.table-disable) table,
-.loopsk-table-auto.loopsk-table-toggle .markdown-rendered.cards:not(.table-disable) table:not(.dataview) {
+.loopsk-table-auto.loopsk-table-toggle .markdown-rendered:not(.table-disable) table {
     margin: 0 auto;
 }
 
-.loopsk-table-width.loopsk-table-toggle .markdown-rendered:not(.cards):not(.table-disable) table,
-.loopsk-table-width.loopsk-table-toggle .markdown-rendered.cards:not(.table-disable) table:not(.dataview) {
+.loopsk-table-width.loopsk-table-toggle .markdown-rendered:not(.table-disable) table {
     width: var(--loopsk-table-width-pct);
     margin-left: calc(50% - var(--loopsk-table-width-pct)/2);
     margin-right: calc(50% - var(--loopsk-table-width-pct)/2);
