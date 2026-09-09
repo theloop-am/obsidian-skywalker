@@ -4201,7 +4201,7 @@ body:not(.loopsk-alternate-tab-toggle):not(.loopsk-disable-newtab-align) .worksp
   /*-------CONFIGS---------*/
 }
 .loopsk-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner {
-  margin: 5px 0 !important;
+  margin: 5px 0;
 }
 .loopsk-safari-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header:not(.is-active) {
   --icon-color: var(--text-muted);
@@ -4293,9 +4293,9 @@ body:not(.loopsk-alternate-tab-toggle):not(.loopsk-disable-newtab-align) .worksp
 .loopsk-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
   background: var(--tab-background);
   border-radius: var(--loopsk-safari-tab-radius, 6px);
-  box-shadow: none !important;
+  box-shadow: none;
   height: var(--tab-height);
-  padding: 0 !important;
+  padding: 0;
   transition: 400ms, background-color 150ms ease-in-out;
 }
 
@@ -4458,7 +4458,7 @@ body.loopsk-card-layout.loopsk-hide-borders {
   --tab-outline-color: transparent;
 }
 body.loopsk-card-layout.loopsk-hide-borders .menu {
-  border: 0px !important;
+  border: 0px;
 }
 body.loopsk-card-layout .sidebar-toggle-button,
 body.loopsk-card-layout .workspace-tabs.mod-top {
@@ -4875,33 +4875,35 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
   --callout-content-padding: 0;
 }
 
-.callout-content > p:first-child,
-.callout-content > ul:first-child,
-.callout-content > ol:first-child {
+.callout .callout-content > p:first-child,
+.callout .callout-content > ul:first-child,
+.callout .callout-content > ol:first-child {
   margin-top: 0px;
 }
-.callout-content > p:last-child,
-.callout-content > ul:last-child,
-.callout-content > ol:last-child {
+.callout .callout-content > p:last-child,
+.callout .callout-content > ul:last-child,
+.callout .callout-content > ol:last-child {
   margin-bottom: 0px;
 }
-.callout-content > h1,
-.callout-content > h2,
-.callout-content > h3,
-.callout-content > h4,
-.callout-content > h5,
-.callout-content > h6 {
-  margin: 0 !important;
+.callout .callout-content > h1,
+.callout .callout-content > h2,
+.callout .callout-content > h3,
+.callout .callout-content > h4,
+.callout .callout-content > h5,
+.callout .callout-content > h6 {
+  margin: 0;
 }
 
 .loopsk-callout-block .callout:not([data-callout-metadata*=loopsk-sleek],
 [data-callout-metadata*=loopsk-vanilla-normal],
 [data-callout-metadata*=loopsk-vanilla-plus]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]),
+[data-callout=multi-column],
+[data-callout=formula]),
 .callout[data-callout-metadata*=loopsk-block]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) {
+[data-callout=multi-column],
+[data-callout=formula]) {
   border-left: var(--size-2-3) solid var(--callout-color);
 }
 
@@ -4909,10 +4911,12 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-normal],
 [data-callout-metadata*=loopsk-vanilla-plus]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]),
+[data-callout=multi-column],
+[data-callout=formula]),
 .callout[data-callout-metadata*=loopsk-sleek]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) {
+[data-callout=multi-column],
+[data-callout=formula]) {
   --callout-padding: 0;
   --callout-border-width: 1px;
   --callout-border-opacity: 0.4;
@@ -4924,10 +4928,12 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-normal],
 [data-callout-metadata*=loopsk-vanilla-plus]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-title,
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-title,
 .callout[data-callout-metadata*=loopsk-sleek]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-title {
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-title {
   background-color: rgb(from var(--callout-color) r g b/var(--callout-title-opacity, 0.1));
 }
 
@@ -4935,10 +4941,12 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-normal],
 [data-callout-metadata*=loopsk-vanilla-plus]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content,
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-content,
 .callout[data-callout-metadata*=loopsk-sleek]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content {
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-content {
   border-top: var(--callout-border-width) dashed rgb(from var(--callout-color) r g b/var(--callout-border-opacity));
 }
 
@@ -4946,10 +4954,12 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-normal],
 [data-callout-metadata*=loopsk-vanilla-plus]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) .list-collapse-indicator,
+[data-callout=multi-column],
+[data-callout=formula]) .list-collapse-indicator,
 .callout[data-callout-metadata*=loopsk-sleek]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) .list-collapse-indicator {
+[data-callout=multi-column],
+[data-callout=formula]) .list-collapse-indicator {
   margin-left: -35px;
   padding-right: 3px;
 }
@@ -4958,10 +4968,12 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-plus],
 [data-callout-metadata*=loopsk-block]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]),
+[data-callout=multi-column],
+[data-callout=formula]),
 .callout[data-callout-metadata*=loopsk-vanilla-normal]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) {
+[data-callout=multi-column],
+[data-callout=formula]) {
   background-color: transparent;
 }
 
@@ -4969,10 +4981,12 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-plus],
 [data-callout-metadata*=loopsk-block]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-title,
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-title,
 .callout[data-callout-metadata*=loopsk-vanilla-normal]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-title {
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-title {
   background-color: rgb(from var(--callout-color) r g b/var(--callout-title-opacity, 0.1));
 }
 
@@ -4980,10 +4994,12 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-plus],
 [data-callout-metadata*=loopsk-block]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content,
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-content,
 .callout[data-callout-metadata*=loopsk-vanilla-normal]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content {
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-content {
   background-color: rgb(var(--ctp-mantle));
 }
 
@@ -4991,18 +5007,22 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-plus],
 [data-callout-metadata*=loopsk-block]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-title,
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-title,
 .loopsk-callout-vanilla-normal .callout:not([data-callout-metadata*=loopsk-sleek],
 [data-callout-metadata*=loopsk-vanilla-plus],
 [data-callout-metadata*=loopsk-block]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content,
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-content,
 .callout[data-callout-metadata*=loopsk-vanilla-normal]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-title,
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-title,
 .callout[data-callout-metadata*=loopsk-vanilla-normal]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content {
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-content {
   border-left: var(--size-2-3) solid var(--callout-color);
 }
 
@@ -5010,10 +5030,12 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-normal],
 [data-callout-metadata*=loopsk-block]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]),
+[data-callout=multi-column],
+[data-callout=formula]),
 .callout[data-callout-metadata*=loopsk-vanilla-plus]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) {
+[data-callout=multi-column],
+[data-callout=formula]) {
   background-color: transparent;
 }
 
@@ -5021,10 +5043,12 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-normal],
 [data-callout-metadata*=loopsk-block]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-title,
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-title,
 .callout[data-callout-metadata*=loopsk-vanilla-plus]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-title {
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-title {
   background-color: rgb(from var(--callout-color) r g b/var(--callout-title-opacity, 0.1));
   border-left: var(--size-2-3) solid var(--callout-color);
 }
@@ -5033,10 +5057,12 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
 [data-callout-metadata*=loopsk-vanilla-normal],
 [data-callout-metadata*=loopsk-block]):not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content,
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-content,
 .callout[data-callout-metadata*=loopsk-vanilla-plus]:not([data-callout-metadata*=revert],
 [data-callout=blank-container],
-[data-callout=multi-column]) > .callout-content {
+[data-callout=multi-column],
+[data-callout=formula]) > .callout-content {
   background-color: rgb(var(--ctp-mantle));
 }
 
@@ -5078,18 +5104,18 @@ Note: If you decide to implement it in your theme or redistribute it, please kee
   width: fit-content;
   height: fit-content;
   mix-blend-mode: normal;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 .callout[data-callout=formula] .callout-title .callout-icon,
 .callout[data-callout=formula] .callout-title .callout-fold {
   display: none;
 }
 .callout[data-callout=formula] .callout-title {
-  background-color: rgb(from var(--callout-color) r g b/0.05) !important;
+  background-color: rgb(from var(--callout-color) r g b/0.05);
   color: var(--ctp-text);
 }
 .callout[data-callout=formula] .callout-content {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 .callout[data-callout=formula] .callout-content ul,
 .callout[data-callout=formula] .callout-content ol {
@@ -6009,7 +6035,7 @@ hr {
 }
 
 table.dataview.table-view-table > tbody > tr:hover {
-  background-color: rgba(var(--ctp-surface1), 0.1) !important;
+  background-color: rgba(var(--ctp-surface1), 0.1);
 }
 
 .loopsk-table-toggle.loopsk-table-th-highlight .markdown-preview-view:not(.cards):not(.table-disable) th,
@@ -6145,7 +6171,7 @@ table.dataview.table-view-table > tbody > tr:hover {
   white-space: pre;
 }
 .loopsk-codeblock-preview-hl-nowrap .markdown-rendered pre[class*=language-] code {
-  white-space: pre !important;
+  white-space: pre;
   overflow-x: scroll;
 }
 .loopsk-codeblock-preview-hl-nowrap .markdown-rendered pre[class*=language-] code::-webkit-scrollbar {
@@ -6232,7 +6258,7 @@ body.rainbow-tags {
 .loopsk-color-transition-toggle .workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf,
 .loopsk-color-transition-toggle .mod-root .workspace-tabs .workspace-leaf,
 .loopsk-color-transition-toggle .setting-item-name {
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out !important;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 
 .callout[data-callout=capacities-card] {
@@ -7080,7 +7106,7 @@ Icons were taken from Font Awesome: https://fontawesome.com/
 .loopsk-custom-checkboxes [data-task="/"] > p > input[type=checkbox]:checked, .loopsk-custom-checkboxes [data-task="/"][type=checkbox]:checked {
   --checkbox-color: rgba(var(--ctp-subtext0), 0.3);
   --checkbox-color-hover: rgba(var(--ctp-subtext0), 0.3);
-  border-color: rgb(var(--ctp-subtext0)) !important;
+  border-color: rgb(var(--ctp-subtext0));
 }
 .loopsk-custom-checkboxes [data-task="<"] > input[type=checkbox]:checked:after,
 .loopsk-custom-checkboxes [data-task="<"] > p > input[type=checkbox]:checked:after, .loopsk-custom-checkboxes [data-task="<"][type=checkbox]:checked:after {
@@ -7318,59 +7344,59 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   margin-right: calc(var(--checkbox-size) * 2.7);
 }
 
-.loopsk-speech-bubble [data-task="0"],
-.loopsk-speech-bubble [data-task="1"],
-.loopsk-speech-bubble [data-task="2"],
-.loopsk-speech-bubble [data-task="3"],
-.loopsk-speech-bubble [data-task="4"],
-.loopsk-speech-bubble [data-task="5"],
-.loopsk-speech-bubble [data-task="6"],
-.loopsk-speech-bubble [data-task="7"],
-.loopsk-speech-bubble [data-task="8"],
-.loopsk-speech-bubble [data-task="9"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"] {
   margin-inline-start: -15px;
-  padding: 3px 10px !important;
+  padding: 3px 10px;
   border-radius: 3px 10px 10px 10px;
   max-width: fit-content;
   color: var(--text-normal);
   --bold-color: var(--text-normal);
   --italic-color: var(--text-normal);
 }
-.loopsk-speech-bubble [data-task="0"] p,
-.loopsk-speech-bubble [data-task="1"] p,
-.loopsk-speech-bubble [data-task="2"] p,
-.loopsk-speech-bubble [data-task="3"] p,
-.loopsk-speech-bubble [data-task="4"] p,
-.loopsk-speech-bubble [data-task="5"] p,
-.loopsk-speech-bubble [data-task="6"] p,
-.loopsk-speech-bubble [data-task="7"] p,
-.loopsk-speech-bubble [data-task="8"] p,
-.loopsk-speech-bubble [data-task="9"] p {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"] p,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"] p,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"] p,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"] p,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"] p,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"] p,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"] p,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"] p,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"] p,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"] p {
   margin-top: 0;
   margin-bottom: 0;
 }
-.loopsk-speech-bubble [data-task="0"] .task-list-item-checkbox,
-.loopsk-speech-bubble [data-task="1"] .task-list-item-checkbox,
-.loopsk-speech-bubble [data-task="2"] .task-list-item-checkbox,
-.loopsk-speech-bubble [data-task="3"] .task-list-item-checkbox,
-.loopsk-speech-bubble [data-task="4"] .task-list-item-checkbox,
-.loopsk-speech-bubble [data-task="5"] .task-list-item-checkbox,
-.loopsk-speech-bubble [data-task="6"] .task-list-item-checkbox,
-.loopsk-speech-bubble [data-task="7"] .task-list-item-checkbox,
-.loopsk-speech-bubble [data-task="8"] .task-list-item-checkbox,
-.loopsk-speech-bubble [data-task="9"] .task-list-item-checkbox {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"] .task-list-item-checkbox,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"] .task-list-item-checkbox,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"] .task-list-item-checkbox,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"] .task-list-item-checkbox,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"] .task-list-item-checkbox,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"] .task-list-item-checkbox,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"] .task-list-item-checkbox,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"] .task-list-item-checkbox,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"] .task-list-item-checkbox,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"] .task-list-item-checkbox {
   display: none;
 }
-.loopsk-speech-bubble [data-task="0"]::selection,
-.loopsk-speech-bubble [data-task="1"]::selection,
-.loopsk-speech-bubble [data-task="2"]::selection,
-.loopsk-speech-bubble [data-task="3"]::selection,
-.loopsk-speech-bubble [data-task="4"]::selection,
-.loopsk-speech-bubble [data-task="5"]::selection,
-.loopsk-speech-bubble [data-task="6"]::selection,
-.loopsk-speech-bubble [data-task="7"]::selection,
-.loopsk-speech-bubble [data-task="8"]::selection,
-.loopsk-speech-bubble [data-task="9"]::selection {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"]::selection,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"]::selection,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"]::selection,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"]::selection,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"]::selection,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"]::selection,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"]::selection,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"]::selection,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"]::selection,
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"]::selection {
   background-color: rgba(var(--ctp-text), 0.2);
 }
 
@@ -7444,43 +7470,43 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   text-indent: 0px !important;
 }
 
-.loopsk-speech-bubble [data-task="0"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"] {
   background-color: rgba(var(--ctp-red), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="1"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"] {
   background-color: rgba(var(--ctp-peach), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="2"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"] {
   background-color: rgba(var(--ctp-yellow), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="3"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"] {
   background-color: rgba(var(--ctp-green), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="4"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"] {
   background-color: rgba(var(--ctp-teal), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="5"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"] {
   background-color: rgba(var(--ctp-sky), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="6"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"] {
   background-color: rgba(var(--ctp-blue), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="7"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"] {
   background-color: rgba(var(--ctp-mauve), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="8"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"] {
   background: linear-gradient(to right, rgba(var(--ctp-red), var(--loopsk-speech-bubble-opacity)), rgba(var(--ctp-yellow), var(--loopsk-speech-bubble-opacity)));
 }
 
-.loopsk-speech-bubble [data-task="9"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"] {
   background: linear-gradient(to left, rgba(var(--ctp-lavender), var(--loopsk-speech-bubble-opacity)), rgba(var(--ctp-mauve), var(--loopsk-speech-bubble-opacity)));
 }
 
@@ -7884,7 +7910,7 @@ None of the original code was used and the feature was implemented from scratch.
 }
 
 .style-settings-container .style-settings-heading[data-id=skywalker-credits] .setting-item-name {
-  color: var(--color-accent) !important;
+  color: var(--color-accent);
 }
 
 .style-settings-container .themed-color-wrapper {
@@ -8479,8 +8505,8 @@ None of the original code was used and the feature was implemented from scratch.
   --icon-fill-color: rgb(var(--ctp-base));
 }
 
-.excalidraw.theme--dark.excalidraw .App-menu__left {
-  --button-hover-bg: rgba(var(--ctp-surface2), 0.6) !important;
+body .excalidraw.theme--dark.excalidraw .App-menu__left {
+  --button-hover-bg: rgba(var(--ctp-surface2), 0.6);
 }
 
 .excalidraw .HintViewer {
@@ -8935,7 +8961,7 @@ body:not(.is-mobile):not(.loopsk-hide-status-bar) .kanban-plugin__board > div {
   width: auto;
 }
 .kanban-plugin__lane-wrapper .kanban-plugin__lane-items > .kanban-plugin__placeholder:not(:only-child) {
-  border-width: 0 !important;
+  border-width: 0;
 }
 .kanban-plugin__lane-wrapper.is-sorting .kanban-plugin__lane-items > .kanban-plugin__placeholder {
   border-color: var(--background-modifier-border);
@@ -8990,7 +9016,7 @@ body:not(.is-mobile):not(.loopsk-hide-status-bar) .kanban-plugin__board > div {
 .loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
 .kanban-plugin__item:not(.is-search-miss),
 .kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) {
-  width: 44px !important;
+  width: 44px;
 }
 .loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
 .kanban-plugin__item:not(.is-search-miss),
@@ -9097,7 +9123,7 @@ body:not(.is-mobile):not(.loopsk-hide-status-bar) .kanban-plugin__board > div {
 }
 
 .loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes .kanban-plugin__drag-container[style*="width: 54px;"] .kanban-plugin__lane-wrapper {
-  width: 44px !important;
+  width: 44px;
 }
 .loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes .kanban-plugin__drag-container[style*="width: 54px;"] .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper {
   border-width: 0;

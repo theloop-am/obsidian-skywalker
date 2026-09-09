@@ -5,7 +5,8 @@
 
     &:not([data-callout-metadata*="revert"],
         [data-callout="blank-container"],
-        [data-callout="multi-column"]) {
+        [data-callout="multi-column"],
+        [data-callout="formula"]) {
         border-left: var(--size-2-3) solid var(--callout-color);
     }
 }

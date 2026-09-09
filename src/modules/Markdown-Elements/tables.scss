@@ -31,7 +31,7 @@
 //dataview table
 table.dataview.table-view-table {
     >tbody>tr:hover {
-        background-color: rgba(var(--ctp-surface1), 0.1) !important; //!important needed since dataview uses the same
+        background-color: rgba(var(--ctp-surface1), 0.1);
     }
 }
 

@@ -48,9 +48,9 @@
 .loopsk-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
     background: var(--tab-background);
     border-radius: var(--loopsk-safari-tab-radius, 6px);
-    box-shadow: none !important;
+    box-shadow: none;
     height: var(--tab-height);
-    padding: 0 !important;
+    padding: 0;
     transition: 400ms, background-color 150ms ease-in-out;
 }
 

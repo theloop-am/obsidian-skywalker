@@ -5,7 +5,8 @@
 
     &:not([data-callout-metadata*="revert"],
         [data-callout="blank-container"],
-        [data-callout="multi-column"]) {
+        [data-callout="multi-column"],
+        [data-callout="formula"]) {
         background-color: transparent;
 
         >.callout-title {

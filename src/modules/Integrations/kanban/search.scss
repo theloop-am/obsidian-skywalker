@@ -1,5 +1,5 @@
 @mixin collapseLane {
-    width: 44px !important;
+    width: 44px;
 
     .kanban-plugin__lane-header-wrapper {
         border-width: 0;

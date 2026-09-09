@@ -7,7 +7,8 @@
     //apply to any callout with this metadata
     &:not([data-callout-metadata*="revert"],
         [data-callout="blank-container"],
-        [data-callout="multi-column"]) {
+        [data-callout="multi-column"],
+        [data-callout="formula"]) {
         //do not apply to revert or MCL metadata
         --callout-padding: 0;
         --callout-border-width: 1px;

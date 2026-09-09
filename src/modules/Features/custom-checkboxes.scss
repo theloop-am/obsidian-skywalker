@@ -343,7 +343,7 @@ Icons were taken from Font Awesome: https://fontawesome.com/
 
             --checkbox-color: rgba(var(--ctp-subtext0), 0.3);
             --checkbox-color-hover: rgba(var(--ctp-subtext0), 0.3);
-            border-color: rgb(var(--ctp-subtext0)) !important;
+            border-color: rgb(var(--ctp-subtext0));
         }
     }
 
@@ -606,18 +606,18 @@ $labels: (
     }
 }
 
-.loopsk-speech-bubble [data-task="0"],
-.loopsk-speech-bubble [data-task="1"],
-.loopsk-speech-bubble [data-task="2"],
-.loopsk-speech-bubble [data-task="3"],
-.loopsk-speech-bubble [data-task="4"],
-.loopsk-speech-bubble [data-task="5"],
-.loopsk-speech-bubble [data-task="6"],
-.loopsk-speech-bubble [data-task="7"],
-.loopsk-speech-bubble [data-task="8"],
-.loopsk-speech-bubble [data-task="9"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"],
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"] {
     margin-inline-start: -15px;
-    padding: 3px 10px !important; //hacky but it works i guess
+    padding: 3px 10px;
     border-radius: 3px 10px 10px 10px;
     max-width: fit-content;
     color: var(--text-normal);
@@ -704,45 +704,45 @@ $labels: (
     }
 }
 
-.loopsk-speech-bubble [data-task="0"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"] {
     background-color: rgba(var(--ctp-red), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="1"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"] {
     background-color: rgba(var(--ctp-peach), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="2"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"] {
     background-color: rgba(var(--ctp-yellow), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="3"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"] {
     background-color: rgba(var(--ctp-green), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="4"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"] {
     background-color: rgba(var(--ctp-teal), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="5"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"] {
     background-color: rgba(var(--ctp-sky), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="6"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"] {
     background-color: rgba(var(--ctp-blue), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="7"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"] {
     background-color: rgba(var(--ctp-mauve), var(--loopsk-speech-bubble-opacity));
 }
 
-.loopsk-speech-bubble [data-task="8"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"] {
     background: linear-gradient(to right,
             rgba(var(--ctp-red), var(--loopsk-speech-bubble-opacity)),
             rgba(var(--ctp-yellow), var(--loopsk-speech-bubble-opacity)));
 }
 
-.loopsk-speech-bubble [data-task="9"] {
+.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"] {
     background: linear-gradient(to left,
             rgba(var(--ctp-lavender), var(--loopsk-speech-bubble-opacity)),
             rgba(var(--ctp-mauve), var(--loopsk-speech-bubble-opacity)));

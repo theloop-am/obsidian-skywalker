@@ -3,7 +3,7 @@
     width: fit-content;
     height: fit-content;
     mix-blend-mode: normal;
-    background-color: transparent !important;
+    background-color: transparent;
 
     .callout-title {
 
@@ -12,12 +12,12 @@
             display: none;
         }
 
-        background-color: rgb(from var(--callout-color) r g b / 0.05) !important;
+        background-color: rgb(from var(--callout-color) r g b / 0.05);
         color: var(--ctp-text);
     }
 
     .callout-content {
-        background-color: transparent !important;
+        background-color: transparent;
 
         ul,
         ol {

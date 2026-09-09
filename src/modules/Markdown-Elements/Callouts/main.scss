@@ -34,7 +34,7 @@
     --callout-content-padding: 0;
 }
 
-.callout-content> {
+.callout .callout-content> {
 
     p,
     ul,
@@ -54,7 +54,7 @@
     h4,
     h5,
     h6 {
-        margin: 0 !important;
+        margin: 0;
     }
 }
 
