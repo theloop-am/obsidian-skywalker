@@ -11,7 +11,7 @@ settings:
     id: loopsk-theme-ext-dark
     title: Toggle extended dark theme
     type: class-toggle
-  - 
+  -
     id: catppuccin-theme-extended
     title: Light theme flavor
     description: Select your preferred light mode flavor
@@ -19,31 +19,31 @@ settings:
     allowEmpty: false
     default: ctp-nord-light
     options:
-        - 
+        -
             label: Atom
             value: ctp-atom-light
-        - 
+        -
             label: Everforest
             value: ctp-everforest-light
-        - 
+        -
             label: Gruvbox
             value: ctp-gruvbox-light
-        - 
+        -
             label: Material Mint
             value: ctp-material-mint-light
-        - 
+        -
             label: Luminescence
             value: ctp-luminescence-light
-        - 
+        -
             label: Nord
             value: ctp-nord-light
-        - 
+        -
             label: Notion
             value: ctp-notion-light
-        - 
+        -
             label: Sandy Beaches
             value: ctp-sandy-beaches-light
-  - 
+  -
     id: catppuccin-theme-dark-extended
     title: Dark theme flavor
     description: Select your preferred dark mode flavor

@@ -197,7 +197,7 @@ settings:
 -
     id: loopsk-color-overrides-header
     title: Color Overrides
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -1042,7 +1042,7 @@ settings:
 -
     id: loopsk-plugin-kanban
     title: Kanban
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -1052,7 +1052,7 @@ settings:
 -
     id: loopsk-plugin-card-settings
     title: Card Settings
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -1100,7 +1100,7 @@ settings:
 -
     id: loopsk-plugin-lane-settings
     title: Lane Settings
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -1145,34 +1145,34 @@ settings:
 -
     id: loopsk-plugin-kanban-search-settings
     title: Search Settings
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
 -
     id: loopsk-kanban-search-full
     title: Enable Full Width Search Bar
-    description: 
+    description:
     type: class-toggle
 -
     id: loopsk-kanban-collapse-lanes
     title: Collapse Lanes With No Search Results
-    description: 
+    description:
     type: class-toggle
 -
     id: loopsk-kanban-hide-cards
     title: Hide Cards That Don't Contain the Search Query
-    description: 
+    description:
     type: class-toggle
 -
     id: loopsk-kanban-hide-mark
     title: Hide Search Result Highlight in Cards
-    description: 
+    description:
     type: class-toggle
 -
     id: loopsk-kanban-uncollapse-lanes
     title: Uncollapse Lanes and Unhide Cards When Sorting
-    description: 
+    description:
     type: class-toggle
 
 # Integrations :: Minimal Cards
@@ -1294,8 +1294,8 @@ settings:
     default: true
 -
     id: loopsk-empty-tab-flat
-    title: Flat New Tab
-    description: Gives the New tab pane the same tone as the sidebars. The reading area is lifted slightly to be easier on the eye, which an empty pane does not need.
+    title: Flat panes
+    description: Gives the New tab and the graph the same tone as the sidebars. The reading area is lifted slightly to be easier on the eye, which a pane holding no text does not need.
     type: class-toggle
     default: true
 -
@@ -1333,7 +1333,7 @@ settings:
 -
     id: loopsk-font-families-header
     title: Font Families
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -1358,7 +1358,7 @@ settings:
 -
     id: loopsk-font-weight-header
     title: Font Weights
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -1503,7 +1503,7 @@ settings:
 -
     id: loopsk-header-header
     title: Headings
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -1535,7 +1535,7 @@ settings:
 -
     id: loopsk-h1-header
     title: H1
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -1619,7 +1619,7 @@ settings:
 -
     id: loopsk-h2-header
     title: H2
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -1703,7 +1703,7 @@ settings:
 -
     id: loopsk-h3-header
     title: H3
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -1787,7 +1787,7 @@ settings:
 -
     id: loopsk-h4-header
     title: H4
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -1871,7 +1871,7 @@ settings:
 -
     id: loopsk-h5-header
     title: H5
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -1955,7 +1955,7 @@ settings:
 -
     id: loopsk-h6-header
     title: H6
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -2039,7 +2039,7 @@ settings:
 -
     id: loopsk-comment-header
     title: Comments
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -2059,7 +2059,7 @@ settings:
 -
     id: loopsk-decor-header
     title: Text Decoration
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -2256,7 +2256,7 @@ settings:
 -
     id: colorful-frame
     title: Colorful Frame
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -2336,7 +2336,7 @@ settings:
 -
     id: loopsk-pdf-viewer-header
     title: PDF Viewer
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -2356,7 +2356,7 @@ settings:
 -
     id: loopsk-rainbow-section-header
     title: Rainbow Folders
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -2388,7 +2388,7 @@ settings:
 -
     id: loopsk-full-rainbow-folder-settings
     title: Full Folder Settings
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -2416,7 +2416,7 @@ settings:
 -
     id: loopsk-simple-rainbow-folder-settings
     title: Simple Folder Settings
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -2446,7 +2446,7 @@ settings:
 -
     id: loopsk-stacked-tabs-header
     title: Stacked Tabs
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -2493,7 +2493,7 @@ settings:
 -
     id: loopsk-alt-tab-header
     title: Tabs
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -2592,7 +2592,7 @@ settings:
 -
     id: loopsk-safari-vanilla-tab-header
     title: Vanilla Safari-style Tab Settings
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -2606,7 +2606,7 @@ settings:
 -
     id: loopsk-translucency-header
     title: Translucency
-    description: 
+    description:
     type: heading
     level: 2
     collapsed: true
@@ -2656,7 +2656,7 @@ settings:
 -
     id: loopsk-layout-card
     title: Card Layout Settings
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -2693,7 +2693,7 @@ settings:
 -
     id: loopsk-layout-border
     title: Border Layout Settings
-    description: 
+    description:
     type: heading
     level: 3
     collapsed: true
@@ -3993,13 +3993,21 @@ input.slider,
   background-color: rgba(var(--ctp-text), 0.075);
 }
 
-/*-New tab uses the sidebar tone-*/
+/*-Panes with nothing to read use the sidebar tone-*/
 /* --background-primary lifts the reading area a little off the sidebars so text
-   is easier on the eye. The New tab pane holds no text, so it gets no benefit
-   from that lift - it just shows as a lighter rectangle in the middle of an
-   otherwise even window. */
+   is easier on the eye. A pane holding no text gets no benefit from that lift -
+   it just shows as a lighter rectangle in the middle of an otherwise even
+   window. The graph is the same case as the New tab: nodes, not prose. */
 .loopsk-empty-tab-flat .workspace-leaf-content[data-type=empty],
 .loopsk-empty-tab-flat .workspace-leaf-content[data-type=empty] .view-content {
+  background-color: var(--background-secondary);
+}
+.loopsk-empty-tab-flat .workspace-leaf-content[data-type=graph],
+.loopsk-empty-tab-flat .workspace-leaf-content[data-type=graph] .view-content {
+  background-color: var(--background-secondary);
+}
+.loopsk-empty-tab-flat .workspace-leaf-content[data-type=localgraph],
+.loopsk-empty-tab-flat .workspace-leaf-content[data-type=localgraph] .view-content {
   background-color: var(--background-secondary);
 }
 
@@ -4120,11 +4128,11 @@ body.is-translucent {
 .loopsk-autohide-titlebar:not(.is-mobile) {
   /**
   * This should fix the drag/click titlebar issue.
-  * 
+  *
   * Invisible boxes are not rendered (as if they were fully transparent),
   * cannot be interacted with (and behave as if they had pointer-events: none),
   * and are removed from navigation (similar to display: none).
-  * 
+  *
   * @see: https://drafts.csswg.org/css-display/#visibility
   */
 }
