@@ -998,7 +998,7 @@ settings:
 -
     id: loopsk-plugin-header
     title: Integrations
-    description: Kanban, Notebook Navigator, Minimal Cards Snippet, etc.
+    description: Kanban, Notebook Navigator, Excalidraw, etc.
     type: heading
     level: 1
     collapsed: true
@@ -1156,58 +1156,6 @@ settings:
     title: Uncollapse Lanes and Unhide Cards When Sorting
     description:
     type: class-toggle
-
-# Integrations :: Minimal Cards
-
--
-    id: loopsk-snippet-minimal-cards
-    title: Minimal Cards
-    type: heading
-    level: 2
-    collapsed: true
--
-    id: loopsk-snippet-minimal-cards-disc
-    title: Usage
-    description: "Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). This theme does not come compiled with the snippet, however you can use a compiled version with this theme."
-    type: info-text
-    markdown: true
--
-    id: skywalker-url-minimal-cards-snippet
-    title: Minimal Cards Snippet
-    description: "Download the snippet from [kepano](https://github.com/kepano/)'s github via [this link](https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss)."
-    type: info-text
-    markdown: true
--
-    id: cards-min-width
-    title: Card minimum width
-    type: variable-text
-    default: 180px
--
-    id: cards-max-width
-    title: Card maximum width
-    description: Default fills the available width, accepts valid CSS units
-    type: variable-text
-    default: 1fr
--
-    id: cards-mobile-width
-    title: Card minimum width on mobile
-    type: variable-text
-    default: 120px
--
-    id: cards-padding
-    title: Card padding
-    type: variable-text
-    default: 1.2em
--
-    id: cards-image-height
-    title: Card maximum image height
-    type: variable-text
-    default: 400px
--
-    id: cards-border-width
-    title: Card border width
-    type: variable-text
-    default: 1px
 
 # Miscellaneous
 

@@ -82,8 +82,7 @@
     margin-top: 0;
 }
 
-.style-settings-container .setting-item:is([data-id="loopsk-snippet-minimal-cards-disc"],
-    [data-id="loopsk-background-image-light"],
+.style-settings-container .setting-item:is([data-id="loopsk-background-image-light"],
     [data-id="loopsk-background-image-dark"]) .setting-item-description>div {
     display: none;
 }
@@ -191,8 +190,6 @@ $linkEmojis: (
     // handshake
     "skywalker-url-submit-issue": '\1f41e',
     // bug
-    "skywalker-url-minimal-cards-snippet": '\2b07',
-    //down
 );
 
 @each $link-data, $link-emoji in $linkEmojis {

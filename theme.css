@@ -1016,7 +1016,7 @@ settings:
 -
     id: loopsk-plugin-header
     title: Integrations
-    description: Kanban, Notebook Navigator, Minimal Cards Snippet, etc.
+    description: Kanban, Notebook Navigator, Excalidraw, etc.
     type: heading
     level: 1
     collapsed: true
@@ -1174,58 +1174,6 @@ settings:
     title: Uncollapse Lanes and Unhide Cards When Sorting
     description:
     type: class-toggle
-
-# Integrations :: Minimal Cards
-
--
-    id: loopsk-snippet-minimal-cards
-    title: Minimal Cards
-    type: heading
-    level: 2
-    collapsed: true
--
-    id: loopsk-snippet-minimal-cards-disc
-    title: Usage
-    description: "Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). This theme does not come compiled with the snippet, however you can use a compiled version with this theme."
-    type: info-text
-    markdown: true
--
-    id: skywalker-url-minimal-cards-snippet
-    title: Minimal Cards Snippet
-    description: "Download the snippet from [kepano](https://github.com/kepano/)'s github via [this link](https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss)."
-    type: info-text
-    markdown: true
--
-    id: cards-min-width
-    title: Card minimum width
-    type: variable-text
-    default: 180px
--
-    id: cards-max-width
-    title: Card maximum width
-    description: Default fills the available width, accepts valid CSS units
-    type: variable-text
-    default: 1fr
--
-    id: cards-mobile-width
-    title: Card minimum width on mobile
-    type: variable-text
-    default: 120px
--
-    id: cards-padding
-    title: Card padding
-    type: variable-text
-    default: 1.2em
--
-    id: cards-image-height
-    title: Card maximum image height
-    type: variable-text
-    default: 400px
--
-    id: cards-border-width
-    title: Card border width
-    type: variable-text
-    default: 1px
 
 # Miscellaneous
 
@@ -6386,57 +6334,6 @@ body.rainbow-tags {
   display: none;
 }
 
-/*-------Tweak for Minimal Cards--------------
-Minimal cards are a snippet designed by Kepano for the Minimal theme.
-None of the original code was used in this theme, and the following code is merely some tweaks to the snippet.
---------------------------------------------*/
-.cards .table-view-table > tbody > tr > td:last-child {
-  border-bottom-color: transparent !important;
-  /*-No border for last cell-*/
-}
-.cards .table-view-table > tbody > tr > td:first-child {
-  width: 100% !important;
-  /*-Max width for first cell-*/
-  border-bottom: 1px dashed var(--background-modifier-border) !important;
-  /*-Border for first table that spans to the end because of max width-*/
-}
-.cards .table-view-table > tbody > tr > td:first-child span {
-  margin: 2px calc(var(--cards-padding) * 0.5) 0 calc(var(--cards-padding) * 0.5);
-  /*-Add padding to text-*/
-}
-.cards .table-view-table > tbody > tr > td:first-child span a {
-  padding: 0 !important;
-  /*-0 padding on link-*/
-}
-.cards .table-view-table > tbody > tr > td:not(:last-child):not(:first-child) > .el-p.el-p.el-p:not(:has(.image-embed)) {
-  border-bottom: 1px dashed var(--background-modifier-border);
-}
-.cards:not([class*=cards-cols-]) {
-  --cards-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
-  /*-force card width to be obeyed on notes not having cards-cols css class-*/
-}
-
-.cards.cards-bookmark .table-view-table .table-view-tbody tr::after {
-  --text-normal: var(--text-muted);
-  content: " ";
-  width: 25px;
-  height: 25px;
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--!  --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
-  /*-SVG for bookmark-*/
-  -webkit-mask-repeat: no-repeat;
-  background-color: var(--color-accent);
-  /*-Bookmark follows accent color-*/
-  position: absolute;
-  margin-top: calc(-2px + -1 * var(--cards-border-width));
-  /*-Bookmark is a bit higher than the card-*/
-  margin-left: 5px;
-  /*-Bookmark is 5px from the left*/
-}
-.cards.cards-bookmark .table-view-table tbody tr > td:first-child span {
-  margin: 2px calc(var(--cards-padding) * 0.5) 0 calc(var(--cards-padding) * 0.5 + 20px);
-  /*-Shift first cell title to the left by about 20px-*/
-}
-
 /*---------------COLORFUL FRAME--------------*/
 /*----------------------------------
 This feature is inspired by Kepano's Minimal theme: https://github.com/kepano/obsidian-minimal
@@ -7922,8 +7819,7 @@ None of the original code was used and the feature was implemented from scratch.
   margin-top: 0;
 }
 
-.style-settings-container .setting-item:is([data-id=loopsk-snippet-minimal-cards-disc],
-[data-id=loopsk-background-image-light],
+.style-settings-container .setting-item:is([data-id=loopsk-background-image-light],
 [data-id=loopsk-background-image-dark]) .setting-item-description > div {
   display: none;
 }
@@ -8026,10 +7922,6 @@ None of the original code was used and the feature was implemented from scratch.
 
 .setting-item[data-id=skywalker-url-submit-issue] .setting-item-name::before {
   content: " 🐞";
-}
-
-.setting-item[data-id=skywalker-url-minimal-cards-snippet] .setting-item-name::before {
-  content: " ⬇";
 }
 
 .setting-item:is([data-id*=skywalker-theme-settings]) > .setting-item-info > .setting-item-name {
