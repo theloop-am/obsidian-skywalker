@@ -1,0 +1,23 @@
+{
+  "name": "obsidian-skywalker",
+  "version": "0.1.0",
+  "description": "Skywalker, a theme for Obsidian.",
+  "author": "theLOOP (https://github.com/theloop-am)",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theloop-am/obsidian-skywalker.git"
+  },
+  "scripts": {
+    "build": "sass src/base.scss theme.css --no-source-map --style=expanded",
+    "watch": "sass --watch src/base.scss theme.css --no-source-map --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "1.104.0",
+    "stylelint": "17.15.0",
+    "stylelint-config-standard-scss": "17.0.0",
+    "stylelint-no-unsupported-browser-features": "8.1.2"
+  }
+}

@@ -1,4 +1,8 @@
 .DS_Store
 *.css.map
 backup/
-.vscode/
+.vscode/node_modules/
+
+# Working notes and agent instructions for this repository.
+notes/
+.claude/
