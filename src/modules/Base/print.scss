@@ -61,7 +61,6 @@
     .anp-print .print,
     body.anp-print,
     .anp-print .markdown-rendered,
-    :root:has(.anp-print),
     :root {
         background-color: rgb(var(--ctp-base));
     }
