@@ -68,7 +68,7 @@ body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__placeholder
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item {
   border: none;
   box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
-  transition: background var(--kanban-transition) !important;
+  transition: background var(--kanban-transition);
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item.is-complete .kanban-plugin__item-markdown {
   text-decoration: line-through;
@@ -76,21 +76,21 @@ body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrappe
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item .kanban-plugin__item-content-wrapper {
   background: var(--notion-kanban-card);
-  transition: background var(--kanban-transition) !important;
+  transition: background var(--kanban-transition);
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item .kanban-plugin__item-content-wrapper .kanban-plugin__item-title-wrapper {
   background: var(--notion-kanban-darken);
-  transition: background var(--kanban-transition) !important;
+  transition: background var(--kanban-transition);
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item .kanban-plugin__item-content-wrapper .kanban-plugin__item-title-wrapper .kanban-plugin__item-prefix-button-wrapper {
   margin-right: 6px;
   box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
   border-radius: 3px;
   background: var(--notion-kanban-card);
-  transition: background var(--kanban-transition) !important;
+  transition: background var(--kanban-transition);
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item .kanban-plugin__item-content-wrapper .kanban-plugin__item-title-wrapper .kanban-plugin__item-prefix-button-wrapper:hover {
-  transition: background var(--kanban-transition) !important;
+  transition: background var(--kanban-transition);
   background: var(--notion-kanban-card-hover);
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item .kanban-plugin__item-content-wrapper .kanban-plugin__item-title-wrapper .kanban-plugin__item-prefix-button-wrapper:hover .kanban-plugin__item-prefix-button {
@@ -124,14 +124,14 @@ body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrappe
   rotate: 90deg;
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item:hover {
-  transition: background var(--kanban-transition) !important;
+  transition: background var(--kanban-transition);
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item:hover .kanban-plugin__item-content-wrapper {
-  transition: background var(--kanban-transition) !important;
+  transition: background var(--kanban-transition);
   background-color: var(--notion-kanban-card-hover);
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item:hover .kanban-plugin__item-content-wrapper .kanban-plugin__item-title-wrapper {
-  transition: background var(--kanban-transition) !important;
+  transition: background var(--kanban-transition);
   background-color: var(--notion-kanban-darken-hover);
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item:hover .kanban-plugin__item-content-wrapper .kanban-plugin__item-postfix-button-wrapper {

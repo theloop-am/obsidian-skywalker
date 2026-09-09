@@ -241,7 +241,7 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 }
 
 .loopsk-colorful-frame .sidebar-toggle-button {
-    padding: var(--size-4-1) !important;
+    padding: var(--size-4-1);
     background-color: var(--background-primary);
     --tab-container-background: var(--background-primary) !important;
     height: calc(var(--header-height) - 5px);

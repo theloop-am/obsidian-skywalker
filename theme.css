@@ -3060,14 +3060,13 @@ settings:
 }
 
 /*------------------AMOLED Toggle-------------------*/
-/* Overrides the --ctp-ext-* layer, so it applies on top of any flavour. */
 .theme-dark.loopsk-theme-amoled {
-  --ctp-ext-surface2: 80, 80, 80 !important;
-  --ctp-ext-surface1: 50, 50, 50 !important;
-  --ctp-ext-surface0: 30, 30, 30 !important;
-  --ctp-ext-base: 10, 10, 10 !important;
-  --ctp-ext-mantle: 5, 5, 5 !important;
-  --ctp-ext-crust: 0, 0, 0 !important;
+  --ctp-ext-surface2: 80, 80, 80;
+  --ctp-ext-surface1: 50, 50, 50;
+  --ctp-ext-surface0: 30, 30, 30;
+  --ctp-ext-base: 10, 10, 10;
+  --ctp-ext-mantle: 5, 5, 5;
+  --ctp-ext-crust: 0, 0, 0;
 }
 
 /*------------------Selecting Accents-------------------*/
@@ -6564,7 +6563,7 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 }
 
 .loopsk-colorful-frame .sidebar-toggle-button {
-  padding: var(--size-4-1) !important;
+  padding: var(--size-4-1);
   background-color: var(--background-primary);
   --tab-container-background: var(--background-primary) !important;
   height: calc(var(--header-height) - 5px);
@@ -7606,28 +7605,6 @@ None of the original code was used and the feature was implemented from scratch.
 .loopsk-file-icons .nav-file .nav-file-title[data-path$=".loom"]::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v18'/%3E%3Crect width='18' height='18' x='3' y='3' rx='2'/%3E%3Cpath d='M3 9h18M3 15h18'/%3E%3C/svg%3E");
   -webkit-mask-repeat: no-repeat;
-}
-
-/*--------------DISABLING IN-FRONTMATTER---------------*/
-.heading-normal-toggle {
-  --h1-color: var(--text-normal) !important;
-  --h2-color: var(--text-normal) !important;
-  --h3-color: var(--text-normal) !important;
-  --h4-color: var(--text-normal) !important;
-  --h5-color: var(--text-normal) !important;
-  --h6-color: var(--text-normal) !important;
-}
-
-.decorations-normal-toggle,
-.decorations-normal-toggle.markdown-rendered {
-  --bold-color: var(--text-normal) !important;
-  --italic-color: var(--text-normal) !important;
-}
-
-.decorations-normal-toggle.markdown-rendered .table-view-table,
-.decorations-normal-toggle.is-live-preview .table-view-table {
-  --bold-color: var(--text-muted) !important;
-  --italic-color: var(--text-muted) !important;
 }
 
 /*===============================================================
