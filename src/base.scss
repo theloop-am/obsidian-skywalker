@@ -16,9 +16,9 @@ version 3, as published by the Free Software Foundation. It comes
 with ABSOLUTELY NO WARRANTY. See LICENSE for the full text.
 *===============================================================*/
 
-@import "modules/Core/index.scss";
-@import "modules/Base/index.scss";
-@import "modules/Workspace/index.scss";
-@import "modules/Markdown-Elements/index.scss";
-@import "modules/Features/index.scss";
-@import "modules/Integrations/index.scss";
+@use "modules/Core/index.scss";
+@use "modules/Base/index.scss" as index2;
+@use "modules/Workspace/index.scss" as index3;
+@use "modules/Markdown-Elements/index.scss" as index4;
+@use "modules/Features/index.scss" as index5;
+@use "modules/Integrations/index.scss" as index6;

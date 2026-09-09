@@ -1,31 +1,33 @@
 /*------------------Defining Colorschemes-------------------*/
-@import "colorschemes/latte.scss";
-@import "colorschemes/rosepine-light.scss";
-@import "colorschemes/frappe.scss";
-@import "colorschemes/macchiato.scss";
-@import "colorschemes/mocha.scss";
-@import "colorschemes/mocha-old.scss";
-@import "colorschemes/solarized-light.scss";
-@import "colorschemes/flexoki-dark.scss";
-@import "colorschemes/amoled-dark.scss";
-$theme-list: $theme-latte, $theme-rosepine-light, $theme-solarized-light, $theme-frappe, $theme-macchiato, $theme-mocha, $theme-mocha-old, $theme-flexoki-dark, $theme-amoled-dark;
+@use "sass:color";
+@use "sass:map";
+@use "colorschemes/latte.scss";
+@use "colorschemes/rosepine-light.scss";
+@use "colorschemes/frappe.scss";
+@use "colorschemes/macchiato.scss";
+@use "colorschemes/mocha.scss";
+@use "colorschemes/mocha-old.scss";
+@use "colorschemes/solarized-light.scss";
+@use "colorschemes/flexoki-dark.scss";
+@use "colorschemes/amoled-dark.scss";
+$theme-list: latte.$theme-latte, rosepine-light.$theme-rosepine-light, solarized-light.$theme-solarized-light, frappe.$theme-frappe, macchiato.$theme-macchiato, mocha.$theme-mocha, mocha-old.$theme-mocha-old, flexoki-dark.$theme-flexoki-dark, amoled-dark.$theme-amoled-dark;
 $color-list: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender", "text", "subtext1", "subtext0", "overlay2", "overlay1", "overlay0", "surface2", "surface1", "surface0", "base", "mantle", "crust";
 
 @each $theme-name in $theme-list {
-  .theme-#{map-get($theme-name, theme-mode)}.ctp-#{map-get($theme-name, theme-name)}, .ctp-#{map-get($theme-name, theme-name)} .themed-color-wrapper > .theme-#{map-get($theme-name, theme-mode)} {
+  .theme-#{map.get($theme-name, theme-mode)}.ctp-#{map.get($theme-name, theme-name)}, .ctp-#{map.get($theme-name, theme-name)} .themed-color-wrapper > .theme-#{map.get($theme-name, theme-mode)} {
     @each $color-name in $color-list {
-      --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{red(map-get($theme-name, ctp-#{$color-name}))}, #{green(map-get($theme-name, ctp-#{$color-name}))}, #{blue(map-get($theme-name, ctp-#{$color-name}))}));
+      --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{color.channel(map.get($theme-name, ctp-#{$color-name}), "red", $space: rgb)}, #{color.channel(map.get($theme-name, ctp-#{$color-name}), "green", $space: rgb)}, #{color.channel(map.get($theme-name, ctp-#{$color-name}), "blue", $space: rgb)}));
     }
   }
 }
 .theme-dark {
   @each $color-name in $color-list {
-    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{red(map-get($theme-flexoki-dark, ctp-#{$color-name}))}, #{green(map-get($theme-flexoki-dark, ctp-#{$color-name}))}, #{blue(map-get($theme-flexoki-dark, ctp-#{$color-name}))}));
+    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "red", $space: rgb)}, #{color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "green", $space: rgb)}, #{color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "blue", $space: rgb)}));
   }
 }
 .theme-light {
   @each $color-name in $color-list {
-    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{red(map-get($theme-solarized-light, ctp-#{$color-name}))}, #{green(map-get($theme-solarized-light, ctp-#{$color-name}))}, #{blue(map-get($theme-solarized-light, ctp-#{$color-name}))}));
+    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "red", $space: rgb)}, #{color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "green", $space: rgb)}, #{color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "blue", $space: rgb)}));
   }
 }
 

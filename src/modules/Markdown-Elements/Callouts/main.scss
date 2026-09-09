@@ -1,3 +1,4 @@
+@use "sass:meta";
 /*----------------CALLOUTS-------------------*/
 .callout:not([data-callout-metadata*="revert"]) {
     //targets callouts that dont have revert metadata
@@ -57,7 +58,7 @@
     }
 }
 
-@import "styles/block.scss";
-@import "styles/sleek.scss";
-@import "styles/vanilla-normal.scss";
-@import "styles/vanilla-plus.scss";
+@include meta.load-css("styles/block.scss");
+@include meta.load-css("styles/sleek.scss");
+@include meta.load-css("styles/vanilla-normal.scss");
+@include meta.load-css("styles/vanilla-plus.scss");
