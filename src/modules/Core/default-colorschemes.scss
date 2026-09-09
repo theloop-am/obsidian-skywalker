@@ -1,5 +1,6 @@
 /*------------------Defining Colorschemes-------------------*/
 @use "sass:color";
+@use "sass:math";
 @use "sass:map";
 @use "colorschemes/latte.scss";
 @use "colorschemes/rosepine-light.scss";
@@ -16,18 +17,18 @@ $color-list: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 @each $theme-name in $theme-list {
   .theme-#{map.get($theme-name, theme-mode)}.ctp-#{map.get($theme-name, theme-name)}, .ctp-#{map.get($theme-name, theme-name)} .themed-color-wrapper > .theme-#{map.get($theme-name, theme-mode)} {
     @each $color-name in $color-list {
-      --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{color.channel(map.get($theme-name, ctp-#{$color-name}), "red", $space: rgb)}, #{color.channel(map.get($theme-name, ctp-#{$color-name}), "green", $space: rgb)}, #{color.channel(map.get($theme-name, ctp-#{$color-name}), "blue", $space: rgb)}));
+      --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{math.round(color.channel(map.get($theme-name, ctp-#{$color-name}), "red", $space: rgb))}, #{math.round(color.channel(map.get($theme-name, ctp-#{$color-name}), "green", $space: rgb))}, #{math.round(color.channel(map.get($theme-name, ctp-#{$color-name}), "blue", $space: rgb))}));
     }
   }
 }
 .theme-dark {
   @each $color-name in $color-list {
-    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "red", $space: rgb)}, #{color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "green", $space: rgb)}, #{color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "blue", $space: rgb)}));
+    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{math.round(color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "red", $space: rgb))}, #{math.round(color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "green", $space: rgb))}, #{math.round(color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "blue", $space: rgb))}));
   }
 }
 .theme-light {
   @each $color-name in $color-list {
-    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "red", $space: rgb)}, #{color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "green", $space: rgb)}, #{color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "blue", $space: rgb)}));
+    --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{math.round(color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "red", $space: rgb))}, #{math.round(color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "green", $space: rgb))}, #{math.round(color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "blue", $space: rgb))}));
   }
 }
 

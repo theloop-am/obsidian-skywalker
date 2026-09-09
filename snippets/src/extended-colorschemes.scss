@@ -10,7 +10,7 @@ settings:
     id: loopsk-theme-ext-dark
     title: Toggle extended dark theme
     type: class-toggle
-  - 
+  -
     id: catppuccin-theme-extended
     title: Light theme flavor
     description: Select your preferred light mode flavor
@@ -18,31 +18,31 @@ settings:
     allowEmpty: false
     default: ctp-nord-light
     options:
-        - 
+        -
             label: Atom
             value: ctp-atom-light
-        - 
+        -
             label: Everforest
             value: ctp-everforest-light
-        - 
+        -
             label: Gruvbox
             value: ctp-gruvbox-light
-        - 
+        -
             label: Material Mint
             value: ctp-material-mint-light
-        - 
+        -
             label: Luminescence
             value: ctp-luminescence-light
-        - 
+        -
             label: Nord
             value: ctp-nord-light
-        - 
+        -
             label: Notion
             value: ctp-notion-light
-        - 
+        -
             label: Sandy Beaches
             value: ctp-sandy-beaches-light
-  - 
+  -
     id: catppuccin-theme-dark-extended
     title: Dark theme flavor
     description: Select your preferred dark mode flavor
@@ -103,46 +103,49 @@ settings:
             value: ctp-thorns
 */
 
-@import "ext-colorschemes/atom-dark.scss";
-@import "ext-colorschemes/atom-light.scss";
-@import "ext-colorschemes/biscuit-dark.scss";
-@import "ext-colorschemes/coffee-dark.scss";
-@import "ext-colorschemes/dracula.scss";
-@import "ext-colorschemes/everforest-light.scss";
-@import "ext-colorschemes/everforest-dark.scss";
-@import "ext-colorschemes/generic-dark.scss";
-@import "ext-colorschemes/gruvbox-dark.scss";
-@import "ext-colorschemes/gruvbox-light.scss";
-@import "ext-colorschemes/kanagawa-dark.scss";
-@import "ext-colorschemes/luminscence-light.scss";
-@import "ext-colorschemes/nord-dark.scss";
-@import "ext-colorschemes/nord-light.scss";
-@import "ext-colorschemes/nord-darker.scss";
-@import "ext-colorschemes/notion-light.scss";
-@import "ext-colorschemes/notion-dark.scss";
-@import "ext-colorschemes/rosebox.scss";
-@import "ext-colorschemes/rosepine-dark.scss";
-@import "ext-colorschemes/royal-velvet.scss";
-@import "ext-colorschemes/sandy-beaches-light.scss";
-@import "ext-colorschemes/solarized-dark.scss";
-@import "ext-colorschemes/thorns.scss";
-@import "ext-colorschemes/material-mint-light.scss";
-@import "ext-colorschemes/material-mint-dark.scss";
+@use "sass:color";
+@use "sass:math";
+@use "sass:map";
+@use "ext-colorschemes/atom-dark.scss";
+@use "ext-colorschemes/atom-light.scss";
+@use "ext-colorschemes/biscuit-dark.scss";
+@use "ext-colorschemes/coffee-dark.scss";
+@use "ext-colorschemes/dracula.scss";
+@use "ext-colorschemes/everforest-light.scss";
+@use "ext-colorschemes/everforest-dark.scss";
+@use "ext-colorschemes/generic-dark.scss";
+@use "ext-colorschemes/gruvbox-dark.scss";
+@use "ext-colorschemes/gruvbox-light.scss";
+@use "ext-colorschemes/kanagawa-dark.scss";
+@use "ext-colorschemes/luminscence-light.scss";
+@use "ext-colorschemes/nord-dark.scss";
+@use "ext-colorschemes/nord-light.scss";
+@use "ext-colorschemes/nord-darker.scss";
+@use "ext-colorschemes/notion-light.scss";
+@use "ext-colorschemes/notion-dark.scss";
+@use "ext-colorschemes/rosebox.scss";
+@use "ext-colorschemes/rosepine-dark.scss";
+@use "ext-colorschemes/royal-velvet.scss";
+@use "ext-colorschemes/sandy-beaches-light.scss";
+@use "ext-colorschemes/solarized-dark.scss";
+@use "ext-colorschemes/thorns.scss";
+@use "ext-colorschemes/material-mint-light.scss";
+@use "ext-colorschemes/material-mint-dark.scss";
 
 $ext-color-list: "rosewater", "flamingo", "pink", "mauve", "red", "maroon",
 	"peach", "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender",
 	"text", "subtext1", "subtext0", "overlay2", "overlay1", "overlay0", "surface2",
 	"surface1", "surface0", "base", "mantle", "crust";
 
-$ext-theme-list: $theme-atom-light, $theme-atom-dark,
-	$theme-biscuit-dark, $theme-coffee-dark, $theme-dracula,
-	$theme-everforest-light, $theme-everforest-dark,
-	$theme-generic-dark, $theme-gruvbox-dark, $theme-gruvbox-light,
-	$theme-kanagawa-dark, $theme-luminescence-light, $theme-material-mint-light,
-	$theme-material-mint-dark, $theme-nord-dark, $theme-nord-darker,
-	$theme-nord-light, $theme-notion-light, $theme-notion-dark, $theme-rosebox,
-	$theme-rosepine-dark, $theme-royal-velvet, $theme-sandy-beaches-light,
-	$theme-solarized-dark, $theme-thorns;
+$ext-theme-list: atom-light.$theme-atom-light, atom-dark.$theme-atom-dark,
+	biscuit-dark.$theme-biscuit-dark, coffee-dark.$theme-coffee-dark, dracula.$theme-dracula,
+	everforest-light.$theme-everforest-light, everforest-dark.$theme-everforest-dark,
+	generic-dark.$theme-generic-dark, gruvbox-dark.$theme-gruvbox-dark, gruvbox-light.$theme-gruvbox-light,
+	kanagawa-dark.$theme-kanagawa-dark, luminscence-light.$theme-luminescence-light, material-mint-light.$theme-material-mint-light,
+	material-mint-dark.$theme-material-mint-dark, nord-dark.$theme-nord-dark, nord-darker.$theme-nord-darker,
+	nord-light.$theme-nord-light, notion-light.$theme-notion-light, notion-dark.$theme-notion-dark, rosebox.$theme-rosebox,
+	rosepine-dark.$theme-rosepine-dark, royal-velvet.$theme-royal-velvet, sandy-beaches-light.$theme-sandy-beaches-light,
+	solarized-dark.$theme-solarized-dark, thorns.$theme-thorns;
 
 .theme-dark.loopsk-theme-ext-dark.ctp-rosebox {
 	--ctp-accent: 165, 117, 98;
@@ -180,18 +183,18 @@ $ext-theme-list: $theme-atom-light, $theme-atom-dark,
 
 @each $theme-name in $ext-theme-list {
 
-	.theme-#{map-get($theme-name, theme-mode)}.loopsk-theme-ext-#{map-get($theme-name, theme-mode)}.ctp-#{map-get($theme-name, theme-name)},
-	.loopsk-theme-ext-#{map-get($theme-name, theme-mode)}.ctp-#{map-get($theme-name, theme-name)} .themed-color-wrapper>.theme-#{map-get($theme-name, theme-mode)} {
+	.theme-#{map.get($theme-name, theme-mode)}.loopsk-theme-ext-#{map.get($theme-name, theme-mode)}.ctp-#{map.get($theme-name, theme-name)},
+	.loopsk-theme-ext-#{map.get($theme-name, theme-mode)}.ctp-#{map.get($theme-name, theme-name)} .themed-color-wrapper>.theme-#{map.get($theme-name, theme-mode)} {
 		@each $color-name in $ext-color-list {
-			--ctp-ext-#{$color-name}: #{red(map-get($theme-name, ctp-#{$color-name}))
+			--ctp-ext-#{$color-name}: #{math.round(color.channel(map.get($theme-name, ctp-#{$color-name}), "red", $space: rgb))
 		}
 
 		,
-		#{green(map-get($theme-name, ctp-#{$color-name}))
+		#{math.round(color.channel(map.get($theme-name, ctp-#{$color-name}), "green", $space: rgb))
 	}
 
 	,
-	#{blue(map-get($theme-name, ctp-#{$color-name}))
+	#{math.round(color.channel(map.get($theme-name, ctp-#{$color-name}), "blue", $space: rgb))
 }
 
 ;

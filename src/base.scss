@@ -16,6 +16,8 @@ version 3, as published by the Free Software Foundation. It comes
 with ABSOLUTELY NO WARRANTY. See LICENSE for the full text.
 *===============================================================*/
 
+// Every module is loaded for its CSS, not its members, but Sass still wants a
+// distinct namespace per load and they are all called index.
 @use "modules/Core/index.scss";
 @use "modules/Base/index.scss" as index2;
 @use "modules/Workspace/index.scss" as index3;
