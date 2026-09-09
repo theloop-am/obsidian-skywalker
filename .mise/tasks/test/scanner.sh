@@ -6,4 +6,4 @@ set -euo pipefail
 # Warnings here are the directory's own advice - !important, :has(), features the
 # engine does not carry - so they are reported rather than fatal. What is fatal
 # lives in test:assets, because that one is a rule and not advice.
-exec stylelint theme.css "snippets/*.css" "$@"
+exec node_modules/.bin/stylelint theme.css "snippets/*.css" "$@"

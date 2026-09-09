@@ -3,4 +3,4 @@
 #MISE dir="{{config_root}}"
 set -euo pipefail
 
-exec stylelint --config .stylelintrc.scss.json "src/**/*.scss" "snippets/src/**/*.scss" "$@"
+exec node_modules/.bin/stylelint --config .stylelintrc.scss.json "src/**/*.scss" "snippets/src/**/*.scss" "$@"
