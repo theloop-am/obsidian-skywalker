@@ -15,8 +15,8 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 
 @for $i from 1 through 6 {
     @each $accent in $accents {
-        .anp-header-color-toggle {
-            &.anp-h#{$i}-#{$accent} {
+        .loopsk-header-color-toggle {
+            &.loopsk-h#{$i}-#{$accent} {
 
                 .app-container,
                 .print {
@@ -26,7 +26,7 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
         }
     }
 
-    .anp-h#{$i}-divider {
+    .loopsk-h#{$i}-divider {
 
         .markdown-rendered h#{$i},
         .HyperMD-header-#{$i} {
@@ -34,7 +34,7 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
             padding-bottom: 2px;
         }
 
-        &.anp-header-divider-color-toggle {
+        &.loopsk-header-divider-color-toggle {
 
             .markdown-rendered h#{$i},
             .HyperMD-header-#{$i} {
@@ -50,12 +50,12 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 
 // Source editor recolor application
 @for $i from 1 through 6 {
-    .anp-header-margin-toggle {
+    .loopsk-header-margin-toggle {
 
         .cm-header-#{$i},
         .markdown-preview-view h#{$i} {
-            margin-block-start: var(--anp-header-margin-value);
-            margin-block-end: var(--anp-header-margin-value);
+            margin-block-start: var(--loopsk-header-margin-value);
+            margin-block-end: var(--loopsk-header-margin-value);
         }
     }
 }
@@ -65,11 +65,11 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     display: inline-block;
 }
 
-.anp-editor-font-toggle .markdown-source-view:not(.is-live-preview) {
-    --h1-font: var(--anp-editor-font);
-    --h2-font: var(--anp-editor-font);
-    --h3-font: var(--anp-editor-font);
-    --h4-font: var(--anp-editor-font);
-    --h5-font: var(--anp-editor-font);
-    --h6-font: var(--anp-editor-font);
+.loopsk-editor-font-toggle .markdown-source-view:not(.is-live-preview) {
+    --h1-font: var(--loopsk-editor-font);
+    --h2-font: var(--loopsk-editor-font);
+    --h3-font: var(--loopsk-editor-font);
+    --h4-font: var(--loopsk-editor-font);
+    --h5-font: var(--loopsk-editor-font);
+    --h6-font: var(--loopsk-editor-font);
 }

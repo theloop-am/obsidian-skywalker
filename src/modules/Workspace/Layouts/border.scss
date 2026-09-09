@@ -2,11 +2,11 @@
 Inspired by https://github.com/Akifyss/obsidian-border
 ---------------------------*/
 
-body.anp-border-layout {
+body.loopsk-border-layout {
     --card-background-color: rgb(var(--ctp-crust));
     --card-foreground-color: var(--background-primary);
     --border-border-style: 1px solid var(--tab-outline-color);
-    --anp-border-bottom-padding: var(--anp-border-padding, 20px);
+    --loopsk-border-bottom-padding: var(--loopsk-border-padding, 20px);
 
     .horizontal-main-container {
         background-color: var(--card-background-color);
@@ -15,8 +15,8 @@ body.anp-border-layout {
         --ribbon-background-collapsed: var(--card-background-color);
     }
 
-    &.anp-fixed-status-bar {
-        --anp-border-bottom-padding: calc(var(--anp-border-padding, 20px) - 18px);
+    &.loopsk-fixed-status-bar {
+        --loopsk-border-bottom-padding: calc(var(--loopsk-border-padding, 20px) - 18px);
     }
 
     .workspace {
@@ -36,13 +36,13 @@ body.anp-border-layout {
                 >.workspace-split.mod-vertical>.workspace-tabs:nth-child(2).mod-top-left-space,
                 >.workspace-split.mod-vertical>.workspace-split.mod-vertical>.workspace-tabs:nth-child(2).mod-top-left-space {
                     >.workspace-tab-container {
-                        border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
+                        border-bottom-left-radius: var(--loopsk-border-radius, var(--radius-xl));
                     }
                 }
 
                 & .workspace-tabs.mod-top-left-space {
                     .workspace-tab-container {
-                        border-top-left-radius: var(--anp-border-radius, var(--radius-xl));
+                        border-top-left-radius: var(--loopsk-border-radius, var(--radius-xl));
                     }
                 }
 
@@ -51,14 +51,14 @@ body.anp-border-layout {
                 >.workspace-split.mod-vertical>.workspace-split.mod-vertical>.workspace-split.mod-horizontal:nth-child(2) {
                     >.workspace-tabs:last-child {
                         .workspace-tab-container {
-                            border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
+                            border-bottom-left-radius: var(--loopsk-border-radius, var(--radius-xl));
                         }
                     }
 
                     >.workspace-split.mod-vertical:last-child {
                         >.workspace-tabs:nth-child(2) {
                             .workspace-tab-container {
-                                border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
+                                border-bottom-left-radius: var(--loopsk-border-radius, var(--radius-xl));
                             }
                         }
                     }
@@ -114,13 +114,13 @@ body.anp-border-layout {
                 >.workspace-split.mod-vertical>.workspace-tabs:last-child.mod-top-right-space,
                 >.workspace-split.mod-vertical>.workspace-split.mod-vertical>.workspace-tabs:last-child.mod-top-right-space {
                     >.workspace-tab-container {
-                        border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
+                        border-bottom-right-radius: var(--loopsk-border-radius, var(--radius-xl));
                     }
                 }
 
                 & .workspace-tabs.mod-top-right-space {
                     .workspace-tab-container {
-                        border-top-right-radius: var(--anp-border-radius, var(--radius-xl));
+                        border-top-right-radius: var(--loopsk-border-radius, var(--radius-xl));
                     }
                 }
 
@@ -129,14 +129,14 @@ body.anp-border-layout {
                 >.workspace-split.mod-vertical>.workspace-split.mod-vertical>.workspace-split.mod-horizontal:last-child {
                     >.workspace-tabs:last-child {
                         .workspace-tab-container {
-                            border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
+                            border-bottom-right-radius: var(--loopsk-border-radius, var(--radius-xl));
                         }
                     }
 
                     >.workspace-split.mod-vertical:last-child {
                         >.workspace-tabs:last-child {
                             .workspace-tab-container {
-                                border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
+                                border-bottom-right-radius: var(--loopsk-border-radius, var(--radius-xl));
                             }
                         }
                     }
@@ -183,7 +183,7 @@ body.anp-border-layout {
 
         .workspace-split.mod-left-split {
             background-color: var(--card-background-color);
-            padding-left: calc(var(--anp-border-padding, 20px) - 20px);
+            padding-left: calc(var(--loopsk-border-padding, 20px) - 20px);
 
             .workspace-tabs {
                 background-color: var(--card-background-color);
@@ -298,8 +298,8 @@ body.anp-border-layout {
 
     .workspace-split.mod-left-split>.workspace-leaf-resize-handle,
     .workspace-split.mod-right-split>.workspace-leaf-resize-handle {
-        height: calc(100% + -1*var(--header-height) + -1*var(--anp-border-bottom-padding, 20px));
-        bottom: var(--anp-border-bottom-padding, 20px);
+        height: calc(100% + -1*var(--header-height) + -1*var(--loopsk-border-bottom-padding, 20px));
+        bottom: var(--loopsk-border-bottom-padding, 20px);
     }
 
     .workspace-split {
@@ -317,7 +317,7 @@ body.anp-border-layout {
 
     &.is-popout-window {
         .workspace {
-            margin-left: var(--anp-border-padding, 20px);
+            margin-left: var(--loopsk-border-padding, 20px);
         }
     }
 }
@@ -325,46 +325,46 @@ body.anp-border-layout {
 // Apply margins & border radius if on PC
 // Does NOT applies on phone and tablets
 // todo: needs some fixes to enable & look great on tablets
-body.anp-border-layout:not(.is-mobile) {
+body.loopsk-border-layout:not(.is-mobile) {
     .workspace {
-        margin-right: var(--anp-border-padding, 20px);
+        margin-right: var(--loopsk-border-padding, 20px);
 
         .workspace-split.mod-left-split {
-            padding-bottom: var(--anp-border-bottom-padding, 20px);
+            padding-bottom: var(--loopsk-border-bottom-padding, 20px);
 
             .workspace-tabs {
                 &.mod-top-left-space {
                     .workspace-tab-container {
-                        border-top-left-radius: var(--anp-border-radius, var(--radius-xl));
+                        border-top-left-radius: var(--loopsk-border-radius, var(--radius-xl));
                     }
                 }
             }
 
             .workspace-sidedock-vault-profile {
-                border-bottom-left-radius: var(--anp-border-radius, var(--radius-xl));
+                border-bottom-left-radius: var(--loopsk-border-radius, var(--radius-xl));
             }
         }
 
         .workspace-split.mod-right-split {
-            padding-bottom: var(--anp-border-bottom-padding, 20px);
+            padding-bottom: var(--loopsk-border-bottom-padding, 20px);
 
             .workspace-tabs {
                 &:last-child {
                     .workspace-tab-container {
-                        border-bottom-right-radius: var(--anp-border-radius, var(--radius-xl));
+                        border-bottom-right-radius: var(--loopsk-border-radius, var(--radius-xl));
                     }
                 }
 
                 &.mod-top-right-space {
                     .workspace-tab-container {
-                        border-top-right-radius: var(--anp-border-radius, var(--radius-xl));
+                        border-top-right-radius: var(--loopsk-border-radius, var(--radius-xl));
                     }
                 }
             }
         }
 
         .workspace-split.mod-root:not(.mod-right-split):not(.mod-left-split) {
-            padding-bottom: var(--anp-border-bottom-padding, 20px);
+            padding-bottom: var(--loopsk-border-bottom-padding, 20px);
         }
     }
 }

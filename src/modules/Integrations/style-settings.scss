@@ -47,8 +47,8 @@
     border-top-width: 0;
 }
 
-.style-settings-heading:is([data-id="loop-skywalker-theme-settings"],
-    [data-id="loop-skywalker-theme-settings-extended"]) {
+.style-settings-heading:is([data-id="skywalker-theme-settings"],
+    [data-id="skywalker-theme-settings-extended"]) {
     border-color: hsla(var(--color-accent-hsl), 0.2);
 
     &:not(.is-collapsed)+.style-settings-container {
@@ -60,8 +60,8 @@
     }
 }
 
-.anp-accent-toggle .style-settings-heading:is([data-id="loop-skywalker-theme-settings"],
-    [data-id="loop-skywalker-theme-settings-extended"]) {
+.loopsk-accent-toggle .style-settings-heading:is([data-id="skywalker-theme-settings"],
+    [data-id="skywalker-theme-settings-extended"]) {
     border-color: rgba(var(--ctp-accent), 0.2);
 
     &:not(.is-collapsed)+.style-settings-container {
@@ -69,7 +69,7 @@
     }
 }
 
-.style-settings-container .style-settings-heading[data-id="loop-skywalker-credits"] .setting-item-name {
+.style-settings-container .style-settings-heading[data-id="skywalker-credits"] .setting-item-name {
     color: var(--color-accent) !important;
 }
 
@@ -82,9 +82,9 @@
     margin-top: 0;
 }
 
-.style-settings-container .setting-item:is([data-id="anp-snippet-minimal-cards-disc"],
-    [data-id="anp-background-image-light"],
-    [data-id="anp-background-image-dark"]) .setting-item-description>div {
+.style-settings-container .setting-item:is([data-id="loopsk-snippet-minimal-cards-disc"],
+    [data-id="loopsk-background-image-light"],
+    [data-id="loopsk-background-image-dark"]) .setting-item-description>div {
     display: none;
 }
 
@@ -120,18 +120,18 @@
     [data-id="callout-radius"],
     [data-id="file-line-width"],
     [data-id="file-margins"],
-    [data-id="anp-card-radius"],
-    [data-id="anp-card-layout-padding"],
-    [data-id="anp-card-header-left-padding"],
-    [data-id="anp-table-thickness"],
-    [data-id="anp-alt-tab-custom-height"],
-    [data-id="anp-depth-tab-gap"],
-    [data-id="anp-safari-tab-radius"],
-    [data-id="anp-safari-tab-gap"],
-    [data-id="anp-safari-border-width"],
-    [data-id="anp-stacked-header-width"],
-    [data-id="anp-border-radius"],
-    [data-id="anp-border-padding"]) .setting-item-control::after {
+    [data-id="loopsk-card-radius"],
+    [data-id="loopsk-card-layout-padding"],
+    [data-id="loopsk-card-header-left-padding"],
+    [data-id="loopsk-table-thickness"],
+    [data-id="loopsk-alt-tab-custom-height"],
+    [data-id="loopsk-depth-tab-gap"],
+    [data-id="loopsk-safari-tab-radius"],
+    [data-id="loopsk-safari-tab-gap"],
+    [data-id="loopsk-safari-border-width"],
+    [data-id="loopsk-stacked-header-width"],
+    [data-id="loopsk-border-radius"],
+    [data-id="loopsk-border-padding"]) .setting-item-control::after {
     content: 'px';
 }
 
@@ -146,22 +146,22 @@
     content: 'em';
 }
 
-.style-settings-container .setting-item:is([data-id="anp-preview-width-pct"],
-    [data-id="anp-table-width-pct"]) .setting-item-control::after {
+.style-settings-container .setting-item:is([data-id="loopsk-preview-width-pct"],
+    [data-id="loopsk-table-width-pct"]) .setting-item-control::after {
     content: '%';
 }
 
-.setting-item[data-id*="anp-kanban-"]:is([data-id$="spacing"], [data-id$="radius"]) .setting-item-description small::after {
+.setting-item[data-id*="loopsk-kanban-"]:is([data-id$="spacing"], [data-id$="radius"]) .setting-item-description small::after {
     content: 'px';
 }
 
 
-.setting-item[data-id="anp-colors-section-header"]>.setting-item-info>.setting-item-name {
+.setting-item[data-id="loopsk-colors-section-header"]>.setting-item-info>.setting-item-name {
     border-bottom: 2px solid;
     border-image: linear-gradient(to right, rgb(var(--ctp-rosewater)) 7%, rgb(var(--ctp-flamingo)) 7%, rgb(var(--ctp-flamingo)) 14%, rgb(var(--ctp-mauve)) 14%, rgb(var(--ctp-mauve)) 21%, rgb(var(--ctp-pink)) 21%, rgb(var(--ctp-pink)) 28%, rgb(var(--ctp-red)) 28%, rgb(var(--ctp-red)) 35%, rgb(var(--ctp-maroon)) 35%, rgb(var(--ctp-maroon)) 42%, rgb(var(--ctp-peach)) 42%, rgb(var(--ctp-peach)) 49%, rgb(var(--ctp-yellow)) 49%, rgb(var(--ctp-yellow)) 56%, rgb(var(--ctp-green)) 56%, rgb(var(--ctp-green)) 63%, rgb(var(--ctp-teal)) 63%, rgb(var(--ctp-teal)) 70%, rgb(var(--ctp-sky)) 70%, rgb(var(--ctp-sky)) 77%, rgb(var(--ctp-sapphire)) 77%, rgb(var(--ctp-sapphire)) 85%, rgb(var(--ctp-blue)) 85%, rgb(var(--ctp-blue)) 92%, rgb(var(--ctp-lavender))) 5;
 }
 
-.setting-item:is([data-id^="loop-skywalker-url-"]) {
+.setting-item:is([data-id^="skywalker-url-"]) {
     .setting-item-control {
         display: none;
     }
@@ -185,13 +185,13 @@
 }
 
 $linkEmojis: (
-    "loop-skywalker-url-repo": '\2b50',
+    "skywalker-url-repo": '\2b50',
     // star
-    "loop-skywalker-url-upstream": '\1f91d',
+    "skywalker-url-upstream": '\1f91d',
     // handshake
-    "loop-skywalker-url-submit-issue": '\1f41e',
+    "skywalker-url-submit-issue": '\1f41e',
     // bug
-    "loop-skywalker-url-minimal-cards-snippet": '\2b07',
+    "skywalker-url-minimal-cards-snippet": '\2b07',
     //down
 );
 
@@ -204,18 +204,18 @@ $linkEmojis: (
 //custom heading icons
 //heading icon list + selector
 $headingIcons: (
-    "loop-skywalker-theme-settings": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='17.5' cy='10.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='8.5' cy='7.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='6.5' cy='12.5' r='.5'%3E%3C/circle%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'%3E%3C/path%3E%3C/svg%3E"),
-    "loop-skywalker-theme-settings-extended": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z'%3E%3C/path%3E%3Cpath d='M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7'%3E%3C/path%3E%3Cpath d='M14.5 17.5 4.5 15'%3E%3C/path%3E%3C/svg%3E"),
-    "anp-colors-section-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08'%3E%3C/path%3E%3Cpath d='M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z'%3E%3C/path%3E%3C/svg%3E"),
-    "anp-editor-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15.5 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z'%3E%3C/path%3E%3Cpath d='M15 3v6h6'%3E%3C/path%3E%3C/svg%3E"),
-    "anp-preview-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7'%3E%3C/path%3E%3Cpath d='M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z'%3E%3C/path%3E%3C/svg%3E"),
-    "anp-plugin-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22v-5'%3E%3C/path%3E%3Cpath d='M9 7V2'%3E%3C/path%3E%3Cpath d='M15 7V2'%3E%3C/path%3E%3Cpath d='M6 13V8h12v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4Z'%3E%3C/path%3E%3C/svg%3E"),
-    "anp-misc-element-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='9' y1='18' x2='15' y2='18'%3E%3C/line%3E%3Cline x1='10' y1='22' x2='14' y2='22'%3E%3C/line%3E%3Cpath d='M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14'%3E%3C/path%3E%3C/svg%3E"),
-    "anp-show-hide-elements-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z'%3E%3C/path%3E%3Cpath d='m14 7 3 3'%3E%3C/path%3E%3Cpath d='M5 6v4'%3E%3C/path%3E%3Cpath d='M19 14v4'%3E%3C/path%3E%3Cpath d='M10 2v2'%3E%3C/path%3E%3Cpath d='M7 8H3'%3E%3C/path%3E%3Cpath d='M21 16h-4'%3E%3C/path%3E%3Cpath d='M11 3H9'%3E%3C/path%3E%3C/svg%3E"),
-    "anp-typography-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 7 4 4 20 4 20 7'%3E%3C/polyline%3E%3Cline x1='9' y1='20' x2='15' y2='20'%3E%3C/line%3E%3Cline x1='12' y1='4' x2='12' y2='20'%3E%3C/line%3E%3C/svg%3E"),
-    "anp-workspace-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='5' rx='2'%3E%3C/rect%3E%3Cpath d='M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9'%3E%3C/path%3E%3Cpath d='M10 13h4'%3E%3C/path%3E%3C/svg%3E"),
-    "loop-skywalker-credits": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z'%3E%3C/path%3E%3C/svg%3E"),
-    "anp-custom-rainbow-colors": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 19.9V16h3a2 2 0 0 0 2-2v-2H5v2c0 1.1.9 2 2 2h3v3.9a2 2 0 1 0 4 0Z'%3E%3C/path%3E%3Cpath d='M6 12V2h12v10'%3E%3C/path%3E%3Cpath d='M14 2v4'%3E%3C/path%3E%3Cpath d='M10 2v2'%3E%3C/path%3E%3C/svg%3E"),
+    "skywalker-theme-settings": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='17.5' cy='10.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='8.5' cy='7.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='6.5' cy='12.5' r='.5'%3E%3C/circle%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'%3E%3C/path%3E%3C/svg%3E"),
+    "skywalker-theme-settings-extended": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z'%3E%3C/path%3E%3Cpath d='M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7'%3E%3C/path%3E%3Cpath d='M14.5 17.5 4.5 15'%3E%3C/path%3E%3C/svg%3E"),
+    "loopsk-colors-section-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08'%3E%3C/path%3E%3Cpath d='M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z'%3E%3C/path%3E%3C/svg%3E"),
+    "loopsk-editor-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15.5 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z'%3E%3C/path%3E%3Cpath d='M15 3v6h6'%3E%3C/path%3E%3C/svg%3E"),
+    "loopsk-preview-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7'%3E%3C/path%3E%3Cpath d='M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z'%3E%3C/path%3E%3C/svg%3E"),
+    "loopsk-plugin-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22v-5'%3E%3C/path%3E%3Cpath d='M9 7V2'%3E%3C/path%3E%3Cpath d='M15 7V2'%3E%3C/path%3E%3Cpath d='M6 13V8h12v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4Z'%3E%3C/path%3E%3C/svg%3E"),
+    "loopsk-misc-element-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='9' y1='18' x2='15' y2='18'%3E%3C/line%3E%3Cline x1='10' y1='22' x2='14' y2='22'%3E%3C/line%3E%3Cpath d='M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14'%3E%3C/path%3E%3C/svg%3E"),
+    "loopsk-show-hide-elements-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z'%3E%3C/path%3E%3Cpath d='m14 7 3 3'%3E%3C/path%3E%3Cpath d='M5 6v4'%3E%3C/path%3E%3Cpath d='M19 14v4'%3E%3C/path%3E%3Cpath d='M10 2v2'%3E%3C/path%3E%3Cpath d='M7 8H3'%3E%3C/path%3E%3Cpath d='M21 16h-4'%3E%3C/path%3E%3Cpath d='M11 3H9'%3E%3C/path%3E%3C/svg%3E"),
+    "loopsk-typography-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 7 4 4 20 4 20 7'%3E%3C/polyline%3E%3Cline x1='9' y1='20' x2='15' y2='20'%3E%3C/line%3E%3Cline x1='12' y1='4' x2='12' y2='20'%3E%3C/line%3E%3C/svg%3E"),
+    "loopsk-workspace-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='5' rx='2'%3E%3C/rect%3E%3Cpath d='M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9'%3E%3C/path%3E%3Cpath d='M10 13h4'%3E%3C/path%3E%3C/svg%3E"),
+    "skywalker-credits": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z'%3E%3C/path%3E%3C/svg%3E"),
+    "loopsk-custom-rainbow-colors": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 19.9V16h3a2 2 0 0 0 2-2v-2H5v2c0 1.1.9 2 2 2h3v3.9a2 2 0 1 0 4 0Z'%3E%3C/path%3E%3Cpath d='M6 12V2h12v10'%3E%3C/path%3E%3Cpath d='M14 2v4'%3E%3C/path%3E%3Cpath d='M10 2v2'%3E%3C/path%3E%3C/svg%3E"),
 );
 
 @each $headingName, $headingIcon in $headingIcons {
@@ -249,29 +249,29 @@ $headingIcons: (
 }
 
 //custom color styling
-.setting-item:is([data-id*="anp-custom-rainbow-colors"])>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
+.setting-item:is([data-id*="loopsk-custom-rainbow-colors"])>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
     background: linear-gradient(to right, rgb(var(--ctp-rosewater)) 7%, rgb(var(--ctp-flamingo)) 7%, rgb(var(--ctp-flamingo)) 14%, rgb(var(--ctp-mauve)) 14%, rgb(var(--ctp-mauve)) 21%, rgb(var(--ctp-pink)) 21%, rgb(var(--ctp-pink)) 28%, rgb(var(--ctp-red)) 28%, rgb(var(--ctp-red)) 35%, rgb(var(--ctp-maroon)) 35%, rgb(var(--ctp-maroon)) 42%, rgb(var(--ctp-peach)) 42%, rgb(var(--ctp-peach)) 49%, rgb(var(--ctp-yellow)) 49%, rgb(var(--ctp-yellow)) 56%, rgb(var(--ctp-green)) 56%, rgb(var(--ctp-green)) 63%, rgb(var(--ctp-teal)) 63%, rgb(var(--ctp-teal)) 70%, rgb(var(--ctp-sky)) 70%, rgb(var(--ctp-sky)) 77%, rgb(var(--ctp-sapphire)) 77%, rgb(var(--ctp-sapphire)) 85%, rgb(var(--ctp-blue)) 85%, rgb(var(--ctp-blue)) 92%, rgb(var(--ctp-lavender)));
 }
 
 //collapse animations
 //clockwise
-.setting-item:is([data-id="loop-skywalker-theme-settings"],
-    [data-id="anp-colors-section-header"],
-    [data-id="anp-editor-header"],
-    [data-id="anp-misc-element-header"],
-    [data-id="anp-show-hide-elements-header"],
-    [data-id="anp-typography-header"],
-    [data-id="anp-plugin-header"],
-    [data-id="anp-workspace-header"],
-    [data-id="loop-skywalker-credits"],
-    [data-id="anp-custom-rainbow-colors"]):not(.is-collapsed)>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
+.setting-item:is([data-id="skywalker-theme-settings"],
+    [data-id="loopsk-colors-section-header"],
+    [data-id="loopsk-editor-header"],
+    [data-id="loopsk-misc-element-header"],
+    [data-id="loopsk-show-hide-elements-header"],
+    [data-id="loopsk-typography-header"],
+    [data-id="loopsk-plugin-header"],
+    [data-id="loopsk-workspace-header"],
+    [data-id="skywalker-credits"],
+    [data-id="loopsk-custom-rainbow-colors"]):not(.is-collapsed)>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
     transform: rotate(90deg);
     transition: transform 0.1s;
 }
 
 //anticlockwise
-.setting-item:is([data-id="loop-skywalker-theme-settings-extended"],
-    [data-id="anp-preview-header"]):not(.is-collapsed)>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
+.setting-item:is([data-id="skywalker-theme-settings-extended"],
+    [data-id="loopsk-preview-header"]):not(.is-collapsed)>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
     transform: rotate(-90deg);
     transition: transform 0.1s;
 }

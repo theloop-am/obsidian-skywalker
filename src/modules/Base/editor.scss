@@ -1,11 +1,11 @@
 /*-Highlight current line-*/
-.anp-current-line .markdown-source-view {
+.loopsk-current-line .markdown-source-view {
     .cm-active.cm-line {
         background-color: rgba(var(--ctp-surface1), 0.4);
     }
 }
 
-.anp-current-line-border .markdown-source-view {
+.loopsk-current-line-border .markdown-source-view {
     .cm-active.cm-line {
         border-left: 2px solid var(--interactive-accent);
         margin-left: -2px !important; //this !important is necessary since the app.css file uses one too ;_;
@@ -13,7 +13,7 @@
     }
 }
 
-.anp-current-line-border-only .markdown-source-view {
+.loopsk-current-line-border-only .markdown-source-view {
     .cm-active.cm-line::before {
         content: '';
         position: absolute;
@@ -31,7 +31,7 @@
 
 /*-Custom editor font-*/
 .markdown-source-view:not(.is-live-preview) {
-    --font-text: var(--anp-editor-font-source, var(--font-text-override)), var(--font-text-theme), var(--font-interface);
+    --font-text: var(--loopsk-editor-font-source, var(--font-text-override)), var(--font-text-theme), var(--font-interface);
     --h1-font: var(--font-text, inherit);
     --h2-font: var(--font-text, inherit);
     --h3-font: var(--font-text, inherit);
@@ -41,11 +41,11 @@
 }
 
 .markdown-source-view.is-live-preview {
-    --font-text: var(--anp-editor-font-lp, var(--font-text-override)), var(--font-text-theme), var(--font-interface);
+    --font-text: var(--loopsk-editor-font-lp, var(--font-text-override)), var(--font-text-theme), var(--font-interface);
 }
 
 .markdown-preview-view {
-    --font-text: var(--anp-editor-font-rv, var(--font-text-override)), var(--font-text-theme), var(--font-interface);
+    --font-text: var(--loopsk-editor-font-rv, var(--font-text-override)), var(--font-text-theme), var(--font-interface);
 }
 
 /*-Highlighted gutter number-*/

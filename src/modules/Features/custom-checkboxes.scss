@@ -4,7 +4,7 @@ This feature is inspired by Cecilia May's Primary theme: https://github.com/ceci
 None of the original code was used and only the checkbox ideas were utilised.
 Icons were taken from Font Awesome: https://fontawesome.com/
 ----------------------------------*/
-.anp-custom-checkboxes {
+.loopsk-custom-checkboxes {
     [data-task="x"] {
 
         >input[type="checkbox"]:checked,
@@ -575,7 +575,7 @@ $labels: (
 );
 
 @each $label, $content in $labels {
-    .anp-custom-checkboxes-labels {
+    .loopsk-custom-checkboxes-labels {
         [data-task="#{$label}"] {
 
             input[type="checkbox"]:checked,
@@ -588,7 +588,7 @@ $labels: (
     }
 }
 
-.anp-custom-checkboxes-labels {
+.loopsk-custom-checkboxes-labels {
     [data-task='"'] {
 
         input[type="checkbox"]:checked,
@@ -606,16 +606,16 @@ $labels: (
     }
 }
 
-.anp-speech-bubble [data-task="0"],
-.anp-speech-bubble [data-task="1"],
-.anp-speech-bubble [data-task="2"],
-.anp-speech-bubble [data-task="3"],
-.anp-speech-bubble [data-task="4"],
-.anp-speech-bubble [data-task="5"],
-.anp-speech-bubble [data-task="6"],
-.anp-speech-bubble [data-task="7"],
-.anp-speech-bubble [data-task="8"],
-.anp-speech-bubble [data-task="9"] {
+.loopsk-speech-bubble [data-task="0"],
+.loopsk-speech-bubble [data-task="1"],
+.loopsk-speech-bubble [data-task="2"],
+.loopsk-speech-bubble [data-task="3"],
+.loopsk-speech-bubble [data-task="4"],
+.loopsk-speech-bubble [data-task="5"],
+.loopsk-speech-bubble [data-task="6"],
+.loopsk-speech-bubble [data-task="7"],
+.loopsk-speech-bubble [data-task="8"],
+.loopsk-speech-bubble [data-task="9"] {
     margin-inline-start: -15px;
     padding: 3px 10px !important; //hacky but it works i guess
     border-radius: 3px 10px 10px 10px;
@@ -638,7 +638,7 @@ $labels: (
     }
 }
 
-.theme-dark.anp-speech-bubble {
+.theme-dark.loopsk-speech-bubble {
 
     [data-task="0"],
     [data-task="1"],
@@ -663,7 +663,7 @@ $labels: (
     }
 }
 
-.anp-speech-bubble .is-live-preview {
+.loopsk-speech-bubble .is-live-preview {
 
     [data-task="0"],
     [data-task="1"],
@@ -688,7 +688,7 @@ $labels: (
 }
 
 /* Dirty Speech Bubble Fix */
-.anp-speech-bubble .HyperMD-task-line {
+.loopsk-speech-bubble .HyperMD-task-line {
 
     &[data-task="0"],
     &[data-task="1"],
@@ -704,46 +704,46 @@ $labels: (
     }
 }
 
-.anp-speech-bubble [data-task="0"] {
-    background-color: rgba(var(--ctp-red), var(--anp-speech-bubble-opacity));
+.loopsk-speech-bubble [data-task="0"] {
+    background-color: rgba(var(--ctp-red), var(--loopsk-speech-bubble-opacity));
 }
 
-.anp-speech-bubble [data-task="1"] {
-    background-color: rgba(var(--ctp-peach), var(--anp-speech-bubble-opacity));
+.loopsk-speech-bubble [data-task="1"] {
+    background-color: rgba(var(--ctp-peach), var(--loopsk-speech-bubble-opacity));
 }
 
-.anp-speech-bubble [data-task="2"] {
-    background-color: rgba(var(--ctp-yellow), var(--anp-speech-bubble-opacity));
+.loopsk-speech-bubble [data-task="2"] {
+    background-color: rgba(var(--ctp-yellow), var(--loopsk-speech-bubble-opacity));
 }
 
-.anp-speech-bubble [data-task="3"] {
-    background-color: rgba(var(--ctp-green), var(--anp-speech-bubble-opacity));
+.loopsk-speech-bubble [data-task="3"] {
+    background-color: rgba(var(--ctp-green), var(--loopsk-speech-bubble-opacity));
 }
 
-.anp-speech-bubble [data-task="4"] {
-    background-color: rgba(var(--ctp-teal), var(--anp-speech-bubble-opacity));
+.loopsk-speech-bubble [data-task="4"] {
+    background-color: rgba(var(--ctp-teal), var(--loopsk-speech-bubble-opacity));
 }
 
-.anp-speech-bubble [data-task="5"] {
-    background-color: rgba(var(--ctp-sky), var(--anp-speech-bubble-opacity));
+.loopsk-speech-bubble [data-task="5"] {
+    background-color: rgba(var(--ctp-sky), var(--loopsk-speech-bubble-opacity));
 }
 
-.anp-speech-bubble [data-task="6"] {
-    background-color: rgba(var(--ctp-blue), var(--anp-speech-bubble-opacity));
+.loopsk-speech-bubble [data-task="6"] {
+    background-color: rgba(var(--ctp-blue), var(--loopsk-speech-bubble-opacity));
 }
 
-.anp-speech-bubble [data-task="7"] {
-    background-color: rgba(var(--ctp-mauve), var(--anp-speech-bubble-opacity));
+.loopsk-speech-bubble [data-task="7"] {
+    background-color: rgba(var(--ctp-mauve), var(--loopsk-speech-bubble-opacity));
 }
 
-.anp-speech-bubble [data-task="8"] {
+.loopsk-speech-bubble [data-task="8"] {
     background: linear-gradient(to right,
-            rgba(var(--ctp-red), var(--anp-speech-bubble-opacity)),
-            rgba(var(--ctp-yellow), var(--anp-speech-bubble-opacity)));
+            rgba(var(--ctp-red), var(--loopsk-speech-bubble-opacity)),
+            rgba(var(--ctp-yellow), var(--loopsk-speech-bubble-opacity)));
 }
 
-.anp-speech-bubble [data-task="9"] {
+.loopsk-speech-bubble [data-task="9"] {
     background: linear-gradient(to left,
-            rgba(var(--ctp-lavender), var(--anp-speech-bubble-opacity)),
-            rgba(var(--ctp-mauve), var(--anp-speech-bubble-opacity)));
+            rgba(var(--ctp-lavender), var(--loopsk-speech-bubble-opacity)),
+            rgba(var(--ctp-mauve), var(--loopsk-speech-bubble-opacity)));
 }

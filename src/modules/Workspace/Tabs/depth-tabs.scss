@@ -1,18 +1,18 @@
-.anp-depth-tab-toggle .workspace .mod-root {
+.loopsk-depth-tab-toggle .workspace .mod-root {
     .workspace-tab-header {
-        --tab-text-color-focused-active-current: rgb(var(--anp-depth-tab-text, var(--ctp-text)));
-        --tab-text-color-focused: rgb(var(--anp-depth-tab-text, var(--ctp-text)));
+        --tab-text-color-focused-active-current: rgb(var(--loopsk-depth-tab-text, var(--ctp-text)));
+        --tab-text-color-focused: rgb(var(--loopsk-depth-tab-text, var(--ctp-text)));
     }
 
     .workspace-tab-header:not(.is-active) {
-        --tab-text-color: rgb(var(--anp-depth-tab-text));
-        --icon-color: rgb(var(--anp-depth-tab-text));
-        --icon-color-hover: rgb(var(--anp-depth-tab-text));
-        background-color: rgba(var(--ctp-mantle), var(--anp-depth-tab-opacity, 0.6));
+        --tab-text-color: rgb(var(--loopsk-depth-tab-text));
+        --icon-color: rgb(var(--loopsk-depth-tab-text));
+        --icon-color-hover: rgb(var(--loopsk-depth-tab-text));
+        background-color: rgba(var(--ctp-mantle), var(--loopsk-depth-tab-opacity, 0.6));
 
         &::before,
         &::after {
-            box-shadow: inset 0 0 0 var(--tab-outline-width) transparent, 0 0 0 calc(var(--tab-curve) * 4) rgba(var(--ctp-mantle), var(--anp-depth-tab-opacity, 0.6));
+            box-shadow: inset 0 0 0 var(--tab-outline-width) transparent, 0 0 0 calc(var(--tab-curve) * 4) rgba(var(--ctp-mantle), var(--loopsk-depth-tab-opacity, 0.6));
         }
 
         &::after {
@@ -29,7 +29,7 @@
     }
 
     .workspace-tab-header-container-inner {
-        gap: var(--anp-depth-tab-gap, 10px);
+        gap: var(--loopsk-depth-tab-gap, 10px);
     }
 
     .workspace-tab-header:not(.is-active):hover {
@@ -43,6 +43,6 @@
     }
 }
 
-.anp-depth-tab-toggle.anp-depth-tab-text-invert {
-    --anp-depth-tab-text: var(--ctp-crust);
+.loopsk-depth-tab-toggle.loopsk-depth-tab-text-invert {
+    --loopsk-depth-tab-text: var(--ctp-crust);
 }

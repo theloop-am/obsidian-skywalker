@@ -1,4 +1,4 @@
-.anp-safari-tab-toggle {
+.loopsk-safari-tab-toggle {
     .workspace-split.mod-vertical.mod-root {
         /*-----VARIABLES---------*/
         --tab-background-inactive: var(--background-secondary-alt);
@@ -37,8 +37,8 @@
                             display: none;
                         }
 
-                        border-radius: var(--anp-safari-tab-radius, 5px);
-                        border: var(--anp-safari-border-width, 1px) solid var(--tab-outline-color);
+                        border-radius: var(--loopsk-safari-tab-radius, 5px);
+                        border: var(--loopsk-safari-border-width, 1px) solid var(--tab-outline-color);
                         background-color: var(--tab-background-inactive);
                         color: var(--text-muted);
                         max-width: var(--tab-max-width);
@@ -56,20 +56,20 @@
                         }
                     }
 
-                    gap: var(--anp-safari-tab-gap, 10px);
+                    gap: var(--loopsk-safari-tab-gap, 10px);
                 }
             }
         }
     }
 
-    &:not(.anp-disable-newtab-align) {
+    &:not(.loopsk-disable-newtab-align) {
         .workspace-tab-header-container-inner {
             width: 100%;
         }
     }
 }
 
-.anp-safari-tab-toggle.anp-safari-tab-animated {
+.loopsk-safari-tab-toggle.loopsk-safari-tab-animated {
     .workspace-split.mod-vertical.mod-root {
         .workspace-tabs {
             .workspace-tab-header-container {

@@ -1,6 +1,6 @@
-.anp-mini-tab-toggle {
-    --header-height: var(--anp-alt-tab-custom-height, 40px);
-    --tab-stacked-header-width: var(--anp-stacked-header-width, 40px);
+.loopsk-mini-tab-toggle {
+    --header-height: var(--loopsk-alt-tab-custom-height, 40px);
+    --tab-stacked-header-width: var(--loopsk-stacked-header-width, 40px);
 
     .workspace-split:not(.mod-left-split):not(.mod-right-split) {
         .workspace-tab-header-container-inner {

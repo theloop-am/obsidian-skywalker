@@ -1,32 +1,32 @@
 /*---------------------------------------------------------------
 * FULL RAINBOW STYLE
 *---------------------------------------------------------------*/
-.anp-full-rainbow-color-toggle {
+.loopsk-full-rainbow-color-toggle {
 
     // Apply styling to folders
     .nav-files-container>div>.nav-folder .nav-folder-title,
     .nav-files-container>div>.nav-folder .nav-file-title,
     .nav-files-container .collapse-icon svg.svg-icon,
     .tree-item-self .tree-item-icon {
-        color: var(--anp-full-rainbow-text-inverted, var(--background-primary));
-        --icon-color: var(--anp-full-rainbow-text-inverted,
+        color: var(--loopsk-full-rainbow-text-inverted, var(--background-primary));
+        --icon-color: var(--loopsk-full-rainbow-text-inverted,
                 var(--background-primary));
     }
 
     // Apply styling to files in root level
-    &.anp-rainbow-file-toggle {
+    &.loopsk-rainbow-file-toggle {
         .nav-files-container>div>.nav-folder-children>.nav-file .nav-file-title {
-            color: var(--anp-full-rainbow-text-inverted, var(--background-primary));
+            color: var(--loopsk-full-rainbow-text-inverted, var(--background-primary));
         }
 
         &.theme-dark .nav-files-container>.nav-folder-children>.nav-file {
             background-color: rgba(var(--ctp-text),
-                    var(--anp-rainbow-folder-bg-opacity));
+                    var(--loopsk-rainbow-folder-bg-opacity));
         }
 
         &.theme-light .nav-files-container>div>.nav-file {
             background-color: rgba(var(--ctp-overlay1),
-                    var(--anp-rainbow-folder-bg-opacity));
+                    var(--loopsk-rainbow-folder-bg-opacity));
         }
 
         .nav-files-container>div>.nav-file {
@@ -81,7 +81,7 @@
             >.nav-folder {
                 transition: background-color 0.4s;
                 background-color: rgba(var(--rainbow-folder-color),
-                        var(--anp-rainbow-folder-bg-opacity));
+                        var(--loopsk-rainbow-folder-bg-opacity));
                 margin-bottom: 2px;
                 border-radius: 5px;
 
@@ -92,7 +92,7 @@
 
             >.nav-file.has-focus {
                 background-color: rgba(var(--ctp-text),
-                        var(--anp-rainbow-folder-bg-opacity));
+                        var(--loopsk-rainbow-folder-bg-opacity));
                 border-left: none;
                 border-color: rgb(var(--ctp-accent));
             }
@@ -121,7 +121,7 @@
 }
 
 // Invert item text colors
-.anp-full-rainbow-text-color-toggle-dark.theme-dark,
-.anp-full-rainbow-text-color-toggle-light.theme-light {
-    --anp-full-rainbow-text-inverted: rgb(var(--ctp-text));
+.loopsk-full-rainbow-text-color-toggle-dark.theme-dark,
+.loopsk-full-rainbow-text-color-toggle-light.theme-light {
+    --loopsk-full-rainbow-text-inverted: rgb(var(--ctp-text));
 }

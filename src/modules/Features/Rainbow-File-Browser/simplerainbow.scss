@@ -1,16 +1,16 @@
 /*---------------------------------------------------------------
 * SIMPLE RAINBOW STYLE
 *---------------------------------------------------------------*/
-.anp-simple-rainbow-color-toggle {
+.loopsk-simple-rainbow-color-toggle {
 
     // Apply styling to titles
-    &.anp-simple-rainbow-title-toggle {
+    &.loopsk-simple-rainbow-title-toggle {
 
         .nav-files-container>div>.nav-folder .nav-folder-title,
         [data-type="bookmarks"] .tree-item .tree-item-inner {
             transition: color 0.4s;
             color: rgba(var(--rainbow-folder-color),
-                    var(--anp-simple-rainbow-opacity, 1));
+                    var(--loopsk-simple-rainbow-opacity, 1));
             --nav-item-background-hover: rgba(var(--rainbow-folder-color), 0.1);
             --nav-item-background-active: rgba(var(--rainbow-folder-color), 0.1);
         }
@@ -21,13 +21,13 @@
     }
 
     // Circle icon indicator
-    &.anp-simple-rainbow-icon-toggle {
+    &.loopsk-simple-rainbow-icon-toggle {
 
         .nav-files-container>div>.nav-folder .nav-folder-title:after,
         [data-type="bookmarks"] .tree-item .tree-item-inner:after {
             transition: color 0.4s;
             color: rgba(var(--rainbow-folder-color),
-                    var(--anp-simple-rainbow-opacity, 1));
+                    var(--loopsk-simple-rainbow-opacity, 1));
             content: "⬤";
             font-size: 10px;
             position: relative;
@@ -45,7 +45,7 @@
     }
 
     // Color indents
-    &.anp-simple-rainbow-indentation-toggle {
+    &.loopsk-simple-rainbow-indentation-toggle {
 
         .nav-files-container .nav-folder>.nav-folder-children,
         [data-type="bookmarks"] .tree-item .tree-item-children {
@@ -55,14 +55,14 @@
     }
 
     // Color Collapse Indicators
-    &.anp-simple-rainbow-collapse-icon-toggle {
+    &.loopsk-simple-rainbow-collapse-icon-toggle {
         .tree-item-self .tree-item-icon {
             --icon-color: rgba(var(--rainbow-folder-color),
-                    var(--anp-simple-rainbow-opacity, 1));
+                    var(--loopsk-simple-rainbow-opacity, 1));
             --nav-collapse-icon-color: rgba(var(--rainbow-folder-color),
-                    var(--anp-simple-rainbow-opacity, 1));
+                    var(--loopsk-simple-rainbow-opacity, 1));
             --nav-collapse-icon-color-collapsed: rgba(var(--rainbow-folder-color),
-                    var(--anp-simple-rainbow-opacity, 1));
+                    var(--loopsk-simple-rainbow-opacity, 1));
         }
     }
 }

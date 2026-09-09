@@ -1,19 +1,19 @@
 /* @settings
-name: LOOP - Skywalker
-id: loop-skywalker-theme-settings
+name: Skywalker
+id: skywalker-theme-settings
 settings:
 
 # Colors
 
 -
-    id: anp-colors-section-header
+    id: loopsk-colors-section-header
     title: Colors
     description: Theme Accent and Flavors, Color Overrides, Extended Color Schemes
     type: heading
     level: 1
     collapsed: true
 -
-    id: anp-theme-light
+    id: loopsk-theme-light
     title: Light Theme Flavor
     description: Select your preferred light mode flavor
     type: class-select
@@ -30,7 +30,7 @@ settings:
         label: Rosé Pine
         value: ctp-rosepine-light
 -
-    id: anp-theme-dark
+    id: loopsk-theme-dark
     title: Dark Theme Flavor
     description: Select your preferred dark mode flavor
     type: class-select
@@ -56,7 +56,7 @@ settings:
         label: Mocha Old
         value: ctp-mocha-old
 -
-    id: anp-light-theme-accents
+    id: loopsk-light-theme-accents
     title: Light Theme Accent
     description: Select your preferred light theme accent (Defaults to dark theme accent if left empty)
     type: class-select
@@ -106,7 +106,7 @@ settings:
         label: Lavender
         value: ctp-accent-light-lavender
 -
-    id: anp-theme-accents
+    id: loopsk-theme-accents
     title: Dark Theme Accent
     description: Select your preferred accent
     type: class-select
@@ -156,28 +156,28 @@ settings:
         label: Lavender
         value: ctp-accent-lavender
 -
-    id: anp-accent-toggle
+    id: loopsk-accent-toggle
     title: Force Custom Accents
     description: Forces colorscheme-specific custom accents to be utilised instead of default obsidian accent
     type: class-toggle
     default: true
 -
-    id: anp-theme-amoled
+    id: loopsk-theme-amoled
     title: Toggle AMOLED black on all themes
     description: Pushes the darkest surfaces to true black, on top of whichever dark flavor is selected
     type: class-toggle
     default: false
 -
-    id: loop-skywalker-url-extended-colorschemes
+    id: skywalker-url-extended-colorschemes
     title: Extended Color Schemes Snippet
-    description: "Adds 25 further flavors on top of the ones built in. Download the snippet by clicking on [this link](https://github.com/theloop-am/loop-skywalker/blob/main/snippets/extended-colorschemes.css)."
+    description: "Adds 25 further flavors on top of the ones built in. Download the snippet by clicking on [this link](https://github.com/theloop-am/obsidian-skywalker/blob/main/snippets/extended-colorschemes.css)."
     type: info-text
     markdown: true
 
 # Colors :: Color Overrides
 
 -
-    id: anp-color-overrides-header
+    id: loopsk-color-overrides-header
     title: Color Overrides
     description: 
     type: heading
@@ -369,42 +369,42 @@ settings:
 # File Editor
 
 -
-    id: anp-editor-header
+    id: loopsk-editor-header
     title: File Editor & Markdown Elements
     description: Callouts, Checkboxes, Codeblocks, Lists, Tables, Tags, etc.
     type: heading
     level: 1
     collapsed: true
 -
-    id: anp-active-line
+    id: loopsk-active-line
     title: Active line highlight
     type: class-select
     allowEmpty: false
-    default: anp-no-highlight
+    default: loopsk-no-highlight
     options:
     -
         label: None
-        value: anp-no-highlight
+        value: loopsk-no-highlight
     -
         label: Highlight
-        value: anp-current-line
+        value: loopsk-current-line
     -
         label: Highlight + Border
-        value: anp-current-line-border
+        value: loopsk-current-line-border
     -
         label: Border Only
-        value: anp-current-line-border-only
+        value: loopsk-current-line-border-only
 
 # File Editor & Markdown Elements :: Callouts
 -
-    id: anp-callout-header
+    id: loopsk-callout-header
     title: Callouts
     description: Callout styles, border radius, custom colors
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-callout-select
+    id: loopsk-callout-select
     title: Callout Style
     type: class-select
     default: none
@@ -415,18 +415,18 @@ settings:
         value: none
     -
         label: Sleek
-        value: anp-callout-sleek
+        value: loopsk-callout-sleek
     -
         label: Block
-        value: anp-callout-block
+        value: loopsk-callout-block
     -
         label: Vanilla Normal
-        value: anp-callout-vanilla-normal
+        value: loopsk-callout-vanilla-normal
     -
         label: Vanilla Plus
-        value: anp-callout-vanilla-plus
+        value: loopsk-callout-vanilla-plus
 -
-    id: anp-callout-color-toggle
+    id: loopsk-callout-color-toggle
     title: Enable Custom Callout Colors
     type: class-toggle
 -
@@ -461,7 +461,7 @@ settings:
     type: variable-text
     default: 8px
 -
-    id: anp-callout-fold-position
+    id: loopsk-callout-fold-position
     title: Callout Fold Position
     type: variable-select
     default: '0'
@@ -476,36 +476,36 @@ settings:
 # File Editor & Markdown Elements :: Checkboxes
 
 -
-    id: anp-custom-checkboxes-header
+    id: loopsk-custom-checkboxes-header
     title: Checkboxes
     description: Custom checkboxes and speech bubbles
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-custom-checkboxes
+    id: loopsk-custom-checkboxes
     title: Enable Custom Checkboxes
     type: class-toggle
 -
-    id: anp-speech-bubble
+    id: loopsk-speech-bubble
     title: Enable Speech Bubbles
     type: class-toggle
 
 # File Editor & Markdown Elements :: Codeblocks
 
 -
-    id: anp-codeblock-header
+    id: loopsk-codeblock-header
     title: Codeblocks
     description: Codeblock wrapping, line numbering
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-codeblock-numbers
+    id: loopsk-codeblock-numbers
     title: Enable Codeblock Numbering
     type: class-toggle
 -
-    id: anp-codeblock-wrap-edit
+    id: loopsk-codeblock-wrap-edit
     title: Codeblock Line Wrap (Edit Mode)
     description: Does not work for codeblocks with syntax highlighting
     type: class-select
@@ -516,9 +516,9 @@ settings:
         value: none
     -
         label: No Wrap
-        value: anp-codeblock-edit-nowrap
+        value: loopsk-codeblock-edit-nowrap
 -
-    id: anp-codeblock-wrap-preview
+    id: loopsk-codeblock-wrap-preview
     title: Codeblock Line Wrap (Preview Mode)
     description: Does not work for codeblocks with syntax highlighting
     type: class-select
@@ -529,9 +529,9 @@ settings:
         value: none
     -
         label: No Wrap
-        value: anp-codeblock-preview-nowrap
+        value: loopsk-codeblock-preview-nowrap
 -
-    id: anp-codeblock-wrap-hl-preview
+    id: loopsk-codeblock-wrap-hl-preview
     title: Syntax Highlighted Codeblock Line Wrap (Preview Mode)
     type: class-select
     default: none
@@ -541,9 +541,9 @@ settings:
         value: none
     -
         label: No Wrap
-        value: anp-codeblock-preview-hl-nowrap
+        value: loopsk-codeblock-preview-hl-nowrap
 -
-    id: anp-code-bg-color
+    id: loopsk-code-bg-color
     title: Codeblock Background Color
     type: variable-themed-color
     allowEmpty: true
@@ -552,7 +552,7 @@ settings:
     default-light: '#'
     default-dark: '#'
 -
-    id: anp-code-text-color
+    id: loopsk-code-text-color
     title: Codeblock Text Color
     type: variable-themed-color
     description: Applies to codeblocks without syntax highlighting
@@ -564,7 +564,7 @@ settings:
 
 # File Editor & Markdown Elements :: Embeds
 -
-    id: anp-embed-header
+    id: loopsk-embed-header
     title: Embeds
     description: Images, videos, iframes, etc.
     type: heading
@@ -580,166 +580,166 @@ settings:
 # File Editor & Markdown Elements :: LaTeX
 
 -
-    id: anp-latex-header
+    id: loopsk-latex-header
     title: LaTex
     type: heading
     description: LaTeX (Math) color, font size
     level: 2
     collapsed: true
 -
-    id: anp-latex-inline-color
+    id: loopsk-latex-inline-color
     title: LaTeX Inline Color
     type: class-select
     allowEmpty: true
-    default: anp-latex-inline-text
+    default: loopsk-latex-inline-text
     options:
     -
         label: Rosewater
-        value: anp-latex-inline-rosewater
+        value: loopsk-latex-inline-rosewater
     -
         label: Flamingo
-        value: anp-latex-inline-flamingo
+        value: loopsk-latex-inline-flamingo
     -
         label: Pink
-        value: anp-latex-inline-pink
+        value: loopsk-latex-inline-pink
     -
         label: Mauve
-        value: anp-latex-inline-mauve
+        value: loopsk-latex-inline-mauve
     -
         label: Red
-        value: anp-latex-inline-red
+        value: loopsk-latex-inline-red
     -
         label: Maroon
-        value: anp-latex-inline-maroon
+        value: loopsk-latex-inline-maroon
     -
         label: Peach
-        value: anp-latex-inline-peach
+        value: loopsk-latex-inline-peach
     -
         label: Yellow
-        value: anp-latex-inline-yellow
+        value: loopsk-latex-inline-yellow
     -
         label: Green
-        value: anp-latex-inline-green
+        value: loopsk-latex-inline-green
     -
         label: Teal
-        value: anp-latex-inline-teal
+        value: loopsk-latex-inline-teal
     -
         label: Sky
-        value: anp-latex-inline-sky
+        value: loopsk-latex-inline-sky
     -
         label: Sapphire
-        value: anp-latex-inline-sapphire
+        value: loopsk-latex-inline-sapphire
     -
         label: Blue
-        value: anp-latex-inline-blue
+        value: loopsk-latex-inline-blue
     -
         label: Lavender
-        value: anp-latex-inline-lavender
+        value: loopsk-latex-inline-lavender
     -
         label: Text
-        value: anp-latex-inline-text
+        value: loopsk-latex-inline-text
     -
         label: Subtext 1
-        value: anp-latex-inline-subtext1
+        value: loopsk-latex-inline-subtext1
     -
         label: Subtext 0
-        value: anp-latex-inline-subtext0
+        value: loopsk-latex-inline-subtext0
     -
         label: Overlay 2
-        value: anp-latex-inline-overlay2
+        value: loopsk-latex-inline-overlay2
     -
         label: Overlay 1
-        value: anp-latex-inline-overlay1
+        value: loopsk-latex-inline-overlay1
     -
         label: Overlay 0
-        value: anp-latex-inline-overlay0
+        value: loopsk-latex-inline-overlay0
     -
         label: Surface 2
-        value: anp-latex-inline-surface2
+        value: loopsk-latex-inline-surface2
     -
         label: Surface 1
-        value: anp-latex-inline-surface1
+        value: loopsk-latex-inline-surface1
     -
         label: Surface 0
-        value: anp-latex-inline-surface0
+        value: loopsk-latex-inline-surface0
 -
-    id: anp-latex-block-color
+    id: loopsk-latex-block-color
     title: LaTeX Block Color
     type: class-select
     allowEmpty: true
-    default: anp-latex-block-text
+    default: loopsk-latex-block-text
     options:
     -
         label: Rosewater
-        value: anp-latex-block-rosewater
+        value: loopsk-latex-block-rosewater
     -
         label: Flamingo
-        value: anp-latex-block-flamingo
+        value: loopsk-latex-block-flamingo
     -
         label: Pink
-        value: anp-latex-block-pink
+        value: loopsk-latex-block-pink
     -
         label: Mauve
-        value: anp-latex-block-mauve
+        value: loopsk-latex-block-mauve
     -
         label: Red
-        value: anp-latex-block-red
+        value: loopsk-latex-block-red
     -
         label: Maroon
-        value: anp-latex-block-maroon
+        value: loopsk-latex-block-maroon
     -
         label: Peach
-        value: anp-latex-block-peach
+        value: loopsk-latex-block-peach
     -
         label: Yellow
-        value: anp-latex-block-yellow
+        value: loopsk-latex-block-yellow
     -
         label: Green
-        value: anp-latex-block-green
+        value: loopsk-latex-block-green
     -
         label: Teal
-        value: anp-latex-block-teal
+        value: loopsk-latex-block-teal
     -
         label: Sky
-        value: anp-latex-block-sky
+        value: loopsk-latex-block-sky
     -
         label: Sapphire
-        value: anp-latex-block-sapphire
+        value: loopsk-latex-block-sapphire
     -
         label: Blue
-        value: anp-latex-block-blue
+        value: loopsk-latex-block-blue
     -
         label: Lavender
-        value: anp-latex-block-lavender
+        value: loopsk-latex-block-lavender
     -
         label: Text
-        value: anp-latex-block-text
+        value: loopsk-latex-block-text
     -
         label: Subtext 1
-        value: anp-latex-block-subtext1
+        value: loopsk-latex-block-subtext1
     -
         label: Subtext 0
-        value: anp-latex-block-subtext0
+        value: loopsk-latex-block-subtext0
     -
         label: Overlay 2
-        value: anp-latex-block-overlay2
+        value: loopsk-latex-block-overlay2
     -
         label: Overlay 1
-        value: anp-latex-block-overlay1
+        value: loopsk-latex-block-overlay1
     -
         label: Overlay 0
-        value: anp-latex-block-overlay0
+        value: loopsk-latex-block-overlay0
     -
         label: Surface 2
-        value: anp-latex-block-surface2
+        value: loopsk-latex-block-surface2
     -
         label: Surface 1
-        value: anp-latex-block-surface1
+        value: loopsk-latex-block-surface1
     -
         label: Surface 0
-        value: anp-latex-block-surface0
+        value: loopsk-latex-block-surface0
 -
-    id: anp-latex-block-font-size
+    id: loopsk-latex-block-font-size
     title: LaTeX Block Font Size
     description: Change the font size of LaTeX blocks.
     type: variable-number
@@ -749,14 +749,14 @@ settings:
 # File Editor & Markdown Elements :: Lists
 
 -
-    id: anp-list-header
+    id: loopsk-list-header
     title: Lists
     description: Styling, indent, spacing
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-list-toggle
+    id: loopsk-list-toggle
     title: Enable List Styling
     type: class-toggle
 -
@@ -839,32 +839,32 @@ settings:
 # File Editor & Markdown Elements :: Tables
 
 -
-    id: anp-table-header
+    id: loopsk-table-header
     title: Tables
     description: Table width, alignment, table element highlight and alignment, border width
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-table-toggle
+    id: loopsk-table-toggle
     title: Enable Table Styling
     type: class-toggle
 -
-    id: anp-table-width
+    id: loopsk-table-width
     title: Enable Custom Table Width
-    description: Use anp-table-width for yaml syntax
+    description: Use loopsk-table-width for yaml syntax
     type: class-toggle
 -
-    id: anp-table-auto
+    id: loopsk-table-auto
     title: Center Tables
-    description: Use anp-table-auto for yaml syntax
+    description: Use loopsk-table-auto for yaml syntax
     type: class-toggle
 -
-    id: anp-table-th-highlight
+    id: loopsk-table-th-highlight
     title: <th> Highlight
     type: class-toggle
 -
-    id: anp-td-highlight
+    id: loopsk-td-highlight
     title: <td> Highlight
     type: class-select
     default: none
@@ -875,18 +875,18 @@ settings:
         value: none
     -
         label: Alternate Rows
-        value: anp-table-row-alt
+        value: loopsk-table-row-alt
     -
         label: Alternate Columns
-        value: anp-table-col-alt
+        value: loopsk-table-col-alt
     -
         label: Checkered
-        value: anp-table-checkered
+        value: loopsk-table-checkered
     -
         label: Full
-        value: anp-table-full
+        value: loopsk-table-full
 -
-    id: anp-table-highlight-opacity
+    id: loopsk-table-highlight-opacity
     title: Highlight Opacity
     default: 0.5
     type: variable-number-slider
@@ -894,7 +894,7 @@ settings:
     max: 1
     step: 0.1
 -
-    id: anp-table-align-th
+    id: loopsk-table-align-th
     title: <th> Text Align
     type: variable-select
     default: center
@@ -909,7 +909,7 @@ settings:
         label: Right
         value: right
 -
-    id: anp-table-align-td
+    id: loopsk-table-align-td
     title: <td> Text Align
     type: variable-select
     default: center
@@ -924,13 +924,13 @@ settings:
         label: Right
         value: right
 -
-    id: anp-table-thickness
+    id: loopsk-table-thickness
     title: Custom Table Border Width
     type: variable-number
     default: 2
     format: px
 -
-    id: anp-table-width-pct
+    id: loopsk-table-width-pct
     title: Custom Table Width
     type: variable-number
     default: 100
@@ -939,7 +939,7 @@ settings:
 # File Editor & Markdown Elements :: Tags
 
 -
-    id: anp-tags-header
+    id: loopsk-tags-header
     title: Tags
     description: Border Width and Border Radius of Tags
     type: heading
@@ -964,14 +964,14 @@ settings:
 # File Preview
 
 -
-    id: anp-preview-header
+    id: loopsk-preview-header
     title: File Preview
     description: File Preview Margins and Word-Wrap Width
     type: heading
     level: 1
     collapsed: true
 -
-    id: anp-toggle-preview
+    id: loopsk-toggle-preview
     title: Enable Custom Preview Margins
     type: class-toggle
 -
@@ -981,7 +981,7 @@ settings:
     default: 32
     format: px
 -
-    id: anp-preview-width-pct
+    id: loopsk-preview-width-pct
     title: Preview Width
     type: variable-number
     default: 80
@@ -996,7 +996,7 @@ settings:
 # Integrations
 
 -
-    id: anp-plugin-header
+    id: loopsk-plugin-header
     title: Integrations
     description: Kanban, Notebook Navigator, Minimal Cards Snippet, etc.
     type: heading
@@ -1006,14 +1006,14 @@ settings:
 # Integrations :: Notebook Navigator
 
 -
-    id: anp-notebook-navigator-header
+    id: loopsk-notebook-navigator-header
     title: Notebook Navigator
     description:
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-nn-banner-logo
+    id: loopsk-nn-banner-logo
     title: Show LOOP logo on the navigation banner
     description: Draws the LOOP logo over the banner image, in the right colour for the current theme. Needs a banner image chosen in Notebook Navigator first, otherwise there is nothing to draw on.
     type: class-toggle
@@ -1022,7 +1022,7 @@ settings:
 # Integrations :: Kanban
 
 -
-    id: anp-plugin-kanban
+    id: loopsk-plugin-kanban
     title: Kanban
     description: 
     type: heading
@@ -1032,26 +1032,26 @@ settings:
 # Integrations :: Kanban :: Card Settings
 
 -
-    id: anp-plugin-card-settings
+    id: loopsk-plugin-card-settings
     title: Card Settings
     description: 
     type: heading
     level: 3
     collapsed: true
 -
-    id: anp-kanban-hide-card-menus
+    id: loopsk-kanban-hide-card-menus
     title: Hide the Card Menu Button
     type: class-toggle
 -
-    id: anp-kanban-hide-archive-btn
+    id: loopsk-kanban-hide-archive-btn
     title: Hide the Archive Card Button
     type: class-toggle
 -
-    id: anp-kanban-hide-card-border
+    id: loopsk-kanban-hide-card-border
     title: Disable Card Borders
     type: class-toggle
 -
-    id: anp-kanban-card-opacity
+    id: loopsk-kanban-card-opacity
     title: Card Opacity
     type: variable-number-slider
     default: 1
@@ -1059,7 +1059,7 @@ settings:
     max: 1
     step: 0.05
 -
-    id: anp-kanban-card-radius
+    id: loopsk-kanban-card-radius
     title: Card Radius
     type: variable-number-slider
     default: 6
@@ -1068,7 +1068,7 @@ settings:
     max: 10
     step: 1
 -
-    id: anp-kanban-card-spacing
+    id: loopsk-kanban-card-spacing
     title: Card Spacing
     type: variable-number-slider
     default: 8
@@ -1080,23 +1080,23 @@ settings:
 # Integrations :: Kanban :: Lane Settings
 
 -
-    id: anp-plugin-lane-settings
+    id: loopsk-plugin-lane-settings
     title: Lane Settings
     description: 
     type: heading
     level: 3
     collapsed: true
 -
-    id: anp-kanban-lanes
+    id: loopsk-kanban-lanes
     title: Enable Full Height Lanes
     description: Toggles maximum height for Kanban lanes
     type: class-toggle
 -
-    id: anp-kanban-hide-lane-border
+    id: loopsk-kanban-hide-lane-border
     title: Disable Lane Borders
     type: class-toggle
 -
-    id: anp-kanban-lane-opacity
+    id: loopsk-kanban-lane-opacity
     title: Lane Opacity
     type: variable-number-slider
     default: 1
@@ -1104,7 +1104,7 @@ settings:
     max: 1
     step: 0.05
 -
-    id: anp-kanban-lane-radius
+    id: loopsk-kanban-lane-radius
     title: Lane Radius
     type: variable-number-slider
     default: 6
@@ -1113,7 +1113,7 @@ settings:
     max: 10
     step: 1
 -
-    id: anp-kanban-lane-spacing
+    id: loopsk-kanban-lane-spacing
     title: Lane Spacing
     type: variable-number-slider
     default: 10
@@ -1125,34 +1125,34 @@ settings:
 # Integrations :: Kanban :: Search Settings
 
 -
-    id: anp-plugin-kanban-search-settings
+    id: loopsk-plugin-kanban-search-settings
     title: Search Settings
     description: 
     type: heading
     level: 3
     collapsed: true
 -
-    id: anp-kanban-search-full
+    id: loopsk-kanban-search-full
     title: Enable Full Width Search Bar
     description: 
     type: class-toggle
 -
-    id: anp-kanban-collapse-lanes
+    id: loopsk-kanban-collapse-lanes
     title: Collapse Lanes With No Search Results
     description: 
     type: class-toggle
 -
-    id: anp-kanban-hide-cards
+    id: loopsk-kanban-hide-cards
     title: Hide Cards That Don't Contain the Search Query
     description: 
     type: class-toggle
 -
-    id: anp-kanban-hide-mark
+    id: loopsk-kanban-hide-mark
     title: Hide Search Result Highlight in Cards
     description: 
     type: class-toggle
 -
-    id: anp-kanban-uncollapse-lanes
+    id: loopsk-kanban-uncollapse-lanes
     title: Uncollapse Lanes and Unhide Cards When Sorting
     description: 
     type: class-toggle
@@ -1160,19 +1160,19 @@ settings:
 # Integrations :: Minimal Cards
 
 -
-    id: anp-snippet-minimal-cards
+    id: loopsk-snippet-minimal-cards
     title: Minimal Cards
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-snippet-minimal-cards-disc
+    id: loopsk-snippet-minimal-cards-disc
     title: Usage
     description: "Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). This theme does not come compiled with the snippet, however you can use a compiled version with this theme."
     type: info-text
     markdown: true
 -
-    id: loop-skywalker-url-minimal-cards-snippet
+    id: skywalker-url-minimal-cards-snippet
     title: Minimal Cards Snippet
     description: "Download the snippet from [kepano](https://github.com/kepano/)'s github via [this link](https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss)."
     type: info-text
@@ -1212,37 +1212,37 @@ settings:
 # Miscellaneous
 
 -
-    id: anp-misc-element-header
+    id: loopsk-misc-element-header
     title: Miscellaneous
     description: Color Palette Transition, Custom Metadata Button
     type: heading
     level: 1
     collapsed: true
 -
-    id: anp-color-transition-toggle
+    id: loopsk-color-transition-toggle
     title: Enable Color Transition (WIP)
     description: "Adds a transition when switching palettes, looks really neat :)"
     type: class-toggle
 -
-    id: anp-print
+    id: loopsk-print
     title: Enable Print Styling
     type: class-toggle
 
 # Show/Hide UI Elements
 
 -
-    id: anp-show-hide-elements-header
+    id: loopsk-show-hide-elements-header
     title: Show/Hide UI Elements
     description: Toggle Visibility of UI Elements
     type: heading
     level: 1
     collapsed: true
 -
-    id: anp-autohide-titlebar
+    id: loopsk-autohide-titlebar
     title: Autohide Title Bar
     type: class-toggle
 -
-    id: anp-cursor
+    id: loopsk-cursor
     title: Pointer cursor
     type: variable-select
     default: pointer
@@ -1254,40 +1254,40 @@ settings:
         label: Normal
         value: initial
 -
-    id: anp-toggle-metadata
+    id: loopsk-toggle-metadata
     title: Hide Metadata
     type: class-toggle
 -
-    id: anp-toggle-scrollbars
+    id: loopsk-toggle-scrollbars
     title: Hide Scrollbars
     type: class-toggle
 -
-    id: anp-hide-status-bar
+    id: loopsk-hide-status-bar
     title: Hide Status Bar
     type: class-toggle
 -
-    id: anp-tooltip-toggle
+    id: loopsk-tooltip-toggle
     title: Hide Tooltips
     type: class-toggle
 -
-    id: anp-hide-external-link-icon
+    id: loopsk-hide-external-link-icon
     title: Hide External Link Icon
     type: class-toggle
     default: true
 -
-    id: anp-empty-tab-flat
+    id: loopsk-empty-tab-flat
     title: Flat New Tab
     description: Gives the New tab pane the same tone as the sidebars. The reading area is lifted slightly to be easier on the eye, which an empty pane does not need.
     type: class-toggle
     default: true
 -
-    id: anp-hide-help
+    id: loopsk-hide-help
     title: Hide Help Button
     description: Removes the help button from the vault profile, leaving the settings cog
     type: class-toggle
     default: false
 -
-    id: anp-inline-title-vis
+    id: loopsk-inline-title-vis
     title: Inline Title Visibility
     description: Some plugins require inline titles to be enabled globally; this hides them on notes without turning the setting off.
     type: variable-select
@@ -1303,7 +1303,7 @@ settings:
 # Typography
 
 -
-    id: anp-typography-header
+    id: loopsk-typography-header
     title: Typography
     description: Fonts, Headings, Text Decoration, etc.
     type: heading
@@ -1313,24 +1313,24 @@ settings:
 # Typography :: Font Families
 
 -
-    id: anp-font-families-header
+    id: loopsk-font-families-header
     title: Font Families
     description: 
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-editor-font-source
+    id: loopsk-editor-font-source
     title: Source Editor Font
     type: variable-text
     default: Iosevka Comfy Duo
 -
-    id: anp-editor-font-lp
+    id: loopsk-editor-font-lp
     title: Live Preview Editor Font
     type: variable-text
     default: Noto Sans
 -
-    id: anp-editor-font-rv
+    id: loopsk-editor-font-rv
     title: Reading View Editor Font
     type: variable-text
     default: Noto Sans
@@ -1338,7 +1338,7 @@ settings:
 # Typography :: Font Weights
 
 -
-    id: anp-font-weight-header
+    id: loopsk-font-weight-header
     title: Font Weights
     description: 
     type: heading
@@ -1381,7 +1381,7 @@ settings:
         label: Black
         value: 900
 -
-    id: anp-font-live-preview-wt
+    id: loopsk-font-live-preview-wt
     title: Live Preview Mode Weight
     type: variable-select
     default: '400'
@@ -1414,7 +1414,7 @@ settings:
         label: Black
         value: 900
 -
-    id: anp-font-preview-wt
+    id: loopsk-font-preview-wt
     title: Reading Mode Weight
     type: variable-select
     default: '400'
@@ -1447,7 +1447,7 @@ settings:
         label: Black
         value: 900
 -
-    id: anp-font-editor-wt
+    id: loopsk-font-editor-wt
     title: Source Mode Weight
     type: variable-select
     default: '400'
@@ -1483,26 +1483,26 @@ settings:
 # Typography :: Headings
 
 -
-    id: anp-header-header
+    id: loopsk-header-header
     title: Headings
     description: 
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-header-color-toggle
+    id: loopsk-header-color-toggle
     title: Enable Custom Heading Colors
     type: class-toggle
 -
-    id: anp-header-margin-toggle
+    id: loopsk-header-margin-toggle
     title: Enable Custom Heading Margin
     type: class-toggle
 -
-    id: anp-header-divider-color-toggle
+    id: loopsk-header-divider-color-toggle
     title: Inherit Divider Color from Heading Color
     type: class-toggle
 -
-    id: anp-header-margin-value
+    id: loopsk-header-margin-value
     title: Heading margin value
     description: Size unit is px
     type: variable-number-slider
@@ -1515,7 +1515,7 @@ settings:
 # Typography :: Headings :: H1
 
 -
-    id: anp-h1-header
+    id: loopsk-h1-header
     title: H1
     description: 
     type: heading
@@ -1543,63 +1543,63 @@ settings:
     type: variable-number
     default: 1.2
 -
-    id: anp-h1-color-custom
+    id: loopsk-h1-color-custom
     title: H1 Color
     type: class-select
     allowEmpty: true
-    default: anp-h1-red
+    default: loopsk-h1-red
     options:
     -
         label: Rosewater
-        value: anp-h1-rosewater
+        value: loopsk-h1-rosewater
     -
         label: Flamingo
-        value: anp-h1-flamingo
+        value: loopsk-h1-flamingo
     -
         label: Pink
-        value: anp-h1-pink
+        value: loopsk-h1-pink
     -
         label: Mauve
-        value: anp-h1-mauve
+        value: loopsk-h1-mauve
     -
         label: Red
-        value: anp-h1-red
+        value: loopsk-h1-red
     -
         label: Maroon
-        value: anp-h1-maroon
+        value: loopsk-h1-maroon
     -
         label: Peach
-        value: anp-h1-peach
+        value: loopsk-h1-peach
     -
         label: Yellow
-        value: anp-h1-yellow
+        value: loopsk-h1-yellow
     -
         label: Green
-        value: anp-h1-green
+        value: loopsk-h1-green
     -
         label: Teal
-        value: anp-h1-teal
+        value: loopsk-h1-teal
     -
         label: Sky
-        value: anp-h1-sky
+        value: loopsk-h1-sky
     -
         label: Sapphire
-        value: anp-h1-sapphire
+        value: loopsk-h1-sapphire
     -
         label: Blue
-        value: anp-h1-blue
+        value: loopsk-h1-blue
     -
         label: Lavender
-        value: anp-h1-lavender
+        value: loopsk-h1-lavender
 -
-    id: anp-h1-divider
+    id: loopsk-h1-divider
     title: H1 Divider
     type: class-toggle
 
 # Typography :: Headings :: H2
 
 -
-    id: anp-h2-header
+    id: loopsk-h2-header
     title: H2
     description: 
     type: heading
@@ -1627,63 +1627,63 @@ settings:
     type: variable-number
     default: 1.2
 -
-    id: anp-h2-color-custom
+    id: loopsk-h2-color-custom
     title: H2 Color
     type: class-select
     allowEmpty: true
-    default: anp-h2-peach
+    default: loopsk-h2-peach
     options:
     -
         label: Rosewater
-        value: anp-h2-rosewater
+        value: loopsk-h2-rosewater
     -
         label: Flamingo
-        value: anp-h2-flamingo
+        value: loopsk-h2-flamingo
     -
         label: Pink
-        value: anp-h2-pink
+        value: loopsk-h2-pink
     -
         label: Mauve
-        value: anp-h2-mauve
+        value: loopsk-h2-mauve
     -
         label: Red
-        value: anp-h2-red
+        value: loopsk-h2-red
     -
         label: Maroon
-        value: anp-h2-maroon
+        value: loopsk-h2-maroon
     -
         label: Peach
-        value: anp-h2-peach
+        value: loopsk-h2-peach
     -
         label: Yellow
-        value: anp-h2-yellow
+        value: loopsk-h2-yellow
     -
         label: Green
-        value: anp-h2-green
+        value: loopsk-h2-green
     -
         label: Teal
-        value: anp-h2-teal
+        value: loopsk-h2-teal
     -
         label: Sky
-        value: anp-h2-sky
+        value: loopsk-h2-sky
     -
         label: Sapphire
-        value: anp-h2-sapphire
+        value: loopsk-h2-sapphire
     -
         label: Blue
-        value: anp-h2-blue
+        value: loopsk-h2-blue
     -
         label: Lavender
-        value: anp-h2-lavender
+        value: loopsk-h2-lavender
 -
-    id: anp-h2-divider
+    id: loopsk-h2-divider
     title: H2 Divider
     type: class-toggle
 
 # Typography :: Headings :: H3
 
 -
-    id: anp-h3-header
+    id: loopsk-h3-header
     title: H3
     description: 
     type: heading
@@ -1711,63 +1711,63 @@ settings:
     type: variable-number
     default: 1.3
 -
-    id: anp-h3-color-custom
+    id: loopsk-h3-color-custom
     title: H3 Color
     type: class-select
     allowEmpty: true
-    default: anp-h3-green
+    default: loopsk-h3-green
     options:
     -
         label: Rosewater
-        value: anp-h3-rosewater
+        value: loopsk-h3-rosewater
     -
         label: Flamingo
-        value: anp-h3-flamingo
+        value: loopsk-h3-flamingo
     -
         label: Pink
-        value: anp-h3-pink
+        value: loopsk-h3-pink
     -
         label: Mauve
-        value: anp-h3-mauve
+        value: loopsk-h3-mauve
     -
         label: Red
-        value: anp-h3-red
+        value: loopsk-h3-red
     -
         label: Maroon
-        value: anp-h3-maroon
+        value: loopsk-h3-maroon
     -
         label: Peach
-        value: anp-h3-peach
+        value: loopsk-h3-peach
     -
         label: Yellow
-        value: anp-h3-yellow
+        value: loopsk-h3-yellow
     -
         label: Green
-        value: anp-h3-green
+        value: loopsk-h3-green
     -
         label: Teal
-        value: anp-h3-teal
+        value: loopsk-h3-teal
     -
         label: Sky
-        value: anp-h3-sky
+        value: loopsk-h3-sky
     -
         label: Sapphire
-        value: anp-h3-sapphire
+        value: loopsk-h3-sapphire
     -
         label: Blue
-        value: anp-h3-blue
+        value: loopsk-h3-blue
     -
         label: Lavender
-        value: anp-h3-lavender
+        value: loopsk-h3-lavender
 -
-    id: anp-h3-divider
+    id: loopsk-h3-divider
     title: H3 Divider
     type: class-toggle
 
 # Typography :: Headings :: H4
 
 -
-    id: anp-h4-header
+    id: loopsk-h4-header
     title: H4
     description: 
     type: heading
@@ -1795,63 +1795,63 @@ settings:
     type: variable-number
     default: 1.4
 -
-    id: anp-h4-color-custom
+    id: loopsk-h4-color-custom
     title: H4 Color
     type: class-select
     allowEmpty: true
-    default: anp-h4-teal
+    default: loopsk-h4-teal
     options:
     -
         label: Rosewater
-        value: anp-h4-rosewater
+        value: loopsk-h4-rosewater
     -
         label: Flamingo
-        value: anp-h4-flamingo
+        value: loopsk-h4-flamingo
     -
         label: Pink
-        value: anp-h4-pink
+        value: loopsk-h4-pink
     -
         label: Mauve
-        value: anp-h4-mauve
+        value: loopsk-h4-mauve
     -
         label: Red
-        value: anp-h4-red
+        value: loopsk-h4-red
     -
         label: Maroon
-        value: anp-h4-maroon
+        value: loopsk-h4-maroon
     -
         label: Peach
-        value: anp-h4-peach
+        value: loopsk-h4-peach
     -
         label: Yellow
-        value: anp-h4-yellow
+        value: loopsk-h4-yellow
     -
         label: Green
-        value: anp-h4-green
+        value: loopsk-h4-green
     -
         label: Teal
-        value: anp-h4-teal
+        value: loopsk-h4-teal
     -
         label: Sky
-        value: anp-h4-sky
+        value: loopsk-h4-sky
     -
         label: Sapphire
-        value: anp-h4-sapphire
+        value: loopsk-h4-sapphire
     -
         label: Blue
-        value: anp-h4-blue
+        value: loopsk-h4-blue
     -
         label: Lavender
-        value: anp-h4-lavender
+        value: loopsk-h4-lavender
 -
-    id: anp-h4-divider
+    id: loopsk-h4-divider
     title: H4 Divider
     type: class-toggle
 
 # Typography :: Headings :: H5
 
 -
-    id: anp-h5-header
+    id: loopsk-h5-header
     title: H5
     description: 
     type: heading
@@ -1879,63 +1879,63 @@ settings:
     type: variable-number
     default: 1.5
 -
-    id: anp-h5-color-custom
+    id: loopsk-h5-color-custom
     title: H5 Color
     type: class-select
     allowEmpty: true
-    default: anp-h5-lavender
+    default: loopsk-h5-lavender
     options:
     -
         label: Rosewater
-        value: anp-h5-rosewater
+        value: loopsk-h5-rosewater
     -
         label: Flamingo
-        value: anp-h5-flamingo
+        value: loopsk-h5-flamingo
     -
         label: Pink
-        value: anp-h5-pink
+        value: loopsk-h5-pink
     -
         label: Mauve
-        value: anp-h5-mauve
+        value: loopsk-h5-mauve
     -
         label: Red
-        value: anp-h5-red
+        value: loopsk-h5-red
     -
         label: Maroon
-        value: anp-h5-maroon
+        value: loopsk-h5-maroon
     -
         label: Peach
-        value: anp-h5-peach
+        value: loopsk-h5-peach
     -
         label: Yellow
-        value: anp-h5-yellow
+        value: loopsk-h5-yellow
     -
         label: Green
-        value: anp-h5-green
+        value: loopsk-h5-green
     -
         label: Teal
-        value: anp-h5-teal
+        value: loopsk-h5-teal
     -
         label: Sky
-        value: anp-h5-sky
+        value: loopsk-h5-sky
     -
         label: Sapphire
-        value: anp-h5-sapphire
+        value: loopsk-h5-sapphire
     -
         label: Blue
-        value: anp-h5-blue
+        value: loopsk-h5-blue
     -
         label: Lavender
-        value: anp-h5-lavender
+        value: loopsk-h5-lavender
 -
-    id: anp-h5-divider
+    id: loopsk-h5-divider
     title: H5 Divider
     type: class-toggle
 
 # Typography :: Headings :: H6
 
 -
-    id: anp-h6-header
+    id: loopsk-h6-header
     title: H6
     description: 
     type: heading
@@ -1963,63 +1963,63 @@ settings:
     type: variable-number
     default: 1.5
 -
-    id: anp-h6-color-custom
+    id: loopsk-h6-color-custom
     title: H6 Color
     type: class-select
     allowEmpty: true
-    default: anp-h6-mauve
+    default: loopsk-h6-mauve
     options:
     -
         label: Rosewater
-        value: anp-h6-rosewater
+        value: loopsk-h6-rosewater
     -
         label: Flamingo
-        value: anp-h6-flamingo
+        value: loopsk-h6-flamingo
     -
         label: Pink
-        value: anp-h6-pink
+        value: loopsk-h6-pink
     -
         label: Mauve
-        value: anp-h6-mauve
+        value: loopsk-h6-mauve
     -
         label: Red
-        value: anp-h6-red
+        value: loopsk-h6-red
     -
         label: Maroon
-        value: anp-h6-maroon
+        value: loopsk-h6-maroon
     -
         label: Peach
-        value: anp-h6-peach
+        value: loopsk-h6-peach
     -
         label: Yellow
-        value: anp-h6-yellow
+        value: loopsk-h6-yellow
     -
         label: Green
-        value: anp-h6-green
+        value: loopsk-h6-green
     -
         label: Teal
-        value: anp-h6-teal
+        value: loopsk-h6-teal
     -
         label: Sky
-        value: anp-h6-sky
+        value: loopsk-h6-sky
     -
         label: Sapphire
-        value: anp-h6-sapphire
+        value: loopsk-h6-sapphire
     -
         label: Blue
-        value: anp-h6-blue
+        value: loopsk-h6-blue
     -
         label: Lavender
-        value: anp-h6-lavender
+        value: loopsk-h6-lavender
 -
-    id: anp-h6-divider
+    id: loopsk-h6-divider
     title: H6 Divider
     type: class-toggle
 
 # Typography :: Comments
   
 -
-    id: anp-comment-header
+    id: loopsk-comment-header
     title: Comments
     description: 
     type: heading
@@ -2039,181 +2039,181 @@ settings:
 # Typography :: Text Decoration
 
 -
-    id: anp-decor-header
+    id: loopsk-decor-header
     title: Text Decoration
     description: 
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-decoration-toggle
+    id: loopsk-decoration-toggle
     title: Enable Decoration Colors
     type: class-toggle
 -
-    id: anp-bold-custom
+    id: loopsk-bold-custom
     title: Bold Color
     type: class-select
     allowEmpty: false
-    default: anp-bold-red
+    default: loopsk-bold-red
     options:
     -
         label: None
         value: none
     -
         label: Rosewater
-        value: anp-bold-rosewater
+        value: loopsk-bold-rosewater
     -
         label: Flamingo
-        value: anp-bold-flamingo
+        value: loopsk-bold-flamingo
     -
         label: Pink
-        value: anp-bold-pink
+        value: loopsk-bold-pink
     -
         label: Mauve
-        value: anp-bold-mauve
+        value: loopsk-bold-mauve
     -
         label: Red
-        value: anp-bold-red
+        value: loopsk-bold-red
     -
         label: Maroon
-        value: anp-bold-maroon
+        value: loopsk-bold-maroon
     -
         label: Peach
-        value: anp-bold-peach
+        value: loopsk-bold-peach
     -
         label: Yellow
-        value: anp-bold-yellow
+        value: loopsk-bold-yellow
     -
         label: Green
-        value: anp-bold-green
+        value: loopsk-bold-green
     -
         label: Teal
-        value: anp-bold-teal
+        value: loopsk-bold-teal
     -
         label: Sky
-        value: anp-bold-sky
+        value: loopsk-bold-sky
     -
         label: Sapphire
-        value: anp-bold-sapphire
+        value: loopsk-bold-sapphire
     -
         label: Blue
-        value: anp-bold-blue
+        value: loopsk-bold-blue
     -
         label: Lavender
-        value: anp-bold-lavender
+        value: loopsk-bold-lavender
 -
-    id: anp-italic-custom
+    id: loopsk-italic-custom
     title: Italic Color
     type: class-select
     allowEmpty: false
-    default: anp-italic-green
+    default: loopsk-italic-green
     options:
     -
         label: None
         value: none
     -
         label: Rosewater
-        value: anp-italic-rosewater
+        value: loopsk-italic-rosewater
     -
         label: Flamingo
-        value: anp-italic-flamingo
+        value: loopsk-italic-flamingo
     -
         label: Pink
-        value: anp-italic-pink
+        value: loopsk-italic-pink
     -
         label: Mauve
-        value: anp-italic-mauve
+        value: loopsk-italic-mauve
     -
         label: Red
-        value: anp-italic-red
+        value: loopsk-italic-red
     -
         label: Maroon
-        value: anp-italic-maroon
+        value: loopsk-italic-maroon
     -
         label: Peach
-        value: anp-italic-peach
+        value: loopsk-italic-peach
     -
         label: Yellow
-        value: anp-italic-yellow
+        value: loopsk-italic-yellow
     -
         label: Green
-        value: anp-italic-green
+        value: loopsk-italic-green
     -
         label: Teal
-        value: anp-italic-teal
+        value: loopsk-italic-teal
     -
         label: Sky
-        value: anp-italic-sky
+        value: loopsk-italic-sky
     -
         label: Sapphire
-        value: anp-italic-sapphire
+        value: loopsk-italic-sapphire
     -
         label: Blue
-        value: anp-italic-blue
+        value: loopsk-italic-blue
     -
         label: Lavender
-        value: anp-italic-lavender
+        value: loopsk-italic-lavender
 -
-    id: anp-highlight-custom
+    id: loopsk-highlight-custom
     title: Highlight Color
     type: class-select
     allowEmpty: false
-    default: anp-highlight-yellow
+    default: loopsk-highlight-yellow
     options:
     -
         label: Rosewater
-        value: anp-highlight-rosewater
+        value: loopsk-highlight-rosewater
     -
         label: Flamingo
-        value: anp-highlight-flamingo
+        value: loopsk-highlight-flamingo
     -
         label: Pink
-        value: anp-highlight-pink
+        value: loopsk-highlight-pink
     -
         label: Mauve
-        value: anp-highlight-mauve
+        value: loopsk-highlight-mauve
     -
         label: Red
-        value: anp-highlight-red
+        value: loopsk-highlight-red
     -
         label: Maroon
-        value: anp-highlight-maroon
+        value: loopsk-highlight-maroon
     -
         label: Peach
-        value: anp-highlight-peach
+        value: loopsk-highlight-peach
     -
         label: Yellow
-        value: anp-highlight-yellow
+        value: loopsk-highlight-yellow
     -
         label: Green
-        value: anp-highlight-green
+        value: loopsk-highlight-green
     -
         label: Teal
-        value: anp-highlight-teal
+        value: loopsk-highlight-teal
     -
         label: Sky
-        value: anp-highlight-sky
+        value: loopsk-highlight-sky
     -
         label: Sapphire
-        value: anp-highlight-sapphire
+        value: loopsk-highlight-sapphire
     -
         label: Blue
-        value: anp-highlight-blue
+        value: loopsk-highlight-blue
     -
         label: Lavender
-        value: anp-highlight-lavender
+        value: loopsk-highlight-lavender
 
 # Workspace
 
 -
-    id: anp-workspace-header
+    id: loopsk-workspace-header
     title: Workspace
     description: Background, Colorful Frame, Layout, Sidebar, Tabs, Translucency, etc.
     type: heading
     level: 1
     collapsed: true
 -
-    id: anp-vault-logo
+    id: loopsk-vault-logo
     title: Show LOOP logo instead of vault name
     description: Puts the LOOP logo where the vault name sits at the bottom of the sidebar.
     type: class-toggle
@@ -2222,14 +2222,14 @@ settings:
 # Workspace :: Canvas
 
 -
-    id: anp-canvas-header
+    id: loopsk-canvas-header
     title: Canvas
     description: Darken Canvas Background
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-canvas-dark-bg
+    id: loopsk-canvas-dark-bg
     title: Darker Canvas Background
     type: class-toggle
 
@@ -2243,19 +2243,19 @@ settings:
     level: 2
     collapsed: true
 -
-    id: anp-colorful-frame
+    id: loopsk-colorful-frame
     title: "Enable Colorful Frame (WIP)"
     type: class-toggle
 -
-    id: anp-colorful-frame-icon-toggle-light
+    id: loopsk-colorful-frame-icon-toggle-light
     title: "Invert Icon Colors - Light"
     type: class-toggle
 -
-    id: anp-colorful-frame-icon-toggle-dark
+    id: loopsk-colorful-frame-icon-toggle-dark
     title: "Invert Icon Colors - Dark"
     type: class-toggle
 -
-    id: anp-colorful-frame-opacity
+    id: loopsk-colorful-frame-opacity
     title: Colorful Frame Opacity
     type: variable-number-slider
     default: 1
@@ -2263,7 +2263,7 @@ settings:
     max: 1
     step: 0.05
 -
-    id: anp-colorful-frame-color
+    id: loopsk-colorful-frame-color
     title: Custom Colorful Frame Color
     type: variable-themed-color
     format: "rgb-values"
@@ -2272,36 +2272,36 @@ settings:
     default-dark: '#'
     alt-format:
     -
-        id: anp-colorful-frame-color-hsl
+        id: loopsk-colorful-frame-color-hsl
         format: "hsl-values"
 
 # Workspace :: File Browser
 
 -
-    id: anp-filebrowser-header
+    id: loopsk-filebrowser-header
     title: File Browser
     description: 'Enable/Disable File Browser elements'
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-custom-vault-toggle
+    id: loopsk-custom-vault-toggle
     title: Enable custom vault title
     type: class-toggle
 -
-    id: anp-file-icons
+    id: loopsk-file-icons
     title: Enable file icons
     type: class-toggle
 -
-    id: anp-floating-header
+    id: loopsk-floating-header
     title: Enable floating vault title
     type: class-toggle
 -
-    id: anp-collapse-folders
+    id: loopsk-collapse-folders
     title: Enable folder icons for collapse indicators
     type: class-toggle
 -
-    id: anp-file-label-align
+    id: loopsk-file-label-align
     title: File label alignment
     type: variable-select
     default: "0"
@@ -2316,19 +2316,19 @@ settings:
 # Workspace :: PDF Viewer
 
 -
-    id: anp-pdf-viewer-header
+    id: loopsk-pdf-viewer-header
     title: PDF Viewer
     description: 
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-pdf-blend-toggle-dark
+    id: loopsk-pdf-blend-toggle-dark
     title: Toggle PDF background blending - Dark Mode
     desc: Blends PDF viewer background with obsidian background in dark mode
     type: class-toggle
 -
-    id: anp-pdf-blend-toggle-light
+    id: loopsk-pdf-blend-toggle-light
     title: Toggle PDF background blending - Light Mode
     desc: Blends PDF viewer background with obsidian background in light mode
     type: class-toggle
@@ -2336,59 +2336,59 @@ settings:
 # Workspace :: Rainbow Folders
 
 -
-    id: anp-rainbow-section-header
+    id: loopsk-rainbow-section-header
     title: Rainbow Folders
     description: 
     type: heading
     level: 2
     collapsed: true
 -
-    id: loop-skywalker-url-custom-rainbow-colors
+    id: skywalker-url-custom-rainbow-colors
     title: Custom rainbow folder colors snippet
-    description: "Download the snippet through [this link](https://github.com/theloop-am/loop-skywalker/blob/main/snippets/custom-rainbow-colors.css)."
+    description: "Download the snippet through [this link](https://github.com/theloop-am/obsidian-skywalker/blob/main/snippets/custom-rainbow-colors.css)."
     type: info-text
     markdown: true
 -
-    id: anp-alt-rainbow-style
+    id: loopsk-alt-rainbow-style
     title: Rainbow style
     type: class-select
     allowEmpty: false
-    default: anp-default-rainbow
+    default: loopsk-default-rainbow
     options:
     -
         label: None
-        value: anp-default-rainbow
+        value: loopsk-default-rainbow
     -
         label: Full
-        value: anp-full-rainbow-color-toggle
+        value: loopsk-full-rainbow-color-toggle
     -
         label: Simple
-        value: anp-simple-rainbow-color-toggle
+        value: loopsk-simple-rainbow-color-toggle
 
 # Workspace :: Rainbow Folders :: Full Folder Settings
 
 -
-    id: anp-full-rainbow-folder-settings
+    id: loopsk-full-rainbow-folder-settings
     title: Full Folder Settings
     description: 
     type: heading
     level: 3
     collapsed: true
 -
-    id: anp-rainbow-file-toggle
+    id: loopsk-rainbow-file-toggle
     title: File recolor toggle
     desc: Recolors files to match the folders
     type: class-toggle
 -
-    id: anp-full-rainbow-text-color-toggle-light
+    id: loopsk-full-rainbow-text-color-toggle-light
     title: Invert title colors (Light Mode)
     type: class-toggle
 -
-    id: anp-full-rainbow-text-color-toggle-dark
+    id: loopsk-full-rainbow-text-color-toggle-dark
     title: Invert title colors (Dark Mode)
     type: class-toggle
 -
-    id: anp-rainbow-folder-bg-opacity
+    id: loopsk-rainbow-folder-bg-opacity
     title: Folder background color opacity
     type: variable-number
     default: 0.7
@@ -2396,50 +2396,50 @@ settings:
 # Workspace :: Rainbow Folders :: Simple Folder Settings
 
 -
-    id: anp-simple-rainbow-folder-settings
+    id: loopsk-simple-rainbow-folder-settings
     title: Simple Folder Settings
     description: 
     type: heading
     level: 3
     collapsed: true
 -
-    id: anp-simple-rainbow-title-toggle
+    id: loopsk-simple-rainbow-title-toggle
     title: Enable title recolor
     type: class-toggle
 -
-    id: anp-simple-rainbow-collapse-icon-toggle
+    id: loopsk-simple-rainbow-collapse-icon-toggle
     title: Enable collapse icon recolor
     type: class-toggle
 -
-    id: anp-simple-rainbow-indentation-toggle
+    id: loopsk-simple-rainbow-indentation-toggle
     title: Enable collapse indent recolor
     type: class-toggle
 -
-    id: anp-simple-rainbow-icon-toggle
+    id: loopsk-simple-rainbow-icon-toggle
     title: Enable circular file
     type: class-toggle
 -
-    id: anp-rainbow-subfolder-color-toggle
+    id: loopsk-rainbow-subfolder-color-toggle
     title: Enable subfolder color inheritance
     type: class-toggle
 
 # Workspace :: Stacked Tabs
 
 -
-    id: anp-stacked-tabs-header
+    id: loopsk-stacked-tabs-header
     title: Stacked Tabs
     description: 
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-stacked-header-width
+    id: loopsk-stacked-header-width
     title: Stacked tabs header width
     type: variable-number
     default: 40
     format: px
 -
-    id: anp-tab-stacked-pane-width
+    id: loopsk-tab-stacked-pane-width
     title: Stacked tabs pane width multiplier
     description: Multiplies the stack tab pane with which depends on file line width
     type: variable-number
@@ -2448,14 +2448,14 @@ settings:
 # Workspace :: Status Bar
 
 -
-    id: anp-status-bar-header
+    id: loopsk-status-bar-header
     title: Status Bar
     description: Select status bar style
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-status-bar-select
+    id: loopsk-status-bar-select
     title: Status Bar Style
     type: class-select
     default: none
@@ -2465,69 +2465,69 @@ settings:
         value: none
     -
         label: Floating
-        value: anp-floating-status-bar
+        value: loopsk-floating-status-bar
     -
         label: Fixed
-        value: anp-fixed-status-bar
+        value: loopsk-fixed-status-bar
 
 # Workspace :: Tabs
 
 -
-    id: anp-alt-tab-header
+    id: loopsk-alt-tab-header
     title: Tabs
     description: 
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-alt-tab-style
+    id: loopsk-alt-tab-style
     title: Tab style
     type: class-select
     allowEmpty: false
-    default: anp-default-tab
+    default: loopsk-default-tab
     options:
     -
         label: Default
-        value: anp-default-tab
+        value: loopsk-default-tab
     -
         label: Depth
-        value: anp-depth-tab-toggle
+        value: loopsk-depth-tab-toggle
     -
         label: Minimalistic
-        value: anp-mini-tab-toggle
+        value: loopsk-mini-tab-toggle
     -
         label: Safari-style (Animated)
-        value: anp-alternate-tab-toggle
+        value: loopsk-alternate-tab-toggle
     -
         label: Safari-style (Vanilla)
-        value: anp-safari-tab-toggle
+        value: loopsk-safari-tab-toggle
 -
-    id: anp-alt-tab-custom-height
+    id: loopsk-alt-tab-custom-height
     title: Custom tab height
     type: variable-number
     allowEmpty: false
     default: 40
     format: px
 -
-    id: anp-disable-newtab-align
+    id: loopsk-disable-newtab-align
     title: Disable new tab button right alignment
     type: class-toggle
 
 # Workspace :: Tabs :: Depth Tab Settings
 
 -
-    id: anp-depth-tab-header
+    id: loopsk-depth-tab-header
     title: Depth Tab Settings
     description: Only applies to inactive tabs
     type: heading
     level: 3
     collapsed: true
 -
-    id: anp-depth-tab-text-invert
+    id: loopsk-depth-tab-text-invert
     title: Invert tab text color
     type: class-toggle
 -
-    id: anp-depth-tab-opacity
+    id: loopsk-depth-tab-opacity
     title: Tab opacity
     type: variable-number-slider
     default: 0.6
@@ -2535,7 +2535,7 @@ settings:
     min: 0
     step: 0.1
 -
-    id: anp-depth-tab-gap
+    id: loopsk-depth-tab-gap
     title: Tab gap
     type: variable-number
     default: 10
@@ -2544,26 +2544,26 @@ settings:
 # Workspace :: Tabs :: Animated Safari-style Tab Settings
 
 -
-    id: anp-safari-tab-header
+    id: loopsk-safari-tab-header
     title: Animated Safari-style Tab Settings
     description: Adapted from github.com/chuckharmston's snippets
     type: heading
     level: 3
     collapsed: true
 -
-    id: anp-safari-tab-radius
+    id: loopsk-safari-tab-radius
     title: Tab radius
     type: variable-number
     default: 6
     format: px
 -
-    id: anp-safari-tab-gap
+    id: loopsk-safari-tab-gap
     title: Tab gap
     type: variable-number
     default: 10
     format: px
 -
-    id: anp-safari-border-width
+    id: loopsk-safari-border-width
     title: Tab border width
     type: variable-number
     default: 1
@@ -2572,28 +2572,28 @@ settings:
 # Workspace :: Tabs :: Vanilla Safari-style Tab Settings
 
 -
-    id: anp-safari-vanilla-tab-header
+    id: loopsk-safari-vanilla-tab-header
     title: Vanilla Safari-style Tab Settings
     description: 
     type: heading
     level: 3
     collapsed: true
 -
-    id: anp-safari-tab-animated
+    id: loopsk-safari-tab-animated
     title: Enable WIP animated safari tabs
     type: class-toggle
 
 # Workspace :: Translucency
 
 -
-    id: anp-translucency-header
+    id: loopsk-translucency-header
     title: Translucency
     description: 
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-translucency-opacity
+    id: loopsk-translucency-opacity
     description: Drag to change background opacity
     title: Window opacity
     type: variable-number
@@ -2602,14 +2602,14 @@ settings:
 # Workspace :: Workspace Layout
 
 -
-    id: anp-layout-header
+    id: loopsk-layout-header
     title: Workspace Layout
     description: Workspace layout and arrangement
     type: heading
     level: 2
     collapsed: true
 -
-    id: anp-layout-select
+    id: loopsk-layout-select
     title: Workspace Layout variant
     type: class-select
     allowEmpty: false
@@ -2620,73 +2620,73 @@ settings:
         value: none
     -
         label: Border
-        value: anp-border-layout
+        value: loopsk-border-layout
     -
         label: Cards
-        value: anp-card-layout
+        value: loopsk-card-layout
 -
-    id: anp-bg-fix
+    id: loopsk-bg-fix
     title: Background fix for applying colors
     type: class-toggle
 -
-    id: anp-hide-borders
+    id: loopsk-hide-borders
     title: Hide borders
     type: class-toggle
 
 # Workspace :: Workspace Layout :: Card Layout
 
 -
-    id: anp-layout-card
+    id: loopsk-layout-card
     title: Card Layout Settings
     description: 
     type: heading
     level: 3
     collapsed: true
 -
-    id: anp-card-radius
+    id: loopsk-card-radius
     title: Card radius
     type: variable-number
     default: 16
     format: px
 -
-    id: anp-card-layout-padding
+    id: loopsk-card-layout-padding
     title: Card padding
     type: variable-number
     default: 10
     format: px
 -
-    id: anp-card-header-left-padding
+    id: loopsk-card-header-left-padding
     title: Tab left padding
     type: variable-number
     default: 20
     format: px
 -
-    id: anp-card-shadows
+    id: loopsk-card-shadows
     title: Enable shadows
     type: class-toggle
 -
-    id: anp-card-layout-actions
+    id: loopsk-card-layout-actions
     title: Enable card format for actions
     type: class-toggle
 -
-    id: anp-card-layout-filebrowser
+    id: loopsk-card-layout-filebrowser
     title: Enable card format for file browser
     type: class-toggle
 -
-    id: anp-layout-border
+    id: loopsk-layout-border
     title: Border Layout Settings
     description: 
     type: heading
     level: 3
     collapsed: true
 -
-    id: anp-border-radius
+    id: loopsk-border-radius
     title: Border Layout Radius
     type: variable-number
     default: 16
     format: px
 -
-    id: anp-border-padding
+    id: loopsk-border-padding
     title: Border Layout Padding
     type: variable-number
     default: 20
@@ -2695,26 +2695,26 @@ settings:
 # Credits
 
 -
-    id: loop-skywalker-credits
-    title: LOOP - Skywalker
+    id: skywalker-credits
+    title: Skywalker
     description: Links and attribution
     type: heading
     level: 1
     collapsed: true
 -
-    id: loop-skywalker-url-repo
+    id: skywalker-url-repo
     title: Theme on GitHub
-    description: "[https://github.com/theloop-am/loop-skywalker](https://github.com/theloop-am/loop-skywalker)"
+    description: "[https://github.com/theloop-am/obsidian-skywalker](https://github.com/theloop-am/obsidian-skywalker)"
     type: info-text
     markdown: true
 -
-    id: loop-skywalker-url-submit-issue
+    id: skywalker-url-submit-issue
     title: Submit an Issue
-    description: "[https://github.com/theloop-am/loop-skywalker/issues](https://github.com/theloop-am/loop-skywalker/issues)"
+    description: "[https://github.com/theloop-am/obsidian-skywalker/issues](https://github.com/theloop-am/obsidian-skywalker/issues)"
     type: info-text
     markdown: true
 -
-    id: loop-skywalker-url-upstream
+    id: skywalker-url-upstream
     title: Built on AnuPpuccin
     description: "Derived from [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin) by Anubis, licensed GPL-3.0."
     type: info-text

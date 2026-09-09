@@ -1,8 +1,8 @@
-.anp-callout-sleek .callout:not([data-callout-metadata*="anp-block"],
-    [data-callout-metadata*="anp-vanilla-normal"],
-    [data-callout-metadata*="anp-vanilla-plus"]),
+.loopsk-callout-sleek .callout:not([data-callout-metadata*="loopsk-block"],
+    [data-callout-metadata*="loopsk-vanilla-normal"],
+    [data-callout-metadata*="loopsk-vanilla-plus"]),
 //do not apply to callouts with these metadata
-.callout[data-callout-metadata*="anp-sleek"] {
+.callout[data-callout-metadata*="loopsk-sleek"] {
 
     //apply to any callout with this metadata
     &:not([data-callout-metadata*="revert"],

@@ -9,7 +9,7 @@
             color: var(--text-normal); //text color for callout titles in light theme
         }
 
-        flex-grow: var(--anp-callout-fold-position, 0); //set fold position via style settings
+        flex-grow: var(--loopsk-callout-fold-position, 0); //set fold position via style settings
     }
 
     &:not(.is-collapsible) {

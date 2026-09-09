@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /* @settings
-name: LOOP - Skywalker Themes Extended
-id: loop-skywalker-theme-settings-extended
+name: Skywalker Themes Extended
+id: skywalker-theme-settings-extended
 settings:
   -
-    id: anp-theme-ext-light
+    id: loopsk-theme-ext-light
     title: Toggle extended light theme
     type: class-toggle
   -
-    id: anp-theme-ext-dark
+    id: loopsk-theme-ext-dark
     title: Toggle extended dark theme
     type: class-toggle
   - 
@@ -103,41 +103,41 @@ settings:
             label: Thorns
             value: ctp-thorns
 */
-.theme-dark.anp-theme-ext-dark.ctp-rosebox {
+.theme-dark.loopsk-theme-ext-dark.ctp-rosebox {
   --ctp-accent: 165, 117, 98;
   --background-modifier-border: rgb(51, 51, 51);
 }
 
-.theme-light.anp-theme-ext-light.ctp-nord-light {
+.theme-light.loopsk-theme-ext-light.ctp-nord-light {
   --ctp-accent: 136, 192, 208;
 }
 
-.theme-light.anp-theme-ext-light.ctp-material-mint-light {
+.theme-light.loopsk-theme-ext-light.ctp-material-mint-light {
   --ctp-accent: var(--ctp-teal);
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-material-mint-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-material-mint-dark {
   --ctp-accent: var(--ctp-teal);
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-nord-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-nord-dark {
   --ctp-accent: 136, 192, 208;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-nord-darker {
+.theme-dark.loopsk-theme-ext-dark.ctp-nord-darker {
   --ctp-accent: 136, 192, 208;
 }
 
-.theme-light.anp-theme-ext-light.ctp-atom-light {
+.theme-light.loopsk-theme-ext-light.ctp-atom-light {
   --ctp-accent: var(--ctp-blue);
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-atom-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-atom-dark {
   --ctp-accent: var(--ctp-blue);
 }
 
-.theme-light.anp-theme-ext-light.ctp-atom-light,
-.anp-theme-ext-light.ctp-atom-light .themed-color-wrapper > .theme-light {
+.theme-light.loopsk-theme-ext-light.ctp-atom-light,
+.loopsk-theme-ext-light.ctp-atom-light .themed-color-wrapper > .theme-light {
   --ctp-ext-rosewater: 229
   	,
   	148
@@ -270,8 +270,8 @@ settings:
   220 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-atom-dark,
-.anp-theme-ext-dark.ctp-atom-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-atom-dark,
+.loopsk-theme-ext-dark.ctp-atom-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 226
   	,
   	196
@@ -404,8 +404,8 @@ settings:
   36 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-biscuit-dark,
-.anp-theme-ext-dark.ctp-biscuit-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-biscuit-dark,
+.loopsk-theme-ext-dark.ctp-biscuit-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 219
   	,
   	177
@@ -538,8 +538,8 @@ settings:
   21 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-coffee-dark,
-.anp-theme-ext-dark.ctp-coffee-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-coffee-dark,
+.loopsk-theme-ext-dark.ctp-coffee-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 236
   	,
   	222
@@ -672,8 +672,8 @@ settings:
   45 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-dracula,
-.anp-theme-ext-dark.ctp-dracula .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-dracula,
+.loopsk-theme-ext-dark.ctp-dracula .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 246
   	,
   	201
@@ -806,8 +806,8 @@ settings:
   35 ;
 }
 
-.theme-light.anp-theme-ext-light.ctp-everforest-light,
-.anp-theme-ext-light.ctp-everforest-light .themed-color-wrapper > .theme-light {
+.theme-light.loopsk-theme-ext-light.ctp-everforest-light,
+.loopsk-theme-ext-light.ctp-everforest-light .themed-color-wrapper > .theme-light {
   --ctp-ext-rosewater: 222
   	,
   	177
@@ -940,8 +940,8 @@ settings:
   216 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-everforest-dark,
-.anp-theme-ext-dark.ctp-everforest-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-everforest-dark,
+.loopsk-theme-ext-dark.ctp-everforest-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 231
   	,
   	198
@@ -1074,8 +1074,8 @@ settings:
   44 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-generic-dark,
-.anp-theme-ext-dark.ctp-generic-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-generic-dark,
+.loopsk-theme-ext-dark.ctp-generic-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 245
   	,
   	224
@@ -1208,8 +1208,8 @@ settings:
   0 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-gruvbox-dark,
-.anp-theme-ext-dark.ctp-gruvbox-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-gruvbox-dark,
+.loopsk-theme-ext-dark.ctp-gruvbox-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 243
   	,
   	128
@@ -1342,8 +1342,8 @@ settings:
   22 ;
 }
 
-.theme-light.anp-theme-ext-light.ctp-gruvbox-light,
-.anp-theme-ext-light.ctp-gruvbox-light .themed-color-wrapper > .theme-light {
+.theme-light.loopsk-theme-ext-light.ctp-gruvbox-light,
+.loopsk-theme-ext-light.ctp-gruvbox-light .themed-color-wrapper > .theme-light {
   --ctp-ext-rosewater: 243
   	,
   	128
@@ -1476,8 +1476,8 @@ settings:
   178 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-kanagawa-dark,
-.anp-theme-ext-dark.ctp-kanagawa-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-kanagawa-dark,
+.loopsk-theme-ext-dark.ctp-kanagawa-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 255
   	,
   	200
@@ -1610,8 +1610,8 @@ settings:
   15 ;
 }
 
-.theme-light.anp-theme-ext-light.ctp-luminescence-light,
-.anp-theme-ext-light.ctp-luminescence-light .themed-color-wrapper > .theme-light {
+.theme-light.loopsk-theme-ext-light.ctp-luminescence-light,
+.loopsk-theme-ext-light.ctp-luminescence-light .themed-color-wrapper > .theme-light {
   --ctp-ext-rosewater: 227
   	,
   	130
@@ -1744,8 +1744,8 @@ settings:
   223 ;
 }
 
-.theme-light.anp-theme-ext-light.ctp-material-mint-light,
-.anp-theme-ext-light.ctp-material-mint-light .themed-color-wrapper > .theme-light {
+.theme-light.loopsk-theme-ext-light.ctp-material-mint-light,
+.loopsk-theme-ext-light.ctp-material-mint-light .themed-color-wrapper > .theme-light {
   --ctp-ext-rosewater: 195
   	,
   	126
@@ -1878,8 +1878,8 @@ settings:
   191 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-material-mint-dark,
-.anp-theme-ext-dark.ctp-material-mint-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-material-mint-dark,
+.loopsk-theme-ext-dark.ctp-material-mint-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 245
   	,
   	224
@@ -2012,8 +2012,8 @@ settings:
   10 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-nord-dark,
-.anp-theme-ext-dark.ctp-nord-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-nord-dark,
+.loopsk-theme-ext-dark.ctp-nord-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 226
   	,
   	191
@@ -2146,8 +2146,8 @@ settings:
   64 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-nord-darker,
-.anp-theme-ext-dark.ctp-nord-darker .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-nord-darker,
+.loopsk-theme-ext-dark.ctp-nord-darker .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 226
   	,
   	191
@@ -2280,8 +2280,8 @@ settings:
   41 ;
 }
 
-.theme-light.anp-theme-ext-light.ctp-nord-light,
-.anp-theme-ext-light.ctp-nord-light .themed-color-wrapper > .theme-light {
+.theme-light.loopsk-theme-ext-light.ctp-nord-light,
+.loopsk-theme-ext-light.ctp-nord-light .themed-color-wrapper > .theme-light {
   --ctp-ext-rosewater: 209
   	,
   	135
@@ -2414,8 +2414,8 @@ settings:
   240 ;
 }
 
-.theme-light.anp-theme-ext-light.ctp-notion-light,
-.anp-theme-ext-light.ctp-notion-light .themed-color-wrapper > .theme-light {
+.theme-light.loopsk-theme-ext-light.ctp-notion-light,
+.loopsk-theme-ext-light.ctp-notion-light .themed-color-wrapper > .theme-light {
   --ctp-ext-rosewater: 228
   	,
   	122
@@ -2548,8 +2548,8 @@ settings:
   232 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-notion-dark,
-.anp-theme-ext-dark.ctp-notion-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-notion-dark,
+.loopsk-theme-ext-dark.ctp-notion-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 246
   	,
   	174
@@ -2682,8 +2682,8 @@ settings:
   55 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-rosebox,
-.anp-theme-ext-dark.ctp-rosebox .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-rosebox,
+.loopsk-theme-ext-dark.ctp-rosebox .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 165
   	,
   	117
@@ -2816,8 +2816,8 @@ settings:
   25 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-rosepine-dark,
-.anp-theme-ext-dark.ctp-rosepine-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-rosepine-dark,
+.loopsk-theme-ext-dark.ctp-rosepine-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 243
   	,
   	215
@@ -2950,8 +2950,8 @@ settings:
   16 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-royal-velvet,
-.anp-theme-ext-dark.ctp-royal-velvet .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-royal-velvet,
+.loopsk-theme-ext-dark.ctp-royal-velvet .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 246
   	,
   	201
@@ -3084,8 +3084,8 @@ settings:
   25 ;
 }
 
-.theme-light.anp-theme-ext-light.ctp-sandy-beaches-light,
-.anp-theme-ext-light.ctp-sandy-beaches-light .themed-color-wrapper > .theme-light {
+.theme-light.loopsk-theme-ext-light.ctp-sandy-beaches-light,
+.loopsk-theme-ext-light.ctp-sandy-beaches-light .themed-color-wrapper > .theme-light {
   --ctp-ext-rosewater: 228
   	,
   	212
@@ -3218,8 +3218,8 @@ settings:
   216 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-solarized-dark,
-.anp-theme-ext-dark.ctp-solarized-dark .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-solarized-dark,
+.loopsk-theme-ext-dark.ctp-solarized-dark .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 227
   	,
   	131
@@ -3352,8 +3352,8 @@ settings:
   41 ;
 }
 
-.theme-dark.anp-theme-ext-dark.ctp-thorns,
-.anp-theme-ext-dark.ctp-thorns .themed-color-wrapper > .theme-dark {
+.theme-dark.loopsk-theme-ext-dark.ctp-thorns,
+.loopsk-theme-ext-dark.ctp-thorns .themed-color-wrapper > .theme-dark {
   --ctp-ext-rosewater: 230
   	,
   	194

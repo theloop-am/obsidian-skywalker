@@ -20,10 +20,10 @@
     margin-left: 10px;
 }
 
-.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek {
+.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek {
 
     &,
-    &.anp-callout-normal-toggle {
+    &.loopsk-callout-normal-toggle {
         div.callout:not([data-callout-metadata*=revert]) {
             &[data-callout=capacities-card] {
                 >.callout-content {
@@ -133,10 +133,10 @@
     }
 }
 
-.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-vanilla {
+.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-vanilla {
 
     &,
-    &.anp-callout-normal-toggle {
+    &.loopsk-callout-normal-toggle {
         div.callout:not([data-callout-metadata*=revert]) {
 
             &[data-callout=capacities-index],
@@ -158,8 +158,8 @@
     }
 }
 
-.anp-card-layout.anp-callout-toggle.anp-callout-toggle.anp-callout-toggle.anp-callout-sleek {
-    --capacities-sidebar-bottom: calc(var(--anp-card-layout-padding, 10px) + 80px);
+.loopsk-card-layout.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek {
+    --capacities-sidebar-bottom: calc(var(--loopsk-card-layout-padding, 10px) + 80px);
 }
 
 .markdown-reading-view .markdown-preview-view.capacities-card {

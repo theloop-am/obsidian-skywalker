@@ -6,8 +6,8 @@
  * Donate to SlRvb here: https://ko-fi.com/slrvb
 ------------------------------------------*/
 /* @settings
-name: LOOP - Skywalker ITS Frontmatter Snippet
-id: anp-its-frontmatter-settings
+name: Skywalker ITS Frontmatter Snippet
+id: loopsk-its-frontmatter-settings
 settings:
     - 
         id: frontmatter-background-opacity
@@ -22,31 +22,31 @@ body {
   --frontmatter-background-opacity: 0.5;
 }
 
-.anp-button-metadata-toggle .frontmatter-container:not(.is-collapsed), .markdown-rendered.metadata-button .frontmatter-container:not(.is-collapsed) {
+.loopsk-button-metadata-toggle .frontmatter-container:not(.is-collapsed), .markdown-rendered.metadata-button .frontmatter-container:not(.is-collapsed) {
   background-color: rgba(var(--ctp-mantle), var(--frontmatter-background-opacity));
   border: 1px solid var(--background-modifier-border);
   padding: var(--size-4-3);
   border-radius: var(--radius-l);
 }
-.anp-button-metadata-toggle .frontmatter-container:not(.is-collapsed) .frontmatter-container-header, .markdown-rendered.metadata-button .frontmatter-container:not(.is-collapsed) .frontmatter-container-header {
+.loopsk-button-metadata-toggle .frontmatter-container:not(.is-collapsed) .frontmatter-container-header, .markdown-rendered.metadata-button .frontmatter-container:not(.is-collapsed) .frontmatter-container-header {
   top: 0;
 }
-.anp-button-metadata-toggle .frontmatter-container.is-collapsed, .markdown-rendered.metadata-button .frontmatter-container.is-collapsed {
+.loopsk-button-metadata-toggle .frontmatter-container.is-collapsed, .markdown-rendered.metadata-button .frontmatter-container.is-collapsed {
   border: none;
   padding: 0;
   border-radius: 0;
 }
-.anp-button-metadata-toggle .frontmatter-container.is-collapsed .frontmatter-container-header, .markdown-rendered.metadata-button .frontmatter-container.is-collapsed .frontmatter-container-header {
+.loopsk-button-metadata-toggle .frontmatter-container.is-collapsed .frontmatter-container-header, .markdown-rendered.metadata-button .frontmatter-container.is-collapsed .frontmatter-container-header {
   top: 0;
 }
 
-body:not(.anp-button-metadata-toggle) .frontmatter-container {
+body:not(.loopsk-button-metadata-toggle) .frontmatter-container {
   background-color: rgba(var(--ctp-mantle), var(--frontmatter-background-opacity));
   border: 1px solid var(--background-modifier-border);
   padding: var(--size-4-3);
   border-radius: var(--radius-l);
 }
-body:not(.anp-button-metadata-toggle) .frontmatter-container.is-collapsed .frontmatter-container-header {
+body:not(.loopsk-button-metadata-toggle) .frontmatter-container.is-collapsed .frontmatter-container-header {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;

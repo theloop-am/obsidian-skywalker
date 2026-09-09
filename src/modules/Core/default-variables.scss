@@ -3,29 +3,29 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender";
 
 @each $accent in $accents {
-    .anp-accent-toggle.ctp-accent-#{$accent} {
+    .loopsk-accent-toggle.ctp-accent-#{$accent} {
         --ctp-accent: var(--ctp-#{$accent});
     }
 
-    .theme-light.anp-accent-toggle.ctp-accent-light-#{$accent} {
+    .theme-light.loopsk-accent-toggle.ctp-accent-light-#{$accent} {
         --ctp-accent: var(--ctp-#{$accent});
     }
 
-    .anp-bold-#{$accent} {
-        --anp-bold-color: var(--ctp-#{$accent});
+    .loopsk-bold-#{$accent} {
+        --loopsk-bold-color: var(--ctp-#{$accent});
     }
 
-    .anp-italic-#{$accent} {
-        --anp-italic-color: var(--ctp-#{$accent});
+    .loopsk-italic-#{$accent} {
+        --loopsk-italic-color: var(--ctp-#{$accent});
     }
 
-    .anp-highlight-#{$accent} {
-        --anp-highlight-color: var(--ctp-#{$accent});
+    .loopsk-highlight-#{$accent} {
+        --loopsk-highlight-color: var(--ctp-#{$accent});
     }
 }
 
 /*------------------Actual Configs--------------------*/
-.anp-accent-toggle {
+.loopsk-accent-toggle {
     --color-accent: rgb(var(--ctp-accent));
     --color-accent-1: rgb(var(--ctp-accent));
     --color-accent-2: rgba(var(--ctp-accent), 0.9);
@@ -134,7 +134,7 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     --nav-indentation-guide-color: rgb(var(--ctp-overlay0));
     --titlebar-text-color-focused: var(--color-accent);
     --callout-title-padding: var(--size-4-2);
-    --table-border-width: var(--anp-table-thickness, 1px);
+    --table-border-width: var(--loopsk-table-thickness, 1px);
     --icon-color-focused: var(--color-accent);
     --embed-block-shadow-hover: none; //no shadow
 }
@@ -145,7 +145,7 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     --background-modifier-border: rgb(var(--ctp-surface0));
     --background-modifier-border-hover: rgb(var(--ctp-surface1));
     --background-modifier-border-focus: rgb(var(--ctp-surface2));
-    --anp-speech-bubble-opacity: var(--anp-sp-op-dark, 0.9);
+    --loopsk-speech-bubble-opacity: var(--loopsk-sp-op-dark, 0.9);
     --background-modifier-cover: rgba(var(--ctp-mantle), 0.4);
 
     &.theme-dark {
@@ -159,7 +159,7 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     --background-modifier-border: rgb(var(--ctp-surface1));
     --background-modifier-border-hover: rgb(var(--ctp-surface2));
     --background-modifier-border-focus: rgb(var(--ctp-overlay0));
-    --anp-speech-bubble-opacity: var(--anp-sp-op-light, 0.5);
+    --loopsk-speech-bubble-opacity: var(--loopsk-sp-op-light, 0.5);
     --background-modifier-cover: #00000022;
 
     &.theme-light {
@@ -168,21 +168,21 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 }
 
 body {
-    --anp-rainbow-folder-bg-opacity: 1;
-    --anp-rainbow-folder-border-opacity: 1;
-    --anp-rainbow-folder-collapse-border-custom: #00000044;
-    --anp-preview-width-pct: 95%;
-    --anp-preview-width-max: 800px;
-    --anp-header-margin-value: 15px;
-    --anp-header-font: "Noto Serif";
-    --tab-stacked-pane-width: calc(var(--anp-tab-stacked-pane-width, 1) * var(--file-line-width));
-    --anp-table-width-pct: 100%;
-    --code-background: var(--anp-code-bg-color, var(--background-secondary-alt));
+    --loopsk-rainbow-folder-bg-opacity: 1;
+    --loopsk-rainbow-folder-border-opacity: 1;
+    --loopsk-rainbow-folder-collapse-border-custom: #00000044;
+    --loopsk-preview-width-pct: 95%;
+    --loopsk-preview-width-max: 800px;
+    --loopsk-header-margin-value: 15px;
+    --loopsk-header-font: "Noto Serif";
+    --tab-stacked-pane-width: calc(var(--loopsk-tab-stacked-pane-width, 1) * var(--file-line-width));
+    --loopsk-table-width-pct: 100%;
+    --code-background: var(--loopsk-code-bg-color, var(--background-secondary-alt));
     --canvas-color: rgb(var(--ctp-overlay2));
     --card-background-color: rgb(var(--ctp-crust));
     --card-foreground-color: rgb(var(--ctp-base));
     --tab-inactive-color: rgb(var(--ctp-mantle));
-    --code-normal: var(--anp-code-text-color, var(--text-normal));
+    --code-normal: var(--loopsk-code-text-color, var(--text-normal));
     --callout-padding: 0;
     --callout-title-padding: var(--size-4-2);
     --callout-content-padding: var(--size-4-2);
@@ -194,16 +194,16 @@ body {
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent;
 
     &.theme-light {
-        --anp-background-image: var(--anp-background-image-light);
-        --anp-custom-bg-brightness: var(--anp-custom-bg-brightness-light);
-        --anp-custom-bg-blur: var(--anp-custom-bg-blur-light);
-        --anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity-light);
+        --loopsk-background-image: var(--loopsk-background-image-light);
+        --loopsk-custom-bg-brightness: var(--loopsk-custom-bg-brightness-light);
+        --loopsk-custom-bg-blur: var(--loopsk-custom-bg-blur-light);
+        --loopsk-custom-bg-card-fg-opacity: var(--loopsk-custom-bg-card-fg-opacity-light);
     }
 
     &.theme-dark {
-        --anp-background-image: var(--anp-background-image-dark);
-        --anp-custom-bg-brightness: var(--anp-custom-bg-brightness-dark);
-        --anp-custom-bg-blur: var(--anp-custom-bg-blur-dark);
-        --anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity-dark);
+        --loopsk-background-image: var(--loopsk-background-image-dark);
+        --loopsk-custom-bg-brightness: var(--loopsk-custom-bg-brightness-dark);
+        --loopsk-custom-bg-blur: var(--loopsk-custom-bg-blur-dark);
+        --loopsk-custom-bg-card-fg-opacity: var(--loopsk-custom-bg-card-fg-opacity-dark);
     }
 }

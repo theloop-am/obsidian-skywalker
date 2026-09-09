@@ -1,9 +1,9 @@
 .markdown-rendered :not(pre)>code {
-    --code-normal: var(--anp-code-text-color, var(--text-normal));
+    --code-normal: var(--loopsk-code-text-color, var(--text-normal));
 }
 
 .markdown-rendered code:not([class*="language"]) {
-    --code-normal: var(--anp-code-text-color, var(--text-normal));
+    --code-normal: var(--loopsk-code-text-color, var(--text-normal));
 }
 
 /* Show language in LP always */
@@ -11,7 +11,7 @@
     overflow-x: visible;
 }
 
-.anp-codeblock-edit-nowrap {
+.loopsk-codeblock-edit-nowrap {
     .markdown-source-view.mod-cm6 .HyperMD-codeblock.cm-line {
         white-space: nowrap;
         overflow-x: scroll;
@@ -23,7 +23,7 @@
     }
 }
 
-.anp-codeblock-preview-nowrap {
+.loopsk-codeblock-preview-nowrap {
     .markdown-rendered pre {
         white-space: pre;
 
@@ -39,7 +39,7 @@
     }
 }
 
-.anp-codeblock-preview-hl-nowrap {
+.loopsk-codeblock-preview-hl-nowrap {
     .markdown-rendered pre[class*="language-"] {
         white-space: pre;
 

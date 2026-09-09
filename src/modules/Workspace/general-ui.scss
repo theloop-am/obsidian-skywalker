@@ -19,7 +19,7 @@
 }
 
 /*-Disable scrollbars-*/
-.anp-toggle-scrollbars *::-webkit-scrollbar {
+.loopsk-toggle-scrollbars *::-webkit-scrollbar {
     display: none;
 }
 
@@ -39,7 +39,7 @@
 }
 
 /*-Disable tooltips-*/
-.anp-tooltip-toggle .tooltip {
+.loopsk-tooltip-toggle .tooltip {
     display: none;
 }
 
@@ -58,20 +58,20 @@
     background-color: var(--background-modifier-active-hover);
 }
 
-.anp-hide-status-bar .status-bar {
+.loopsk-hide-status-bar .status-bar {
     display: none;
 }
 
 .workspace,
 .horizontal-main-container,
-.anp-card-layout .mod-vertical .workspace-tabs,
-.anp-border-layout .mod-vertical .workspace-tabs {
+.loopsk-card-layout .mod-vertical .workspace-tabs,
+.loopsk-border-layout .mod-vertical .workspace-tabs {
     background-color: var(--tab-container-background);
 }
 
 /* Align file extension labels to the right in sidebar */
 .nav-file-title-content {
-    flex-grow: var(--anp-file-label-align);
+    flex-grow: var(--loopsk-file-label-align);
 }
 
 .nav-folder-title-content {
@@ -80,7 +80,7 @@
 
 /* Inline title visibility */
 .inline-title {
-    display: var(--anp-inline-title-vis, block);
+    display: var(--loopsk-inline-title-vis, block);
 }
 
 /* Search page hover item fix */
@@ -89,7 +89,7 @@
 }
 
 // Fix ribbon icon drag backgrounds 
-.anp-accent-toggle .drag-ghost-hidden:before {
+.loopsk-accent-toggle .drag-ghost-hidden:before {
     background-color: rgba(var(--ctp-accent), 0.3)
 }
 
@@ -102,7 +102,7 @@
    is easier on the eye. The New tab pane holds no text, so it gets no benefit
    from that lift - it just shows as a lighter rectangle in the middle of an
    otherwise even window. */
-.anp-empty-tab-flat {
+.loopsk-empty-tab-flat {
     .workspace-leaf-content[data-type="empty"],
     .workspace-leaf-content[data-type="empty"] .view-content {
         background-color: var(--background-secondary);
