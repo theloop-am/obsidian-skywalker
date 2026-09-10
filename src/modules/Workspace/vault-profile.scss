@@ -29,6 +29,7 @@ body.loopsk-vault-logo:not(.is-mobile) .workspace-split.mod-left-split .workspac
     }
 }
 
+// stylelint-disable-next-line selector-pseudo-class-disallowed-list -- both buttons are a bare .clickable-icon; only the icon inside tells them apart, and the alternative is a positional selector that breaks when Obsidian adds a button
 body.loopsk-hide-help .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon:has(svg.help) {
     display: none;
 }

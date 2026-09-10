@@ -15,10 +15,6 @@
         box-shadow: inset 0 0 0 1px var(--background-modifier-border-hover);
     }
 
-    &.is-search-hit {
-        box-shadow: 0 15px 25px #0003, inset 0 0 0 1px var(--background-modifier-border);
-    }
-
     &.is-complete .kanban-plugin__item-markdown {
         color: var(--text-muted);
         text-decoration-line: line-through;
@@ -99,10 +95,6 @@
 .loopsk-kanban-hide-card-border {
     .kanban-plugin__item:not(:hover) {
         box-shadow: none;
-    }
-
-    .kanban-plugin__item.is-search-hit {
-        box-shadow: 0 15px 25px #0003;
     }
 }
 

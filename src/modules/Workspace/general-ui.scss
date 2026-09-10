@@ -13,11 +13,6 @@
     background-color: rgb(var(--ctp-crust));
 }
 
-/* -Banners are always sharp- */
-.obsidian-banner-wrapper .obsidian-banner .banner-image.banner-image.banner-image.banner-image {
-    border-radius: 0;
-}
-
 /* -Disable scrollbars- */
 .loopsk-toggle-scrollbars *::-webkit-scrollbar {
     display: none;

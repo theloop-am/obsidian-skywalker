@@ -80,6 +80,7 @@ body:not(.is-mobile, .loopsk-hide-status-bar) .kanban-plugin__board>div {
 }
 
 /* Kanban conditional settings */
+// stylelint-disable-next-line selector-pseudo-class-disallowed-list -- Style Settings puts the on/off state on the toggle inside the row, not on the row, so a dependent setting can only be read from within
 .setting-item[data-id="loopsk-kanban-hide-card-menus"]:not(:has(.is-enabled))+[data-id="loopsk-kanban-hide-archive-btn"] {
     display: none;
 }

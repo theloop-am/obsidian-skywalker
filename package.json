@@ -11,7 +11,7 @@
     "url": "git+https://github.com/theloop-am/obsidian-skywalker.git"
   },
   "scripts": {
-    "build": "sass src/base.scss:theme.css snippets/src/custom-rainbow-colors.scss:snippets/custom-rainbow-colors.css snippets/src/extended-colorschemes.scss:snippets/extended-colorschemes.css snippets/src/floating-search-bar.scss:snippets/floating-search-bar.css snippets/src/its-frontmatter.scss:snippets/its-frontmatter.css snippets/src/notion-cards.scss:snippets/notion-cards.css --no-source-map --style=expanded",
+    "build": "sass src/base.scss:theme.css snippets/src/extended-colorschemes.scss:snippets/extended-colorschemes.css --no-source-map --style=expanded",
     "watch": "sass --watch src/base.scss:theme.css --no-source-map --style=expanded"
   },
   "devDependencies": {

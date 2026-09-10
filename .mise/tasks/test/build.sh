@@ -7,11 +7,7 @@ set -euo pipefail
 # directly, so they are the files that can quietly stop matching their sources.
 SHEETS=(
   "src/base.scss:theme.css"
-  "snippets/src/custom-rainbow-colors.scss:snippets/custom-rainbow-colors.css"
   "snippets/src/extended-colorschemes.scss:snippets/extended-colorschemes.css"
-  "snippets/src/floating-search-bar.scss:snippets/floating-search-bar.css"
-  "snippets/src/its-frontmatter.scss:snippets/its-frontmatter.css"
-  "snippets/src/notion-cards.scss:snippets/notion-cards.css"
 )
 
 main() {

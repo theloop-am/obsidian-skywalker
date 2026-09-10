@@ -41,9 +41,9 @@ Every Catppuccin flavour is built in, light and dark, and each accent can be set
 on its own. AMOLED is one of them: true black rather than a dark grey, for screens
 where that is the difference between dark and off.
 
-The `snippets/` folder in this repository adds another twenty-five flavours,
-Notion-styled Kanban cards and a few smaller pieces. They are optional and
-separate: copy the ones you want into `<vault>/.obsidian/snippets/`.
+The `snippets/` folder in this repository adds another twenty-five flavours. It
+is optional and separate: copy `extended-colorschemes.css` into
+`<vault>/.obsidian/snippets/`.
 
 ## 3 Settings
 

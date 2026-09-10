@@ -1136,26 +1136,6 @@ settings:
     title: Enable Full Width Search Bar
     description:
     type: class-toggle
--
-    id: loopsk-kanban-collapse-lanes
-    title: Collapse Lanes With No Search Results
-    description:
-    type: class-toggle
--
-    id: loopsk-kanban-hide-cards
-    title: Hide Cards That Don't Contain the Search Query
-    description:
-    type: class-toggle
--
-    id: loopsk-kanban-hide-mark
-    title: Hide Search Result Highlight in Cards
-    description:
-    type: class-toggle
--
-    id: loopsk-kanban-uncollapse-lanes
-    title: Uncollapse Lanes and Unhide Cards When Sorting
-    description:
-    type: class-toggle
 
 # Miscellaneous
 
@@ -2291,12 +2271,6 @@ settings:
     level: 2
     collapsed: true
 -
-    id: skywalker-url-custom-rainbow-colors
-    title: Custom rainbow folder colors snippet
-    description: "Download the snippet through [this link](https://github.com/theloop-am/obsidian-skywalker/blob/main/snippets/custom-rainbow-colors.css)."
-    type: info-text
-    markdown: true
--
     id: loopsk-alt-rainbow-style
     title: Rainbow style
     type: class-select
@@ -2411,9 +2385,6 @@ settings:
     -
         label: Default
         value: none
-    -
-        label: Floating
-        value: loopsk-floating-status-bar
     -
         label: Fixed
         value: loopsk-fixed-status-bar

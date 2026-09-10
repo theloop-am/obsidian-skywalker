@@ -1154,26 +1154,6 @@ settings:
     title: Enable Full Width Search Bar
     description:
     type: class-toggle
--
-    id: loopsk-kanban-collapse-lanes
-    title: Collapse Lanes With No Search Results
-    description:
-    type: class-toggle
--
-    id: loopsk-kanban-hide-cards
-    title: Hide Cards That Don't Contain the Search Query
-    description:
-    type: class-toggle
--
-    id: loopsk-kanban-hide-mark
-    title: Hide Search Result Highlight in Cards
-    description:
-    type: class-toggle
--
-    id: loopsk-kanban-uncollapse-lanes
-    title: Uncollapse Lanes and Unhide Cards When Sorting
-    description:
-    type: class-toggle
 
 # Miscellaneous
 
@@ -2309,12 +2289,6 @@ settings:
     level: 2
     collapsed: true
 -
-    id: skywalker-url-custom-rainbow-colors
-    title: Custom rainbow folder colors snippet
-    description: "Download the snippet through [this link](https://github.com/theloop-am/obsidian-skywalker/blob/main/snippets/custom-rainbow-colors.css)."
-    type: info-text
-    markdown: true
--
     id: loopsk-alt-rainbow-style
     title: Rainbow style
     type: class-select
@@ -2429,9 +2403,6 @@ settings:
     -
         label: Default
         value: none
-    -
-        label: Floating
-        value: loopsk-floating-status-bar
     -
         label: Fixed
         value: loopsk-fixed-status-bar
@@ -3851,11 +3822,6 @@ input.slider,
   background-color: rgb(var(--ctp-crust));
 }
 
-/* -Banners are always sharp- */
-.obsidian-banner-wrapper .obsidian-banner .banner-image.banner-image.banner-image.banner-image {
-  border-radius: 0;
-}
-
 /* -Disable scrollbars- */
 .loopsk-toggle-scrollbars *::-webkit-scrollbar {
   display: none;
@@ -4413,9 +4379,6 @@ body.loopsk-card-layout .sidebar-toggle-button,
 body.loopsk-card-layout .workspace-tabs.mod-top {
   --tab-container-background: var(--card-background-color);
 }
-body.loopsk-card-layout .workspace-tabs.mod-top:has(.obsidian-banner-wrapper) {
-  --file-header-border: none;
-}
 body.loopsk-card-layout.is-focused,
 body.loopsk-card-layout.is-focused .sidebar-toggle-button,
 body.loopsk-card-layout.is-focused .workspace-tabs.mod-top {
@@ -4756,37 +4719,6 @@ body.loopsk-border-layout:not(.is-mobile) .workspace .workspace-split.mod-root:n
 .loopsk-hide-borders {
   --tab-outline-color: transparent;
   --divider-color: transparent;
-}
-
-/* AGPLv3 License
-Floating Status Bar
-Author: AnubisNekhet
-Note: If you decide to implement it in your theme or redistribute it, please keep this comment (Especially for *certain* individuals who may try to rebrand it as their own :))
-*/
-.loopsk-floating-status-bar {
-  --status-bar-position: absolute;
-  --status-bar-radius: var(--radius-m);
-  --status-bar-border-width: 1px;
-}
-.loopsk-floating-status-bar .status-bar {
-  transform: translateX(calc(100% + 5px));
-  transition: transform 300ms 150ms;
-  bottom: 5px;
-  right: 5px;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.05);
-}
-.loopsk-floating-status-bar .status-bar::before {
-  width: 100%;
-  min-height: 100%;
-  content: " ";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: translateX(-100%);
-}
-.loopsk-floating-status-bar .status-bar:hover {
-  transform: none;
-  transition: transform 300ms 150ms;
 }
 
 .loopsk-fixed-status-bar .status-bar {
@@ -8134,34 +8066,6 @@ None of the original code was used and the feature was implemented from scratch.
   display: none;
 }
 
-.setting-item:is([data-id*=loopsk-custom-rainbow-colors]) > .setting-item-info > .setting-item-name {
-  margin-left: -3px;
-}
-.setting-item:is([data-id*=loopsk-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
-  mask-repeat: no-repeat;
-  mask-size: contain;
-  background-color: var(--color-accent);
-  content: " ";
-  display: inline-flex;
-  flex-shrink: 0;
-  height: calc(var(--font-ui-medium) + 3px);
-  width: calc(var(--font-ui-medium) + 3px);
-  margin-left: calc(-0.5 * var(--size-4-1));
-  transition: transform 0.1s;
-  vertical-align: text-top;
-  margin-right: 0;
-}
-.setting-item:is([data-id*=loopsk-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator {
-  margin-right: 4px;
-}
-.setting-item:is([data-id*=loopsk-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
-  display: none;
-}
-
-.setting-item:is([data-id*=loopsk-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
-  background: linear-gradient(to right, rgb(var(--ctp-rosewater)) 7%, rgb(var(--ctp-flamingo)) 7%, rgb(var(--ctp-flamingo)) 14%, rgb(var(--ctp-mauve)) 14%, rgb(var(--ctp-mauve)) 21%, rgb(var(--ctp-pink)) 21%, rgb(var(--ctp-pink)) 28%, rgb(var(--ctp-red)) 28%, rgb(var(--ctp-red)) 35%, rgb(var(--ctp-maroon)) 35%, rgb(var(--ctp-maroon)) 42%, rgb(var(--ctp-peach)) 42%, rgb(var(--ctp-peach)) 49%, rgb(var(--ctp-yellow)) 49%, rgb(var(--ctp-yellow)) 56%, rgb(var(--ctp-green)) 56%, rgb(var(--ctp-green)) 63%, rgb(var(--ctp-teal)) 63%, rgb(var(--ctp-teal)) 70%, rgb(var(--ctp-sky)) 70%, rgb(var(--ctp-sky)) 77%, rgb(var(--ctp-sapphire)) 77%, rgb(var(--ctp-sapphire)) 85%, rgb(var(--ctp-blue)) 85%, rgb(var(--ctp-blue)) 92%, rgb(var(--ctp-lavender)));
-}
-
 .setting-item:is([data-id=skywalker-theme-settings],
 [data-id=loopsk-colors-section-header],
 [data-id=loopsk-editor-header],
@@ -8170,8 +8074,7 @@ None of the original code was used and the feature was implemented from scratch.
 [data-id=loopsk-typography-header],
 [data-id=loopsk-plugin-header],
 [data-id=loopsk-workspace-header],
-[data-id=skywalker-credits],
-[data-id=loopsk-custom-rainbow-colors]):not(.is-collapsed) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+[data-id=skywalker-credits]):not(.is-collapsed) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   transform: rotate(90deg);
   transition: transform 0.1s;
 }
@@ -8224,10 +8127,6 @@ None of the original code was used and the feature was implemented from scratch.
 
 .setting-item:is([data-id=skywalker-credits]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z'%3E%3C/path%3E%3C/svg%3E");
-}
-
-.setting-item:is([data-id=loopsk-custom-rainbow-colors]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 19.9V16h3a2 2 0 0 0 2-2v-2H5v2c0 1.1.9 2 2 2h3v3.9a2 2 0 1 0 4 0Z'%3E%3C/path%3E%3Cpath d='M6 12V2h12v10'%3E%3C/path%3E%3Cpath d='M14 2v4'%3E%3C/path%3E%3Cpath d='M10 2v2'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .excalibrain-searchinput,
@@ -8610,9 +8509,6 @@ body:not(.is-mobile, .loopsk-hide-status-bar) .kanban-plugin__board > div {
 .kanban-plugin__item:hover {
   box-shadow: inset 0 0 0 1px var(--background-modifier-border-hover);
 }
-.kanban-plugin__item.is-search-hit {
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2), inset 0 0 0 1px var(--background-modifier-border);
-}
 .kanban-plugin__item.is-complete .kanban-plugin__item-markdown {
   color: var(--text-muted);
   text-decoration-line: line-through;
@@ -8683,9 +8579,6 @@ body:not(.is-mobile, .loopsk-hide-status-bar) .kanban-plugin__board > div {
 
 .loopsk-kanban-hide-card-border .kanban-plugin__item:not(:hover) {
   box-shadow: none;
-}
-.loopsk-kanban-hide-card-border .kanban-plugin__item.is-search-hit {
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 .kanban-plugin__drag-container > .kanban-plugin__item-wrapper .kanban-plugin__item {
@@ -8809,6 +8702,12 @@ body:not(.is-mobile, .loopsk-hide-status-bar) .kanban-plugin__board > div {
   padding-top: 6px;
 }
 
+/* The Kanban search bar.
+
+   The lane-collapsing and card-hiding that used to live here read
+   is-search-hit / is-search-miss, which Kanban marked on every card. Kanban 2.0
+   removes the cards that miss instead of marking them, so nothing is left to
+   read and the features were deleted rather than renamed. */
 .loopsk-kanban-search-full .kanban-plugin__search-wrapper {
   padding: 10px;
 }
@@ -8821,170 +8720,4 @@ body:not(.is-mobile, .loopsk-hide-status-bar) .kanban-plugin__board > div {
 }
 .loopsk-kanban-search-full .kanban-plugin__search-wrapper .kanban-plugin__icon {
   display: flex;
-}
-
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)),
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]),
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)),
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) {
-  width: 44px;
-}
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__lane-header-wrapper,
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__lane-header-wrapper,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__lane-header-wrapper,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__lane-header-wrapper {
-  border-width: 0;
-  gap: 10px;
-  position: absolute;
-  transform-origin: 18px 22px;
-  transform: rotate(90deg);
-  z-index: 1;
-}
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__lane-grip,
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__lane-grip,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__lane-grip,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__lane-grip {
-  transform: rotate(-90deg);
-}
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__lane-settings-button-wrapper,
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__lane-settings-button-wrapper,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__lane-settings-button-wrapper,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__lane-settings-button-wrapper {
-  display: none;
-}
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__item-wrapper,
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__item-wrapper,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__item-wrapper,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__item-wrapper {
-  display: none;
-}
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__placeholder:only-child,
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__placeholder:only-child,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__placeholder:only-child,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__placeholder:only-child {
-  display: none;
-}
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__new-item-button,
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__new-item-button,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__new-item-button,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__new-item-button {
-  font-size: 0;
-}
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__item-button-plus,
-.loopsk-kanban-collapse-lanes:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__item-button-plus,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) .kanban-plugin__item-button-plus,
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container > .kanban-plugin__item-wrapper)) .kanban-plugin__lane-wrapper:not(:has(.kanban-plugin__lane[data-count="0"],
-.kanban-plugin__item:not(.is-search-miss),
-.kanban-plugin__item-form)) ~ .kanban-plugin__lane-wrapper:has(.kanban-plugin__lane[data-count="0"]) .kanban-plugin__item-button-plus {
-  font-size: 0.875rem;
-}
-
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes .kanban-plugin__drag-container[style*="width: 54px;"] .kanban-plugin__lane-wrapper {
-  width: 44px;
-}
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes .kanban-plugin__drag-container[style*="width: 54px;"] .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper {
-  border-width: 0;
-  gap: 10px;
-  position: absolute;
-  transform-origin: 18px 22px;
-  transform: rotate(90deg);
-  z-index: 1;
-}
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes .kanban-plugin__drag-container[style*="width: 54px;"] .kanban-plugin__lane-wrapper .kanban-plugin__lane-grip {
-  transform: rotate(-90deg);
-}
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes .kanban-plugin__drag-container[style*="width: 54px;"] .kanban-plugin__lane-wrapper .kanban-plugin__lane-settings-button-wrapper {
-  display: none;
-}
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes .kanban-plugin__drag-container[style*="width: 54px;"] .kanban-plugin__lane-wrapper .kanban-plugin__item-wrapper {
-  display: none;
-}
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes .kanban-plugin__drag-container[style*="width: 54px;"] .kanban-plugin__lane-wrapper .kanban-plugin__placeholder:only-child {
-  display: none;
-}
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes .kanban-plugin__drag-container[style*="width: 54px;"] .kanban-plugin__lane-wrapper .kanban-plugin__new-item-button {
-  font-size: 0;
-}
-.loopsk-kanban-collapse-lanes.loopsk-kanban-uncollapse-lanes .kanban-plugin__drag-container[style*="width: 54px;"] .kanban-plugin__lane-wrapper .kanban-plugin__item-button-plus {
-  font-size: 0.875rem;
-}
-
-.loopsk-kanban-hide-cards:not(.loopsk-kanban-uncollapse-lanes) .kanban-plugin__item-wrapper:has(.is-search-miss),
-.loopsk-kanban-hide-cards.loopsk-kanban-uncollapse-lanes:not(:has(.kanban-plugin__drag-container)) .kanban-plugin__item-wrapper:has(.is-search-miss) {
-  display: none;
-}
-
-.loopsk-kanban-hide-cards.loopsk-kanban-hide-card-border .kanban-plugin__item.is-search-hit {
-  box-shadow: none;
-}
-
-.loopsk-kanban-hide-cards:not(.loopsk-kanban-hide-card-border) .kanban-plugin__item.is-search-hit {
-  box-shadow: inset 0 0 0 1px var(--background-modifier-border);
-}
-
-.loopsk-kanban-hide-mark .kanban-plugin__item-wrapper .is-search-hit mark {
-  background-color: transparent;
-  color: inherit;
 }

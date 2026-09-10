@@ -23,10 +23,6 @@ body.loopsk-card-layout {
         --tab-container-background: var(--card-background-color);
     }
 
-    .workspace-tabs.mod-top:has(.obsidian-banner-wrapper) {
-        --file-header-border: none;
-    }
-
     &.is-focused {
         &,
         .sidebar-toggle-button,
