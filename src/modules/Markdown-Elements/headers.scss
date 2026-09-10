@@ -60,12 +60,3 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 .cm-header {
     display: inline-block;
 }
-
-.loopsk-editor-font-toggle .markdown-source-view:not(.is-live-preview) {
-    --h1-font: var(--loopsk-editor-font);
-    --h2-font: var(--loopsk-editor-font);
-    --h3-font: var(--loopsk-editor-font);
-    --h4-font: var(--loopsk-editor-font);
-    --h5-font: var(--loopsk-editor-font);
-    --h6-font: var(--loopsk-editor-font);
-}

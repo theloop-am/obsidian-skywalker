@@ -59,9 +59,6 @@
     border: var(--loopsk-safari-border-width, 1px) solid var(--tab-outline-color);
 }
 
-.loopsk-alternate-tab-toggle.loopsk-alt-tab-anim-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
-    transition: 400ms, background-color 150ms ease-in-out;
-}
 
 .loopsk-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header:first-child {
     margin-left: 0;

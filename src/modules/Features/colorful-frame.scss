@@ -337,7 +337,7 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
     --icon-color-focused: var(--text-normal);
 }
 
-.loopsk-colorful-frame.loopsk-card-layout:not(.loopsk-alternate-layout) .workspace-tab-header-status-icon {
+.loopsk-colorful-frame.loopsk-card-layout .workspace-tab-header-status-icon {
     color: var(--icon-color);
 }
 

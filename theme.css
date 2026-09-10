@@ -4212,10 +4212,6 @@ body:not(.loopsk-alternate-tab-toggle, .loopsk-disable-newtab-align) .workspace-
   border: var(--loopsk-safari-border-width, 1px) solid var(--tab-outline-color);
 }
 
-.loopsk-alternate-tab-toggle.loopsk-alt-tab-anim-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
-  transition: 400ms, background-color 150ms ease-in-out;
-}
-
 .loopsk-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header:first-child {
   margin-left: 0;
 }
@@ -5613,15 +5609,6 @@ video {
   display: inline-block;
 }
 
-.loopsk-editor-font-toggle .markdown-source-view:not(.is-live-preview) {
-  --h1-font: var(--loopsk-editor-font);
-  --h2-font: var(--loopsk-editor-font);
-  --h3-font: var(--loopsk-editor-font);
-  --h4-font: var(--loopsk-editor-font);
-  --h5-font: var(--loopsk-editor-font);
-  --h6-font: var(--loopsk-editor-font);
-}
-
 .hide-comment-indicators .is-live-preview .cm-line:not(.cm-active) .cm-comment-start,
 .hide-comment-indicators .is-live-preview .cm-line:not(.cm-active) .cm-comment-end {
   display: none;
@@ -6103,109 +6090,6 @@ body.rainbow-tags {
   margin-left: 10px;
 }
 
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] > .callout-content {
-  padding: 0;
-  background-color: var(--background-primary);
-  overflow-y: hidden;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] {
-  background-color: var(--background-primary);
-  border-radius: 6px;
-  mix-blend-mode: normal;
-  overflow-y: hidden;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] {
-  border-radius: 0;
-  top: -1px;
-  padding-top: 1px;
-  right: 11px;
-  padding-right: 1px;
-  height: calc(100% + 6px);
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] > .callout-content {
-  padding: 0;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-content {
-  margin: 0 10px 7px;
-  background-color: var(--background-primary);
-  border-color: var(--background-modifier-border);
-  padding: 3px 0;
-  border-top-style: solid;
-  border-radius: 6px;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title {
-  text-transform: uppercase;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title > .callout-title-inner, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title > .callout-title-inner {
-  color: rgb(var(--ctp-text), 0.7);
-  font-size: 80%;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] > .callout-title {
-  background-color: transparent;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] {
-  border: none;
-  padding: 0;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] > .callout-content {
-  padding: 0;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] {
-  border-radius: 0;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] p:first-child, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] p:first-child {
-  margin-bottom: 0;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] {
-  margin: -1px;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] > .callout-content {
-  padding-right: 0;
-  padding-left: 0;
-  background-color: var(--background-secondary);
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] {
-  background-color: var(--background-secondary);
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image] > .callout-content {
-  padding: 0;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] > .callout-content {
-  padding: var(--callout-padding);
-  background-color: var(--background-primary);
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] {
-  border-width: 0 1px 0 0;
-  background-color: var(--background-primary);
-  mix-blend-mode: normal;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body], .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] {
-  border-color: var(--background-modifier-border);
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop-image] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-body] > .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card] > .callout-content {
-  border-top: none;
-}
-
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-vanilla div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-vanilla div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-vanilla div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-vanilla.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-index] .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-vanilla.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-card-prop] .callout-content, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-vanilla.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-sidebar] .callout-content {
-  border-left: none;
-  padding: 0;
-}
-.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-vanilla div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] .callout-title, .loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-vanilla.loopsk-callout-normal-toggle div.callout:not([data-callout-metadata*=revert])[data-callout=capacities-prop] .callout-title {
-  border-left: none;
-  background-color: transparent;
-}
-
-.loopsk-card-layout.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-toggle.loopsk-callout-sleek {
-  --capacities-sidebar-bottom: calc(var(--loopsk-card-layout-padding, 10px) + 80px);
-}
-
-.markdown-reading-view .markdown-preview-view.capacities-card {
-  overflow-y: hidden;
-}
-.markdown-reading-view .markdown-preview-view.capacities-card::after {
-  display: none;
-}
-
 /* ---------------COLORFUL FRAME-------------- */
 /* ----------------------------------
 This feature is inspired by Kepano's Minimal theme: https://github.com/kepano/obsidian-minimal
@@ -6451,7 +6335,7 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
   --icon-color-focused: var(--text-normal);
 }
 
-.loopsk-colorful-frame.loopsk-card-layout:not(.loopsk-alternate-layout) .workspace-tab-header-status-icon {
+.loopsk-colorful-frame.loopsk-card-layout .workspace-tab-header-status-icon {
   color: var(--icon-color);
 }
 
@@ -7050,73 +6934,6 @@ Icons were taken from Font Awesome: https://fontawesome.com/
   --checkbox-color: transparent;
   --checkbox-color-hover: transparent;
   border-width: 0;
-}
-
-.loopsk-custom-checkboxes-labels [data-task="!"] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task="!"][type=checkbox]:checked::before {
-  content: "IMP";
-}
-
-.loopsk-custom-checkboxes-labels [data-task=">"] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task=">"][type=checkbox]:checked::before {
-  content: "RSCH";
-}
-
-.loopsk-custom-checkboxes-labels [data-task="<"] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task="<"][type=checkbox]:checked::before {
-  content: "SCH";
-}
-
-.loopsk-custom-checkboxes-labels [data-task="-"] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task="-"][type=checkbox]:checked::before {
-  content: "CNCL";
-}
-
-.loopsk-custom-checkboxes-labels [data-task="/"] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task="/"][type=checkbox]:checked::before {
-  content: "PRG";
-}
-
-.loopsk-custom-checkboxes-labels [data-task="?"] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task="?"][type=checkbox]:checked::before {
-  content: "QUE";
-}
-
-.loopsk-custom-checkboxes-labels [data-task="*"] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task="*"][type=checkbox]:checked::before {
-  content: "STAR";
-}
-
-.loopsk-custom-checkboxes-labels [data-task=n] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task=n][type=checkbox]:checked::before {
-  content: "NOTE";
-}
-
-.loopsk-custom-checkboxes-labels [data-task=l] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task=l][type=checkbox]:checked::before {
-  content: "LCTN";
-}
-
-.loopsk-custom-checkboxes-labels [data-task=i] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task=i][type=checkbox]:checked::before {
-  content: "INFO";
-}
-
-.loopsk-custom-checkboxes-labels [data-task=I] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task=I][type=checkbox]:checked::before {
-  content: "IDEA";
-}
-
-.loopsk-custom-checkboxes-labels [data-task=S] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task=S][type=checkbox]:checked::before {
-  content: "AMT";
-}
-
-.loopsk-custom-checkboxes-labels [data-task=p] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task=p][type=checkbox]:checked::before {
-  content: "PRO";
-}
-
-.loopsk-custom-checkboxes-labels [data-task=c] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task=c][type=checkbox]:checked::before {
-  content: "CON";
-}
-
-.loopsk-custom-checkboxes-labels [data-task=b] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task=b][type=checkbox]:checked::before {
-  content: "BKMK";
-}
-
-.loopsk-custom-checkboxes-labels [data-task='"'] input[type=checkbox]:checked::before, .loopsk-custom-checkboxes-labels [data-task='"'][type=checkbox]:checked::before {
-  content: "QUOT";
-}
-.loopsk-custom-checkboxes-labels .task-list-item .task-list-item-checkbox {
-  margin-right: calc(var(--checkbox-size) * 2.7);
 }
 
 /* ------------FLOATING VAULT TITLE----------- */
@@ -8085,10 +7902,6 @@ body .excalidraw.theme--dark.excalidraw .App-menu__left {
 
 .obsidian-icon-folder-icon {
   margin-top: -5px;
-}
-
-.loopsk-simple-rainbow-color-toggle.loopsk-simple-rainbow-icon-folder-toggle .obsidian-icon-folder-icon {
-  color: rgb(var(--rainbow-folder-color));
 }
 
 .obsidian-icon-folder-modal.prompt-results .suggestion-item {
