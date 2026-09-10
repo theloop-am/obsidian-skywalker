@@ -4,6 +4,7 @@
 
 - [What a release is](#what-a-release-is)
 - [Cutting one](#cutting-one)
+- [The first one, and the directory](#the-first-one-and-the-directory)
 - [What the release notes are](#what-the-release-notes-are)
 - [Actions](#actions)
 - [The repository itself](#the-repository-itself)
@@ -25,7 +26,7 @@ Draft release → Run workflow — and every run does the same thing:
 3. Reads the release body out of that changelog section. Nothing is retyped at release time.
 4. Signs `theme.css` and `manifest.json` with build provenance, so an installed copy can
    be traced back to the run that produced it.
-5. Drafts a release named after the manifest version, with those three files attached.
+5. Drafts a release named after the manifest version, with both files attached.
 
 Publishing the draft is what releases. The tag is created from the manifest at that moment, so no
 tag is ever typed and none can disagree with what is inside the theme. It carries no `v`, because
@@ -44,11 +45,25 @@ The workflow never decides a version. What the next number is, is not a robot's 
    major.
 2. Rename `## Unreleased` in `CHANGELOG.md` to `## [X.Y.Z] - YYYY-MM-DD` and open a fresh
    `## Unreleased` above it.
-3. Set the version in `manifest.json` and `package.json`, and add `"X.Y.Z": "<minAppVersion>"` to
-   `versions.json`. `minAppVersion` is a claim that was tested against that Obsidian version, not an
+3. Set the version in `manifest.json` and `package.json`. A theme carries no `versions.json`;
+   `minAppVersion` in the manifest is a claim that was tested against that Obsidian version, not an
    aspiration.
 4. `mise run check`.
 5. Merge to `main`, run the workflow, read the draft, publish it.
+
+## The first one, and the directory
+
+The community directory is where people find the theme, and it is joined once, by hand:
+
+1. Publish a release, so a tag exists whose `manifest.json` and `theme.css` Obsidian can download.
+2. Sign in at [community.obsidian.md](https://community.obsidian.md) with an Obsidian account and
+   link the GitHub account that owns the repository.
+3. Add the theme there. The directory reads the `manifest.json` at the head of `main`, so that file
+   decides what the listing says.
+4. An automated review runs and reports what to correct. Each correction is a new release with a
+   higher version - the listing follows the repository, never the other way round.
+
+After that, an update is a release and nothing else: Obsidian offers whatever the newest tag holds.
 
 ## What the release notes are
 
