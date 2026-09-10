@@ -1,50 +1,49 @@
 @use "sass:meta";
-/*----------------CALLOUTS-------------------*/
+
+/* ----------------CALLOUTS------------------- */
 .callout:not([data-callout-metadata*="revert"]) {
-    //targets callouts that dont have revert metadata
+    // targets callouts that dont have revert metadata
     --callout-blend-mode: normal;
 
     >.callout-title>.callout-title-inner {
         .theme-light & {
-            color: var(--text-normal); //text color for callout titles in light theme
+            color: var(--text-normal); // text color for callout titles in light theme
         }
 
-        flex-grow: var(--loopsk-callout-fold-position, 0); //set fold position via style settings
+        flex-grow: var(--loopsk-callout-fold-position, 0); // set fold position via style settings
     }
 
     &:not(.is-collapsible) {
-
-        //targets callout that dont have revert metadata and are not collapsible
+        // targets callout that dont have revert metadata and are not collapsible
         >.callout-title .callout-title-inner {
-            font-weight: 500; //lighter font weight for callout title
+            font-weight: 500; // lighter font weight for callout title
         }
     }
 
     .callout-title {
-        //set bold and italic colors to text color
-        --bold-color: currentColor;
-        --italic-color: currentColor;
+        // set bold and italic colors to text color
+        --bold-color: currentcolor;
+        --italic-color: currentcolor;
     }
 }
 
 .callout[data-callout-metadata*="revert"] {
-    //reverts back to vanilla for callouts with revert tag
+    // reverts back to vanilla for callouts with revert tag
     --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
     --callout-title-padding: 0;
     --callout-content-padding: 0;
 }
 
 .callout .callout-content> {
-
     p,
     ul,
     ol {
         &:first-child {
-            margin-top: 0px;
+            margin-top: 0;
         }
 
         &:last-child {
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
     }
 
@@ -58,7 +57,7 @@
     }
 }
 
-@include meta.load-css("styles/block.scss");
-@include meta.load-css("styles/sleek.scss");
-@include meta.load-css("styles/vanilla-normal.scss");
-@include meta.load-css("styles/vanilla-plus.scss");
+@include meta.load-css("styles/block");
+@include meta.load-css("styles/sleek");
+@include meta.load-css("styles/vanilla-normal");
+@include meta.load-css("styles/vanilla-plus");

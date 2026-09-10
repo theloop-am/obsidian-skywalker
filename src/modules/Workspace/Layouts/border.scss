@@ -1,6 +1,6 @@
-/*--------------------------
+/* --------------------------
 Inspired by https://github.com/Akifyss/obsidian-border
----------------------------*/
+--------------------------- */
 
 body.loopsk-border-layout {
     --card-background-color: rgb(var(--ctp-crust));
@@ -10,6 +10,7 @@ body.loopsk-border-layout {
 
     .horizontal-main-container {
         background-color: var(--card-background-color);
+
         --titlebar-background: var(--card-background-color);
         --ribbon-background: var(--card-background-color);
         --ribbon-background-collapsed: var(--card-background-color);
@@ -20,7 +21,6 @@ body.loopsk-border-layout {
     }
 
     .workspace {
-
         & .workspace-tab-container {
             border-bottom: var(--border-border-style);
         }
@@ -28,7 +28,6 @@ body.loopsk-border-layout {
         // LEFT SIDE rules when the left sidedock is closed
         &:not(.is-left-sidedock-open) {
             >.workspace-split.mod-vertical.mod-root {
-
                 >.workspace-tabs:nth-child(2).workspace-tabs.mod-top-left-space,
                 // the following 2 selectors don't make sense but they are here because obsidan let's you create a vertical split inside a vertical split in certain conditions
                 // ideally this would be fixed in a future release but for now this is a workaround
@@ -106,7 +105,6 @@ body.loopsk-border-layout {
         // RIGHT SIDE rules when the right sidedock is closed (please make sure it similar in structure to the left side rules above)
         &:not(.is-right-sidedock-open) {
             >.workspace-split.mod-vertical.mod-root {
-
                 >.workspace-tabs:last-child.mod-top-right-space,
                 // the following 2 selectors don't make sense but they are here because obsidan let's you create a vertical split inside a vertical split in certain conditions
                 // ideally this would be fixed in a future release but for now this is a workaround
@@ -259,7 +257,7 @@ body.loopsk-border-layout {
             }
         }
 
-        .workspace-split:not(.mod-right-split):not(.mod-left-split) {
+        .workspace-split:not(.mod-right-split, .mod-left-split) {
             >.workspace-split {
                 padding-bottom: 0;
             }
@@ -298,15 +296,15 @@ body.loopsk-border-layout {
 
     .workspace-split.mod-left-split>.workspace-leaf-resize-handle,
     .workspace-split.mod-right-split>.workspace-leaf-resize-handle {
-        height: calc(100% + -1*var(--header-height) + -1*var(--loopsk-border-bottom-padding, 20px));
+        height: calc(100% + -1 * var(--header-height) + -1 * var(--loopsk-border-bottom-padding, 20px));
         bottom: var(--loopsk-border-bottom-padding, 20px);
     }
 
     .workspace-split {
-        --divider-vertical-height: calc(100% + -1*var(--header-height));
+        --divider-vertical-height: calc(100% + -1 * var(--header-height));
     }
 
-    .workspace-ribbon.mod-left:before {
+    .workspace-ribbon.mod-left::before {
         border-bottom: 1px solid var(--card-background-color);
     }
 
@@ -363,7 +361,7 @@ body.loopsk-border-layout:not(.is-mobile) {
             }
         }
 
-        .workspace-split.mod-root:not(.mod-right-split):not(.mod-left-split) {
+        .workspace-split.mod-root:not(.mod-right-split, .mod-left-split) {
             padding-bottom: var(--loopsk-border-bottom-padding, 20px);
         }
     }

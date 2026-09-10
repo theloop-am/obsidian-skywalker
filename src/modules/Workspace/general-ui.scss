@@ -1,29 +1,29 @@
-/*-Slider checkboxes-*/
-.checkbox-container.is-enabled:after {
+/* -Slider checkboxes- */
+.checkbox-container.is-enabled::after {
     background-color: var(--background-primary);
 }
 
-/*-Notices-*/
+/* -Notices- */
 .notice {
     color: rgb(var(--ctp-text));
 }
 
-/*-Recolor copy code button-*/
+/* -Recolor copy code button- */
 .markdown-rendered button.copy-code-button {
     background-color: rgb(var(--ctp-crust));
 }
 
-/*-Banners are always sharp-*/
+/* -Banners are always sharp- */
 .obsidian-banner-wrapper .obsidian-banner .banner-image.banner-image.banner-image.banner-image {
-    border-radius: 0px;
+    border-radius: 0;
 }
 
-/*-Disable scrollbars-*/
+/* -Disable scrollbars- */
 .loopsk-toggle-scrollbars *::-webkit-scrollbar {
     display: none;
 }
 
-/*-Smoother popover transition-*/
+/* -Smoother popover transition- */
 .popover.hover-popover.is-loaded {
     animation: fade .2s;
 }
@@ -33,17 +33,17 @@
     --icon-color-hover: var(--text-faint);
 }
 
-/*-Recolor tooltips-*/
+/* -Recolor tooltips- */
 .tooltip {
     color: rgb(var(--ctp-text));
 }
 
-/*-Disable tooltips-*/
+/* -Disable tooltips- */
 .loopsk-tooltip-toggle .tooltip {
     display: none;
 }
 
-/*-Tab icons-*/
+/* -Tab icons- */
 .mod-left-split .workspace-tab-header.has-active-menu,
 .mod-right-split .workspace-tab-header.has-active-menu,
 .mod-left-split .workspace-tab-header.is-active,
@@ -89,15 +89,17 @@
 }
 
 // Fix ribbon icon drag backgrounds
-.loopsk-accent-toggle .drag-ghost-hidden:before {
-    background-color: rgba(var(--ctp-accent), 0.3)
+.loopsk-accent-toggle .drag-ghost-hidden::before {
+    background-color: rgb(var(--ctp-accent), 0.3)
 }
 
-/*-Suggestion selected item bg fix-*/
+/* -Suggestion selected item bg fix- */
 .suggestion-item.is-selected {
-    background-color: rgba(var(--ctp-text), 0.075);
+    background-color: rgb(var(--ctp-text), 0.075);
 }
-/*-Panes with nothing to read use the sidebar tone-*/
+
+/* -Panes with nothing to read use the sidebar tone- */
+
 /* --background-primary lifts the reading area a little off the sidebars so text
    is easier on the eye. A pane holding no text gets no benefit from that lift -
    it just shows as a lighter rectangle in the middle of an otherwise even

@@ -1,15 +1,15 @@
-/*------------------------------------------
+/* ------------------------------------------
  * ITS is a theme by @SlRvb
  * https://github.com/SlRvb/Obsidian--ITS-Theme
  * This snippet is a simple imitation which tries to emulate the look of frontmatter in ITS.
  * All credits go to SlRvb and their theme for inspiration.
  * Donate to SlRvb here: https://ko-fi.com/slrvb
-------------------------------------------*/
+------------------------------------------ */
 /* @settings
 name: Skywalker ITS Frontmatter Snippet
 id: loopsk-its-frontmatter-settings
 settings:
-    - 
+    -
         id: frontmatter-background-opacity
         title: Frontmatter background opacity
         type: variable-number-slider
@@ -23,7 +23,7 @@ body {
 }
 
 .loopsk-button-metadata-toggle .frontmatter-container:not(.is-collapsed), .markdown-rendered.metadata-button .frontmatter-container:not(.is-collapsed) {
-  background-color: rgba(var(--ctp-mantle), var(--frontmatter-background-opacity));
+  background-color: rgb(var(--ctp-mantle), var(--frontmatter-background-opacity));
   border: 1px solid var(--background-modifier-border);
   padding: var(--size-4-3);
   border-radius: var(--radius-l);
@@ -41,7 +41,7 @@ body {
 }
 
 body:not(.loopsk-button-metadata-toggle) .frontmatter-container {
-  background-color: rgba(var(--ctp-mantle), var(--frontmatter-background-opacity));
+  background-color: rgb(var(--ctp-mantle), var(--frontmatter-background-opacity));
   border: 1px solid var(--background-modifier-border);
   padding: var(--size-4-3);
   border-radius: var(--radius-l);

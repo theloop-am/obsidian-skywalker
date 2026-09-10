@@ -16,7 +16,7 @@
 }
 
 .style-settings-heading:not([data-level="0"]) {
-    border-top: 1px solid rgba(var(--ctp-text), 0.2);
+    border-top: 1px solid rgb(var(--ctp-text), 0.2);
     border-bottom: none;
 }
 
@@ -25,11 +25,11 @@
 }
 
 .style-settings-heading:not([data-level="0"])+.style-settings-container {
-    border: 1px solid rgba(var(--ctp-text), 0.2);
+    border: 1px solid rgb(var(--ctp-text), 0.2);
     border-radius: var(--radius-s);
     padding: var(--size-4-2);
     padding-left: var(--size-4-6);
-    background-color: rgba(var(--ctp-crust), 0.3);
+    background-color: rgb(var(--ctp-crust), 0.3);
     overflow-x: hidden;
 }
 
@@ -49,10 +49,10 @@
 
 .style-settings-heading:is([data-id="skywalker-theme-settings"],
     [data-id="skywalker-theme-settings-extended"]) {
-    border-color: hsla(var(--color-accent-hsl), 0.2);
+    border-color: hsl(var(--color-accent-hsl), 0.2);
 
     &:not(.is-collapsed)+.style-settings-container {
-        border-color: hsla(var(--color-accent-hsl), 0.2);
+        border-color: hsl(var(--color-accent-hsl), 0.2);
     }
 
     .setting-item-name {
@@ -62,10 +62,10 @@
 
 .loopsk-accent-toggle .style-settings-heading:is([data-id="skywalker-theme-settings"],
     [data-id="skywalker-theme-settings-extended"]) {
-    border-color: rgba(var(--ctp-accent), 0.2);
+    border-color: rgb(var(--ctp-accent), 0.2);
 
     &:not(.is-collapsed)+.style-settings-container {
-        border-color: rgba(var(--ctp-accent), 0.2);
+        border-color: rgb(var(--ctp-accent), 0.2);
     }
 }
 
@@ -87,7 +87,7 @@
     display: none;
 }
 
-.style-settings-container .setting-item-control:has(input[type=text]) {
+.style-settings-container .setting-item-control:has(input[type="text"]) {
     flex-grow: 0;
     position: relative;
 
@@ -183,7 +183,7 @@
     }
 }
 
-$linkEmojis: (
+$link-emojis: (
     "skywalker-url-repo": '\2b50',
     // star
     "skywalker-url-upstream": '\1f91d',
@@ -192,15 +192,15 @@ $linkEmojis: (
     // bug
 );
 
-@each $link-data, $link-emoji in $linkEmojis {
+@each $link-data, $link-emoji in $link-emojis {
     .setting-item[data-id="#{$link-data}"] .setting-item-name::before {
         content: "#{" " + $link-emoji}";
     }
 }
 
-//custom heading icons
-//heading icon list + selector
-$headingIcons: (
+// custom heading icons
+// heading icon list + selector
+$heading-icons: (
     "skywalker-theme-settings": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='17.5' cy='10.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='8.5' cy='7.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='6.5' cy='12.5' r='.5'%3E%3C/circle%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'%3E%3C/path%3E%3C/svg%3E"),
     "skywalker-theme-settings-extended": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z'%3E%3C/path%3E%3Cpath d='M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7'%3E%3C/path%3E%3Cpath d='M14.5 17.5 4.5 15'%3E%3C/path%3E%3C/svg%3E"),
     "loopsk-colors-section-header": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08'%3E%3C/path%3E%3Cpath d='M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z'%3E%3C/path%3E%3C/svg%3E"),
@@ -215,22 +215,21 @@ $headingIcons: (
     "loopsk-custom-rainbow-colors": url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 19.9V16h3a2 2 0 0 0 2-2v-2H5v2c0 1.1.9 2 2 2h3v3.9a2 2 0 1 0 4 0Z'%3E%3C/path%3E%3Cpath d='M6 12V2h12v10'%3E%3C/path%3E%3Cpath d='M14 2v4'%3E%3C/path%3E%3Cpath d='M10 2v2'%3E%3C/path%3E%3C/svg%3E"),
 );
 
-@each $headingName, $headingIcon in $headingIcons {
-    .setting-item:is([data-id*=#{$headingName}])>.setting-item-info>.setting-item-name {
+@each $heading-name, $heading-icon in $heading-icons {
+    .setting-item:is([data-id*=#{$heading-name}])>.setting-item-info>.setting-item-name {
         margin-left: -3px;
 
         >.style-settings-collapse-indicator {
             &::after {
-                -webkit-mask-repeat: no-repeat;
-                -webkit-mask-size: contain;
+                mask-repeat: no-repeat;
+                mask-size: contain;
                 background-color: var(--color-accent);
                 content: " ";
                 display: inline-flex;
                 flex-shrink: 0;
                 height: calc(var(--font-ui-medium) + 3px);
                 width: calc(var(--font-ui-medium) + 3px);
-                margin-left: calc(-0.5*var(--size-4-1));
-                margin-right: calc(var(--size-4-2) - 3px);
+                margin-left: calc(-0.5 * var(--size-4-1));
                 transition: transform 0.1s;
                 vertical-align: text-top;
                 margin-right: 0;
@@ -245,13 +244,13 @@ $headingIcons: (
     }
 }
 
-//custom color styling
+// custom color styling
 .setting-item:is([data-id*="loopsk-custom-rainbow-colors"])>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
     background: linear-gradient(to right, rgb(var(--ctp-rosewater)) 7%, rgb(var(--ctp-flamingo)) 7%, rgb(var(--ctp-flamingo)) 14%, rgb(var(--ctp-mauve)) 14%, rgb(var(--ctp-mauve)) 21%, rgb(var(--ctp-pink)) 21%, rgb(var(--ctp-pink)) 28%, rgb(var(--ctp-red)) 28%, rgb(var(--ctp-red)) 35%, rgb(var(--ctp-maroon)) 35%, rgb(var(--ctp-maroon)) 42%, rgb(var(--ctp-peach)) 42%, rgb(var(--ctp-peach)) 49%, rgb(var(--ctp-yellow)) 49%, rgb(var(--ctp-yellow)) 56%, rgb(var(--ctp-green)) 56%, rgb(var(--ctp-green)) 63%, rgb(var(--ctp-teal)) 63%, rgb(var(--ctp-teal)) 70%, rgb(var(--ctp-sky)) 70%, rgb(var(--ctp-sky)) 77%, rgb(var(--ctp-sapphire)) 77%, rgb(var(--ctp-sapphire)) 85%, rgb(var(--ctp-blue)) 85%, rgb(var(--ctp-blue)) 92%, rgb(var(--ctp-lavender)));
 }
 
-//collapse animations
-//clockwise
+// collapse animations
+// clockwise
 .setting-item:is([data-id="skywalker-theme-settings"],
     [data-id="loopsk-colors-section-header"],
     [data-id="loopsk-editor-header"],
@@ -266,16 +265,16 @@ $headingIcons: (
     transition: transform 0.1s;
 }
 
-//anticlockwise
+// anticlockwise
 .setting-item:is([data-id="skywalker-theme-settings-extended"],
     [data-id="loopsk-preview-header"]):not(.is-collapsed)>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
     transform: rotate(-90deg);
     transition: transform 0.1s;
 }
 
-//set icon per selector
-@each $headingName, $headingIcon in $headingIcons {
-    .setting-item:is([data-id=#{$headingName}])>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
-        -webkit-mask-image: $headingIcon;
+// set icon per selector
+@each $heading-name, $heading-icon in $heading-icons {
+    .setting-item:is([data-id=#{$heading-name}])>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::after {
+        mask-image: $heading-icon;
     }
 }

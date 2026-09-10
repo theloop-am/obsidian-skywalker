@@ -1,4 +1,4 @@
-body:not(.loopsk-alternate-tab-toggle):not(.loopsk-disable-newtab-align) {
+body:not(.loopsk-alternate-tab-toggle, .loopsk-disable-newtab-align) {
     .workspace-split.mod-vertical {
         .workspace-tab-header-spacer {
             display: none;

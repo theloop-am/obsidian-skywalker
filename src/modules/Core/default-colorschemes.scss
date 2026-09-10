@@ -1,16 +1,17 @@
-/*------------------Defining Colorschemes-------------------*/
+/* ------------------Defining Colorschemes------------------- */
 @use "sass:color";
 @use "sass:math";
 @use "sass:map";
-@use "colorschemes/latte.scss";
-@use "colorschemes/rosepine-light.scss";
-@use "colorschemes/frappe.scss";
-@use "colorschemes/macchiato.scss";
-@use "colorschemes/mocha.scss";
-@use "colorschemes/mocha-old.scss";
-@use "colorschemes/solarized-light.scss";
-@use "colorschemes/flexoki-dark.scss";
-@use "colorschemes/amoled-dark.scss";
+@use "colorschemes/latte";
+@use "colorschemes/rosepine-light";
+@use "colorschemes/frappe";
+@use "colorschemes/macchiato";
+@use "colorschemes/mocha";
+@use "colorschemes/mocha-old";
+@use "colorschemes/solarized-light";
+@use "colorschemes/flexoki-dark";
+@use "colorschemes/amoled-dark";
+
 $theme-list: latte.$theme-latte, rosepine-light.$theme-rosepine-light, solarized-light.$theme-solarized-light, frappe.$theme-frappe, macchiato.$theme-macchiato, mocha.$theme-mocha, mocha-old.$theme-mocha-old, flexoki-dark.$theme-flexoki-dark, amoled-dark.$theme-amoled-dark;
 $color-list: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender", "text", "subtext1", "subtext0", "overlay2", "overlay1", "overlay0", "surface2", "surface1", "surface0", "base", "mantle", "crust";
 
@@ -21,18 +22,20 @@ $color-list: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     }
   }
 }
+
 .theme-dark {
   @each $color-name in $color-list {
     --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{math.round(color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "red", $space: rgb))}, #{math.round(color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "green", $space: rgb))}, #{math.round(color.channel(map.get(flexoki-dark.$theme-flexoki-dark, ctp-#{$color-name}), "blue", $space: rgb))}));
   }
 }
+
 .theme-light {
   @each $color-name in $color-list {
     --ctp-#{$color-name}: var(--ctp-custom-#{$color-name}, var(--ctp-ext-#{$color-name}, #{math.round(color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "red", $space: rgb))}, #{math.round(color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "green", $space: rgb))}, #{math.round(color.channel(map.get(solarized-light.$theme-solarized-light, ctp-#{$color-name}), "blue", $space: rgb))}));
   }
 }
 
-/*------------------AMOLED Toggle-------------------*/
+/* ------------------AMOLED Toggle------------------- */
 .theme-dark.loopsk-theme-amoled {
   --ctp-ext-surface2: 80, 80, 80;
   --ctp-ext-surface1: 50, 50, 50;

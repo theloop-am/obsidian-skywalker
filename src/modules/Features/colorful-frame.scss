@@ -1,12 +1,13 @@
-/*---------------COLORFUL FRAME--------------*/
-/*----------------------------------
+/* ---------------COLORFUL FRAME-------------- */
+
+/* ----------------------------------
 This feature is inspired by Kepano's Minimal theme: https://github.com/kepano/obsidian-minimal
 None of the original code was used, and was written from scratch.
-----------------------------------*/
+---------------------------------- */
 body {
     --colorful-icon-color: var(--background-secondary);
     --colorful-icon-color-alt: var(--background-secondary-alt);
-    --colorful-frame-color: rgba(var(--loopsk-colorful-frame-color, var(--ctp-accent)), var(--loopsk-colorful-frame-opacity, 1));
+    --colorful-frame-color: rgb(var(--loopsk-colorful-frame-color, var(--ctp-accent)), var(--loopsk-colorful-frame-opacity, 1));
 }
 
 body.loopsk-colorful-frame-icon-toggle-light.theme-light,
@@ -17,7 +18,6 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 
 .loopsk-colorful-frame {
     &.loopsk-fixed-status-bar {
-
         &.loopsk-card-layout,
         &.loopsk-border-layout {
             .status-bar {
@@ -26,7 +26,7 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 
                 .status-bar-item.mod-clickable:hover {
                     color: var(--colorful-icon-color);
-                    background-color: rgba(var(--ctp-crust), 0.2);
+                    background-color: rgb(var(--ctp-crust), 0.2);
                 }
             }
         }
@@ -37,7 +37,7 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
     &:not(.loopsk-card-layout, .loopsk-border-layout) .workspace-split.mod-left-split .workspace-tabs.mod-top,
     &:not(.loopsk-card-layout, .loopsk-border-layout) .workspace-split.mod-right-split .workspace-tabs.mod-top {
         .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
-            background-color: rgba(var(--ctp-crust), 0.2);
+            background-color: rgb(var(--ctp-crust), 0.2);
         }
     }
 
@@ -48,32 +48,30 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
     }
 
     &.loopsk-accent-toggle.loopsk-colorful-frame {
-
         &:not(.loopsk-card-layout, .loopsk-border-layout) .mod-top .workspace-tab-header-container,
-        &:not(.loopsk-card-layout, .loopsk-border-layout) .workspace-ribbon.mod-left:before,
+        &:not(.loopsk-card-layout, .loopsk-border-layout) .workspace-ribbon.mod-left::before,
         &.loopsk-card-layout,
         &.loopsk-card-layout .workspace-tabs.mod-top,
         &.loopsk-card-layout .sidebar-toggle-button,
-        &.loopsk-card-layout .workspace-ribbon.mod-left:before {
-            --tab-container-background: rgba(var(--loopsk-colorful-frame-color, var(--ctp-accent)), var(--loopsk-colorful-frame-opacity, 1));
-            --titlebar-background: rgba(var(--loopsk-colorful-frame-color, var(--ctp-accent)), var(--loopsk-colorful-frame-opacity, 1));
+        &.loopsk-card-layout .workspace-ribbon.mod-left::before {
+            --tab-container-background: rgb(var(--loopsk-colorful-frame-color, var(--ctp-accent)), var(--loopsk-colorful-frame-opacity, 1));
+            --titlebar-background: rgb(var(--loopsk-colorful-frame-color, var(--ctp-accent)), var(--loopsk-colorful-frame-opacity, 1));
         }
 
         &.loopsk-card-layout .prompt {
-            --background-modifier-hover: rgba(var(--ctp-text), 0.075)
+            --background-modifier-hover: rgb(var(--ctp-text), 0.075)
         }
     }
 
     &.loopsk-accent-toggle.loopsk-colorful-frame,
     &.loopsk-colorful-frame.loopsk-colorful-frame.loopsk-colorful-frame {
         .sidebar-toggle-button {
-            --background-modifier-hover: rgba(var(--ctp-text), 0.075);
+            --background-modifier-hover: rgb(var(--ctp-text), 0.075);
         }
     }
 
     &.is-focused .workspace-tabs.mod-stacked .workspace-tab-container {
         .workspace-tab-header-inner {
-
             .workspace-tab-header-inner-title,
             .workspace-tab-header-inner-close-button {
                 color: var(--text-muted);
@@ -91,7 +89,6 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 
     &.is-focused .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active {
         .workspace-tab-header-inner {
-
             .workspace-tab-header-inner-title,
             .workspace-tab-header-inner-close-button {
                 color: var(--color-accent);
@@ -103,10 +100,10 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
     &.loopsk-colorful-frame.loopsk-card-layout,
     &.loopsk-colorful-frame.loopsk-card-layout .workspace-tabs.mod-top,
     &.loopsk-colorful-frame.loopsk-card-layout .sidebar-toggle-button,
-    &.loopsk-colorful-frame.loopsk-card-layout .workspace-ribbon.mod-left:before,
-    &:not(.loopsk-card-layout, .loopsk-border-layout) .workspace-ribbon.mod-left:before {
-        --tab-container-background: hsla(var(--loopsk-colorful-frame-color-hsl, var(--color-accent-hsl)), var(--loopsk-colorful-frame-opacity, 1));
-        --titlebar-background: hsla(var(--loopsk-colorful-frame-color-hsl, var(--color-accent-hsl)), var(--loopsk-colorful-frame-opacity, 1));
+    &.loopsk-colorful-frame.loopsk-card-layout .workspace-ribbon.mod-left::before,
+    &:not(.loopsk-card-layout, .loopsk-border-layout) .workspace-ribbon.mod-left::before {
+        --tab-container-background: hsl(var(--loopsk-colorful-frame-color-hsl, var(--color-accent-hsl)), var(--loopsk-colorful-frame-opacity, 1));
+        --titlebar-background: hsl(var(--loopsk-colorful-frame-color-hsl, var(--color-accent-hsl)), var(--loopsk-colorful-frame-opacity, 1));
         ;
     }
 
@@ -118,7 +115,6 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
     &:not(.loopsk-card-layout, .loopsk-border-layout).is-focused {
         .mod-top {
             &:not(.mod-stacked) {
-
                 .workspace-tab-header,
                 .workspace-tab-header.is-active,
                 .is-focused.workspace-tab-header,
@@ -140,7 +136,6 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 
             .workspace-tab-header-tab-list,
             .workspace-tab-header-new-tab {
-
                 .clickable-icon,
                 .clickable-icon:hover {
                     color: var(--colorful-icon-color-alt);
@@ -151,7 +146,6 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
         &.loopsk-mini-tab-toggle,
         &.is-focused.loopsk-mini-tab-toggle {
             .mod-top {
-
                 .workspace-tab-header,
                 .workspace-tab-header.is-active {
                     --tab-text-color-focused-active: var(--colorful-icon-color-alt);
@@ -171,7 +165,6 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
     }
 
     &:not(.loopsk-card-layout, .loopsk-border-layout) {
-
         .mod-right-split .mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
         .mod-left-split .mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
         .mod-top .workspace-tab-header-container .clickable-icon.has-active-menu,
@@ -193,19 +186,18 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 
         .mod-left-split .mod-top .workspace-tab-header.is-active,
         .mod-right-split .mod-top .workspace-tab-header.is-active {
-            background-color: rgba(var(--ctp-crust), 0.2);
+            background-color: rgb(var(--ctp-crust), 0.2);
 
             &:hover {
-                background-color: rgba(var(--ctp-crust), 0.3);
+                background-color: rgb(var(--ctp-crust), 0.3);
             }
         }
 
         &.loopsk-colorful-frame-icon-toggle-light.theme-light,
         &.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
-
             .mod-left-split .mod-top .workspace-tab-header.is-active,
             .mod-right-split .mod-top .workspace-tab-header.is-active {
-                background-color: rgba(var(--ctp-text), 0.3);
+                background-color: rgb(var(--ctp-text), 0.3);
             }
         }
 
@@ -227,6 +219,7 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 .loopsk-colorful-frame:not(.loopsk-card-layout, .loopsk-border-layout).is-focused.loopsk-mini-tab-toggle .mod-top:not(.mod-stacked) .workspace-tab-header:not(.is-active),
 .loopsk-colorful-frame:not(.loopsk-card-layout, .loopsk-border-layout).loopsk-mini-tab-toggle .mod-top:not(.mod-stacked) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button {
     color: var(--colorful-icon-color-alt);
+
     --tab-text-color-focused-active-current: var(--colorful-icon-color-alt);
 }
 
@@ -243,13 +236,16 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 .loopsk-colorful-frame .sidebar-toggle-button {
     padding: var(--size-4-1);
     background-color: var(--background-primary);
+
     --tab-container-background: var(--background-primary) !important;
+
     height: calc(var(--header-height) - 5px);
     margin-right: 0;
     border-radius: 0 0 var(--radius-m) var(--radius-m);
-    border-width: 0 1px 1px 1px;
+    border-width: 0 1px 1px;
     border-style: solid;
     border-color: var(--tab-outline-color);
+
     --icon-color: var(--text-muted);
     --icon-color-hover: var(--text-muted);
     --icon-color-active: var(--text-accent);
@@ -268,7 +264,7 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
     color: var(--background-primary);
 }
 
-//Fullscreen tweak
+// Fullscreen tweak
 .loopsk-colorful-frame.mod-macos .sidebar-toggle-button.mod-right {
     border-radius: 0 0 0 var(--radius-m);
 }
@@ -287,7 +283,8 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
 .loopsk-colorful-frame.loopsk-card-layout.loopsk-mini-tab-toggle .mod-vertical .workspace-tab-header.is-active,
 .loopsk-colorful-frame.loopsk-card-layout:not(.loopsk-card-layout-filebrowser) .workspace-leaf-content[data-type="file-explorer"] {
     --tab-text-color: var(--background-secondary-alt);
-    //--tab-text-color-active: var(--background-secondary-alt);
+
+    // --tab-text-color-active: var(--background-secondary-alt);
     --tab-text-color-focused: var(--background-secondary-alt);
     --tab-text-color-focused-active: var(--background-secondary-alt);
     --tab-text-color-focused-highlighted: var(--background-secondary-alt);
@@ -299,12 +296,12 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
 }
 
 .loopsk-colorful-frame.loopsk-card-layout:not(.loopsk-card-layout-filebrowser) {
-
     &.loopsk-colorful-frame-icon-toggle-light.theme-light,
     &.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
         .workspace-leaf-content[data-type="file-explorer"] {
             --tab-text-color: var(--text-normal);
-            //--tab-text-color-active: var(--text-normal);
+
+            // --tab-text-color-active: var(--text-normal);
             --tab-text-color-focused: var(--text-normal);
             --tab-text-color-focused-active: var(--text-normal);
             --tab-text-color-focused-highlighted: var(--text-normal);
@@ -355,10 +352,8 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
 }
 
 .loopsk-colorful-frame.loopsk-card-layout.is-focused {
-
     &.loopsk-colorful-frame-icon-toggle-light.theme-light,
     &.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
-
         .mod-left-split,
         .mod-right-split {
             .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
@@ -369,7 +364,6 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
 }
 
 .loopsk-colorful-frame.loopsk-card-layout {
-
     .mod-left-split,
     .mod-right-split {
         .workspace-tab-container {
@@ -388,22 +382,20 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
 
 .loopsk-colorful-frame.loopsk-card-layout .mod-right-split .workspace-tab-header.is-active,
 .loopsk-colorful-frame.loopsk-card-layout .mod-left-split .workspace-tab-header.is-active {
-    background-color: rgba(var(--ctp-crust), 0.2);
+    background-color: rgb(var(--ctp-crust), 0.2);
 
     &:hover {
-        background-color: rgba(var(--ctp-crust), 0.3);
+        background-color: rgb(var(--ctp-crust), 0.3);
     }
 }
 
 .loopsk-colorful-frame.loopsk-card-layout {
-
     &.loopsk-colorful-frame-icon-toggle-light.theme-light,
     &.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
-
         .mod-right-split,
         .mod-left-split {
             .workspace-tab-header.is-active {
-                background-color: rgba(var(--ctp-text), 0.3);
+                background-color: rgb(var(--ctp-text), 0.3);
             }
         }
     }
@@ -418,11 +410,11 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
     --tab-text-color-focused-active: var(--text-normal);
 }
 
-.loopsk-mini-tab-toggle.loopsk-colorful-frame .workspace-split:not(.mod-left-split):not(.mod-right-split) .workspace-tabs.mod-top .workspace-tab-header-container-inner .workspace-tab-header.is-active {
+.loopsk-mini-tab-toggle.loopsk-colorful-frame .workspace-split:not(.mod-left-split, .mod-right-split) .workspace-tabs.mod-top .workspace-tab-header-container-inner .workspace-tab-header.is-active {
     border-bottom: 2px solid var(--background-secondary-alt);
 }
 
-.loopsk-colorful-frame.loopsk-card-layout .workspace-drop-overlay:before {
+.loopsk-colorful-frame.loopsk-card-layout .workspace-drop-overlay::before {
     background-color: var(--background-secondary-alt);
     border-radius: var(--radius-m);
     opacity: 0.5;
@@ -436,7 +428,6 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
 }
 
 .loopsk-colorful-frame.is-frameless:not(.is-hidden-frameless) {
-
     .sidebar-toggle-button.mod-right,
     .sidebar-toggle-button.mod-left {
         border-radius: var(--radius-m);
@@ -444,7 +435,6 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
 }
 
 .loopsk-colorful-frame:not(.is-frameless) {
-
     .sidebar-toggle-button.mod-right,
     .sidebar-toggle-button.mod-left {
         border-radius: var(--radius-m);
@@ -454,6 +444,7 @@ body.loopsk-colorful-frame.loopsk-card-layout .workspace,
 body.loopsk-colorful-frame.loopsk-border-layout {
     .horizontal-main-container {
         background-color: var(--colorful-frame-color);
+
         --titlebar-background: var(--colorful-frame-color);
         --ribbon-background: var(--colorful-frame-color);
         --ribbon-background-collapsed: var(--colorful-frame-color);
@@ -467,11 +458,11 @@ body.loopsk-colorful-frame.loopsk-border-layout {
         --icon-color-focused: var(--colorful-icon-color);
 
         .clickable-icon:hover {
-            background-color: rgba(var(--ctp-crust), 0.2);
+            background-color: rgb(var(--ctp-crust), 0.2);
         }
 
         .clickable-icon:active {
-            background-color: rgba(var(--ctp-crust), 0.3);
+            background-color: rgb(var(--ctp-crust), 0.3);
         }
     }
 
@@ -485,17 +476,16 @@ body.loopsk-colorful-frame.loopsk-border-layout {
             }
 
             .clickable-icon:hover {
-                background-color: rgba(var(--ctp-crust), 0.2);
+                background-color: rgb(var(--ctp-crust), 0.2);
             }
 
             .clickable-icon:active {
-                background-color: rgba(var(--ctp-crust), 0.3);
+                background-color: rgb(var(--ctp-crust), 0.3);
             }
         }
     }
 
     .workspace-split {
-
         &.mod-right-split,
         &.mod-left-split {
             .workspace-tabs.mod-top {
@@ -506,19 +496,19 @@ body.loopsk-colorful-frame.loopsk-border-layout {
                     --icon-color-focused: var(--colorful-icon-color);
 
                     .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
-                        background-color: rgba(var(--ctp-crust), 0.2);
+                        background-color: rgb(var(--ctp-crust), 0.2);
                     }
 
                     .workspace-tab-header.is-active .workspace-tab-header-inner {
-                        background-color: rgba(var(--ctp-crust), 0.3);
+                        background-color: rgb(var(--ctp-crust), 0.3);
                     }
 
                     .clickable-icon:hover {
-                        background-color: rgba(var(--ctp-crust), 0.2);
+                        background-color: rgb(var(--ctp-crust), 0.2);
                     }
 
                     .clickable-icon:active {
-                        background-color: rgba(var(--ctp-crust), 0.3);
+                        background-color: rgb(var(--ctp-crust), 0.3);
                     }
 
                     .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
@@ -531,7 +521,6 @@ body.loopsk-colorful-frame.loopsk-border-layout {
     }
 
     &.loopsk-mini-tab-toggle .workspace-tabs.mod-top {
-
         .workspace-tab-header-inner-title,
         .workspace-tab-header-status-container,
         .workspace-tab-header-inner-close-button,

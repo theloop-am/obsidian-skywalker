@@ -1,5 +1,5 @@
 .kanban-plugin__lane {
-    background-color: rgba(var(--ctp-mantle), var(--loopsk-kanban-lane-opacity, 1));
+    background-color: rgb(var(--ctp-mantle), var(--loopsk-kanban-lane-opacity, 1));
     border-radius: var(--loopsk-kanban-lane-radius, 6px);
     border-width: 0;
     box-shadow: inset 0 0 0 1px var(--background-modifier-border);
@@ -110,7 +110,6 @@
 }
 
 .loopsk-kanban-hide-lane-border {
-
     .kanban-plugin__lane,
     .kanban-plugin__lane-header-wrapper,
     .kanban-plugin__item-button-wrapper,

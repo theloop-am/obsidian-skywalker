@@ -2,12 +2,12 @@
     counter-reset: line-numbers;
 }
 
-.loopsk-codeblock-numbers .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+.loopsk-codeblock-numbers .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end) {
     padding-left: 5em;
     position: relative;
 }
 
-.loopsk-codeblock-numbers .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::before {
+.loopsk-codeblock-numbers .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end)::before {
     align-items: flex-end;
     border-right: 1px solid var(--scrollbar-thumb-bg);
     color: var(--loopsk-code-text-color, var(--text-faint));
@@ -25,7 +25,7 @@
     width: 3em;
 }
 
-.loopsk-codeblock-numbers .HyperMD-codeblock.cm-line.cm-active:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::before {
+.loopsk-codeblock-numbers .HyperMD-codeblock.cm-line.cm-active:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end)::before {
     color: var(--color-accent);
 }
 

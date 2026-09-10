@@ -1,4 +1,4 @@
-/*------------------Selecting Accents-------------------*/
+/* ------------------Selecting Accents------------------- */
 $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender";
 
@@ -24,30 +24,28 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     }
 }
 
-/*------------------Actual Configs--------------------*/
+/* ------------------Actual Configs-------------------- */
 .loopsk-accent-toggle {
     --color-accent: rgb(var(--ctp-accent));
     --color-accent-1: rgb(var(--ctp-accent));
-    --color-accent-2: rgba(var(--ctp-accent), 0.9);
-    --text-selection: rgba(var(--ctp-accent), 0.25);
-    --interactive-accent: rgb(var(--ctp-accent));
-    --interactive-accent-hover: rgba(var(--ctp-accent), 0.9);
+    --color-accent-2: rgb(var(--ctp-accent), 0.9);
+    --text-selection: rgb(var(--ctp-accent), 0.25);
     --text-accent: rgb(var(--ctp-accent));
     --text-accent-hover: rgb(var(--ctp-accent));
-    --text-highlight-bg: rgba(var(--ctp-accent), 0.4);
-    --text-highlight-bg-active: rgba(var(--ctp-accent), 0.6);
+    --text-highlight-bg: rgb(var(--ctp-accent), 0.4);
+    --text-highlight-bg-active: rgb(var(--ctp-accent), 0.6);
     --interactive-accent: rgb(var(--ctp-accent));
     --interactive-accent-rgb: var(--ctp-accent);
     --interactive-accent-hover: rgb(var(--ctp-accent));
     --blockquote-border-color: rgb(var(--ctp-accent));
-    --background-modifier-active: rgba(var(--ctp-accent), 0.1);
-    --background-modifier-active-hover: rgba(var(--ctp-accent), 0.15);
-    --link-unresolved-decoration-color: rgba(var(--ctp-accent), 0.3);
-    --tag-background: rgba(var(--ctp-accent), 0.1);
-    --tag-background-hover: rgba(var(--ctp-accent), 0.2);
-    --tag-border-color: rgba(var(--ctp-accent), 0.15);
-    --tag-border-color-hover: rgba(var(--ctp-accent), 0.15);
-    --nav-item-background-selected: rgba(var(--ctp-accent), 0.2);
+    --background-modifier-active: rgb(var(--ctp-accent), 0.1);
+    --background-modifier-active-hover: rgb(var(--ctp-accent), 0.15);
+    --link-unresolved-decoration-color: rgb(var(--ctp-accent), 0.3);
+    --tag-background: rgb(var(--ctp-accent), 0.1);
+    --tag-background-hover: rgb(var(--ctp-accent), 0.2);
+    --tag-border-color: rgb(var(--ctp-accent), 0.15);
+    --tag-border-color-hover: rgb(var(--ctp-accent), 0.15);
+    --nav-item-background-selected: rgb(var(--ctp-accent), 0.2);
     --heading-formatting: rgb(var(--ctp-accent));
     --icon-color-focused: rgb(var(--ctp-accent));
 }
@@ -83,49 +81,49 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     --color-base-60: rgb(var(--ctp-overlay2));
     --color-base-70: rgb(var(--ctp-subtext0));
     --color-base-100: rgb(var(--ctp-text));
-    --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
-    --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4);
-    --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(var(255, 255, 255), 0.09),
-        0 2px 4px 0 rgba(var(--ctp-crust), 0.15),
-        0 1px 1.5px 0 rgba(var(--ctp-crust), 0.1),
-        0 1px 2px 0 rgba(var(--ctp-crust), 0.2), 0 0 0 0 transparent;
-    --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(var(255, 255, 255), 0.16),
-        0 2px 3px 0 rgba(var(--ctp-crust), 0.3),
-        0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
-        0 1px 2px 0 rgba(var(--ctp-crust), 0.4), 0 0 0 0 transparent;
-    --shadow-s: 0px 1px 2px rgba(var(--ctp-crust), 0.121),
-        0px 3.4px 6.7px rgba(var(--ctp-crust), 0.179),
-        0px 15px 30px rgba(var(--ctp-crust), 0.3);
-    --shadow-l: 0px 1.8px 7.3px rgba(var(--ctp-crust), 0.071),
-        0px 6.3px 24.7px rgba(var(--ctp-crust), 0.112),
-        0px 30px 90px rgba(var(--ctp-crust), 0.2);
+    --text-highlight-bg: rgb(var(--ctp-yellow), 0.2);
+    --text-highlight-bg-active: rgb(var(--ctp-yellow), 0.4);
+    --input-shadow: inset 0 0.5px 0.5px 0.5px rgb(var(255, 255, 255), 0.09),
+        0 2px 4px 0 rgb(var(--ctp-crust), 0.15),
+        0 1px 1.5px 0 rgb(var(--ctp-crust), 0.1),
+        0 1px 2px 0 rgb(var(--ctp-crust), 0.2), 0 0 0 0 transparent;
+    --input-shadow-hover: inset 0 0.5px 1px 0.5px rgb(var(255, 255, 255), 0.16),
+        0 2px 3px 0 rgb(var(--ctp-crust), 0.3),
+        0 1px 1.5px 0 rgb(var(--ctp-crust), 0.2),
+        0 1px 2px 0 rgb(var(--ctp-crust), 0.4), 0 0 0 0 transparent;
+    --shadow-s: 0px 1px 2px rgb(var(--ctp-crust), 0.121),
+        0px 3.4px 6.7px rgb(var(--ctp-crust), 0.179),
+        0px 15px 30px rgb(var(--ctp-crust), 0.3);
+    --shadow-l: 0px 1.8px 7.3px rgb(var(--ctp-crust), 0.071),
+        0px 6.3px 24.7px rgb(var(--ctp-crust), 0.112),
+        0px 30px 90px rgb(var(--ctp-crust), 0.2);
     --background-primary: rgb(var(--ctp-base));
     --background-primary-alt: rgb(var(--ctp-mantle));
     --background-secondary: rgb(var(--ctp-mantle));
     --background-secondary-alt: rgb(var(--ctp-crust));
-    --background-modifier-hover: rgba(var(--ctp-text), 0.075);
-    --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
-    --background-modifier-success: rgba(var(--ctp-green), 1);
-    --background-modifier-success-hover: rgba(var(--ctp-green), 0.9);
+    --background-modifier-hover: rgb(var(--ctp-text), 0.075);
+    --background-modifier-form-field: rgb(var(--ctp-crust), 0.3);
+    --background-modifier-success: rgb(var(--ctp-green), 1);
+    --background-modifier-success-hover: rgb(var(--ctp-green), 0.9);
     --background-modifier-success-rgb: var(--ctp-green);
-    --background-modifier-error: rgba(var(--ctp-red), 1);
+    --background-modifier-error: rgb(var(--ctp-red), 1);
     --background-modifier-error-rgb: var(--ctp-red);
-    --background-modifier-error-hover: rgba(var(--ctp-red), 0.9);
-    --background-modifier-message: rgba(var(--ctp-crust), 0.9);
+    --background-modifier-error-hover: rgb(var(--ctp-red), 0.9);
+    --background-modifier-message: rgb(var(--ctp-crust), 0.9);
     --modal-border-color: rgb(var(--ctp-surface0));
     --text-normal: rgb(var(--ctp-text));
     --text-muted: rgb(var(--ctp-overlay2));
     --text-muted-rgb: var(--ctp-overlay2);
     --text-faint: rgb(var(--ctp-overlay1));
     --text-error: rgb(var(--ctp-red));
-    --text-error-hover: rgba(var(--ctp-red), 0.8);
+    --text-error-hover: rgb(var(--ctp-red), 0.8);
     --text-success: rgb(var(--ctp-green));
     --text-on-accent: rgb(var(--ctp-base));
     --interactive-normal: rgb(var(--ctp-surface0));
     --interactive-hover: rgb(var(--ctp-surface1));
     --interactive-success: rgb(var(--ctp-green));
-    --workspace-background-translucent: rgba(var(--ctp-crust), 0.6);
-    --blockquote-background-color: rgba(var(--ctp-crust), 0.5);
+    --workspace-background-translucent: rgb(var(--ctp-crust), 0.6);
+    --blockquote-background-color: rgb(var(--ctp-crust), 0.5);
     --width-image-gallery: 200px;
     --min-width-image: 50%;
     --max-width-image: 90%;
@@ -136,17 +134,18 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     --callout-title-padding: var(--size-4-2);
     --table-border-width: var(--loopsk-table-thickness, 1px);
     --icon-color-focused: var(--color-accent);
-    --embed-block-shadow-hover: none; //no shadow
+    --embed-block-shadow-hover: none; // no shadow
 }
 
 .theme-dark {
     color-scheme: dark;
+
     --highlight-mix-blend-mode: none;
     --background-modifier-border: rgb(var(--ctp-surface0));
     --background-modifier-border-hover: rgb(var(--ctp-surface1));
     --background-modifier-border-focus: rgb(var(--ctp-surface2));
     --loopsk-speech-bubble-opacity: var(--loopsk-sp-op-dark, 0.9);
-    --background-modifier-cover: rgba(var(--ctp-mantle), 0.4);
+    --background-modifier-cover: rgb(var(--ctp-mantle), 0.4);
 
     &.theme-dark {
         --canvas-color: rgb(var(--ctp-overlay0));
@@ -155,12 +154,13 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 
 .theme-light {
     color-scheme: light;
+
     --highlight-mix-blend-mode: none;
     --background-modifier-border: rgb(var(--ctp-surface1));
     --background-modifier-border-hover: rgb(var(--ctp-surface2));
     --background-modifier-border-focus: rgb(var(--ctp-overlay0));
     --loopsk-speech-bubble-opacity: var(--loopsk-sp-op-light, 0.5);
-    --background-modifier-cover: #00000022;
+    --background-modifier-cover: #0002;
 
     &.theme-light {
         --canvas-color: rgb(var(--ctp-overlay0));
@@ -170,7 +170,7 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 body {
     --loopsk-rainbow-folder-bg-opacity: 1;
     --loopsk-rainbow-folder-border-opacity: 1;
-    --loopsk-rainbow-folder-collapse-border-custom: #00000044;
+    --loopsk-rainbow-folder-collapse-border-custom: #0004;
     --loopsk-preview-width-pct: 95%;
     --loopsk-preview-width-max: 800px;
     --loopsk-header-margin-value: 15px;
@@ -186,12 +186,12 @@ body {
     --callout-padding: 0;
     --callout-title-padding: var(--size-4-2);
     --callout-content-padding: var(--size-4-2);
-    --background-modifier-active: hsla(var(--color-accent-hsl), 0.1);
+    --background-modifier-active: hsl(var(--color-accent-hsl), 0.1);
     --pdf-background: var(--background-primary);
     --pdf-dark-opacity: 1;
-    --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent;
+    --pdf-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 8px transparent;
     --pdf-sidebar-background: var(--background-primary);
-    --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent;
+    --pdf-thumbnail-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 8px transparent;
 
     &.theme-light {
         --loopsk-background-image: var(--loopsk-background-image-light);

@@ -14,8 +14,7 @@
 .loopsk-codeblock-edit-nowrap {
     .markdown-source-view.mod-cm6 .HyperMD-codeblock.cm-line {
         white-space: nowrap;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        overflow: scroll hidden;
 
         &::-webkit-scrollbar {
             display: none;

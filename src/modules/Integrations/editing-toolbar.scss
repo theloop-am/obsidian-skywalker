@@ -1,13 +1,15 @@
 .editingToolbarDefaultAesthetic {
-    margin: 5px 10px 0 10px;
-    box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 5%);
+    margin: 5px 10px 0;
+    box-shadow: 0 3px 4px 0 rgb(0 0 0 / 5%);
     background-color: var(--background-primary);
 }
 
+// stylelint-disable-next-line selector-id-pattern -- the Editing Toolbar plugin names this element
 #editingToolbarModalBar.top button.editingToolbarCommandItem:hover {
     background-color: var(--background-secondary);
 }
 
-#editingToolbarModalBar.top :is(.editingToolbarCommandItem, button[class^=editingToolbarCommandsubItem]):not(.editingToolbar-Divider-Line) {
+// stylelint-disable-next-line selector-id-pattern -- the Editing Toolbar plugin names this element
+#editingToolbarModalBar.top :is(.editingToolbarCommandItem, button[class^="editingToolbarCommandsubItem"]):not(.editingToolbar-Divider-Line) {
     transition: all 0s linear;
 }

@@ -1,23 +1,23 @@
 body.is-translucent {
     background-color: transparent;
-    --workspace-background-translucent: rgba(var(--ctp-crust), var(--loopsk-translucency-opacity));
+
+    --workspace-background-translucent: rgb(var(--ctp-crust), var(--loopsk-translucency-opacity));
 }
 
 .is-translucent:not(.is-fullscreen) {
-    --nav-collapse-icon-color: rgba(var(--mono-rgb-100), 0.3);
-    --nav-collapse-icon-color-collapsed: rgba(var(--mono-rgb-100), 0.3);
-    --divider-color: rgba(var(--ctp-surface0), 0.15);
+    --nav-collapse-icon-color: rgb(var(--mono-rgb-100), 0.3);
+    --nav-collapse-icon-color-collapsed: rgb(var(--mono-rgb-100), 0.3);
+    --divider-color: rgb(var(--ctp-surface0), 0.15);
 }
 
 .is-translucent:not(.is-fullscreen) {
-
     .workspace-ribbon.mod-left,
     .workspace-tabs,
     .mod-left-split .workspace-tab-header-container,
     .mod-right-split .workspace-tab-header-container,
     .mod-top .workspace-tab-header-container,
     .workspace-tabs .workspace-leaf,
-    .workspace-ribbon.mod-left:before,
+    .workspace-ribbon.mod-left::before,
     .workspace-split.mod-root,
     .workspace-split.mod-root.mod-left-split .view-content,
     .view-header,
@@ -25,12 +25,11 @@ body.is-translucent {
         background-color: transparent;
     }
 
-    .view-header-title-container:not(.mod-at-end):after {
+    .view-header-title-container:not(.mod-at-end)::after {
         background-image: none;
     }
 
     .workspace-tabs.mod-stacked {
-
         .workspace-tab-header,
         .view-header {
             background-color: var(--background-primary);

@@ -1,18 +1,18 @@
 .callout[data-callout="formula"] {
     --callout-color: rgb(var(--ctp-text));
+
     width: fit-content;
     height: fit-content;
     mix-blend-mode: normal;
     background-color: transparent;
 
     .callout-title {
-
         .callout-icon,
         .callout-fold {
             display: none;
         }
 
-        background-color: rgb(from var(--callout-color) r g b / 0.05);
+        background-color: rgb(from var(--callout-color) r g b / 5%);
         color: var(--ctp-text);
     }
 

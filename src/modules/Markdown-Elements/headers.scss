@@ -1,9 +1,9 @@
-/*--------------HEADERS----------------*/
+/* --------------HEADERS---------------- */
 
 // Fix fold indicators of headings in edit mode when using em font sizes (match reading mode)
 .markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
     margin-left: -22px;
-    padding: 0px 6px;
+    padding: 0 6px;
 }
 
 // Custom header font
@@ -15,7 +15,6 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     @each $accent in $accents {
         .loopsk-header-color-toggle {
             &.loopsk-h#{$i}-#{$accent} {
-
                 .app-container,
                 .print {
                     --h#{$i}-color: rgb(var(--ctp-#{$accent}));
@@ -36,7 +35,7 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 
             .markdown-rendered h#{$i},
             .HyperMD-header-#{$i} {
-                border-bottom-color: currentColor;
+                border-bottom-color: currentcolor;
             }
         }
     }
@@ -52,8 +51,7 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
 
         .cm-header-#{$i},
         .markdown-preview-view h#{$i} {
-            margin-block-start: var(--loopsk-header-margin-value);
-            margin-block-end: var(--loopsk-header-margin-value);
+            margin-block: var(--loopsk-header-margin-value) var(--loopsk-header-margin-value);
         }
     }
 }

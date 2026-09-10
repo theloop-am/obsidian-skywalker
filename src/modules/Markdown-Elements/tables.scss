@@ -1,9 +1,7 @@
-/*-Recolor table borders-*/
+/* -Recolor table borders- */
 .loopsk-table-toggle {
-
     .markdown-preview-view:not(.table-disable) table,
     .is-live-preview:not(.table-disable) table {
-
         &,
         td,
         th,
@@ -26,49 +24,48 @@
     }
 }
 
-//dataview table
+// dataview table
 table.dataview.table-view-table {
     >tbody>tr:hover {
-        background-color: rgba(var(--ctp-surface1), 0.1);
+        background-color: rgb(var(--ctp-surface1), 0.1);
     }
 }
 
 $table-styling: th-highlight, row-alt, col-alt, full, checkered;
 
 @mixin styling($style) {
-    @if $style ==th-highlight {
+    @if $style == th-highlight {
         th {
-            background-color: rgba(var(--ctp-mantle), var(--loopsk-table-highlight-opacity, 0.5));
+            background-color: rgb(var(--ctp-mantle), var(--loopsk-table-highlight-opacity, 0.5));
         }
     }
 
-    @if $style ==row-alt {
+    @if $style == row-alt {
         tr:nth-child(2n) td {
-            background-color: rgba(var(--ctp-mantle), var(--loopsk-table-highlight-opacity, 0.5));
+            background-color: rgb(var(--ctp-mantle), var(--loopsk-table-highlight-opacity, 0.5));
         }
     }
 
-    @if $style ==col-alt {
+    @if $style == col-alt {
         tr td:nth-child(2n) {
-            background-color: rgba(var(--ctp-mantle), var(--loopsk-table-highlight-opacity, 0.5));
+            background-color: rgb(var(--ctp-mantle), var(--loopsk-table-highlight-opacity, 0.5));
         }
     }
 
-    @if $style ==checkered {
-
+    @if $style == checkered {
         tr td:nth-child(2n),
         tr:nth-child(2n) td {
-            background-color: rgba(var(--ctp-mantle), var(--loopsk-table-highlight-opacity, 0.5));
+            background-color: rgb(var(--ctp-mantle), var(--loopsk-table-highlight-opacity, 0.5));
         }
 
         tr:nth-child(2n) td:nth-child(2n) {
-            background-color: rgba(var(--ctp-crust), var(--loopsk-table-highlight-opacity, 0.5));
+            background-color: rgb(var(--ctp-crust), var(--loopsk-table-highlight-opacity, 0.5));
         }
     }
 
-    @if $style ==full {
+    @if $style == full {
         td {
-            background-color: rgba(var(--ctp-mantle), var(--loopsk-table-highlight-opacity, 0.5));
+            background-color: rgb(var(--ctp-mantle), var(--loopsk-table-highlight-opacity, 0.5));
         }
     }
 }
@@ -78,7 +75,6 @@ $table-styling: th-highlight, row-alt, col-alt, full, checkered;
 @each $table-style in $table-styling {
     .loopsk-table-toggle {
         &.loopsk-table-#{"#{$table-style}"} {
-
             .markdown-preview-view:not(.table-disable),
             .is-live-preview:not(.table-disable) {
                 @include styling($table-style);
@@ -86,19 +82,15 @@ $table-styling: th-highlight, row-alt, col-alt, full, checkered;
         }
     }
 
-    @if $table-style !=full {
+    @if $table-style != full {
         .#{$table-style} {
-
             &.markdown-preview-view:not(.table-disable),
             &.is-live-preview:not(.table-disable) {
                 @include styling($table-style);
             }
         }
-    }
-
-    @else {
+    } @else {
         .table-#{$table-style} {
-
             &.markdown-preview-view:not(.table-disable),
             &.is-live-preview:not(.table-disable) {
                 @include styling($table-style);
@@ -121,6 +113,6 @@ $table-styling: th-highlight, row-alt, col-alt, full, checkered;
 
 .loopsk-table-width.loopsk-table-toggle .markdown-rendered:not(.table-disable) table {
     width: var(--loopsk-table-width-pct);
-    margin-left: calc(50% - var(--loopsk-table-width-pct)/2);
-    margin-right: calc(50% - var(--loopsk-table-width-pct)/2);
+    margin-left: calc(50% - var(--loopsk-table-width-pct) / 2);
+    margin-right: calc(50% - var(--loopsk-table-width-pct) / 2);
 }

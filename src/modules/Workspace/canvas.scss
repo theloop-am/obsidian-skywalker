@@ -38,7 +38,7 @@
 }
 
 .loopsk-accent-toggle .canvas-selection {
-    background-color: rgba(var(--ctp-accent), 0.1);
+    background-color: rgb(var(--ctp-accent), 0.1);
     border: 2px solid var(--color-accent);
 }
 
@@ -50,13 +50,10 @@
     color: var(--canvas-color);
 
     &::after {
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
+        inset: 0;
     }
 }
 
 .loopsk-accent-toggle .canvas-placeholder-message {
-    background: rgba(var(--ctp-accent), 0.1)
+    background: rgb(var(--ctp-accent), 0.1)
 }

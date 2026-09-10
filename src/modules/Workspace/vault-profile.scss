@@ -20,7 +20,6 @@ body.loopsk-vault-logo:not(.is-mobile) .workspace-split.mod-left-split .workspac
             width: var(--loopsk-vault-logo-width);
             height: var(--loopsk-vault-logo-height);
             background-color: var(--loopsk-brand-mark-color);
-            -webkit-mask: var(--loopsk-vault-logo-image) no-repeat left center / contain;
             mask: var(--loopsk-vault-logo-image) no-repeat left center / contain;
         }
     }

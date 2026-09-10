@@ -106,37 +106,36 @@ settings:
 @use "sass:color";
 @use "sass:math";
 @use "sass:map";
-@use "ext-colorschemes/atom-dark.scss";
-@use "ext-colorschemes/atom-light.scss";
-@use "ext-colorschemes/biscuit-dark.scss";
-@use "ext-colorschemes/coffee-dark.scss";
-@use "ext-colorschemes/dracula.scss";
-@use "ext-colorschemes/everforest-light.scss";
-@use "ext-colorschemes/everforest-dark.scss";
-@use "ext-colorschemes/generic-dark.scss";
-@use "ext-colorschemes/gruvbox-dark.scss";
-@use "ext-colorschemes/gruvbox-light.scss";
-@use "ext-colorschemes/kanagawa-dark.scss";
-@use "ext-colorschemes/luminscence-light.scss";
-@use "ext-colorschemes/nord-dark.scss";
-@use "ext-colorschemes/nord-light.scss";
-@use "ext-colorschemes/nord-darker.scss";
-@use "ext-colorschemes/notion-light.scss";
-@use "ext-colorschemes/notion-dark.scss";
-@use "ext-colorschemes/rosebox.scss";
-@use "ext-colorschemes/rosepine-dark.scss";
-@use "ext-colorschemes/royal-velvet.scss";
-@use "ext-colorschemes/sandy-beaches-light.scss";
-@use "ext-colorschemes/solarized-dark.scss";
-@use "ext-colorschemes/thorns.scss";
-@use "ext-colorschemes/material-mint-light.scss";
-@use "ext-colorschemes/material-mint-dark.scss";
+@use "ext-colorschemes/atom-dark";
+@use "ext-colorschemes/atom-light";
+@use "ext-colorschemes/biscuit-dark";
+@use "ext-colorschemes/coffee-dark";
+@use "ext-colorschemes/dracula";
+@use "ext-colorschemes/everforest-light";
+@use "ext-colorschemes/everforest-dark";
+@use "ext-colorschemes/generic-dark";
+@use "ext-colorschemes/gruvbox-dark";
+@use "ext-colorschemes/gruvbox-light";
+@use "ext-colorschemes/kanagawa-dark";
+@use "ext-colorschemes/luminscence-light";
+@use "ext-colorschemes/nord-dark";
+@use "ext-colorschemes/nord-light";
+@use "ext-colorschemes/nord-darker";
+@use "ext-colorschemes/notion-light";
+@use "ext-colorschemes/notion-dark";
+@use "ext-colorschemes/rosebox";
+@use "ext-colorschemes/rosepine-dark";
+@use "ext-colorschemes/royal-velvet";
+@use "ext-colorschemes/sandy-beaches-light";
+@use "ext-colorschemes/solarized-dark";
+@use "ext-colorschemes/thorns";
+@use "ext-colorschemes/material-mint-light";
+@use "ext-colorschemes/material-mint-dark";
 
 $ext-color-list: "rosewater", "flamingo", "pink", "mauve", "red", "maroon",
 	"peach", "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender",
 	"text", "subtext1", "subtext0", "overlay2", "overlay1", "overlay0", "surface2",
 	"surface1", "surface0", "base", "mantle", "crust";
-
 $ext-theme-list: atom-light.$theme-atom-light, atom-dark.$theme-atom-dark,
 	biscuit-dark.$theme-biscuit-dark, coffee-dark.$theme-coffee-dark, dracula.$theme-dracula,
 	everforest-light.$theme-everforest-light, everforest-dark.$theme-everforest-dark,
@@ -149,7 +148,7 @@ $ext-theme-list: atom-light.$theme-atom-light, atom-dark.$theme-atom-dark,
 
 .theme-dark.loopsk-theme-ext-dark.ctp-rosebox {
 	--ctp-accent: 165, 117, 98;
-	--background-modifier-border: rgb(51, 51, 51);
+	--background-modifier-border: rgb(51 51 51);
 }
 
 .theme-light.loopsk-theme-ext-light.ctp-nord-light {

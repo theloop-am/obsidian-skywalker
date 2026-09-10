@@ -1,5 +1,7 @@
-@use "main.scss";
-/*---------------CALLOUT COLORS----------------*/
-@use "colors.scss";
-/*---------------CUSTOM CALLOUTS---------------*/
-@use "misc-callouts.scss";
+@use "main";
+
+/* ---------------CALLOUT COLORS---------------- */
+@use "colors";
+
+/* ---------------CUSTOM CALLOUTS--------------- */
+@use "misc-callouts";

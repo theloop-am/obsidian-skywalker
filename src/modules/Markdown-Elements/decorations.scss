@@ -1,13 +1,12 @@
-/*-Decorations for bold and italics-*/
+/* -Decorations for bold and italics- */
 .loopsk-decoration-toggle {
     --italic-color: rgb(var(--loopsk-italic-color, var(--text-normal)));
     --bold-color: rgb(var(--loopsk-bold-color, var(--text-normal)));
-    --text-highlight-bg: rgba(var(--loopsk-highlight-color, var(--ctp-yellow)), 0.2);
+    --text-highlight-bg: rgb(var(--loopsk-highlight-color, var(--ctp-yellow)), 0.2);
 }
 
 // Internal links have no underline
 .markdown-rendered .internal-link {
-
     &:hover,
     &:active,
     &.is-unresolved:hover,
@@ -30,17 +29,15 @@
 
 // External links have underline but no icon
 .loopsk-hide-external-link-icon {
-
     .external-link,
     .external-link:hover {
         background-image: none;
-        padding-right: 0px;
+        padding-right: 0;
     }
 }
 
 // Editor colors follow the same color as in reading mode
 .cm-s-obsidian span {
-
     &.cm-formatting-strong,
     &.cm-strong {
         color: var(--bold-color);
@@ -52,7 +49,7 @@
     }
 }
 
-/*-Footnote-*/
+/* -Footnote- */
 sup[data-footnote-id] {
     font-size: var(--font-smallest);
 }

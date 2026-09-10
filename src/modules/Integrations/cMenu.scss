@@ -1,15 +1,17 @@
+// stylelint-disable-next-line selector-id-pattern -- the cMenu plugin names this element
 #cMenuModalBar {
     .cMenuCommandItem {
-        background-color: rgba(var(--ctp-mantle), 0.4);
+        background-color: rgb(var(--ctp-mantle), 0.4);
 
         &:hover {
-            background-color: rgba(var(--ctp-mantle), 0.6);
+            background-color: rgb(var(--ctp-mantle), 0.6);
         }
     }
 
-    border: 2px solid rgba(var(--ctp-crust), 0.2);
+    border: 2px solid rgb(var(--ctp-crust), 0.2);
 }
 
+// stylelint-disable-next-line selector-id-pattern -- the cMenu plugin names this element
 #cMenuModalBar button.cMenuCommandItem:hover {
-    background-color: rgba(var(--ctp-mantle), 0.6);
+    background-color: rgb(var(--ctp-mantle), 0.6);
 }

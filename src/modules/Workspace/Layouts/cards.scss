@@ -14,7 +14,7 @@ body.loopsk-card-layout {
         --tab-outline-color: transparent;
 
         .menu {
-            border: 0px; // hide menu border
+            border: 0; // hide menu border
         }
     }
 
@@ -28,7 +28,6 @@ body.loopsk-card-layout {
     }
 
     &.is-focused {
-
         &,
         .sidebar-toggle-button,
         .workspace-tabs.mod-top {
@@ -45,7 +44,7 @@ body.loopsk-card-layout {
     .workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf,
     .mod-root .workspace-tabs .workspace-leaf,
     .workspace-ribbon.mod-left,
-    .workspace-ribbon.mod-left:before {
+    .workspace-ribbon.mod-left::before {
         background-color: var(--tab-container-background);
     }
 
@@ -55,9 +54,9 @@ body.loopsk-card-layout {
         }
 
         .side-dock-actions {
-            border-radius: 0px var(--loopsk-card-radius, var(--radius-xl)) var(--loopsk-card-radius, var(--radius-xl)) 0px;
+            border-radius: 0 var(--loopsk-card-radius, var(--radius-xl)) var(--loopsk-card-radius, var(--radius-xl)) 0;
             margin-top: 2px;
-            border-width: 1px 1px 0px 1px;
+            border-width: 1px 1px 0;
         }
 
         .side-dock-actions {
@@ -69,7 +68,7 @@ body.loopsk-card-layout {
         &.loopsk-fixed-status-bar {
             .side-dock-settings {
                 border-width: 1px;
-                border-radius: 0px var(--loopsk-card-radius, var(--radius-xl)) var(--loopsk-card-radius, var(--radius-xl)) 0px;
+                border-radius: 0 var(--loopsk-card-radius, var(--radius-xl)) var(--loopsk-card-radius, var(--radius-xl)) 0;
             }
         }
     }
@@ -90,7 +89,7 @@ body.loopsk-card-layout {
     }
 
     .workspace-tab-header-container,
-    .workspace-ribbon.mod-left:before {
+    .workspace-ribbon.mod-left::before {
         border-bottom: none;
     }
 
@@ -123,18 +122,17 @@ body.loopsk-card-layout {
     }
 
     &.loopsk-card-shadows {
-
         .workspace-split .workspace-leaf-content,
         &.loopsk-card-layout-actions .side-dock-actions,
         &.loopsk-card-layout-filebrowser .workspace-split .workspace-leaf-content[data-type="file-explorer"] {
-            box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 3px 4px 0 rgb(0 0 0 / 5%);
         }
     }
 
     .workspace-split .mod-stacked .workspace-leaf-content {
         border-radius: 0;
         border: none;
-        margin-bottom: 0px;
+        margin-bottom: 0;
         border-left: none;
     }
 
@@ -145,14 +143,14 @@ body.loopsk-card-layout {
     .workspace .workspace-tabs.mod-stacked {
         .workspace-tab-container .workspace-tab-header {
             border-style: solid;
-            border-radius: var(--loopsk-card-radius, var(--radius-xl)) 0px 0px var(--loopsk-card-radius, var(--radius-xl));
+            border-radius: var(--loopsk-card-radius, var(--radius-xl)) 0 0 var(--loopsk-card-radius, var(--radius-xl));
             border-width: var(--tab-outline-width);
             border-color: var(--tab-outline-color);
             border-right: var(--tab-outline-width) dashed var(--tab-outline-color);
         }
 
         .workspace-leaf {
-            border-left-width: 0px;
+            border-left-width: 0;
             border-top-width: var(--tab-outline-width);
             border-bottom-width: var(--tab-outline-width);
             border-style: solid;
@@ -165,7 +163,7 @@ body.loopsk-card-layout {
         }
     }
 
-    .workspace-drop-overlay:before {
+    .workspace-drop-overlay::before {
         width: calc(100% - 6px - var(--loopsk-card-layout-padding, 0) * 2);
         height: calc(100% - 6px - var(--loopsk-card-layout-padding, 0) * 2);
         margin: auto;

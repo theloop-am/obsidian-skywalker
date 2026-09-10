@@ -1,12 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/stylelintrc.json",
   "extends": ["stylelint-config-standard-scss"],
+  "reportDescriptionlessDisables": true,
+  "reportInvalidScopeDisables": true,
+  "reportNeedlessDisables": true,
+  "reportUnscopedDisables": true,
   "rules": {
     "custom-property-pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
     "scss/dollar-variable-pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
-    "scss/at-mixin-pattern": "^[a-z][a-zA-Z0-9]*$",
+    "scss/at-mixin-pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+    "selector-class-pattern": "^(?:(?!loopsk).*|loopsk-[a-z0-9]+(?:-[a-z0-9]+)*)$",
 
-    "selector-class-pattern": null,
     "no-descending-specificity": null
   }
 }

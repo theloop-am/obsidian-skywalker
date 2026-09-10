@@ -8,7 +8,8 @@ video {
 .internal-embed[alt*="seamless"] {
     &.markdown-embed {
         --embed-padding: 0;
-        border-width: 0px;
+
+        border-width: 0;
 
         >.markdown-embed-title {
             width: fit-content;
@@ -26,7 +27,6 @@ video {
         }
 
         &:hover {
-
             &>.markdown-embed-title,
             &>.markdown-embed-link {
                 opacity: 1;

@@ -13,8 +13,8 @@ body.theme-light {
 body.theme-dark {
   --notion-kanban-card: var(--color-base-30);
   --notion-kanban-card-hover: var(--color-base-35);
-  --notion-kanban-darken: rgba(var(--ctp-crust, 0, 0, 0), 0.3);
-  --notion-kanban-darken-hover: rgba(var(--ctp-crust, 0, 0, 0), 0.2);
+  --notion-kanban-darken: rgb(var(--ctp-crust, 0, 0, 0), 0.3);
+  --notion-kanban-darken-hover: rgb(var(--ctp-crust, 0, 0, 0), 0.2);
 }
 
 body {
@@ -71,7 +71,7 @@ body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrappe
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item {
   border: none;
-  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+  box-shadow: rgba(15, 15, 15, 0.1) 0 0 0 1px, rgba(15, 15, 15, 0.1) 0 2px 4px;
   transition: background var(--kanban-transition);
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item .kanban-plugin__item-content-wrapper {
@@ -84,7 +84,7 @@ body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrappe
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item .kanban-plugin__item-content-wrapper .kanban-plugin__item-title-wrapper .kanban-plugin__item-prefix-button-wrapper {
   margin-right: 6px;
-  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+  box-shadow: rgba(15, 15, 15, 0.1) 0 0 0 1px, rgba(15, 15, 15, 0.1) 0 2px 4px;
   border-radius: 3px;
   background: var(--notion-kanban-card);
   transition: background var(--kanban-transition);
@@ -102,7 +102,7 @@ body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrappe
   padding: var(--size-2-3);
 }
 body .kanban-plugin__lane .kanban-plugin__lane-items .kanban-plugin__item-wrapper .kanban-plugin__item .kanban-plugin__item-content-wrapper .kanban-plugin__item-postfix-button-wrapper {
-  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+  box-shadow: rgba(15, 15, 15, 0.1) 0 0 0 1px, rgba(15, 15, 15, 0.1) 0 2px 4px;
   border-radius: 3px;
   background-color: var(--notion-kanban-card);
   opacity: 0;
@@ -174,7 +174,7 @@ body .kanban-plugin__lane:hover .kanban-plugin__lane-header-wrapper .kanban-plug
 }
 body .kanban-plugin__drag-container .kanban-plugin__item-wrapper .kanban-plugin__item {
   border: none;
-  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+  box-shadow: rgba(15, 15, 15, 0.1) 0 0 0 1px, rgba(15, 15, 15, 0.1) 0 2px 4px;
 }
 body .kanban-plugin__item-input {
   background-color: transparent;

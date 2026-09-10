@@ -1,4 +1,4 @@
-/*---------------------------------------------------------------
+/* ---------------------------------------------------------------
 * RAIBOW FOLDER VARIABLE
 
 * --rainbow-folder-color is a raw rgb variable whose value
@@ -6,7 +6,7 @@
 * Applying "inherit" to every child folder excluding first-order
 * child folders results in folders "inheriting" their parent
 * folder colors.
-*---------------------------------------------------------------*/
+*--------------------------------------------------------------- */
 .nav-folder-children>.nav-folder,
 .nav-files-container>div>.nav-folder,
 [data-type="bookmarks"] .tree-item {
@@ -56,7 +56,6 @@
 }
 
 .loopsk-rainbow-subfolder-color-toggle {
-
     .nav-files-container .nav-folder.nav-folder .nav-folder,
     [data-type="bookmarks"] .tree-item .tree-item {
         --rainbow-folder-color: inherit;

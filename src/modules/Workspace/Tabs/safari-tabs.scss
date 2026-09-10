@@ -10,7 +10,7 @@
     --tab-background: var(--background-secondary);
     --tab-background-active: var(--background-primary);
     --tab-font-size: 12px;
-    --tab-height: calc(var(--header-height)*0.7);
+    --tab-height: calc(var(--header-height) * 0.7);
     --tab-max-width: 200px;
     --tab-max-width-active: 300px
 }
@@ -19,8 +19,8 @@
     margin-top: var(--header-height);
 }
 
-.loopsk-alternate-tab-toggle .workspace-ribbon.mod-left:before {
-    padding-bottom: 0px;
+.loopsk-alternate-tab-toggle .workspace-ribbon.mod-left::before {
+    padding-bottom: 0;
 }
 
 .loopsk-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header::before,
@@ -29,8 +29,8 @@
     display: none;
 }
 
-.loopsk-alternate-tab-toggle .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner,
-.loopsk-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
+.loopsk-alternate-tab-toggle .mod-vertical:not(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner,
+.loopsk-alternate-tab-toggle .mod-horizontal:not(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
     align-items: center;
     justify-content: var(--loopsk-safari-tab-align, center);
     margin: 0;
@@ -38,14 +38,14 @@
     gap: var(--loopsk-safari-tab-gap, 10px);
 }
 
-.loopsk-disable-newtab-align.loopsk-alternate-tab-toggle .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner,
-.loopsk-disable-newtab-align.loopsk-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
+.loopsk-disable-newtab-align.loopsk-alternate-tab-toggle .mod-vertical:not(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner,
+.loopsk-disable-newtab-align.loopsk-alternate-tab-toggle .mod-horizontal:not(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
     width: unset;
     gap: var(--loopsk-safari-tab-gap, 10px);
 }
 
-.loopsk-alternate-tab-toggle .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header,
-.loopsk-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+.loopsk-alternate-tab-toggle .mod-vertical:not(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header,
+.loopsk-alternate-tab-toggle .mod-horizontal:not(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
     background: var(--tab-background);
     border-radius: var(--loopsk-safari-tab-radius, 6px);
     box-shadow: none;
@@ -67,11 +67,11 @@
     margin-left: 0;
 }
 
-.loopsk-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner {
+.loopsk-alternate-tab-toggle .mod-root:not(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner {
     padding: 7px 8px;
 }
 
-.loopsk-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) {
+.loopsk-alternate-tab-toggle .mod-root:not(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-stacked) {
     .workspace-tab-header-inner {
         padding: 0 4px 0 8px;
         transition: 400ms, background-color 150ms ease-in-out, max-width 400ms;
@@ -88,7 +88,7 @@
     display: none;
 }
 
-.loopsk-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+.loopsk-alternate-tab-toggle .mod-root:not(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
     flex-grow: 1.67;
     max-width: var(--tab-max-width-active);
     background-color: var(--background-primary);
@@ -99,7 +99,6 @@
 }
 
 .loopsk-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
-
     .workspace-tab-header-inner,
     .workspace-tab-header-inner-title,
     .workspace-tab-header-inner-close-button,
@@ -108,12 +107,11 @@
     }
 
     .workspace-tab-header-inner:hover {
-        background-color: rgba(var(--ctp-surface1), 0.4);
+        background-color: rgb(var(--ctp-surface1), 0.4);
     }
 }
 
 .loopsk-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active {
-
     .workspace-tab-header-inner,
     .workspace-tab-header-inner-title,
     .workspace-tab-header-inner-close-button,

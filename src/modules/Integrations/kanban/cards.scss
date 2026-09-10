@@ -7,7 +7,7 @@
     --input-radius: var(--loopsk-kanban-card-radius, 6px);
     --tag-color: var(--text-faint);
 
-    background-color: rgba(var(--ctp-base), var(--loopsk-kanban-card-opacity, 1));
+    background-color: rgb(var(--ctp-base), var(--loopsk-kanban-card-opacity, 1));
     border-width: 0;
     box-shadow: inset 0 0 0 1px var(--background-modifier-border);
 
@@ -90,7 +90,6 @@
 }
 
 .kanban-plugin__drag-container {
-
     p,
     code {
         overflow: hidden;

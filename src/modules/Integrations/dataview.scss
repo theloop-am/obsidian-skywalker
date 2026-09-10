@@ -1,4 +1,4 @@
-/*-Fix dataview table header size-*/
+/* -Fix dataview table header size- */
 .table-view-table>thead>tr>th {
     font-size: medium;
     color: var(--text-muted);
@@ -7,8 +7,8 @@
 .dataview.inline-field-standalone-value,
 .dataview.inline-field-key,
 .dataview.inline-field-value {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     font-family: inherit;
     background-color: transparent;
     color: var(--text-normal);
@@ -17,8 +17,7 @@
 .dataview.inline-field-standalone-value,
 .dataview.inline-field-value {
     text-decoration: underline;
-    text-decoration-line: underline;
-    text-decoration-color: rgba(var(--ctp-yellow), 0.4);
+    text-decoration-color: rgb(var(--ctp-yellow), 0.4);
 }
 
 .dataview.inline-field-key {

@@ -3,18 +3,17 @@
     [data-callout-metadata*="loopsk-vanilla-plus"]),
 //do not apply to callouts with these metadata
 .callout[data-callout-metadata*="loopsk-sleek"] {
-
-    //apply to any callout with this metadata
+    // apply to any callout with this metadata
     &:not([data-callout-metadata*="revert"],
         [data-callout="blank-container"],
         [data-callout="multi-column"],
         [data-callout="formula"]) {
-        //do not apply to revert or MCL metadata
+        // do not apply to revert or MCL metadata
         --callout-padding: 0;
         --callout-border-width: 1px;
         --callout-border-opacity: 0.4;
-        --callout-border-width: 1px;
-        background-color: rgba(var(--ctp-mantle), 0.4);
+
+        background-color: rgb(var(--ctp-mantle), 0.4);
 
         &>.callout-title {
             background-color: rgb(from var(--callout-color) r g b / var(--callout-title-opacity, 0.1));
