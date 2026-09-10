@@ -3,7 +3,8 @@
 #MISE dir="{{config_root}}"
 set -euo pipefail
 
-# Warnings here are the directory's own advice - !important, :has(), features the
-# engine does not carry - so they are reported rather than fatal. What is fatal
-# lives in test:assets, because that one is a rule and not advice.
-exec node_modules/.bin/stylelint theme.css "snippets/*.css" "$@"
+# The directory's scanner reports its findings as warnings and passes the job
+# anyway, so the verdict ends up in a log nobody reads. Here a warning is a
+# failure. What the built stylesheet cannot carry - the reason a :has() is
+# allowed - is enforced on the sources instead, where a comment can say why.
+exec node_modules/.bin/stylelint theme.css "snippets/*.css" --max-warnings 0 "$@"
