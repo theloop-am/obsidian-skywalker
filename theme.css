@@ -496,17 +496,13 @@ settings:
 -
     id: loopsk-custom-checkboxes-header
     title: Checkboxes
-    description: Custom checkboxes and speech bubbles
+    description: Custom checkbox icons for every task state
     type: heading
     level: 2
     collapsed: true
 -
     id: loopsk-custom-checkboxes
     title: Enable Custom Checkboxes
-    type: class-toggle
--
-    id: loopsk-speech-bubble
-    title: Enable Speech Bubbles
     type: class-toggle
 
 # File Editor & Markdown Elements :: Codeblocks
@@ -3388,7 +3384,6 @@ settings:
   --background-modifier-border: rgb(var(--ctp-surface0));
   --background-modifier-border-hover: rgb(var(--ctp-surface1));
   --background-modifier-border-focus: rgb(var(--ctp-surface2));
-  --loopsk-speech-bubble-opacity: var(--loopsk-sp-op-dark, 0.9);
   --background-modifier-cover: rgb(var(--ctp-mantle), 0.4);
 }
 .theme-dark.theme-dark {
@@ -3401,7 +3396,6 @@ settings:
   --background-modifier-border: rgb(var(--ctp-surface1));
   --background-modifier-border-hover: rgb(var(--ctp-surface2));
   --background-modifier-border-focus: rgb(var(--ctp-overlay0));
-  --loopsk-speech-bubble-opacity: var(--loopsk-sp-op-light, 0.5);
   --background-modifier-cover: #0002;
 }
 .theme-light.theme-light {
@@ -3457,8 +3451,7 @@ body.theme-dark {
 }
 
 .loopsk-current-line-border .markdown-source-view .cm-active.cm-line {
-  border-left: 2px solid var(--interactive-accent);
-  margin-left: -2px !important;
+  box-shadow: inset 2px 0 0 var(--interactive-accent);
   background-color: rgb(var(--ctp-surface1), 0.4);
 }
 
@@ -4269,7 +4262,7 @@ body:not(.loopsk-alternate-tab-toggle, .loopsk-disable-newtab-align) .workspace-
 .loopsk-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
 .loopsk-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-close-button,
 .loopsk-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
-  color: var(--color-accent) !important;
+  color: var(--color-accent);
 }
 
 .loopsk-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active:hover {
@@ -6369,13 +6362,13 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 }
 
 .loopsk-colorful-frame .sidebar-toggle-button.sidebar-toggle-button {
-  background-color: var(--background-primary) !important;
+  background-color: var(--background-primary);
 }
 
 .loopsk-colorful-frame .sidebar-toggle-button {
   padding: var(--size-4-1);
   background-color: var(--background-primary);
-  --tab-container-background: var(--background-primary) !important;
+  --tab-container-background: var(--background-primary);
   height: calc(var(--header-height) - 5px);
   margin-right: 0;
   border-radius: 0 0 var(--radius-m) var(--radius-m);
@@ -6388,10 +6381,10 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
   --icon-color-focused: var(--text-normal);
 }
 .loopsk-colorful-frame .sidebar-toggle-button .clickable-icon {
-  --icon-color: var(--text-muted) !important;
-  --icon-color-hover: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: var(--text-normal) !important;
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--text-muted);
+  --icon-color-active: var(--text-accent);
+  --icon-color-focused: var(--text-normal);
 }
 
 .loopsk-colorful-frame:not(.loopsk-card-layout, .loopsk-border-layout).loopsk-mini-tab-toggle.is-focused .mod-active.mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
@@ -6568,6 +6561,12 @@ body.loopsk-colorful-frame.loopsk-border-layout .workspace-tabs.mod-top .workspa
   --icon-color-hover: var(--colorful-icon-color-alt);
   --icon-color-active: var(--colorful-icon-color-alt);
   --icon-color-focused: var(--colorful-icon-color);
+}
+body.loopsk-colorful-frame.loopsk-border-layout .workspace-tabs.mod-top .workspace-tab-header-container .sidebar-toggle-button .clickable-icon {
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--text-muted);
+  --icon-color-active: var(--text-accent);
+  --icon-color-focused: var(--text-normal);
 }
 body.loopsk-colorful-frame.loopsk-border-layout .workspace-tabs.mod-top .workspace-tab-header-container .clickable-icon:hover {
   background-color: rgb(var(--ctp-crust), 0.2);
@@ -7118,171 +7117,6 @@ Icons were taken from Font Awesome: https://fontawesome.com/
 }
 .loopsk-custom-checkboxes-labels .task-list-item .task-list-item-checkbox {
   margin-right: calc(var(--checkbox-size) * 2.7);
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"],
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"],
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"],
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"],
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"],
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"],
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"],
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"],
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"],
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"] {
-  margin-inline-start: -15px;
-  padding: 3px 10px;
-  border-radius: 3px 10px 10px;
-  max-width: fit-content;
-  color: var(--text-normal);
-  --bold-color: var(--text-normal);
-  --italic-color: var(--text-normal);
-}
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"] p,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"] p,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"] p,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"] p,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"] p,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"] p,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"] p,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"] p,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"] p,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"] p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"] .task-list-item-checkbox,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"] .task-list-item-checkbox,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"] .task-list-item-checkbox,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"] .task-list-item-checkbox,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"] .task-list-item-checkbox,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"] .task-list-item-checkbox,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"] .task-list-item-checkbox,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"] .task-list-item-checkbox,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"] .task-list-item-checkbox,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"] .task-list-item-checkbox {
-  display: none;
-}
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"]::selection,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"]::selection,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"]::selection,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"]::selection,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"]::selection,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"]::selection,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"]::selection,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"]::selection,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"]::selection,
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"]::selection {
-  background-color: rgb(var(--ctp-text), 0.2);
-}
-
-.theme-dark.loopsk-speech-bubble [data-task="0"],
-.theme-dark.loopsk-speech-bubble [data-task="1"],
-.theme-dark.loopsk-speech-bubble [data-task="2"],
-.theme-dark.loopsk-speech-bubble [data-task="3"],
-.theme-dark.loopsk-speech-bubble [data-task="4"],
-.theme-dark.loopsk-speech-bubble [data-task="5"],
-.theme-dark.loopsk-speech-bubble [data-task="6"],
-.theme-dark.loopsk-speech-bubble [data-task="7"],
-.theme-dark.loopsk-speech-bubble [data-task="8"],
-.theme-dark.loopsk-speech-bubble [data-task="9"] {
-  --text-normal: var(--background-primary);
-}
-.theme-dark.loopsk-speech-bubble [data-task="0"]::selection,
-.theme-dark.loopsk-speech-bubble [data-task="1"]::selection,
-.theme-dark.loopsk-speech-bubble [data-task="2"]::selection,
-.theme-dark.loopsk-speech-bubble [data-task="3"]::selection,
-.theme-dark.loopsk-speech-bubble [data-task="4"]::selection,
-.theme-dark.loopsk-speech-bubble [data-task="5"]::selection,
-.theme-dark.loopsk-speech-bubble [data-task="6"]::selection,
-.theme-dark.loopsk-speech-bubble [data-task="7"]::selection,
-.theme-dark.loopsk-speech-bubble [data-task="8"]::selection,
-.theme-dark.loopsk-speech-bubble [data-task="9"]::selection {
-  background: rgb(var(--ctp-crust), 0.2);
-}
-.theme-dark.loopsk-speech-bubble [data-task="0"],
-.theme-dark.loopsk-speech-bubble [data-task="1"],
-.theme-dark.loopsk-speech-bubble [data-task="2"],
-.theme-dark.loopsk-speech-bubble [data-task="3"],
-.theme-dark.loopsk-speech-bubble [data-task="4"],
-.theme-dark.loopsk-speech-bubble [data-task="5"],
-.theme-dark.loopsk-speech-bubble [data-task="6"],
-.theme-dark.loopsk-speech-bubble [data-task="7"],
-.theme-dark.loopsk-speech-bubble [data-task="8"],
-.theme-dark.loopsk-speech-bubble [data-task="9"] {
-  transition: background-color 0.2s, background 0.2s, border-radius 0.2s;
-}
-
-.loopsk-speech-bubble .is-live-preview [data-task="0"].cm-active,
-.loopsk-speech-bubble .is-live-preview [data-task="1"].cm-active,
-.loopsk-speech-bubble .is-live-preview [data-task="2"].cm-active,
-.loopsk-speech-bubble .is-live-preview [data-task="3"].cm-active,
-.loopsk-speech-bubble .is-live-preview [data-task="4"].cm-active,
-.loopsk-speech-bubble .is-live-preview [data-task="5"].cm-active,
-.loopsk-speech-bubble .is-live-preview [data-task="6"].cm-active,
-.loopsk-speech-bubble .is-live-preview [data-task="7"].cm-active,
-.loopsk-speech-bubble .is-live-preview [data-task="8"].cm-active,
-.loopsk-speech-bubble .is-live-preview [data-task="9"].cm-active {
-  border-radius: 0;
-  --text-normal: rgb(var(--ctp-text));
-  background: rgb(var(--ctp-surface1), 0.4);
-}
-.loopsk-speech-bubble .is-live-preview [data-task="0"]:not(.cm-active),
-.loopsk-speech-bubble .is-live-preview [data-task="1"]:not(.cm-active),
-.loopsk-speech-bubble .is-live-preview [data-task="2"]:not(.cm-active),
-.loopsk-speech-bubble .is-live-preview [data-task="3"]:not(.cm-active),
-.loopsk-speech-bubble .is-live-preview [data-task="4"]:not(.cm-active),
-.loopsk-speech-bubble .is-live-preview [data-task="5"]:not(.cm-active),
-.loopsk-speech-bubble .is-live-preview [data-task="6"]:not(.cm-active),
-.loopsk-speech-bubble .is-live-preview [data-task="7"]:not(.cm-active),
-.loopsk-speech-bubble .is-live-preview [data-task="8"]:not(.cm-active),
-.loopsk-speech-bubble .is-live-preview [data-task="9"]:not(.cm-active) {
-  max-width: max-content;
-}
-
-/* Dirty Speech Bubble Fix */
-.loopsk-speech-bubble .HyperMD-task-line[data-task="0"], .loopsk-speech-bubble .HyperMD-task-line[data-task="1"], .loopsk-speech-bubble .HyperMD-task-line[data-task="2"], .loopsk-speech-bubble .HyperMD-task-line[data-task="3"], .loopsk-speech-bubble .HyperMD-task-line[data-task="4"], .loopsk-speech-bubble .HyperMD-task-line[data-task="5"], .loopsk-speech-bubble .HyperMD-task-line[data-task="6"], .loopsk-speech-bubble .HyperMD-task-line[data-task="7"], .loopsk-speech-bubble .HyperMD-task-line[data-task="8"], .loopsk-speech-bubble .HyperMD-task-line[data-task="9"] {
-  text-indent: 0 !important;
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="0"] {
-  background-color: rgb(var(--ctp-red), var(--loopsk-speech-bubble-opacity));
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="1"] {
-  background-color: rgb(var(--ctp-peach), var(--loopsk-speech-bubble-opacity));
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="2"] {
-  background-color: rgb(var(--ctp-yellow), var(--loopsk-speech-bubble-opacity));
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="3"] {
-  background-color: rgb(var(--ctp-green), var(--loopsk-speech-bubble-opacity));
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="4"] {
-  background-color: rgb(var(--ctp-teal), var(--loopsk-speech-bubble-opacity));
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="5"] {
-  background-color: rgb(var(--ctp-sky), var(--loopsk-speech-bubble-opacity));
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="6"] {
-  background-color: rgb(var(--ctp-blue), var(--loopsk-speech-bubble-opacity));
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="7"] {
-  background-color: rgb(var(--ctp-mauve), var(--loopsk-speech-bubble-opacity));
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="8"] {
-  background: linear-gradient(to right, rgb(var(--ctp-red), var(--loopsk-speech-bubble-opacity)), rgb(var(--ctp-yellow), var(--loopsk-speech-bubble-opacity)));
-}
-
-.loopsk-speech-bubble :is(.markdown-source-view, .markdown-rendered) [data-task="9"] {
-  background: linear-gradient(to left, rgb(var(--ctp-lavender), var(--loopsk-speech-bubble-opacity)), rgb(var(--ctp-mauve), var(--loopsk-speech-bubble-opacity)));
 }
 
 /* ------------FLOATING VAULT TITLE----------- */

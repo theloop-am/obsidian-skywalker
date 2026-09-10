@@ -4,6 +4,16 @@
 This feature is inspired by Kepano's Minimal theme: https://github.com/kepano/obsidian-minimal
 None of the original code was used, and was written from scratch.
 ---------------------------------- */
+// The sidebar toggle keeps the workspace's own icon colours, not the frame's.
+// It sits inside the tab header container, so the border layout's colours for
+// that container reach it as well and are restated here.
+@mixin sidebar-toggle-icons {
+    --icon-color: var(--text-muted);
+    --icon-color-hover: var(--text-muted);
+    --icon-color-active: var(--text-accent);
+    --icon-color-focused: var(--text-normal);
+}
+
 body {
     --colorful-icon-color: var(--background-secondary);
     --colorful-icon-color-alt: var(--background-secondary-alt);
@@ -230,14 +240,14 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
 }
 
 .loopsk-colorful-frame .sidebar-toggle-button.sidebar-toggle-button {
-    background-color: var(--background-primary) !important;
+    background-color: var(--background-primary);
 }
 
 .loopsk-colorful-frame .sidebar-toggle-button {
     padding: var(--size-4-1);
     background-color: var(--background-primary);
 
-    --tab-container-background: var(--background-primary) !important;
+    --tab-container-background: var(--background-primary);
 
     height: calc(var(--header-height) - 5px);
     margin-right: 0;
@@ -246,16 +256,10 @@ body.loopsk-colorful-frame-icon-toggle-dark.theme-dark {
     border-style: solid;
     border-color: var(--tab-outline-color);
 
-    --icon-color: var(--text-muted);
-    --icon-color-hover: var(--text-muted);
-    --icon-color-active: var(--text-accent);
-    --icon-color-focused: var(--text-normal);
+    @include sidebar-toggle-icons;
 
     .clickable-icon {
-        --icon-color: var(--text-muted) !important;
-        --icon-color-hover: var(--text-muted) !important;
-        --icon-color-active: var(--text-accent) !important;
-        --icon-color-focused: var(--text-normal) !important;
+        @include sidebar-toggle-icons;
     }
 }
 
@@ -473,6 +477,10 @@ body.loopsk-colorful-frame.loopsk-border-layout {
                 --icon-color-hover: var(--colorful-icon-color-alt);
                 --icon-color-active: var(--colorful-icon-color-alt);
                 --icon-color-focused: var(--colorful-icon-color);
+            }
+
+            .sidebar-toggle-button .clickable-icon {
+                @include sidebar-toggle-icons;
             }
 
             .clickable-icon:hover {

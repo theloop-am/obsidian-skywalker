@@ -144,7 +144,6 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     --background-modifier-border: rgb(var(--ctp-surface0));
     --background-modifier-border-hover: rgb(var(--ctp-surface1));
     --background-modifier-border-focus: rgb(var(--ctp-surface2));
-    --loopsk-speech-bubble-opacity: var(--loopsk-sp-op-dark, 0.9);
     --background-modifier-cover: rgb(var(--ctp-mantle), 0.4);
 
     &.theme-dark {
@@ -159,7 +158,6 @@ $accents: "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach",
     --background-modifier-border: rgb(var(--ctp-surface1));
     --background-modifier-border-hover: rgb(var(--ctp-surface2));
     --background-modifier-border-focus: rgb(var(--ctp-overlay0));
-    --loopsk-speech-bubble-opacity: var(--loopsk-sp-op-light, 0.5);
     --background-modifier-cover: #0002;
 
     &.theme-light {

@@ -7,8 +7,9 @@
 
 .loopsk-current-line-border .markdown-source-view {
     .cm-active.cm-line {
-        border-left: 2px solid var(--interactive-accent);
-        margin-left: -2px !important; // this !important is necessary since the app.css file uses one too ;_;
+        // The stripe is painted inside the box: Obsidian zeroes the margins of
+        // every .cm-content child, so the line cannot absorb a border's width.
+        box-shadow: inset 2px 0 0 var(--interactive-accent);
         background-color: rgb(var(--ctp-surface1), 0.4);
     }
 }
