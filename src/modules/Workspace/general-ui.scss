@@ -24,8 +24,18 @@
 }
 
 /* -Smoother popover transition- */
+@keyframes loopsk-popover-fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .popover.hover-popover.is-loaded {
-    animation: fade .2s;
+    animation: loopsk-popover-fade 0.2s;
 }
 
 .popover .markdown-embed-link {

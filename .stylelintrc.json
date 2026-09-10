@@ -35,6 +35,10 @@
       { "ignoreAtRules": ["layer", "property", "container"], "severity": "warning" }
     ],
     "unit-no-unknown": [true, { "severity": "warning" }],
-    "property-disallowed-list": [["all"], { "severity": "warning" }]
+    "property-disallowed-list": [["all"], { "severity": "warning" }],
+    "declaration-property-value-no-unknown": true,
+    "function-no-unknown": true,
+    "property-no-unknown": true,
+    "no-unknown-animations": true
   }
 }
