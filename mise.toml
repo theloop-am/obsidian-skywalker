@@ -54,6 +54,7 @@ depends = [
   "lint:styles",
   "lint:docs",
   "test:build",
+  "test:classes",
   "test:scanner",
   "test:assets",
   "test:manifest",
